@@ -14,6 +14,8 @@ local kingstone = {
 	{"teren9", 624, ground},
 	{"teren10", 625, ground},
 	{"teren11", 626, ground},
+	{"teren12", 627, ground},
+	{"teren13", 628, ground},
 }
 
 addEventHandler( "onClientResourceStart", resourceRoot,

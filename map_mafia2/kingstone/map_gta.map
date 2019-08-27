@@ -11,5 +11,6 @@
 <object id="teren9" breakable="true" interior="0" collisions="true" alpha="255" model="624" doublesided="false" scale="1" dimension="0" posX="-1003.10600" posY="1410.77600" posZ="-14.00727" rotX="90" rotY="0" rotZ="0"></object>
 <object id="teren10" breakable="true" interior="0" collisions="true" alpha="255" model="625" doublesided="false" scale="1" dimension="0" posX="-1349.63700" posY="1604.33000" posZ="2.60039" rotX="90" rotY="0" rotZ="0"></object>
 <object id="teren11" breakable="true" interior="0" collisions="true" alpha="255" model="626" doublesided="false" scale="1" dimension="0" posX="-1561.34300" posY="1590.94100" posZ="-3.09693" rotX="90" rotY="0" rotZ="0"></object>
-
+<object id="teren12" breakable="true" interior="0" collisions="true" alpha="255" model="627" doublesided="false" scale="1" dimension="0" posX="-1394.53000" posY="1408.82500" posZ="-8.76358" rotX="90" rotY="0" rotZ="0"></object>
+<object id="teren13" breakable="true" interior="0" collisions="true" alpha="255" model="628" doublesided="false" scale="1" dimension="0" posX="-1174.98700" posY="1147.74200" posZ="-30.72144" rotX="90" rotY="0" rotZ="0"></object>
 </map>
