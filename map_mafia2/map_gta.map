@@ -1,0 +1,11 @@
+<map edf:definitions="editor_main">
+<object id="teren0" breakable="true" interior="0" collisions="true" alpha="255" model="615" doublesided="false" scale="1" dimension="0" posX="-1204.44200" posY="1429.81300" posZ="-8.26321" rotX="90" rotY="0" rotZ="0"></object>
+<object id="teren1" breakable="true" interior="0" collisions="true" alpha="255" model="616" doublesided="false" scale="1" dimension="0" posX="-1337.13700" posY="1197.12900" posZ="-19.87857" rotX="90" rotY="0" rotZ="0"></object>
+<object id="teren2" breakable="true" interior="0" collisions="true" alpha="255" model="617" doublesided="false" scale="1" dimension="0" posX="-1198.80000" posY="1248.14300" posZ="-19.91991" rotX="90" rotY="0" rotZ="0"></object>
+<object id="teren3" breakable="true" interior="0" collisions="true" alpha="255" model="618" doublesided="false" scale="1" dimension="0" posX="-1650.80900" posY="1692.52800" posZ="2.05191" rotX="90" rotY="0" rotZ="0"></object>
+<object id="teren4" breakable="true" interior="0" collisions="true" alpha="255" model="619" doublesided="false" scale="1" dimension="0" posX="-1451.41700" posY="1807.72800" posZ="9.42347" rotX="90" rotY="0" rotZ="0"></object>
+<object id="teren5" breakable="true" interior="0" collisions="true" alpha="255" model="620" doublesided="false" scale="1" dimension="0" posX="-1287.17800" posY="1797.35500" posZ="15.24572" rotX="90" rotY="0" rotZ="0"></object>
+<object id="teren6" breakable="true" interior="0" collisions="true" alpha="255" model="621" doublesided="false" scale="1" dimension="0" posX="-1085.39000" posY="1797.35500" posZ="10.50450" rotX="90" rotY="0" rotZ="0"></object>
+<object id="teren7" breakable="true" interior="0" collisions="true" alpha="255" model="622" doublesided="false" scale="1" dimension="0" posX="-964.84580" posY="1654.89300" posZ="7.83806" rotX="90" rotY="0" rotZ="0"></object>
+<object id="teren8" breakable="true" interior="0" collisions="true" alpha="255" model="623" doublesided="false" scale="1" dimension="0" posX="-1116.54600" posY="1601.18200" posZ="3.27992" rotX="90" rotY="0" rotZ="0"></object>
+</map>

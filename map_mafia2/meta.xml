@@ -1,0 +1,37 @@
+<meta>
+	<script src="object_eb.lua" type="client" cache="false"/>
+	<map src="map_gta.map" dimension="0"></map>
+	<settings>
+		<setting name="#maxplayers" value="[ 128 ]"></setting>
+		<setting name="#useLODs" value="[ false ]"></setting>
+		<setting name="#gamespeed" value="[ 1 ]"></setting>
+		<setting name="#minplayers" value="[ 0 ]"></setting>
+		<setting name="#gravity" value="[ 0.008 ]"></setting>
+		<setting name="#waveheight" value="[ 0 ]"></setting>
+		<setting name="#locked_time" value="[ false ]"></setting>
+		<setting name="#weather" value="[ 0 ]"></setting>
+		<setting name="#time" value="12:0"></setting>
+	</settings>
+	<script src="mapEditorScriptingExtension_s.lua" type="server"></script>
+	<script src="mapEditorScriptingExtension_c.lua" type="client" validate="false"></script>
+
+	<file src="ground.txd"/>
+	<file src="teren0.dff"/>
+	<file src="teren0.col"/>
+	<file src="teren1.dff"/>
+	<file src="teren1.col"/>
+	<file src="teren2.dff"/>
+	<file src="teren2.col"/>
+	<file src="teren3.dff"/>
+	<file src="teren3.col"/>
+	<file src="teren4.dff"/>
+	<file src="teren4.col"/>
+	<file src="teren5.dff"/>
+	<file src="teren5.col"/>
+	<file src="teren6.dff"/>
+	<file src="teren6.col"/>
+	<file src="teren7.dff"/>
+	<file src="teren7.col"/>
+	<file src="teren8.dff"/>
+	<file src="teren8.col"/>
+</meta>
