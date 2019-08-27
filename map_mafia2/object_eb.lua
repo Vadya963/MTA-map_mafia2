@@ -1,4 +1,4 @@
-local ground = engineLoadTXD ( ":map_mafia2/kingstone/ground.txd" )
+local ground = engineLoadTXD ( ":map_mafia2/ground.txd" )
 
 local kingstone = {
 	--объекты
@@ -11,6 +11,9 @@ local kingstone = {
 	{"teren6", 621, ground},
 	{"teren7", 622, ground},
 	{"teren8", 623, ground},
+	{"teren9", 624, ground},
+	{"teren10", 625, ground},
+	{"teren11", 626, ground},
 }
 
 addEventHandler( "onClientResourceStart", resourceRoot,

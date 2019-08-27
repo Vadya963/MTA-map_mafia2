@@ -8,4 +8,8 @@
 <object id="teren6" breakable="true" interior="0" collisions="true" alpha="255" model="621" doublesided="false" scale="1" dimension="0" posX="-1085.39000" posY="1797.35500" posZ="10.50450" rotX="90" rotY="0" rotZ="0"></object>
 <object id="teren7" breakable="true" interior="0" collisions="true" alpha="255" model="622" doublesided="false" scale="1" dimension="0" posX="-964.84580" posY="1654.89300" posZ="7.83806" rotX="90" rotY="0" rotZ="0"></object>
 <object id="teren8" breakable="true" interior="0" collisions="true" alpha="255" model="623" doublesided="false" scale="1" dimension="0" posX="-1116.54600" posY="1601.18200" posZ="3.27992" rotX="90" rotY="0" rotZ="0"></object>
+<object id="teren9" breakable="true" interior="0" collisions="true" alpha="255" model="624" doublesided="false" scale="1" dimension="0" posX="-1003.10600" posY="1410.77600" posZ="-14.00727" rotX="90" rotY="0" rotZ="0"></object>
+<object id="teren10" breakable="true" interior="0" collisions="true" alpha="255" model="625" doublesided="false" scale="1" dimension="0" posX="-1349.63700" posY="1604.33000" posZ="2.60039" rotX="90" rotY="0" rotZ="0"></object>
+<object id="teren11" breakable="true" interior="0" collisions="true" alpha="255" model="626" doublesided="false" scale="1" dimension="0" posX="-1561.34300" posY="1590.94100" posZ="-3.09693" rotX="90" rotY="0" rotZ="0"></object>
+
 </map>

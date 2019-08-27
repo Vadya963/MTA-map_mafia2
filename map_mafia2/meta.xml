@@ -15,7 +15,8 @@
 	<script src="mapEditorScriptingExtension_s.lua" type="server"></script>
 	<script src="mapEditorScriptingExtension_c.lua" type="client" validate="false"></script>
 
-	<file src="kingstone/ground.txd"/>
+	<file src="ground.txd"/>
+
 	<file src="kingstone/teren0.dff"/>
 	<file src="kingstone/teren0.col"/>
 	<file src="kingstone/teren1.dff"/>
@@ -34,4 +35,10 @@
 	<file src="kingstone/teren7.col"/>
 	<file src="kingstone/teren8.dff"/>
 	<file src="kingstone/teren8.col"/>
+	<file src="kingstone/teren9.dff"/>
+	<file src="kingstone/teren9.col"/>
+	<file src="kingstone/teren10.dff"/>
+	<file src="kingstone/teren10.col"/>
+	<file src="kingstone/teren11.dff"/>
+	<file src="kingstone/teren11.col"/>
 </meta>
