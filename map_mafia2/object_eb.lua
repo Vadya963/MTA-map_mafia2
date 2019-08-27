@@ -1,6 +1,6 @@
-local ground = engineLoadTXD ( ":map_mafia2/ground.txd" )
+local ground = engineLoadTXD ( ":map_mafia2/kingstone/ground.txd" )
 
-local dff_and_txd_table = {
+local kingstone = {
 	--объекты
 	{"teren0", 615, ground},
 	{"teren1", 616, ground},
@@ -21,11 +21,11 @@ function ( startedRes )
 	setOcclusionsEnabled(false)
 	setWaterLevel(-5000)
 	
-	for k,v in pairs(dff_and_txd_table) do
+	for k,v in pairs(kingstone) do
 		engineImportTXD ( v[3], v[2] )
-		local dff = engineLoadDFF ( ":map_mafia2/"..v[1]..".dff" )
+		local dff = engineLoadDFF ( ":map_mafia2/kingstone/"..v[1]..".dff" )
 		engineReplaceModel ( dff, v[2] )
-		local col = engineLoadCOL ( ":map_mafia2/"..v[1]..".col" )
+		local col = engineLoadCOL ( ":map_mafia2/kingstone/"..v[1]..".col" )
 		engineReplaceCOL ( col, v[2] )
 		engineSetModelLODDistance(v[2], 30000)
 	end
