@@ -19,4 +19,13 @@
 <object id="tunel3" breakable="false" interior="0" collisions="true" alpha="255" model="632" doublesided="false" scale="1" dimension="0" posX="-622.97620" posY="1344.20400" posZ="-31.87234" rotX="90" rotY="0" rotZ="0"></object>
 <object id="tunel0" breakable="false" interior="0" collisions="true" alpha="255" model="633" doublesided="false" scale="1" dimension="0" posX="-622.97620" posY="1344.20400" posZ="-31.87234" rotX="90" rotY="0" rotZ="0"></object>
 <object id="tunel1" breakable="false" interior="0" collisions="true" alpha="255" model="634" doublesided="false" scale="1" dimension="0" posX="-622.97620" posY="1344.20400" posZ="-29.87234" rotX="90" rotY="0" rotZ="0"></object>
+<object id="rantl6" breakable="false" interior="0" collisions="true" alpha="255" model="635" doublesided="false" scale="1" dimension="0" posX="-1070.41900" posY="1523.53100" posZ="1.51440" rotX="90" rotY="0" rotZ="0"></object>
+<object id="rantl8" breakable="false" interior="0" collisions="true" alpha="255" model="636" doublesided="false" scale="1" dimension="0" posX="-1043.01200" posY="1409.40500" posZ="-9.67674" rotX="90" rotY="0" rotZ="0"></object>
+<object id="rantl9" breakable="false" interior="0" collisions="true" alpha="255" model="637" doublesided="false" scale="1" dimension="0" posX="-1151.84300" posY="1421.08100" posZ="-8.16802" rotX="90" rotY="0" rotZ="0"></object>
+<object id="rantl13" breakable="false" interior="0" collisions="true" alpha="255" model="638" doublesided="false" scale="1" dimension="0" posX="-1504.13600" posY="1556.09400" posZ="-6.97555" rotX="90" rotY="0" rotZ="-90"></object>
+<object id="rantl14" breakable="false" interior="0" collisions="true" alpha="255" model="639" doublesided="false" scale="1" dimension="0" posX="-1479.56400" posY="1501.99700" posZ="-9.77325" rotX="90" rotY="0" rotZ="0"></object>
+<object id="rantl15" breakable="false" interior="0" collisions="true" alpha="255" model="640" doublesided="false" scale="1" dimension="0" posX="-1420.28900" posY="1453.08000" posZ="-9.31285" rotX="90" rotY="0" rotZ="-90"></object>
+<object id="rantl16" breakable="false" interior="0" collisions="true" alpha="255" model="641" doublesided="false" scale="1" dimension="0" posX="-1495.49400" posY="1669.62600" posZ="0.77649" rotX="90" rotY="0" rotZ="-90"></object>
+<object id="rantl21" breakable="false" interior="0" collisions="true" alpha="255" model="642" doublesided="false" scale="1" dimension="0" posX="-1127.41200" posY="1368.93500" posZ="-14.22700" rotX="90" rotY="0" rotZ="180"></object>
+
 </map>

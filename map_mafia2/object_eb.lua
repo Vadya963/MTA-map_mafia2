@@ -22,22 +22,35 @@ local kingstone = {
 	{"tunel3", 632, ground},
 	{"tunel0", 633, ground},
 	{"tunel1", 634, ground},
+	{"rantl6", 635, ground},
+	{"rantl8", 636, ground},
+	{"rantl9", 637, ground},
+	{"rantl13", 638, ground},
+	{"rantl14", 639, ground},
+	{"rantl15", 640, ground},
+	{"rantl16", 641, ground},
+	{"rantl21", 642, ground},
 }
 
+local start = true
 addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
-	for i=550,20000 do
-		removeWorldModel(i,10000,0,0,0)
-	end
-	setOcclusionsEnabled(false)
-	setWaterLevel(-5000)
-	
-	for k,v in pairs(kingstone) do
-		engineImportTXD ( v[3], v[2] )
-		local dff = engineLoadDFF ( ":map_mafia2/kingstone/"..v[1]..".dff" )
-		engineReplaceModel ( dff, v[2] )
-		local col = engineLoadCOL ( ":map_mafia2/kingstone/"..v[1]..".col" )
-		engineReplaceCOL ( col, v[2] )
-		engineSetModelLODDistance(v[2], 30000)
+	if start then
+		start = false
+		
+		for i=550,20000 do
+			removeWorldModel(i,10000,0,0,0)
+		end
+		setOcclusionsEnabled(false)
+		setWaterLevel(-5000)
+		
+		for k,v in pairs(kingstone) do
+			engineImportTXD ( v[3], v[2] )
+			local dff = engineLoadDFF ( ":map_mafia2/kingstone/"..v[1]..".dff" )
+			engineReplaceModel ( dff, v[2] )
+			local col = engineLoadCOL ( ":map_mafia2/kingstone/"..v[1]..".col" )
+			engineReplaceCOL ( col, v[2] )
+			engineSetModelLODDistance(v[2], 30000)
+		end
 	end
 end)

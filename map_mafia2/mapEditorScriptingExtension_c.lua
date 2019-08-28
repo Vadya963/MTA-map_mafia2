@@ -21,6 +21,7 @@ function applyBreakableState()
 		if breakable then
 			setObjectBreakable(obj, breakable == "true")
 		end
+		setElementFrozen(obj, true)
 	end
 end
 addEventHandler("onClientResourceStart", resourceRoot, applyBreakableState)
