@@ -74,4 +74,14 @@
 	<file src="kingstone/rantl16.col"/>
 	<file src="kingstone/rantl21.dff"/>
 	<file src="kingstone/rantl21.col"/>
+	<file src="kingstone/04_tunel_portal.dff"/>
+	<file src="kingstone/04_tunel_portal.col"/>
+	<file src="kingstone/04_moloA.dff"/>
+	<file src="kingstone/04_moloA.col"/>
+	<file src="kingstone/04_moloB.dff"/>
+	<file src="kingstone/04_moloB.col"/>
+	<file src="kingstone/04_moloC.dff"/>
+	<file src="kingstone/04_moloC.col"/>
+	<file src="kingstone/04_moloD.dff"/>
+	<file src="kingstone/04_moloD.col"/>
 </meta>

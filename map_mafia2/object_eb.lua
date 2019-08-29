@@ -31,6 +31,11 @@ local kingstone = {
 	{"rantl15", 640, ground},
 	{"rantl16", 641, ground},
 	{"rantl21", 642, kingstone_city},
+	{"04_tunel_portal", 643, kingstone_city},
+	{"04_moloA", 644, ground},
+	{"04_moloB", 645, ground},
+	{"04_moloC", 646, ground},
+	{"04_moloD", 647, ground},
 }
 
 local start = true
