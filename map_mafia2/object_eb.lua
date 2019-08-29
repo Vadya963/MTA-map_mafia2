@@ -1,4 +1,5 @@
 local ground = engineLoadTXD ( ":map_mafia2/ground.txd" )
+local kingstone_city = engineLoadTXD ( ":map_mafia2/kingstone.txd" )
 
 local kingstone = {
 	--объекты
@@ -29,7 +30,7 @@ local kingstone = {
 	{"rantl14", 639, ground},
 	{"rantl15", 640, ground},
 	{"rantl16", 641, ground},
-	{"rantl21", 642, ground},
+	{"rantl21", 642, kingstone_city},
 }
 
 local start = true

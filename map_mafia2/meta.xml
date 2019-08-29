@@ -16,6 +16,7 @@
 	<script src="mapEditorScriptingExtension_c.lua" type="client" validate="false"></script>
 
 	<file src="ground.txd"/>
+	<file src="kingstone.txd"/>
 
 	<file src="kingstone/teren0.dff"/>
 	<file src="kingstone/teren0.col"/>
