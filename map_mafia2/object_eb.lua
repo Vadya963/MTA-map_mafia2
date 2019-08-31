@@ -51,7 +51,27 @@ local kingstone = {
 	{"04_rantl07C", ground, {{-994.32150,1651.06100,9.48711,90,0,0}}, 0},
 	{"04_rantl07D", ground, {{-1128.46400,1541.55500,4.61663,90,0,0}}, 0},
 	{"04_rantl07E", ground, {{-1200.15100,1539.49300,2.34151,90,0,0}}, 0},
-	{"04_schudky", ground, {{-1431.06500,1660.22600,5.83288,90,0,0}}, 675},
+	{"04_schudky", ground, {{-1431.06500,1660.22600,5.83288,90,0,0}}, 0},
+	{"04_rantl10A", ground, {{-1419.56800,1601.90000,1.18277,90,0,0}}, 0},
+	{"04_rantl10B", ground, {{-1401.12300,1553.50500,1.80054,90,0,0}}, 0},
+	{"04_rantl12A", ground, {{-1293.65300,1523.79500,-3.46030,90,0,0}}, 0},
+	{"04_rantl12C", ground, {{-1283.38900,1442.35100,-7.93181,90,0,0}}, 0},
+	{"04_rantl12D", ground, {{-1323.30000,1429.04000,-9.84217,90,0,0}}, 0},
+	{"04_rantl12E", ground, {{-1317.04100,1538.98600,0.95081,90,0,0}}, 0},
+	{"04_rantl12F", ground, {{-1222.86000,1537.95600,2.18715,90,0,0}}, 0},
+	{"04_rantl17A", ground, {{-1467.08200,1453.16100,-12.08815,90,0,0}}, 0},
+	{"04_rantl17B", ground, {{-1393.32900,1501.24600,-3.03211,90,0,-90}}, 0},
+	{"04_rantl18A", ground, {{-1531.46200,1634.46500,-4.24416,90,0,-90}}, 0},
+	{"04_rantl18C", ground, {{-1564.68800,1668.15900,-3.13756,90,0,-90}}, 0},
+	{"04_rantl19A", ground, {{-1169.37900,1319.43200,-19.24800,90,0,0}}, 0},
+	{"04_rantl19C", ground, {{-1131.76100,1350.19000,-19.24800,90,0,0}}, 0},
+	{"04_rantl20A", ground, {{-1288.34700,1646.62600,9.81464,90,0,0}}, 0},--к ней можно попасть?
+	{"04_rantl20B", ground, {{-1348.90300,1616.72500,9.60061,90,0,0}}, 0},--?
+	{"04_rantl20C", ground, {{-1329.97300,1588.20400,5.03857,90,0,0}}, 0},--?
+	{"04_rantl20D", ground, {{-1235.94600,1658.60500,10.06001,90,0,0}}, 0},
+	{"04_rantl20E", ground, {{-1225.28500,1607.25600,6.75437,90,0,0}}, 0},
+	{"04_rantl22A", ground, {{-932.91530,1361.10400,-19.24800,90,0,0}}, 0},
+	{"04_rantl22C", ground, {{-941.62000,1372.01700,-19.24800,90,0,0}}, 0},
 }
 
 local start = true
@@ -65,38 +85,31 @@ function ( startedRes )
 		end
 		setOcclusionsEnabled(false)
 		setWaterLevel(-5000)
+
+		local count = 0
+		for k,v in pairs(getElementData(resourceRoot, "objectNames")) do
+			count = count+1
+			kingstone[count][4] = k
+
+			if count == #kingstone then
+				break
+			end
+		end
 		
 		for k,v in ipairs(kingstone) do
-			local model = k+614
-
-			while true do
-				if not kingstone[k-1] then
-					kingstone[k][4] = model
-					break
-				elseif v[4] ~= 0 then
-					model = v[4]
-					break
-				elseif getObjectNameFromModel(model) and model ~= kingstone[k-1][4] then
-					kingstone[k][4] = model
-					break
-				else
-					model = model+1
-				end
-			end
-
-			engineImportTXD ( v[2], model )
+			engineImportTXD ( v[2], v[4] )
 			local dff = engineLoadDFF ( ":map_mafia2/kingstone/"..v[1]..".dff" )
-			engineReplaceModel ( dff, model )
+			engineReplaceModel ( dff, v[4] )
 			local col = engineLoadCOL ( ":map_mafia2/kingstone/"..v[1]..".col" )
-			engineReplaceCOL ( col, model )
+			engineReplaceCOL ( col, v[4] )
 
-			for k,v in ipairs(v[3]) do
-				local obj = createObject(model, v[1],v[2],v[3], v[4],v[5],v[6])
+			for k,j in ipairs(v[3]) do
+				local obj = createObject(v[4], j[1],j[2],j[3], j[4],j[5],j[6])
 				setElementFrozen(obj, true)
 				setObjectBreakable(obj, false)
 			end
 
-			engineSetModelLODDistance(model, 30000)
+			engineSetModelLODDistance(v[4], 30000)
 		end
 	end
 end)
@@ -117,6 +130,7 @@ function createText ()
 					local coords = { getScreenFromWorldPosition( j[1],j[2],j[3]+1, 0, false ) }
 					if coords[1] and coords[2] then
 						dxdrawtext ( v[1], coords[1]-(dxGetTextWidth ( v[1], 1, "default-bold" )/2), coords[2]-15, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
+						dxdrawtext ( v[4], coords[1]-(dxGetTextWidth ( v[4], 1, "default-bold" )/2), coords[2]-15*2, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
 					end
 				end
 			end
