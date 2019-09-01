@@ -103,7 +103,6 @@
 	<file src="kingstone/04_rantl07E.col"/>
 	<file src="kingstone/04_schudky.dff"/>
 	<file src="kingstone/04_schudky.col"/>
-
 	<file src="kingstone/04_rantl10A.dff"/>
 	<file src="kingstone/04_rantl10A.col"/>
 	<file src="kingstone/04_rantl10B.dff"/>
@@ -144,5 +143,8 @@
 	<file src="kingstone/04_rantl22A.col"/>
 	<file src="kingstone/04_rantl22C.dff"/>
 	<file src="kingstone/04_rantl22C.col"/>
-
+	<file src="kingstone/04_schodynoveuFF.dff"/>
+	<file src="kingstone/04_schodynoveuFF.col"/>
+	<file src="kingstone/04_plot01.dff"/>
+	<file src="kingstone/04_plot01.col"/>
 </meta>

@@ -72,6 +72,8 @@ local kingstone = {
 	{"04_rantl20E", ground, {{-1225.28500,1607.25600,6.75437,90,0,0}}, 0},
 	{"04_rantl22A", ground, {{-932.91530,1361.10400,-19.24800,90,0,0}}, 0},
 	{"04_rantl22C", ground, {{-941.62000,1372.01700,-19.24800,90,0,0}}, 0},
+	{"04_schodynoveuFF", ground, {{-1611.38900,1659.00400,-2.04312,90,0,-90}}, 0},
+	{"04_plot01", kingstone_city, {{-1033.77700,1730.94000,12.03265,90,0,0}}, 0},
 }
 
 local start = true
@@ -123,6 +125,7 @@ end
 local hud = true
 function createText ()
 	if hud then
+		setTime(15, 0)
 		local x,y,z = getElementPosition(localPlayer)
 		for k,v in ipairs(kingstone) do
 			for k,j in ipairs(v[3]) do
