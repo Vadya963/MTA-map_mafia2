@@ -2,8 +2,7 @@
 	<script src="getObjectNameFromModel.lua" type="client"></script>
 	<script src="object_eb.lua" type="client"/>
 
-	<file src="ground.txd"/>
-	<file src="kingstone.txd"/>
+	<file src="eb_textures.txd"/>
 
 	<file src="kingstone/teren0.dff"/>
 	<file src="kingstone/teren0.col"/>
