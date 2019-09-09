@@ -321,7 +321,28 @@ local kingstone = {
 	{"04_rantl11E", {{-1471.35800,1456.44700,-11.51253,90,0,0}}, 0},
 }
 
-local dipton = {}
+local dipton = {
+	{"05_terrain_01_OM_A", {{-953.32180,1489.40300,-4.33521,90,0,0}}, 0},
+	{"05_terrain_01_OM_B", {{-825.44260,1424.52600,-15.95450,90,0,0}}, 0},
+	{"05_terrain_01_OM_C", {{-530.31720,1578.56800,-17.50506,90,0,0}}, 0},
+	{"05_terrain_01_OM_E", {{-642.52370,1500.37900,-16.27009,90,0,0}}, 0},
+	{"05_terrain_01_OM_F", {{-717.41290,1796.42000,-12.04440,90,0,0}}, 0},
+	{"05_terrain_01_OM_G", {{-473.74290,1768.13500,-20.07383,90,0,0}}, 0},
+	{"05_terrain_01_OM_I", {{-707.99000,1594.55600,-11.47663,90,0,0}}, 0},
+	{"05_terrain_01_OM_j", {{-802.31290,1705.27300,-2.68773,90,0,0}}, 0},
+	{"05_terrain_01_OM_K", {{-481.01850,1511.35800,-20.03275,90,0,0}}, 0},
+	{"05_terrain_01_OM_L", {{-473.13900,1465.73300,-29.11687,90,0,0}}, 0},
+	{"05_terrain_01_OM_O", {{-829.74400,1496.50500,-5.63450,90,0,0}}, 0},
+	{"05_terrain_01_OM_Q", {{-748.32650,1473.24600,-12.50446,90,0,0}}, 0},
+	{"05_terrain_01_OM_W", {{-460.11430,1639.01900,5.87330,90,0,0}}, 0},
+	{"05_terrain_02_OM_A", {{-645.74770,1814.54800,-19.30939,90,0,0}}, 0},
+	{"05_terrain_02_OM_B", {{-509.13900,1854.01700,-19.67228,90,0,0}}, 0},
+	{"05_terrain_02_OM_C", {{-470.72960,1687.98500,-19.98808,90,0,0}}, 0},
+	{"05_terrain_02_OM_D", {{-647.83240,1676.25500,-18.56099,90,0,0}}, 0},
+	{"05_terrain_02_OM_e", {{-612.43840,2009.58000,-23.11283,90,0,0}}, 0},
+	{"05_17_OM_G", {{-381.88200,1814.44600,-25.89003,90,0,0}}, 0},--не отображается в м2кит
+	--{"05_30_OM", {{-638.77860,1738.21000,-9.32861,90,0,0}}, 0},--проблема с коллизией
+}
 
 local start = true
 -- Setting water properties.
@@ -356,8 +377,8 @@ function ( startedRes )
 		
 			if count <= #kingstone then
 				kingstone[count][3] = k
-			--[[elseif count <= #kingstone+#dipton then
-				dipton[count][3] = k]]
+			elseif count <= #kingstone+#dipton then
+				dipton[count-#kingstone][3] = k
 			else
 				break
 			end
@@ -381,7 +402,7 @@ function ( startedRes )
 			print(v[1], v[3])
 		end
 
-		--[[for k,v in ipairs(dipton) do
+		for k,v in ipairs(dipton) do
 			engineImportTXD (eb_textures, v[3])
 			local dff = engineLoadDFF ( ":map_mafia2/dipton/"..v[1]..".dff" )
 			engineReplaceModel ( dff, v[3] )
@@ -397,7 +418,7 @@ function ( startedRes )
 			engineSetModelLODDistance(v[3], 30000)
 
 			print(v[1], v[3])
-		end]]
+		end
 	end
 end)
 
@@ -412,6 +433,10 @@ function createText ()
 	setTime(15, 0)
 	if hud then
 		local x,y,z = getElementPosition(localPlayer)
+		local task = getPedSimplestTask(localPlayer)
+
+		dxdrawtext ( task, 0, 200, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
+
 		for k,v in ipairs(kingstone) do
 			for k,j in ipairs(v[2]) do
 				if getDistanceBetweenPoints3D(x, y, z, j[1],j[2],j[3]) <= 100 then
@@ -423,7 +448,7 @@ function createText ()
 				end
 			end
 		end
-		--[[for k,v in ipairs(dipton) do
+		for k,v in ipairs(dipton) do
 			for k,j in ipairs(v[2]) do
 				if getDistanceBetweenPoints3D(x, y, z, j[1],j[2],j[3]) <= 100 then
 					local coords = { getScreenFromWorldPosition( j[1],j[2],j[3]+1, 0, false ) }
@@ -433,7 +458,7 @@ function createText ()
 					end
 				end
 			end
-		end]]
+		end
 	end
 end
 addEventHandler ( "onClientRender", root, createText )
