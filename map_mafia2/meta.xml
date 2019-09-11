@@ -1,6 +1,7 @@
 <meta>
-	<script src="getObjectNameFromModel.lua" type="client"></script>
+	<script src="getObjectNameFromModel.lua"></script>
 	<script src="object_eb.lua" type="client"/>
+	<script src="server.lua"/>
 
 	<file src="eb_textures.txd"/>
 
