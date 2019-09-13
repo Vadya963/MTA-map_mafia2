@@ -2,7 +2,7 @@ local eb_textures = engineLoadTXD ( ":map_mafia2/eb_textures.txd" )
 
 local start = true
 -- Setting water properties.
-height = 40
+height = 1
 SizeVal = 2998
 -- Defining variables.
 southWest_X = -SizeVal
@@ -65,8 +65,10 @@ end
 
 local hud = true
 function createText ()
-	setTime(15, 0)
+	
 	if hud then
+		setTime(15, 0)
+		
 		local x,y,z = getElementPosition(localPlayer)
 		local task = getPedSimplestTask(localPlayer)
 
@@ -102,4 +104,9 @@ addCommandHandler ( "water",
 function ( cmd, level )
 	setWaterLevel(water, level)
 	outputChatBox(level)
+end)
+
+addCommandHandler ( "hud",
+function ( cmd )
+	hud = not hud
 end)
