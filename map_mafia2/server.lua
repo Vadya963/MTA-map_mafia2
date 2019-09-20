@@ -349,7 +349,6 @@ local dipton = {
 	{"05_terrain_02_OM_D", {{-647.83240,1676.25500,-18.56099,90,0,0}}, 0},
 	--{"05_terrain_02_OM_e", {{-612.43840,2009.58000,-23.11283,90,0,0}}, 0},
 	{"05_17_OM_G", {{-381.88200,1814.44600,-25.89003,90,0,0}}, 0},
-	--{"05_30_OM", {{-638.77860,1738.21000,-9.32861,90,0,0}}, 0},--проблема с коллизией
 	{"05_20_OM_G", {{-392.92960,1839.61700,-24.19353,90,0,0}}, 0},
 	{"05_77_OM", {{-379.09600,1843.14700,-19.83295,90,0,0}}, 0},
 	{"05_ms_199_OM", {{-575.00240,1609.75100,-5.01658,90,0,0}}, 0},
@@ -681,7 +680,33 @@ local dipton = {
 	--{"05_369_B", {{-725.50120,1434.51900,-3.07264,90,0,0}}, 0},--не робит
 }
 
+local riverside = {
+	--{"06_teren_01_n", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
+	--{"06_teren_01_A", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
+	--{"06_teren_01_B", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
+	--{"06_teren_01_K_most", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
+	--{"06_04", {{-225.47680,1563.83100,-32.86102,0,0,44.99998}}, 0},
+
+	{"06_teren_01_I", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
+	{"06_teren_01_H", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
+	{"06_teren_01_C", {{-287.03390,1590.14900,-27.89163,0,0,0}}, 0},
+	{"06_teren_01_D", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
+	{"06_teren_01_F", {{-287.03390,1590.14900,-27.89163,0,0,0}}, 0},
+	{"06_teren_k_d01_G", {{-253.85000,1753.98000,-24.49622,0,0,0}}, 0},
+	{"06_teren_01_E_tunel", {{-126.94830,1207.52300,-12.03669,0,0,0}}, 0},
+	{"06_tunel", {{-126.94830,1207.52300,-12.03669,0,0,0}}, 0},
+	{"06_06", {{-118.63210,1306.06200,-9.10966,0,0,0}}, 0},
+	{"06_mostni_pilire", {{-127.09290,1312.97300,-22.07288,-90.00000,180.00000,-90}}, 0},
+	{"06_13_most", {{77.95527,1726.22600,-19.40726,0,0,0}}, 0},
+	{"06_fly_over_02", {{-236.29970,1707.71600,-18.04568,0,0,0}}, 0},
+}
+
 local object = {}
+
+local no_col_object = {
+	{"05_30_OM", {{-638.77860,1738.21000,-9.32861,90,0,0}}, 1226, "dipton"},--проблема с коллизией
+	{"05_104_OM", {{-423.82840,1858.56600,-18.37658,90,0,0}}, 1290, "dipton"},
+}
 
 function displayLoadedRes ( res )--старт ресурсов
 	local count = 0
@@ -692,8 +717,18 @@ function displayLoadedRes ( res )--старт ресурсов
 			kingstone[count][3] = k
 		elseif count <= #kingstone+#dipton then
 			dipton[count-#kingstone][3] = k
+		elseif count <= #kingstone+#dipton+#riverside then
+			riverside[count-#kingstone-#dipton][3] = k
 		else
 			break
+		end
+	end
+
+	for k,v in ipairs(no_col_object) do
+		for k,j in ipairs(v[2]) do
+			local obj = createObject(v[3], j[1],j[2],j[3], j[4],j[5],j[6])
+			setElementFrozen(obj, true)
+			table.insert(object, obj)
 		end
 	end
 		
@@ -713,12 +748,22 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 	end
 
+	for k,v in ipairs(riverside) do
+		for k,j in ipairs(v[2]) do
+			local obj = createObject(v[3], j[1],j[2],j[3], j[4]+90,j[5],j[6]*-1)
+			setElementFrozen(obj, true)
+			table.insert(object, obj)
+		end
+	end
+
 	for k,v in ipairs(object) do
 		setElementDimension(v, 0)
 	end
 
+	setElementData(resourceRoot, "no_col_object", no_col_object)
+	setElementData(resourceRoot, "object", object)
 	setElementData(resourceRoot, "kingstone", kingstone)
 	setElementData(resourceRoot, "dipton", dipton)
-	setElementData(resourceRoot, "object", object)
+	setElementData(resourceRoot, "riverside", riverside)
 end
 addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
