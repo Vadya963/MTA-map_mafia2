@@ -40,7 +40,7 @@ function ( startedRes )
 
 			engineSetModelLODDistance(v[3], 30000)
 
-			print(v[1], v[3])
+			--print(v[1], v[3])
 		end
 
 		for k,v in ipairs(getElementData(resourceRoot, "kingstone")) do
@@ -52,7 +52,7 @@ function ( startedRes )
 
 			engineSetModelLODDistance(v[3], 30000)
 
-			print(v[1], v[3])
+			--print(v[1], v[3])
 		end
 
 		for k,v in ipairs(getElementData(resourceRoot, "dipton")) do
@@ -64,14 +64,14 @@ function ( startedRes )
 
 			engineSetModelLODDistance(v[3], 30000)
 
-			print(v[1], v[3])
+			--print(v[1], v[3])
 		end
 
-		for k,v in ipairs(getElementData(resourceRoot, "riverside")) do
+		for k,v in ipairs(getElementData(resourceRoot, "highbrook")) do
 			engineImportTXD (eb_textures, v[3])
-			local dff = engineLoadDFF ( ":map_mafia2/riverside/"..v[1]..".dff" )
+			local dff = engineLoadDFF ( ":map_mafia2/highbrook/"..v[1]..".dff" )
 			engineReplaceModel ( dff, v[3] )
-			local col = engineLoadCOL ( ":map_mafia2/riverside/"..v[1]..".col" )
+			local col = engineLoadCOL ( ":map_mafia2/highbrook/"..v[1]..".col" )
 			engineReplaceCOL ( col, v[3] )
 
 			engineSetModelLODDistance(v[3], 30000)
@@ -120,7 +120,7 @@ function createText ()
 				end
 			end
 		end
-		for k,v in ipairs(getElementData(resourceRoot, "riverside")) do
+		for k,v in ipairs(getElementData(resourceRoot, "highbrook")) do
 			for k,j in ipairs(v[2]) do
 				if getDistanceBetweenPoints3D(x, y, z, j[1],j[2],j[3]) <= 100 then
 					local coords = { getScreenFromWorldPosition( j[1],j[2],j[3]+1, 0, false ) }

@@ -702,6 +702,27 @@ local riverside = {
 	{"06_fly_over_02", {{-236.29970,1707.71600,-18.04568,0,0,0}}, 0},
 }
 
+local highbrook = {
+	{"12_teren_CC02", {{-289.893 ,1109.201 ,48.10213 ,0 ,0 ,0}}, 0},
+	{"12_teren_DD1", {{-183.2785 ,1064.326 ,24.34757 ,0 ,0 ,0}}, 0},
+	{"12_teren_EE1", {{-624.909 ,1077.13 ,6.953383 ,0 ,0 ,0}}, 0},
+	{"12_teren_AA1", {{-448.4441 ,1075.517 ,28.9103 ,0 ,0 ,0}}, 0},
+	{"12_teren_II1", {{-427.0553 ,1316.3 ,38.38039 ,0 ,0 ,0}}, 0},
+	{"12_teren_KK1", {{-255.4982 ,1387.275 ,12.8831 ,0 ,0 ,0}}, 0},
+	{"12_teren_DD", {{-129.7781 ,1180.639 ,38.26924 ,0 ,0 ,0}}, 0},
+	{"12_teren_EE", {{-722.0737 ,1110.524 ,0.2651025 ,0 ,0 ,0}}, 0},
+	{"12_teren_FF", {{-713.6418 ,1230.984 ,0.2160229 ,0 ,0 ,0}}, 0},
+	{"12_teren_GV", {{-317.9851 ,1111.14 ,39.62385 ,0 ,0 ,0}}, 0},
+	{"12_teren_GG", {{-583.3847 ,1226.534 ,28.57086 ,0 ,0 ,0}}, 0},
+	{"12_teren_AA", {{-310.727 ,1024.553 ,25.18453 ,0 ,0 ,0}}, 0},
+	{"12_teren_BB", {{-444.5208 ,1163.263 ,42.14059 ,0 ,0 ,0}}, 0},
+	{"12_teren_CC", {{-289.9402 ,1217.131 ,51.22807 ,0 ,0 ,0}}, 0},
+	{"12_teren_HH", {{-547.4743 ,1340.746 ,2.224651 ,0 ,0 ,0}}, 0},
+	{"12_teren_II", {{-280.4438 ,1321.415 ,47.89539 ,0 ,0 ,0}}, 0},
+	{"12_teren_JJ", {{-134.2728 ,1336.685 ,19.42958 ,0 ,0 ,0}}, 0},
+	{"12_teren_KK", {{-396.8021 ,1382.394 ,9.341567 ,0 ,0 ,0}}, 0},
+}
+
 local object = {}
 
 local no_col_object = {
@@ -718,8 +739,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			kingstone[count][3] = k
 		elseif count <= #kingstone+#dipton then
 			dipton[count-#kingstone][3] = k
-		elseif count <= #kingstone+#dipton+#riverside then
-			riverside[count-#kingstone-#dipton][3] = k
+		elseif count <= #kingstone+#dipton+#highbrook then
+			highbrook[count-#kingstone-#dipton][3] = k
 		else
 			break
 		end
@@ -749,7 +770,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 	end
 
-	for k,v in ipairs(riverside) do
+	for k,v in ipairs(highbrook) do
 		for k,j in ipairs(v[2]) do
 			local obj = createObject(v[3], j[1],j[2],j[3], j[4]+90,j[5],j[6]*-1)
 			setElementFrozen(obj, true)
@@ -765,6 +786,6 @@ function displayLoadedRes ( res )--старт ресурсов
 	setElementData(resourceRoot, "object", object)
 	setElementData(resourceRoot, "kingstone", kingstone)
 	setElementData(resourceRoot, "dipton", dipton)
-	setElementData(resourceRoot, "riverside", riverside)
+	setElementData(resourceRoot, "highbrook", highbrook)
 end
 addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
