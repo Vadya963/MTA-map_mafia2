@@ -795,8 +795,36 @@ local highbrook = {
 	{"12_62_plot", {{-468.7872 ,1075.349 ,32.92242 ,0 ,0 ,-90}}, 0},
 }
 
-local object = {}
+local hillwood = {
+	{"14_teren__gg", {{280.2817 ,1170.147 ,59.35579 ,0 ,0 ,0}}, 0},
+	{"14_teren__ff", {{394.5805 ,1203.013 ,59.66571 ,0 ,0 ,0}}, 0},
+	{"14_teren__ee", {{56.80484 ,1175.015 ,54.10462 ,0 ,0 ,0}}, 0},
+	{"14_teren__dd", {{35.97686 ,1267.455 ,59.64884 ,0 ,0 ,0}}, 0},
+	{"14_teren__aa", {{256.5594 ,1387.657 ,19.18766 ,0 ,0 ,0}}, 0},
+	{"14_teren__mm", {{700.9915 ,1280.49 ,40.76319 ,0 ,0 ,0}}, 0},
+	{"14_teren__ll", {{605.5877 ,1357.026 ,50.94392 ,0 ,0 ,0}}, 0},
+	{"14_teren__kk", {{-40.91351 ,1182.721 ,48.05069 ,0 ,0 ,0}}, 0},
+	{"14_teren__jj", {{173.2101 ,1175.887 ,59.20597 ,0 ,0 ,0}}, 0},
+	{"14_teren__ii", {{273.429 ,1278.437 ,58.47564 ,0 ,0 ,0}}, 0},
+	{"14_teren__hh", {{203.5522 ,1233.966 ,21.1133 ,0 ,0 ,0}}, 0},
+	{"14_teren__aa1", {{42.1684 ,1353.333 ,15.44033 ,0 ,0 ,0}}, 0},
+	{"14_teren__aa3", {{372.8076 ,1361.27 ,32.79406 ,0 ,0 ,0}}, 0},
+	{"14_teren__aa2", {{165.1477 ,1390.98 ,13.96313 ,0 ,0 ,0}}, 0},
+	{"14_teren__mm1", {{581.4919 ,1196.789 ,39.18855 ,0 ,0 ,0}}, 0},
+	{"14_teren__ll1", {{513.7497 ,1293.574 ,43.42384 ,0 ,0 ,0}}, 0},
+	{"14_teren__cc1-bez_coll", {{94.19685 ,1066.901 ,27.51352 ,0 ,0 ,0}}, 0},
+	{"14_teren__cc-bez_coll", {{229.1126 ,1075.712 ,32.65847 ,0 ,0 ,0}}, 0},
+	{"14_teren__bb-bez_coll", {{427.0205 ,1088.309 ,36.74967 ,0 ,0 ,0}}, 0},
+	{"14_teren__ll2-bez_coll", {{752.5344 ,1422.453 ,54.76783 ,0 ,0 ,0}}, 0},
+	{"14_teren__ll3-bez_coll", {{665.9688 ,1412.921 ,54.76809 ,0 ,0 ,0}}, 0},
+	--[[{"", {{ ,0 ,0 ,0}}, 0},
+	{"", {{ ,0 ,0 ,0}}, 0},
+	{"", {{ ,0 ,0 ,0}}, 0},
+	{"", {{ ,0 ,0 ,0}}, 0},]]
+}
 
+local object = {}
+--{"", {{ ,0 ,0 ,0}}, 0},
 local no_col_object = {
 	{"05_30_OM", {{-638.77860,1738.21000,-9.32861,0,0,0}}, 1226, "dipton"},
 	{"05_104_OM", {{-423.82840,1858.56600,-18.37658,0,0,0}}, 1283, "dipton"},
@@ -814,6 +842,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			dipton[count-#kingstone][3] = k
 		elseif count <= #kingstone+#dipton+#highbrook then
 			highbrook[count-#kingstone-#dipton][3] = k
+		elseif count <= #kingstone+#dipton+#highbrook+#hillwood then
+			hillwood[count-#kingstone-#dipton-#highbrook][3] = k
 		else
 			break
 		end
@@ -851,6 +881,15 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 	end
 
+	for k,v in ipairs(hillwood) do
+		for k,j in ipairs(v[2]) do
+			local obj = createObject(v[3], j[1],j[2],j[3], j[4]+90,j[5],j[6]*-1)
+			setElementFrozen(obj, true)
+			table.insert(object, obj)
+			print(v[1],v[3],obj)
+		end
+	end
+
 	for k,v in ipairs(object) do
 		setElementDimension(v, 0)
 	end
@@ -860,5 +899,6 @@ function displayLoadedRes ( res )--старт ресурсов
 	setElementData(resourceRoot, "kingstone", kingstone)
 	setElementData(resourceRoot, "dipton", dipton)
 	setElementData(resourceRoot, "highbrook", highbrook)
+	setElementData(resourceRoot, "hillwood", hillwood)
 end
 addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
