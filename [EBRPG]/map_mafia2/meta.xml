@@ -700,6 +700,10 @@
 	<file src="dipton/05_104_OM.col"/>
 	<file src="dipton/05_i_train_stop_09_G.dff"/>
 	<file src="dipton/05_i_train_stop_09_G.col"/>
+	<file src="dipton/05_99_03.dff"/>
+	<file src="dipton/05_99_03.col"/>
+	<file src="dipton/05_99_02b.dff"/>
+	<file src="dipton/05_99_02b.col"/>
 
 	<file src="riverside/06_teren_01_n.dff"/>
 	<file src="riverside/06_teren_01_n.col"/>
@@ -772,7 +776,6 @@
 	<file src="highbrook/12_teren_JJ.col"/>
 	<file src="highbrook/12_teren_KK.dff"/>
 	<file src="highbrook/12_teren_KK.col"/>
-	
 	<file src="highbrook/12_terasa.dff"/>
 	<file src="highbrook/12_82.dff"/>
 	<file src="highbrook/12_94.dff"/>
