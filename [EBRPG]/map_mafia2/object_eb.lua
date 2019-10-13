@@ -1,18 +1,10 @@
 local eb_textures = engineLoadTXD ( ":map_mafia2/eb_textures.txd" )
 
 local start = true
--- Setting water properties.
-height = 1
-SizeVal = 2998
--- Defining variables.
-southWest_X = -SizeVal
-southWest_Y = -SizeVal
-southEast_X = SizeVal
-southEast_Y = -SizeVal
-northWest_X = -SizeVal
-northWest_Y = SizeVal
-northEast_X = SizeVal
-northEast_Y = SizeVal
+local table_water = {
+	{0, -1283.8791503906,1123.7979736328,-20.698886871338, -610.97723388672,1365.2574462891,-16.659574508667},
+	{0, -755.57446289063,1365.2574462891,-16.659574508667, -379.68450927734,1523.5191650391,-23.234601974487},
+}
 addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
 	if start then
@@ -24,8 +16,10 @@ function ( startedRes )
 		setOcclusionsEnabled(false)
 		setWaterLevel(-5000)
 
-		--water = createWater ( southWest_X, southWest_Y, height, southEast_X, southEast_Y, height, northWest_X, northWest_Y, height, northEast_X, northEast_Y, height )
-		--setWaterLevel(water, -25)
+		for k,v in pairs(table_water) do
+			table_water[k][1] = createWater ( v[2], v[3], 40, v[5], v[3], 40, v[2], v[6], 40, v[5], v[6], 40 )
+			setWaterLevel(table_water[k][1], -25)
+		end
 
 		for i,v in ipairs(getElementData(resourceRoot, "object")) do
 			setObjectBreakable(v, false)
@@ -89,6 +83,19 @@ local function dxdrawtext(text, x, y, width, height, color, scale, font)
 	dxDrawText ( text, x, y, width, height, color, scale, font )
 end
 
+local swim_time = 0
+setTimer(function ( ... )
+	local task = getPedSimplestTask(localPlayer)
+	if task == "TASK_SIMPLE_SWIM" then
+		swim_time = swim_time+1
+	end
+
+	if swim_time >= 5 then
+		setElementPosition(localPlayer, -575.101,1622.8,-14.6957)
+		swim_time = 0
+	end
+end, 1000, 0)
+
 local hud = true
 function createText ()
 	
@@ -150,7 +157,9 @@ addEventHandler ( "onClientRender", root, createText )
 
 addCommandHandler ( "water",
 function ( cmd, level )
-	setWaterLevel(water, level)
+	for k,v in pairs(table_water) do
+		setWaterLevel(v[1], level)
+	end
 	outputChatBox(level)
 end)
 
