@@ -85,14 +85,22 @@ local function dxdrawtext(text, x, y, width, height, color, scale, font)
 	dxDrawText ( text, x, y, width, height, color, scale, font )
 end
 
-local swim_time = 0
+local swim_time, air_time = 0, 0
 setTimer(function ( ... )
 	local task = getPedSimplestTask(localPlayer)
 	if task == "TASK_SIMPLE_SWIM" then
 		swim_time = swim_time+1
+	else
+		swim_time = 0
 	end
 
-	if swim_time >= 5 then
+	if task == "TASK_SIMPLE_IN_AIR" then
+		air_time = air_time+1
+	else
+		air_time = 0
+	end
+
+	if swim_time >= 5 or air_time >= 5 then
 		setElementPosition(localPlayer, -575.101,1622.8,-14.6957)
 		swim_time = 0
 	end
@@ -107,7 +115,7 @@ function createText ()
 		local x,y,z = getElementPosition(localPlayer)
 		local task = getPedSimplestTask(localPlayer)
 
-		dxdrawtext ( task, 0, 200, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
+		dxdrawtext ( task..", "..swim_time..", "..air_time, 0, 200, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
 
 		for k,v in ipairs(getElementData(resourceRoot, "kingstone")) do
 			for k,j in ipairs(v[2]) do
