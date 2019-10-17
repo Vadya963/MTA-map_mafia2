@@ -686,11 +686,11 @@ local dipton = {
 
 local riverside = {
 	--{"06_teren_01_n", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
-	--{"06_teren_01_A", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
-	--{"06_teren_01_B", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
-	--{"06_teren_01_K_most", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
-	--{"06_04", {{-225.47680,1563.83100,-32.86102,0,0,44.99998}}, 0},
 
+	{"06_teren_01_A", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
+	{"06_teren_01_B", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
+	{"06_teren_01_K_most", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
+	{"06_04", {{-225.47680,1563.83100,-32.86102,0,0,44.99998}}, 0},
 	{"06_teren_01_I", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
 	{"06_teren_01_H", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
 	{"06_teren_01_C", {{-287.03390,1590.14900,-27.89163,0,0,0}}, 0},
@@ -722,7 +722,7 @@ local highbrook = {
 	{"12_teren_CC", {{-289.9402 ,1217.131 ,51.22807 ,0 ,0 ,0}}, 0},
 	{"12_teren_HH", {{-547.4743 ,1340.746 ,2.224651 ,0 ,0 ,0}}, 0},
 	{"12_teren_II", {{-280.4438 ,1321.415 ,47.89539 ,0 ,0 ,0}}, 0},
-	{"12_teren_JJ", {{-134.2728 ,1336.685 ,19.42958 ,0 ,0 ,0}}, 0},
+	--{"12_teren_JJ", {{-134.2728 ,1336.685 ,19.42958 ,0 ,0 ,0}}, 0},
 	{"12_teren_KK", {{-396.8021 ,1382.394 ,9.341567 ,0 ,0 ,0}}, 0},
 	{"12_terasa", {{-649.3055 ,1295.337 ,2.036455 ,0 ,0 ,-135}}, 0},
 	{"12_82", {{-492.0214 ,1368.201 ,25.4197 ,0 ,0 ,0}}, 0},
@@ -984,6 +984,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			highbrook[count-#kingstone-#dipton][3] = k
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood then
 			hillwood[count-#kingstone-#dipton-#highbrook][3] = k
+		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside then
+			riverside[count-#kingstone-#dipton-#highbrook-#hillwood][3] = k
 		else
 			break
 		end
@@ -1030,6 +1032,15 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 	end
 
+	for k,v in ipairs(riverside) do
+		for k,j in ipairs(v[2]) do
+			local obj = createObject(v[3], j[1],j[2],j[3], j[4]+90,j[5],j[6]*-1)
+			setElementFrozen(obj, true)
+			table.insert(object, obj)
+			print(v[1],v[3],obj)
+		end
+	end
+
 	for k,v in ipairs(object) do
 		setElementDimension(v, 0)
 	end
@@ -1040,5 +1051,6 @@ function displayLoadedRes ( res )--старт ресурсов
 	setElementData(resourceRoot, "dipton", dipton)
 	setElementData(resourceRoot, "highbrook", highbrook)
 	setElementData(resourceRoot, "hillwood", hillwood)
+	setElementData(resourceRoot, "riverside", riverside)
 end
 addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
