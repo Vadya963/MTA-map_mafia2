@@ -739,6 +739,12 @@
 	<file src="riverside/06_13_most.col"/>
 	<file src="riverside/06_fly_over_02.dff"/>
 	<file src="riverside/06_fly_over_02.col"/>
+	<file src="riverside/city04.dff"/>
+	<file src="riverside/city24.dff"/>
+	<file src="riverside/city50.dff"/>
+	<file src="riverside/city04.col"/>
+	<file src="riverside/city24.col"/>
+	<file src="riverside/city50.col"/>
 
 	<file src="highbrook/12_teren_CC02.dff"/>
 	<file src="highbrook/12_teren_CC02.col"/>
@@ -1029,12 +1035,6 @@
 	<file src="hillwood/14_plot_zed__05.col"/>
 	<file src="hillwood/14_sl_plot_samot__03.col"/>
 	<file src="hillwood/14_Brana_B__02.col"/>
-	<file src="hillwood/city76.dff"/>
-	<file src="hillwood/city74.dff"/>
-	<file src="hillwood/city75.dff"/>
-	<file src="hillwood/city76.col"/>
-	<file src="hillwood/city74.col"/>
-	<file src="hillwood/city75.col"/>
 	<file src="hillwood/14_plot_zed_kamen__14.dff"/> 
 	<file src="hillwood/14_plot_zed_kamen__01.dff"/> 
 	<file src="hillwood/14_plot_zed__10.dff"/> 
