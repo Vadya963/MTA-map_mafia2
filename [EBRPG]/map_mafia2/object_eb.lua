@@ -17,9 +17,6 @@ function ( startedRes )
 		end
 		setOcclusionsEnabled(false)
 		setWaterLevel(-5000)
-		engineSetSurfaceProperties ( 0, "audio", "grass" )
-		engineSetSurfaceProperties ( 0, "canclimb", true )
-		--engineSetSurfaceProperties ( 0, "glass", false )
 
 		--[[for k,v in pairs(table_water) do
 			table_water[k][1] = createWater ( v[2], v[3], 40, v[5], v[3], 40, v[2], v[6], 40, v[5], v[6], 40 )

@@ -1020,7 +1020,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			local obj = createObject(v[3], j[1],j[2],j[3], j[4]+90,j[5],j[6]*-1)
 			setElementFrozen(obj, true)
 			table.insert(object, obj)
-			print(v[1],v[3],obj)
 		end
 	end
 
