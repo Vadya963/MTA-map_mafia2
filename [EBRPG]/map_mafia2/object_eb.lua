@@ -1,4 +1,4 @@
-local eb_textures = engineLoadTXD ( ":map_mafia2/eb_textures.txd" )
+local eb_textures = false
 
 local start = true
 local table_water = {
@@ -28,6 +28,8 @@ function ( startedRes )
 		for i,v in ipairs(getElementData(resourceRoot, "object")) do
 			setObjectBreakable(v, false)
 		end
+
+		eb_textures = engineLoadTXD ( ":map_mafia2/eb_textures.txd" )
 
 		for k,v in ipairs(getElementData(resourceRoot, "no_col_object")) do
 			engineImportTXD (eb_textures, v[3])
