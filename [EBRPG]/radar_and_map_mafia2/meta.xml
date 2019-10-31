@@ -2,11 +2,9 @@
 	<info description="Shader - HUD mask" author="ccw" version="0.0.1" type="script" />
 	<min_mta_version client="1.3.5" />
 
-	<!--<script src="c_hud_mask.lua" type="client" validate="false"/>
-	<file src="hud_mask.fx" type="client" />
-	<file src="include/tex_matrix.fx" type="client" />
-	<file src="images/circle_mask.png" type="client" />
-	<file src="images/sept_mask.png" type="client" />-->
+	<!--<oop>true</oop>
+	<script src="render.lua" type="client"></script>-->
+	
 
 	<file src="images/radar.jpg" type="client" />
 	<script src="maximap_c.lua" type="client"/>
