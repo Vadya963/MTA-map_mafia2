@@ -1141,6 +1141,24 @@ local hillwood = {
 	{"14_vila_FLV__09", {{111.0887 ,1241.623 ,63.34928 ,0 ,0 ,0}}, 0},
 }
 
+local hillwood_obj_new_pos = {
+	{"VV_GAR_segment06", {{-19.86927 ,-42.95234 ,15.73177 ,0 ,0 ,5.999992},
+	{-19.86927 ,-42.95234 ,15.73177 ,0 ,0 ,17.99998},
+	{-19.86927 ,-42.95234 ,15.73177 ,0 ,0 ,29.99998}}, 0},
+	{"VV_GAR_segment05", {{-19.86927 ,-42.95234 ,15.73177 ,0 ,0 ,11.99998},
+	{-19.86927 ,-42.95234 ,15.73177 ,0 ,0 ,24}}, 0},
+	{"VV_GAR_segment01", {{-19.86927 ,-42.95234 ,15.73177 ,0 ,0 ,29.99998}}, 0},
+	{"VV_GAR_wall", {{1.90333 ,-5.701406 ,15.21958 ,0 ,0 ,29.99998}}, 0},
+	{"VV_EXT_kamen", {{1.780967 ,-24.07531 ,22.05143 ,0 ,0 ,29.99998}}, 0},
+	{"VV_EXT_podlaha", {{-4.274834 ,-34.43281 ,20.32911 ,0 ,0 ,29.99998}}, 0},
+	{"VV_EXT_glass", {{-3.045176 ,-34.51078 ,21.81444 ,0 ,0 ,29.99998}}, 0},
+	{"VV_EXT_wood1", {{0.5803809 ,-28.41703 ,19.04011 ,0 ,0 ,29.99998}}, 0},
+	{"VV_EXT_okenko", {{8.015244 ,-17.57109 ,16.73581 ,0 ,0 ,29.99998}}, 0},
+	{"VV_EXT_wood2", {{0.3195898 ,-27.94938 ,20.16158 ,0 ,0 ,29.99998}}, 0},
+	{"VV_EXT_okenko02", {{6.985845 ,-23.93406 ,16.73581 ,0 ,0 ,-150}}, 0},
+	{"VV_EXT_nosnik", {{-7.380478 ,-36.77859 ,7.892509 ,0 ,0 ,29.99998}}, 0},
+}
+
 local riverside = {
 	--{"06_teren_01_n", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},--большая кол-ия и далеко от центра
 	{"06_teren_01_A", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
@@ -1299,6 +1317,14 @@ local riverside = {
 	{"budova_HL_03", {{26.07336 ,1834.144 ,-0.1121411 ,0 ,0 ,0}}, 0},
 }
 
+local riverside_obj_new_pos = {
+	{"teren_okoli", {{25.70995 ,-15.24094 ,4.734521 ,0 ,0 ,0}}, 0},
+	{"breh", {{38.93762 ,-14.83156 ,-3.483252 ,0 ,0 ,0}}, 0},
+	{"kanal_vstup", {{19.1728 ,-27.31172 ,-0.3986548 ,0 ,0 ,0}}, 0},
+	{"Object03", {{17.69775 ,-27.30469 ,0.05926758 ,0 ,0 ,0}}, 0},
+	{"kanal_mriz_01", {{14.24643 ,-27.30844 ,0.08760742 ,0 ,0 ,0}}, 0},
+}
+
 local greenfield = {
 	{"03_teren10", {{-1244.493 ,1038.629 ,-31.13123 ,0 ,0 ,0}}, 0},
 	{"03_teren11", {{-1249.264 ,846.5592 ,-29.6765 ,0 ,0 ,0}}, 0},
@@ -1315,8 +1341,7 @@ local greenfield = {
 	{"03_teren08b", {{-1362.752 ,1044.98 ,-16.11477 ,0 ,0 ,0}}, 0},
 	--[[{"03_teren203", {{-1877.168 ,1046.32 ,12.10801 ,0 ,0 ,0}}, 0},--большая кол-ия
 	{"03_teren202", {{-1877.168 ,1046.32 ,12.10801 ,0 ,0 ,0}}, 0},
-	{"03_teren201", {{-1877.168 ,1046.32 ,12.10801 ,0 ,0 ,0}}, 0},
-	{"03_24", {{-1575.364 ,950.4914 ,-2.85188 ,0 ,0 ,0}}, 0},--появляется в гринфилде]]
+	{"03_teren201", {{-1877.168 ,1046.32 ,12.10801 ,0 ,0 ,0}}, 0},]]
 }
 
 local object = {}
@@ -1325,9 +1350,9 @@ local no_col_object = {
 	{"05_30_OM", {{-638.77860,1738.21000,-9.32861,0,0,0}}, 1226, "dipton"},
 	{"05_104_OM", {{-423.82840,1858.56600,-18.37658,0,0,0}}, 1283, "dipton"},
 	{"gvinterier", {{-323.7051 ,1116.869 ,51.83453 ,0 ,0 ,0}}, 1284, "highbrook"},
-	{"city04", {{420.6397 ,1695.095 ,5.312256 ,0 ,0 ,0}}, 1290, "riverside"},
-	{"city24", {{564.3041 ,1488.372 ,4.445335 ,0 ,0 ,0}}, 1294, "riverside"},
-	{"city50", {{443.2983 ,1881.396 ,4.616481 ,0 ,0 ,0}}, 1295, "riverside"},
+	{"03_24", {{-1575.364 ,950.4914 ,-2.85188 ,0 ,0 ,0}}, 1290, "greenfield"},
+	--{"city24", {{564.3041 ,1488.372 ,4.445335 ,0 ,0 ,0}}, 1294, "riverside"},
+	--{"city50", {{443.2983 ,1881.396 ,4.616481 ,0 ,0 ,0}}, 1295, "riverside"},
 	{"city61", {{56.47254 ,1317.093 ,19.26826 ,0 ,0 ,0}}, 1297, "riverside"},
 	{"06_Fact_A_00", {{-14.15554 ,1741.667 ,-8.64619 ,0 ,0 ,-92},
 	{-26.8 ,1800 ,-10 ,0 ,0 ,-270}}, 1491, "riverside"},
@@ -1393,15 +1418,22 @@ function displayLoadedRes ( res )--старт ресурсов
 
 	for i,v in ipairs(no_col_object) do
 		for k,j in ipairs(v[2]) do
-			local obj = createObject(v[3], j[1],j[2],j[3], j[4]+90,j[5],j[6]*-1)
+			local obj = false
+			local x,y,z = j[1],j[2],j[3]
+
+			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			setElementFrozen(obj, true)
 			table.insert(object, obj)
+			--print(i,v[1],v[3],obj)
 		end
 	end
 		
 	for i,v in ipairs(kingstone) do
 		for k,j in ipairs(v[2]) do
-			local obj = createObject(v[3], j[1],j[2],j[3], j[4],j[5],j[6])
+			local obj = false
+			local x,y,z = j[1],j[2],j[3]
+
+			obj = createObject(v[3], x,y,z, j[4],j[5],j[6])
 			setElementFrozen(obj, true)
 			table.insert(object, obj)
 			--print(i,v[1],v[3],obj)
@@ -1410,7 +1442,10 @@ function displayLoadedRes ( res )--старт ресурсов
 
 	for i,v in ipairs(dipton) do
 		for k,j in ipairs(v[2]) do
-			local obj = createObject(v[3], j[1],j[2],j[3], j[4],j[5],j[6])
+			local obj = false
+			local x,y,z = j[1],j[2],j[3]
+
+			obj = createObject(v[3], x,y,z, j[4],j[5],j[6])
 			setElementFrozen(obj, true)
 			table.insert(object, obj)
 			--print(i,v[1],v[3],obj)
@@ -1419,7 +1454,10 @@ function displayLoadedRes ( res )--старт ресурсов
 
 	for i,v in ipairs(highbrook) do
 		for k,j in ipairs(v[2]) do
-			local obj = createObject(v[3], j[1],j[2],j[3], j[4]+90,j[5],j[6]*-1)
+			local obj = false
+			local x,y,z = j[1],j[2],j[3]
+
+			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			setElementFrozen(obj, true)
 			table.insert(object, obj)
 			--print(i,v[1],v[3],obj)
@@ -1429,11 +1467,15 @@ function displayLoadedRes ( res )--старт ресурсов
 	for i,v in ipairs(hillwood) do
 		for k,j in ipairs(v[2]) do
 			local obj = false
-			if i >= 26 and i <= 37 then
-				obj = createObject(v[3], j[1]+-44.39632,j[2]+1181.624,j[3]+54.36982, j[4]+90,j[5],j[6]*-1)
-			else
-				obj = createObject(v[3], j[1],j[2],j[3], j[4]+90,j[5],j[6]*-1)
+			local x,y,z = j[1],j[2],j[3]
+
+			for _,p in pairs(hillwood_obj_new_pos) do
+				if p[1] == v[1] then
+					x,y,z = j[1]+-44.39632,j[2]+1181.624,j[3]+54.36982
+				end
 			end
+
+			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			setElementFrozen(obj, true)
 			table.insert(object, obj)
 			--print(i,v[1],v[3],obj)
@@ -1443,11 +1485,15 @@ function displayLoadedRes ( res )--старт ресурсов
 	for i,v in ipairs(riverside) do
 		for k,j in ipairs(v[2]) do
 			local obj = false
-			if i >= 78 and i <= 82 then
-				obj = createObject(v[3], j[1]+77.72681,j[2]+1803.701,j[3]+-21.32529, j[4]+90,j[5],j[6]*-1)
-			else
-				obj = createObject(v[3], j[1],j[2],j[3], j[4]+90,j[5],j[6]*-1)
+			local x,y,z = j[1],j[2],j[3]
+
+			for _,p in pairs(riverside_obj_new_pos) do
+				if p[1] == v[1] then
+					x,y,z = j[1]+77.72681,j[2]+1803.701,j[3]+-21.32529
+				end
 			end
+
+			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			setElementFrozen(obj, true)
 			table.insert(object, obj)
 			--print(i,v[1],v[3],obj)
@@ -1457,9 +1503,9 @@ function displayLoadedRes ( res )--старт ресурсов
 	for i,v in ipairs(greenfield) do
 		for k,j in ipairs(v[2]) do
 			local obj = false
-			
-				obj = createObject(v[3], j[1],j[2],j[3], j[4]+90,j[5],j[6]*-1)
-			
+			local x,y,z = j[1],j[2],j[3]
+
+			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			setElementFrozen(obj, true)
 			table.insert(object, obj)
 			print(i,v[1],v[3],obj)
