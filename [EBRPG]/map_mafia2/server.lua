@@ -504,7 +504,7 @@ local dipton = {
 	{"05_213", {{-735.09450,1419.70500,-1.99382,90,0,-49.49999}}, 0},
 	{"05_290", {{-955.91530,1528.97600,-2.88474,90,0,0}}, 0},
 	{"05_295", {{-903.29890,1392.26500,-9.05349,90,0,0}}, 0},
-	--{"05_296", {{-1174.05600,1626.85900,-1.14606,90,0,0}}, 0},--далеко от центра
+	--{"05_296", {{-1174.05600,1626.85900,-1.14606,90,0,0}}, 0},--далеко от игрока
 	{"05_304", {{-721.1254 ,1394.318 ,-8.217873,90,0,70.93108}}, 0},
 	{"05_296b", {{-1174.05600,1626.85900,-1.14606,90,0,0}}, 0},
 	{"05_370", {{-642.32700,1324.23800,2.03852,90,0,-49.99999}}, 0},
@@ -712,7 +712,7 @@ local dipton = {
 	{-868.56960,1501.65600,-3.75135,90,0,90}}, 0},
 	{"05_99_04", {{-539.92410,1697.07000,-18.53846,90,0,180}}, 0},
 	{"05_zabrnadrazi", {{-572.52030,1655.22100,-18.56151,90,0,180}}, 0},
-	--{"05_369_B", {{-725.50120,1434.51900,-3.07264,90,0,0}}, 0},--далеко от центра
+	--{"05_369_B", {{-725.50120,1434.51900,-3.07264,90,0,0}}, 0},--далеко от игрока
 	{"05_99_03", {{-484.8369,1509.937,-19.19659,90,0,180}}, 0},
 	{"05_99_02b", {{-587.8461,1791.678,-14.27465,90,0,180}}, 0},
 	{"05_03", {{-660.7158 ,1911.351 ,-18.90857,90,0,0}}, 0},
@@ -1168,7 +1168,7 @@ local hillwood_obj_new_pos = {
 }
 
 local riverside = {
-	--{"06_teren_01_n", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},--большая кол-ия и далеко от центра
+	--{"06_teren_01_n", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},--большая кол-ия и далеко от игрока
 	{"06_teren_01_A", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
 	{"06_teren_01_B", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
 	{"06_teren_01_K_most", {{-137.46010,1642.07100,-24.73032,0,0,0}}, 0},
@@ -1527,6 +1527,39 @@ local greenfield = {
 	{"03_55", {{-1429.650 ,1155.988 ,-6.402097 ,0 ,0 ,0}}, 0},
 }
 
+local hunters = {
+	{"02_teren24", {{-1357.141 ,587.2208 ,-21.44785 ,0 ,0 ,0}}, 0},
+	{"02_teren25", {{-1567.362 ,815.7074 ,-7.601891 ,0 ,0 ,0}}, 0},
+	{"02_teren26", {{-1649.595 ,669.6393 ,-12.55612 ,0 ,0 ,0}}, 0},
+	{"02_teren20", {{-1601.040 ,619.7065 ,-10.34853 ,0 ,0 ,0}}, 0},
+	{"02_teren21", {{-1371.005 ,424.3609 ,-24.2114 ,0 ,0 ,0}}, 0},
+	{"02_teren22", {{-1307.809 ,288.8509 ,-23.12396 ,0 ,0 ,0}}, 0},
+	{"02_teren23", {{-1328.650 ,159.5100 ,-24.62364 ,0 ,0 ,0}}, 0},
+	{"02_teren02", {{-1328.650 ,159.5100 ,-24.62364 ,0 ,0 ,0}}, 0},
+	{"02_teren03", {{-1601.040 ,619.7065 ,-10.34853 ,0 ,0 ,0}}, 0},
+	--{"02_teren00", {{-1654.674 ,541.1331 ,-11.89489 ,0 ,0 ,0}}, 0},--большая кол-ия
+	{"02_teren01", {{-1307.809 ,288.8509 ,-23.12396 ,0 ,0 ,0}}, 0},
+	--{"02_teren06", {{-1601.040 ,619.7065 ,-10.34853 ,0 ,0 ,0}}, 0},--большая кол-ия
+	--{"02_teren07", {{-1601.040 ,619.7065 ,-10.34853 ,0 ,0 ,0}}, 0},--большая кол-ия
+	{"02_teren04", {{-1476.843 ,304.7757 ,-19.81644 ,0 ,0 ,0}}, 0},
+	{"02_teren05", {{-1645.241 ,268.2857 ,-13.26774 ,0 ,0 ,0}}, 0},
+	{"02_teren08", {{-1371.005 ,424.3609 ,-24.2114 ,0 ,0 ,0}}, 0},
+	{"02_teren09", {{-1357.141 ,587.2208 ,-21.44785 ,0 ,0 ,0}}, 0},
+	--{"02_teren15", {{-1601.040 ,619.7065 ,-10.34853 ,0 ,0 ,0}}, 0},--большая кол-ия
+	--{"02_teren14", {{-1601.040 ,619.7065 ,-10.34853 ,0 ,0 ,0}}, 0},--далеко от игрока
+	{"02_teren17", {{-1521.955 ,468.4820 ,-20.30125 ,0 ,0 ,0}}, 0},
+	--{"02_teren16", {{-1601.040 ,619.7065 ,-10.34853 ,0 ,0 ,0}}, 0},--далеко от игрока
+	{"02_teren11", {{-1522.937 ,739.1835 ,-9.808838 ,0 ,0 ,0}}, 0},
+	{"02_teren10", {{-1378.978 ,746.7308 ,-14.89334 ,0 ,0 ,0}}, 0},
+	--{"02_teren13", {{-1601.040 ,619.7065 ,-10.34853 ,0 ,0 ,0}}, 0},--большая кол-ия
+	{"02_teren12", {{-1601.040 ,619.7065 ,-10.34853 ,0 ,0 ,0}}, 0},
+	{"02_teren19", {{-1658.020 ,488.1999 ,-19.10083 ,0 ,0 ,0}}, 0},
+	{"02_teren18", {{-1658.020 ,488.1999 ,-19.10083 ,0 ,0 ,0}}, 0},
+	--{"teren_most01", {{-1497.023 ,320.0447 ,-8.685206 ,0 ,0 ,0}}, 0},--большая кол-ия
+	{"teren_most02", {{-1497.023 ,320.0447 ,-8.685206 ,0 ,0 ,0}}, 0},
+	--{"teren_most03", {{-1497.023 ,320.0447 ,-8.685206 ,0 ,0 ,0}}, 0},--большая кол-ия
+}
+
 local object = {}
 --{"", {{ ,0 ,0 ,0}}, 0},
 local no_col_object = {
@@ -1583,6 +1616,13 @@ local no_col_object = {
 	{"06_16_plot_01", {{-379.096 ,1843.147 ,-20.05569 ,0 ,0 ,0}}, 1567, "riverside"},
 }
 
+local col_object = {
+	{"03_21_col1", {{-1591.998 ,1160.697 ,-2.015232 ,0 ,0 ,0}}, 669, "greenfield"},
+	{"03_21_col3", {{-1685.41 ,1255.365 ,0.02563858 ,0 ,0 ,0}}, 670, "greenfield"},
+	{"03_21_col2", {{-1701.521 ,1407.389 ,-1.331383 ,0 ,0 ,0}}, 671, "greenfield"},
+	{"03_21_col4", {{-1688.431 ,1532.943 ,-1.52503 ,0 ,0 ,0}}, 672, "greenfield"},
+}
+
 function displayLoadedRes ( res )--старт ресурсов
 	local count = 0
 	for k,v in pairs(getElementData(resourceRoot, "objectNames")) do
@@ -1600,6 +1640,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			riverside[count-#kingstone-#dipton-#highbrook-#hillwood][3] = k
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield then
 			greenfield[count-#kingstone-#dipton-#highbrook-#hillwood-#riverside][3] = k
+		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters then
+			hunters[count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield][3] = k
 		else
 			break
 		end
@@ -1612,6 +1654,19 @@ function displayLoadedRes ( res )--старт ресурсов
 
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			setElementFrozen(obj, true)
+			table.insert(object, obj)
+			--print(i,v[1],v[3],obj)
+		end
+	end
+
+	for i,v in ipairs(col_object) do
+		for k,j in ipairs(v[2]) do
+			local obj = false
+			local x,y,z = j[1],j[2],j[3]
+
+			obj = createObject(v[3], x,y,z, j[4],j[5],j[6])
+			setElementFrozen(obj, true)
+			setElementAlpha(obj, 0)
 			table.insert(object, obj)
 			--print(i,v[1],v[3],obj)
 		end
@@ -1697,11 +1752,24 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			setElementFrozen(obj, true)
 			table.insert(object, obj)
+			--print(i,v[1],v[3],obj)
+		end
+	end
+
+	for i,v in ipairs(hunters) do
+		for k,j in ipairs(v[2]) do
+			local obj = false
+			local x,y,z = j[1],j[2],j[3]
+
+			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
+			setElementFrozen(obj, true)
+			table.insert(object, obj)
 			print(i,v[1],v[3],obj)
 		end
 	end
 
 	setElementData(resourceRoot, "no_col_object", no_col_object)
+	setElementData(resourceRoot, "col_object", col_object)
 	setElementData(resourceRoot, "object", object)
 	setElementData(resourceRoot, "kingstone", kingstone)
 	setElementData(resourceRoot, "dipton", dipton)
@@ -1709,6 +1777,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	setElementData(resourceRoot, "hillwood", hillwood)
 	setElementData(resourceRoot, "riverside", riverside)
 	setElementData(resourceRoot, "greenfield", greenfield)
+	setElementData(resourceRoot, "hunters", hunters)
 end
 addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
 

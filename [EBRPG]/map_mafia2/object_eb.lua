@@ -41,6 +41,13 @@ function ( startedRes )
 			engineSetModelLODDistance(v[3], 30000)
 		end
 
+		for k,v in ipairs(getElementData(resourceRoot, "col_object")) do
+			local col = engineLoadCOL ( ":map_mafia2/"..v[4].."/"..v[1]..".col" )
+			engineReplaceCOL ( col, v[3] )
+
+			engineSetModelLODDistance(v[3], 30000)
+		end
+
 		for k,v in ipairs(getElementData(resourceRoot, "kingstone")) do
 			engineImportTXD (eb_textures, v[3])
 			local dff = engineLoadDFF ( ":map_mafia2/kingstone/"..v[1]..".dff" )
@@ -100,6 +107,16 @@ function ( startedRes )
 
 			engineSetModelLODDistance(v[3], 30000)
 		end
+
+		for k,v in ipairs(getElementData(resourceRoot, "hunters")) do
+			engineImportTXD (eb_textures, v[3])
+			local dff = engineLoadDFF ( ":map_mafia2/hunters/"..v[1]..".dff" )
+			engineReplaceModel ( dff, v[3] )
+			local col = engineLoadCOL ( ":map_mafia2/hunters/"..v[1]..".col" )
+			engineReplaceCOL ( col, v[3] )
+
+			engineSetModelLODDistance(v[3], 30000)
+		end
 	end
 end)
 
@@ -141,6 +158,28 @@ function createText ()
 
 		dxdrawtext ( task..", "..swim_time..", "..air_time, 0, 200, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
 
+		for k,v in ipairs(getElementData(resourceRoot, "no_col_object")) do
+			for k,j in ipairs(v[2]) do
+				if getDistanceBetweenPoints3D(x, y, z, j[1],j[2],j[3]) <= 100 then
+					local coords = { getScreenFromWorldPosition( j[1],j[2],j[3]+1, 0, false ) }
+					if coords[1] and coords[2] then
+						dxdrawtext ( v[1], coords[1]-(dxGetTextWidth ( v[1], 1, "default-bold" )/2), coords[2]-15, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
+						dxdrawtext ( v[3], coords[1]-(dxGetTextWidth ( v[3], 1, "default-bold" )/2), coords[2]-15*2, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
+					end
+				end
+			end
+		end
+		for k,v in ipairs(getElementData(resourceRoot, "col_object")) do
+			for k,j in ipairs(v[2]) do
+				if getDistanceBetweenPoints3D(x, y, z, j[1],j[2],j[3]) <= 100 then
+					local coords = { getScreenFromWorldPosition( j[1],j[2],j[3]+1, 0, false ) }
+					if coords[1] and coords[2] then
+						dxdrawtext ( v[1], coords[1]-(dxGetTextWidth ( v[1], 1, "default-bold" )/2), coords[2]-15, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
+						dxdrawtext ( v[3], coords[1]-(dxGetTextWidth ( v[3], 1, "default-bold" )/2), coords[2]-15*2, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
+					end
+				end
+			end
+		end
 		for k,v in ipairs(getElementData(resourceRoot, "kingstone")) do
 			for k,j in ipairs(v[2]) do
 				if getDistanceBetweenPoints3D(x, y, z, j[1],j[2],j[3]) <= 100 then
@@ -197,6 +236,17 @@ function createText ()
 			end
 		end
 		for k,v in ipairs(getElementData(resourceRoot, "greenfield")) do
+			for k,j in ipairs(v[2]) do
+				if getDistanceBetweenPoints3D(x, y, z, j[1],j[2],j[3]) <= 100 then
+					local coords = { getScreenFromWorldPosition( j[1],j[2],j[3]+1, 0, false ) }
+					if coords[1] and coords[2] then
+						dxdrawtext ( v[1], coords[1]-(dxGetTextWidth ( v[1], 1, "default-bold" )/2), coords[2]-15, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
+						dxdrawtext ( v[3], coords[1]-(dxGetTextWidth ( v[3], 1, "default-bold" )/2), coords[2]-15*2, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
+					end
+				end
+			end
+		end
+		for k,v in ipairs(getElementData(resourceRoot, "hunters")) do
 			for k,j in ipairs(v[2]) do
 				if getDistanceBetweenPoints3D(x, y, z, j[1],j[2],j[3]) <= 100 then
 					local coords = { getScreenFromWorldPosition( j[1],j[2],j[3]+1, 0, false ) }

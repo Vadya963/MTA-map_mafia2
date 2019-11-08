@@ -6,10 +6,7 @@
 	<script src="server.lua"/>
 
 	<file src="eb_textures.txd"/>
-
-	<!--<file src="/(0).dff"/>-->
-	<!--<file src="/(0).col"/>-->
-
+	
 	<file src="kingstone/teren0.dff"/>
 	<file src="kingstone/teren0.col"/>
 	<file src="kingstone/teren1.dff"/>
@@ -1651,4 +1648,69 @@
 	<file src="greenfield/03_vitoh01.col"/>
 	<file src="greenfield/03_14.col"/>
 	<file src="greenfield/03_55.col"/>
+	<file src="greenfield/03_21_col1.col"/>
+	<file src="greenfield/03_21_col3.col"/>
+	<file src="greenfield/03_21_col2.col"/>
+	<file src="greenfield/03_21_col4.col"/>
+
+	<file src="hunters/02_teren24.dff"/>
+	<file src="hunters/02_teren25.dff"/>
+	<file src="hunters/02_teren26.dff"/>
+	<file src="hunters/02_teren20.dff"/>
+	<file src="hunters/02_teren21.dff"/>
+	<file src="hunters/02_teren22.dff"/>
+	<file src="hunters/02_teren23.dff"/>
+	<file src="hunters/02_teren02.dff"/>
+	<file src="hunters/02_teren03.dff"/>
+	<file src="hunters/02_teren00.dff"/>
+	<file src="hunters/02_teren01.dff"/>
+	<file src="hunters/02_teren06.dff"/>
+	<file src="hunters/02_teren07.dff"/>
+	<file src="hunters/02_teren04.dff"/>
+	<file src="hunters/02_teren05.dff"/>
+	<file src="hunters/02_teren08.dff"/>
+	<file src="hunters/02_teren09.dff"/>
+	<file src="hunters/02_teren15.dff"/>
+	<file src="hunters/02_teren14.dff"/>
+	<file src="hunters/02_teren17.dff"/>
+	<file src="hunters/02_teren16.dff"/>
+	<file src="hunters/02_teren11.dff"/>
+	<file src="hunters/02_teren10.dff"/>
+	<file src="hunters/02_teren13.dff"/>
+	<file src="hunters/02_teren12.dff"/>
+	<file src="hunters/02_teren19.dff"/>
+	<file src="hunters/02_teren18.dff"/>
+	<file src="hunters/teren_most01.dff"/>
+	<file src="hunters/teren_most02.dff"/>
+	<file src="hunters/teren_most03.dff"/>
+	<file src="hunters/02_teren24.col"/>
+	<file src="hunters/02_teren25.col"/>
+	<file src="hunters/02_teren26.col"/>
+	<file src="hunters/02_teren20.col"/>
+	<file src="hunters/02_teren21.col"/>
+	<file src="hunters/02_teren22.col"/>
+	<file src="hunters/02_teren23.col"/>
+	<file src="hunters/02_teren02.col"/>
+	<file src="hunters/02_teren03.col"/>
+	<file src="hunters/02_teren00.col"/>
+	<file src="hunters/02_teren01.col"/>
+	<file src="hunters/02_teren06.col"/>
+	<file src="hunters/02_teren07.col"/>
+	<file src="hunters/02_teren04.col"/>
+	<file src="hunters/02_teren05.col"/>
+	<file src="hunters/02_teren08.col"/>
+	<file src="hunters/02_teren09.col"/>
+	<file src="hunters/02_teren15.col"/>
+	<file src="hunters/02_teren14.col"/>
+	<file src="hunters/02_teren17.col"/>
+	<file src="hunters/02_teren16.col"/>
+	<file src="hunters/02_teren11.col"/>
+	<file src="hunters/02_teren10.col"/>
+	<file src="hunters/02_teren13.col"/>
+	<file src="hunters/02_teren12.col"/>
+	<file src="hunters/02_teren19.col"/>
+	<file src="hunters/02_teren18.col"/>
+	<file src="hunters/teren_most01.col"/>
+	<file src="hunters/teren_most02.col"/>
+	<file src="hunters/teren_most03.col"/>
 </meta>
