@@ -6,6 +6,8 @@
 	<script src="server.lua"/>
 
 	<file src="eb_textures.txd"/>
+	<file src="empty.dff"/>
+	<file src="mta-helper.fx" type="client" />
 	
 	<file src="kingstone/teren0.dff"/>
 	<file src="kingstone/teren0.col"/>
@@ -1279,12 +1281,6 @@
 	<file src="riverside/06_13_most.col"/>
 	<file src="riverside/06_fly_over_02.dff"/>
 	<file src="riverside/06_fly_over_02.col"/>
-	<file src="riverside/city04.dff"/>
-	<file src="riverside/city24.dff"/>
-	<file src="riverside/city50.dff"/>
-	<file src="riverside/city04.col"/>
-	<file src="riverside/city24.col"/>
-	<file src="riverside/city50.col"/>
 	<file src="riverside/city61.dff"/>
 	<file src="riverside/city61.col"/>
 	<file src="riverside/06_zabradli_02.dff"/>

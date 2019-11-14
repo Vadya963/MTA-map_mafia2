@@ -21,7 +21,7 @@ local R,G,B,A      = 255,255,255,255
 local mapDrawColor = tocolor(R,G,B,A)
 local normalColor  = tocolor(255,255,255,255)
 
-local mapFile                           = ":radar_and_map_mafia2/images/radar.jpg"
+local mapFile                           = ":radar_and_map_mafia2/images/radar.png"
 local topLeftWorldX,topLeftWorldY       = -3000,3000
 local lowerRightWorldX,lowerRightWorldY = 3000,-3000
 local mapWidth,mapHeight                = 6000,6000
@@ -282,7 +282,7 @@ function setPlayerMapImage(image,tLX,tLY,lRX,lRY)
 	elseif not image then
 		imageOwnerResource                = thisResource
 		
-		mapFile                           = ":radar_and_map_mafia2/images/radar.jpg"
+		mapFile                           = ":radar_and_map_mafia2/images/radar.png"
 		topLeftWorldX,topLeftWorldY       = -3000,3000
 		lowerRightWorldX,lowerRightWorldY = 3000,-3000
 		mapWidth,mapHeight                = 6000,6000

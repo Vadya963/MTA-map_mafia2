@@ -13,7 +13,7 @@ local settings = {
     safeY = 0.025*sy, -- offset from bottom edge of screen
 
     map = {
-        image = "images/radar.jpg",
+        image = "images/radar.png",
         alwaysRender = false, -- false = render only in interior world 0
         backgroundColor = tocolor(124, 167, 209), -- rendered behind map (water color)
     },

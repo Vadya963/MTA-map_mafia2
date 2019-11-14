@@ -6,7 +6,7 @@
 	<script src="render.lua" type="client"></script>-->
 	
 
-	<file src="images/radar.jpg" type="client" />
+	<file src="images/radar.png" type="client" />
 	<script src="maximap_c.lua" type="client"/>
 	<script src="getControlState.lua" type="client"/>
 

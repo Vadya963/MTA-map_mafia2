@@ -42,6 +42,9 @@ function ( startedRes )
 		end
 
 		for k,v in ipairs(getElementData(resourceRoot, "col_object")) do
+			engineImportTXD (eb_textures, v[3])
+			local dff = engineLoadDFF ( ":map_mafia2/empty.dff" )
+			engineReplaceModel ( dff, v[3] )
 			local col = engineLoadCOL ( ":map_mafia2/"..v[4].."/"..v[1]..".col" )
 			engineReplaceCOL ( col, v[3] )
 
