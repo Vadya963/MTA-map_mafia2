@@ -700,8 +700,6 @@
 	<file src="dipton/05_99_04.col"/>
 	<file src="dipton/05_zabrnadrazi.dff"/>
 	<file src="dipton/05_zabrnadrazi.col"/>
-	<file src="dipton/05_369_B.dff"/>
-	<file src="dipton/05_369_B.col"/>
 	<file src="dipton/05_104_OM.dff"/>
 	<file src="dipton/05_104_OM.col"/>
 	<file src="dipton/05_i_train_stop_09_G.dff"/>
@@ -1644,10 +1642,6 @@
 	<file src="greenfield/03_vitoh01.col"/>
 	<file src="greenfield/03_14.col"/>
 	<file src="greenfield/03_55.col"/>
-	<file src="greenfield/03_21_col1.col"/>
-	<file src="greenfield/03_21_col3.col"/>
-	<file src="greenfield/03_21_col2.col"/>
-	<file src="greenfield/03_21_col4.col"/>
 
 	<file src="hunters/02_teren24.dff"/>
 	<file src="hunters/02_teren25.dff"/>
@@ -1709,8 +1703,4 @@
 	<file src="hunters/teren_most01.col"/>
 	<file src="hunters/teren_most02.col"/>
 	<file src="hunters/teren_most03.col"/>
-	<file src="hunters/02_teren00_col1.col"/>
-	<file src="hunters/02_teren00_col2.col"/>
-	<file src="hunters/02_teren00_col3.col"/>
-	<file src="hunters/02_teren00_col4.col"/>
 </meta>
