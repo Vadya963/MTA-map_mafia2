@@ -26,7 +26,7 @@ function ( startedRes )
 		end]]
 
 		for i,v in ipairs(getElementData(resourceRoot, "object")) do
-			setObjectBreakable(v, false)
+			setObjectBreakable(v[2], false)
 		end
 
 		eb_textures = engineLoadTXD ( ":map_mafia2/eb_textures.txd" )
@@ -34,16 +34,6 @@ function ( startedRes )
 		for k,v in ipairs(getElementData(resourceRoot, "no_col_object")) do
 			engineImportTXD (eb_textures, v[3])
 			local dff = engineLoadDFF ( ":map_mafia2/"..v[4].."/"..v[1]..".dff" )
-			engineReplaceModel ( dff, v[3] )
-			local col = engineLoadCOL ( ":map_mafia2/"..v[4].."/"..v[1]..".col" )
-			engineReplaceCOL ( col, v[3] )
-
-			engineSetModelLODDistance(v[3], 30000)
-		end
-
-		for k,v in ipairs(getElementData(resourceRoot, "col_object")) do
-			engineImportTXD (eb_textures, v[3])
-			local dff = engineLoadDFF ( ":map_mafia2/empty.dff" )
 			engineReplaceModel ( dff, v[3] )
 			local col = engineLoadCOL ( ":map_mafia2/"..v[4].."/"..v[1]..".col" )
 			engineReplaceCOL ( col, v[3] )
@@ -145,7 +135,7 @@ setTimer(function ( ... )
 	end
 
 	if swim_time >= 5 or air_time >= 5 then
-		setElementPosition(localPlayer, -575.101,1622.8,-14.6957)
+		setElementPosition(localPlayer, -1606.3515625,639.96655273438,-9.3480110168457)
 		swim_time = 0
 	end
 end, 1000, 0)
@@ -162,17 +152,6 @@ function createText ()
 		dxdrawtext ( task..", "..swim_time..", "..air_time, 0, 200, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
 
 		for k,v in ipairs(getElementData(resourceRoot, "no_col_object")) do
-			for k,j in ipairs(v[2]) do
-				if getDistanceBetweenPoints3D(x, y, z, j[1],j[2],j[3]) <= 100 then
-					local coords = { getScreenFromWorldPosition( j[1],j[2],j[3]+1, 0, false ) }
-					if coords[1] and coords[2] then
-						dxdrawtext ( v[1], coords[1]-(dxGetTextWidth ( v[1], 1, "default-bold" )/2), coords[2]-15, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
-						dxdrawtext ( v[3], coords[1]-(dxGetTextWidth ( v[3], 1, "default-bold" )/2), coords[2]-15*2, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
-					end
-				end
-			end
-		end
-		for k,v in ipairs(getElementData(resourceRoot, "col_object")) do
 			for k,j in ipairs(v[2]) do
 				if getDistanceBetweenPoints3D(x, y, z, j[1],j[2],j[3]) <= 100 then
 					local coords = { getScreenFromWorldPosition( j[1],j[2],j[3]+1, 0, false ) }
