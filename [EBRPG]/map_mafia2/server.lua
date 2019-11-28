@@ -1974,6 +1974,28 @@ local hunters = {
 {-1294.874 ,797.1225 ,-10.64183 ,0 ,0 ,0},}, 0},
 }
 
+local sandisland = {
+{"S01_teren_10", {{-1604.519 ,135.3419 ,-10.69615 ,0 ,0 ,0},}, 0},
+{"S01_teren_11", {{-1429.481 ,-124.6859 ,-22.53036 ,0 ,0 ,0},}, 0},
+{"S01_teren_12", {{-1664.039 ,-278.4519 ,-19.63948 ,0 ,0 ,0},}, 0},
+{"S01_teren_13", {{-1543.002 ,29.44431 ,-14.88921 ,0 ,0 ,0},}, 0},
+{"S01_teren_14", {{-1706.251 ,24.71739 ,-7.902571 ,0 ,0 ,0},}, 0},
+{"S01_teren_16", {{-1614.846 ,-120.9671 ,-15.04712 ,0 ,0 ,0},}, 0},
+{"S01_teren_18", {{-1429.481 ,-124.6859 ,-22.53036 ,0 ,0 ,0},}, 0},
+{"S01_teren_19", {{-1686.095 ,170.0035 ,-6.842525 ,0 ,0 ,0},}, 0},
+{"S01_teren_03", {{-1445.945 ,-284.025 ,-26.48739 ,0 ,0 ,0},}, 0},
+{"S01_teren_02", {{-1652.368 ,-396.004 ,-18.30915 ,0 ,0 ,0},}, 0},
+{"S01_teren_01", {{-1870.107 ,55.6395 ,-8.367309 ,0 ,0 ,0},}, 0},
+{"S01_teren_00", {{-1710.804 ,125.5705 ,-4.757999 ,0 ,0 ,0},}, 0},
+{"S01_teren_07", {{-1614.846 ,-120.9671 ,-15.04712 ,0 ,0 ,0},}, 0},
+{"S01_teren_06", {{-1488.942 ,145.4182 ,-17.09416 ,0 ,0 ,0},}, 0},
+{"S01_teren_05", {{-1406.742 ,24.69863 ,-19.40648 ,0 ,0 ,0},}, 0},
+{"S01_teren_04", {{-1801.388 ,45.95226 ,-3.420988 ,0 ,0 ,0},}, 0},
+{"S01_teren_09", {{-1775.656 ,-96.56422 ,-11.28849 ,0 ,0 ,0},}, 0},
+{"S01_teren_08", {{-1423.53 ,-354.218 ,-20.33894 ,0 ,0 ,0},}, 0},
+{"S01_teren_21", {{-1424.16 ,124.8455 ,-19.77644 ,0 ,0 ,0},}, 0},
+}
+
 local object = {}
 --{"", {{ ,0 ,0 ,0},}, 0},
 local no_col_object = {
@@ -2028,7 +2050,7 @@ local no_col_object = {
 --{"06_16_plot_01", {{-379.096 ,1843.147 ,-20.05569 ,0 ,0 ,0}}, 1567, "riverside"},свободный
 
 --col_object
-{"02_podklad_domu", {{-1427.789 ,381.6188 ,-20.94726 ,0 ,0 ,0},}, 669, "hunters"},--50
+{"02_podklad_domu", {{-1427.789 ,381.6188 ,-20.94726 ,0 ,0 ,0},}, 669, "hunters"},
 {"Object02", {{-1388.082 ,429.8034 ,-28.10993 ,0 ,0 ,0},}, 670, "hunters"},
 }
 
@@ -2051,6 +2073,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			greenfield[count-#kingstone-#dipton-#highbrook-#hillwood-#riverside][3] = k
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters then
 			hunters[count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield][3] = k
+		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters+#sandisland then
+			sandisland[count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters][3] = k
 		else
 			break
 		end
@@ -2165,6 +2189,18 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
 			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
+			--print(i,v[1],v[3],obj)
+		end
+	end
+
+	for i,v in ipairs(sandisland) do 
+		for k,j in ipairs(v[2]) do
+			local obj = false
+			local x,y,z = j[1],j[2],j[3]
+
+			obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
+			setElementFrozen(obj, true)
+			table.insert(object, {v[1], obj})
 			print(i,v[1],v[3],obj)
 		end
 	end
@@ -2178,6 +2214,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	setElementData(resourceRoot, "riverside", riverside)
 	setElementData(resourceRoot, "greenfield", greenfield)
 	setElementData(resourceRoot, "hunters", hunters)
+	setElementData(resourceRoot, "sandisland", sandisland)
 end
 addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
 
