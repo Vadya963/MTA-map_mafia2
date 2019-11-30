@@ -62,8 +62,8 @@
 <file src="kingstone/rantl15.col"/>
 <file src="kingstone/rantl16.dff"/>
 <file src="kingstone/rantl16.col"/>
-<file src="kingstone/rantl21.dff"/>
-<file src="kingstone/rantl21.col"/>
+<file src="kingstone/04_rantl21.dff"/>
+<file src="kingstone/04_rantl21.col"/>
 <file src="kingstone/04_tunel_portal.dff"/>
 <file src="kingstone/04_tunel_portal.col"/>
 <file src="kingstone/04_moloA.dff"/>
@@ -328,8 +328,6 @@
 <file src="kingstone/04_blok_interier02.col"/>
 <file src="kingstone/GUNSHOP.dff"/>
 <file src="kingstone/GUNSHOP.col"/>
-<file src="kingstone/Subway.dff"/>
-<file src="kingstone/Subway.col"/>
 <file src="kingstone/04_blok66.dff"/>
 <file src="kingstone/04_blok66.col"/>
 <file src="kingstone/04_blok67.dff"/>
@@ -408,8 +406,6 @@
 <file src="kingstone/04_alfa00.col"/>
 <file src="kingstone/04_blok_interier04.dff"/>
 <file src="kingstone/04_blok_interier04.col"/>
-<file src="kingstone/RESPRAY.dff"/>
-<file src="kingstone/RESPRAY.col"/>
 <file src="kingstone/04_inst01_dum00.dff"/>
 <file src="kingstone/04_inst01_dum00.col"/>
 <file src="kingstone/04_inst02_dum00.dff"/>
@@ -446,8 +442,6 @@
 <file src="kingstone/04_molokuly02.col"/>
 <file src="kingstone/04_molokuly03.dff"/>
 <file src="kingstone/04_molokuly03.col"/>
-<file src="kingstone/fast.dff"/>
-<file src="kingstone/fast.col"/>
 <file src="kingstone/04_fast_food_exterier.dff"/>
 <file src="kingstone/04_fast_food_exterier.col"/>
 <file src="kingstone/04_uhli_02.dff"/>
@@ -631,8 +625,6 @@
 <file src="dipton/05_371.col"/>
 <file src="dipton/05_g_station.dff"/>
 <file src="dipton/05_g_station.col"/>
-<file src="dipton/GAS.dff"/>
-<file src="dipton/GAS.col"/>
 <file src="dipton/BETTING.dff"/>
 <file src="dipton/BETTING.col"/>
 <file src="dipton/05_i_post_platform_01_G.dff"/>
@@ -1930,6 +1922,16 @@
 <file src="hunters/Object02.col"/>
 <file src="hunters/02_podklad_domu.dff"/>
 <file src="hunters/Object02.dff"/>
+<file src="hunters/02_most_002_1.dff"/>
+<file src="hunters/02_most_002_1.col"/>
+<file src="hunters/02_most_002_2.dff"/>
+<file src="hunters/02_most_002_2.col"/>
+<file src="hunters/02_97.dff"/>
+<file src="hunters/02_97.col"/>
+<file src="hunters/02_pod50.dff"/>
+<file src="hunters/02_pod50.col"/>
+<file src="hunters/02_nadzema.dff"/>
+<file src="hunters/02_nadzema.col"/>
 
 <file src="sandisland/S01_teren_10.dff"/>
 <file src="sandisland/S01_teren_11.dff"/>
