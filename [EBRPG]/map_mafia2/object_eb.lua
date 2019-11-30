@@ -17,7 +17,7 @@ function ( startedRes )
 		end
 		setOcclusionsEnabled(false)
 		setWaterLevel(-5000)
-		engineSetSurfaceProperties ( 0, "audio", "grass" )
+		engineSetSurfaceProperties ( 0, "audio", "concrete" )
 		engineSetSurfaceProperties ( 0, "canclimb", true )
 
 		--[[for k,v in pairs(table_water) do
