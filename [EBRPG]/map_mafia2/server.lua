@@ -1183,7 +1183,7 @@ local riverside = {
 {"06_mostni_pilire", {{-127.09290,1312.97300,-22.07288,-90.00000,180.00000,-90}}, 0},
 {"06_13_most", {{77.95527,1726.22600,-19.40726,0,0,0}}, 0},
 {"06_fly_over_02", {{-236.29970,1707.71600,-18.04568,0,0,0}}, 0},
-{"06_zabradli_02", {{-119.400 ,1457.699 ,-32.86102 ,0 ,0 ,44.99998}}, 0},
+{"06_zabradli_02", {{-225.4768+52.518 ,1563.831-120.041 ,-32.86102+13.337 ,0-90 ,0 ,45-45}}, 0},
 {"06_svodidlo_stred_01", {{-126.9865 ,1352.485 ,-14.81714 ,0 ,0 ,0}}, 0},
 {"06_17", {{-32.63172-150 ,1561.357 ,-24.17027 ,0 ,0 ,0}}, 0},
 {"06_pillar_00", {{-204.541 ,1542.803 ,-19.0811 ,0 ,0 ,0},
@@ -2445,14 +2445,18 @@ function displayLoadedRes ( res )--старт ресурсов
 	for i,v in ipairs(no_col_object) do
 		for k,j in ipairs(v[2]) do
 			local obj = false
+			local lod_obj = false
 			local x,y,z = j[1],j[2],j[3]
 
 			if i <= 33 then
 				obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
+				lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			else
 				obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
+				lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 			end
 
+			setLowLODElement(obj,lod_obj)
 			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
@@ -2465,6 +2469,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			local x,y,z = j[1],j[2],j[3]
 
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6])
+			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6], true)
+			setLowLODElement(obj,lod_obj)
 			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
@@ -2477,6 +2483,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			local x,y,z = j[1],j[2],j[3]
 
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6])
+			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6], true)
+			setLowLODElement(obj,lod_obj)
 			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
@@ -2489,6 +2497,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			local x,y,z = j[1],j[2],j[3]
 
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
+			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
+			setLowLODElement(obj,lod_obj)
 			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
@@ -2507,6 +2517,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
+			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
+			setLowLODElement(obj,lod_obj)
 			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
@@ -2525,6 +2537,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
+			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
+			setLowLODElement(obj,lod_obj)
 			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
@@ -2537,6 +2551,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			local x,y,z = j[1],j[2],j[3]
 
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
+			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
+			setLowLODElement(obj,lod_obj)
 			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
@@ -2549,6 +2565,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			local x,y,z = j[1],j[2],j[3]
 
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
+			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
+			setLowLODElement(obj,lod_obj)
 			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
@@ -2561,6 +2579,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			local x,y,z = j[1],j[2],j[3]
 
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
+			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
+			setLowLODElement(obj,lod_obj)
 			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			print(i,v[1],v[3],obj)

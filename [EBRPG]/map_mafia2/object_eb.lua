@@ -1,4 +1,5 @@
 local eb_textures = false
+local object_data = false
 
 local start = true
 local table_water = {
@@ -11,6 +12,7 @@ addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
 	if start then
 		start = false
+		object_data = getElementData(resourceRoot, "object")
 
 		for i=550,20000 do
 			removeWorldModel(i,10000,0,0,0)
@@ -25,7 +27,7 @@ function ( startedRes )
 			setWaterLevel(table_water[k][1], -25)
 		end]]
 
-		for i,v in ipairs(getElementData(resourceRoot, "object")) do
+		for i,v in ipairs(object_data) do
 			setObjectBreakable(v[2], false)
 		end
 
@@ -161,7 +163,7 @@ function createText ()
 
 		dxdrawtext ( task..", "..swim_time..", "..air_time, 0, 200, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
 
-		for k,v in ipairs(getElementData(resourceRoot, "object")) do
+		for k,v in ipairs(object_data) do
 			local j = {getElementPosition(v[2])}
 			local model = getElementModel(v[2])
 			if getDistanceBetweenPoints3D(x, y, z, j[1],j[2],j[3]) <= 100 then
