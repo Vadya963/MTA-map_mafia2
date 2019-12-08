@@ -2437,6 +2437,8 @@ local no_col_object = {
 {"04_tunel_zbr01", {{-622.9762 ,1344.204 ,-29.87234 ,0 ,0 ,0},}, 691, "kingstone"},
 {"04_tunel_zbr00", {{-622.9762 ,1344.204 ,-29.87234 ,0 ,0 ,0},}, 693, "kingstone"},
 {"04_tunel_zbr02", {{-622.9762 ,1344.204 ,-29.87234 ,0 ,0 ,0},}, 694, "kingstone"},
+{"distillery00", {{-1560.5 ,-102.600 ,-35.62 ,0 ,0 ,0},}, 695, "sandisland"},
+{"distillery01", {{-1560.5 ,-102.598 ,-35.62 ,0 ,0 ,0},}, 696, "sandisland"},
 }
 
 function displayLoadedRes ( res )--старт ресурсов
@@ -2635,6 +2637,8 @@ function (playerid, cmd, name, level )
 	for k,v in ipairs(object) do
 		if name == v[1] then
 			setElementDimension(v[2], level)
+			local obj = getLowLODElement(v[2])
+			setElementDimension(obj, level)
 			break
 		end
 	end
