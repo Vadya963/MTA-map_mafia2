@@ -30,8 +30,8 @@
 <file src="kingstone/teren9.col"/>
 <file src="kingstone/teren10.dff"/>
 <file src="kingstone/teren10.col"/>
-<file src="kingstone/teren11.dff"/>
-<file src="kingstone/teren11.col"/>
+<file src="kingstone/04_teren11.dff"/>
+<file src="kingstone/04_teren11.col"/>
 <file src="kingstone/teren12.dff"/>
 <file src="kingstone/teren12.col"/>
 <file src="kingstone/teren13.dff"/>
@@ -456,6 +456,20 @@
 <file src="kingstone/04_rantl11D.col"/>
 <file src="kingstone/04_rantl11E.dff"/>
 <file src="kingstone/04_rantl11E.col"/>
+<file src='kingstone/04_zbrdl12.dff'/>
+<file src='kingstone/04_zbrdl12.col'/>
+<file src='kingstone/04_tunel_zbr05.dff'/>
+<file src='kingstone/04_tunel_zbr05.col'/>
+<file src='kingstone/04_tunel_zbr04.dff'/>
+<file src='kingstone/04_tunel_zbr04.col'/>
+<file src='kingstone/04_tunel_zbr06.dff'/>
+<file src='kingstone/04_tunel_zbr06.col'/>
+<file src='kingstone/04_tunel_zbr01.dff'/>
+<file src='kingstone/04_tunel_zbr01.col'/>
+<file src='kingstone/04_tunel_zbr00.dff'/>
+<file src='kingstone/04_tunel_zbr00.col'/>
+<file src='kingstone/04_tunel_zbr02.dff'/>
+<file src='kingstone/04_tunel_zbr02.col'/>
 
 <file src="dipton/05_terrain_01_OM_A.dff"/>
 <file src="dipton/05_terrain_01_OM_A.col"/>
@@ -2393,5 +2407,21 @@
 <file src='sandisland/Object07.col'/>
 <file src='sandisland/Object33.dff'/>
 <file src='sandisland/Object33.col'/>
+<file src='sandisland/20_tunel_08_B.dff'/>
+<file src='sandisland/20_tunel_08_B.col'/>
+<file src='sandisland/20_tunel_03_A.dff'/>
+<file src='sandisland/20_tunel_03_A.col'/>
+<file src='sandisland/20_tunel_02_A.dff'/>
+<file src='sandisland/20_tunel_02_A.col'/>
+<file src='sandisland/20_tunel_01_B.dff'/>
+<file src='sandisland/20_tunel_01_B.col'/>
+<file src='sandisland/20_tunel_07_A.dff'/>
+<file src='sandisland/20_tunel_07_A.col'/>
+<file src='sandisland/20_tunel_06_A.dff'/>
+<file src='sandisland/20_tunel_06_A.col'/>
+<file src='sandisland/20_tunel_05_B.dff'/>
+<file src='sandisland/20_tunel_05_B.col'/>
+<file src='sandisland/20_tunel_04_B.dff'/>
+<file src='sandisland/20_tunel_04_B.col'/>
 
 </meta>
