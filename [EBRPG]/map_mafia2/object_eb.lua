@@ -23,8 +23,7 @@ function ( startedRes )
 		engineSetSurfaceProperties ( 0, "canclimb", true )
 
 		--[[for k,v in pairs(table_water) do
-			table_water[k][1] = createWater ( v[2], v[3], 40, v[5], v[3], 40, v[2], v[6], 40, v[5], v[6], 40 )
-			setWaterLevel(table_water[k][1], -25)
+			table_water[k][1] = createWater ( v[2], v[3], -25, v[5], v[3], -25, v[2], v[6], -25, v[5], v[6], -25 )
 		end]]
 
 		for i,v in ipairs(object_data) do
