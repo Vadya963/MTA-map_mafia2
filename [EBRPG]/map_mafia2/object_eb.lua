@@ -28,6 +28,8 @@ function ( startedRes )
 
 		for i,v in ipairs(object_data) do
 			setObjectBreakable(v[2], false)
+			setElementFrozen(v[2], true)
+			setElementDoubleSided(v[2], false)
 		end
 
 		eb_textures = engineLoadTXD ( ":map_mafia2/eb_textures.txd" )
@@ -155,12 +157,19 @@ local hud = false
 function createText ()
 	
 	if hud then
-		setTime(15, 0)
+		setTime(10, 0)
 		
 		local x,y,z = getElementPosition(localPlayer)
 		local task = getPedSimplestTask(localPlayer)
 
-		dxdrawtext ( task..", "..swim_time..", "..air_time, 0, 200, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
+		local amount = 0 -- When starting the command, we don't have any objects looped.
+		for k,v in ipairs ( getElementsByType ( "object" ) ) do -- Looping all the objects in the server
+			if isElementStreamedIn ( v ) then -- If the object is streamed in
+				amount = amount + 1 -- It's an object more streamed in
+			end
+		end
+
+		dxdrawtext ( task..", "..swim_time..", "..air_time..", streamed obj "..amount, 0, 200, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
 
 		for k,v in ipairs(object_data) do
 			local j = {getElementPosition(v[2])}

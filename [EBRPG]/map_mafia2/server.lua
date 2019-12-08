@@ -2482,7 +2482,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 
 			setLowLODElement(obj,lod_obj)
-			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
 		end
@@ -2496,7 +2495,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6])
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6], true)
 			setLowLODElement(obj,lod_obj)
-			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
 		end
@@ -2510,7 +2508,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6])
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6], true)
 			setLowLODElement(obj,lod_obj)
-			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
 		end
@@ -2524,7 +2521,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
 		end
@@ -2544,7 +2540,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
 		end
@@ -2564,7 +2559,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
 		end
@@ -2578,7 +2572,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
 		end
@@ -2592,7 +2585,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			--print(i,v[1],v[3],obj)
 		end
@@ -2606,7 +2598,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			setElementFrozen(obj, true)
 			table.insert(object, {v[1], obj})
 			print(i,v[1],v[3],obj)
 		end
