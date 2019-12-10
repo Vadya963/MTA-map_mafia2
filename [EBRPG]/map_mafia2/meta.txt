@@ -1,4 +1,0 @@
-<file src='sandisland/S01_teren_10.dff'/>
-<file src='sandisland/S01_teren_10.col'/>
-<file src='sandisland/S01_teren_11.dff'/>
-<file src='sandisland/S01_teren_11.col'/>

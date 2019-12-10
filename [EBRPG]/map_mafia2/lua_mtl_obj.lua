@@ -1,6 +1,5 @@
 local object = {
-{"int_kancelar_02", {{13.82537 ,1806.133 ,-15.17974 ,0 ,0 ,0},}, 0},
-{"striska_nad_rampou", {{35.24466 ,1815.672 ,-13.25852 ,0 ,0 ,0},}, 0},
+{"Parry_Bus.root", {{13.82537 ,1806.133 ,-15.17974 ,0 ,0 ,0},}, 0},
 }
 print(os.date())
 function string.split(input, separator)
@@ -20,7 +19,7 @@ function string.split(input, separator)
 	return t
 end
 
-local pyt_new = "C:\\default_new.txt"
+local pyt_new = "C:\\test\\default_new.txt"
 --[[local pyt = "C:\\default.txt"
 local file = io.open(pyt, "r")
 local file_new = io.open(pyt_new, "w")
@@ -66,7 +65,7 @@ for k,v in pairs(object) do
 	file:close()
 end
 
-local file_meta = io.open("C:\\meta.txt", "w")
+local file_meta = io.open("C:\\test\\meta.txt", "w")
 for k,v in pairs(object) do
 	local pyt = "C:\\"..v[1].."(0).obj"
 	local file = io.open(pyt, "r")
