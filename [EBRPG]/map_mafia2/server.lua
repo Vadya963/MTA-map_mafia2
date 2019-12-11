@@ -2645,11 +2645,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		local x,y,z = getElementRotation(obj)
 		setElementRotation(obj, x,y,-z)
 		setElementRotation(lod_obj, x,y,-z)
-
-		if v[4] then
-			setObjectScale(obj, v[4])
-			setObjectScale(lod_obj, v[4])
-		end
 		
 		table.insert(object, {v[1], obj, v[3], "southport"})
 		print(i,v[1],v[3],obj)
