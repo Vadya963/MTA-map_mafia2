@@ -1,5 +1,9 @@
 local object = {
-{"Parry_Bus.root", {{13.82537 ,1806.133 ,-15.17974 ,0 ,0 ,0},}, 0},
+{'tunel12', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-881.455932617188, -483.994140625, -26.6085548400879, 0} }, 0},
+{'tunel13', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-854.05224609375, -491.153747558594, -2.00000047683716, 0} }, 0},
+{'tunel11', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-881.35107421875, -455.009552001953, -28.1173095703125, 0} }, 0},
+{'tunel00', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-917.692016601563, -467.560546875, -22.4119052886963, 0} }, 0},
+
 }
 print(os.date())
 function string.split(input, separator)
@@ -90,8 +94,8 @@ for k,v in pairs(object) do
 
 	file:close()
 
-	file_meta:write("<file src='sandisland/"..v[1]..".dff'/>\n")
-	file_meta:write("<file src='sandisland/"..v[1]..".col'/>\n")
+	file_meta:write("<file src='southport/"..v[1]..".dff'/>\n")
+	file_meta:write("<file src='southport/"..v[1]..".col'/>\n")
 end
 
 file_meta:close()

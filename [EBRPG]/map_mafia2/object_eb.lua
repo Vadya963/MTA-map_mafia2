@@ -29,99 +29,21 @@ function ( startedRes )
 		for i,v in ipairs(object_data) do
 			setObjectBreakable(v[2], false)
 			setElementFrozen(v[2], true)
-			setElementDoubleSided(v[2], false)
+			setElementDoubleSided(v[2], true)
 		end
 
 		eb_textures = engineLoadTXD ( ":map_mafia2/eb_textures.txd" )
 
-		for k,v in ipairs(getElementData(resourceRoot, "no_col_object")) do
-			engineImportTXD (eb_textures, v[3])
-			local dff = engineLoadDFF ( ":map_mafia2/"..v[4].."/"..v[1]..".dff" )
-			engineReplaceModel ( dff, v[3] )
-			local col = engineLoadCOL ( ":map_mafia2/"..v[4].."/"..v[1]..".col" )
-			engineReplaceCOL ( col, v[3] )
+		for k,v in ipairs(object_data) do
+			if fileExists(v[4].."/"..v[1]..".dff") and fileExists(v[4].."/"..v[1]..".col") then
+				engineImportTXD (eb_textures, v[3])
+				local dff = engineLoadDFF ( ":map_mafia2/"..v[4].."/"..v[1]..".dff" )
+				engineReplaceModel ( dff, v[3] )
+				local col = engineLoadCOL ( ":map_mafia2/"..v[4].."/"..v[1]..".col" )
+				engineReplaceCOL ( col, v[3] )
 
-			engineSetModelLODDistance(v[3], 30000)
-		end
-
-		for k,v in ipairs(getElementData(resourceRoot, "kingstone")) do
-			engineImportTXD (eb_textures, v[3])
-			local dff = engineLoadDFF ( ":map_mafia2/kingstone/"..v[1]..".dff" )
-			engineReplaceModel ( dff, v[3] )
-			local col = engineLoadCOL ( ":map_mafia2/kingstone/"..v[1]..".col" )
-			engineReplaceCOL ( col, v[3] )
-
-			engineSetModelLODDistance(v[3], 30000)
-		end
-
-		for k,v in ipairs(getElementData(resourceRoot, "dipton")) do
-			engineImportTXD (eb_textures, v[3])
-			local dff = engineLoadDFF ( ":map_mafia2/dipton/"..v[1]..".dff" )
-			engineReplaceModel ( dff, v[3] )
-			local col = engineLoadCOL ( ":map_mafia2/dipton/"..v[1]..".col" )
-			engineReplaceCOL ( col, v[3] )
-
-			engineSetModelLODDistance(v[3], 30000)
-		end
-
-		for k,v in ipairs(getElementData(resourceRoot, "highbrook")) do
-			engineImportTXD (eb_textures, v[3])
-			local dff = engineLoadDFF ( ":map_mafia2/highbrook/"..v[1]..".dff" )
-			engineReplaceModel ( dff, v[3] )
-			local col = engineLoadCOL ( ":map_mafia2/highbrook/"..v[1]..".col" )
-			engineReplaceCOL ( col, v[3] )
-
-			engineSetModelLODDistance(v[3], 30000)
-		end
-
-		for k,v in ipairs(getElementData(resourceRoot, "hillwood")) do
-			engineImportTXD (eb_textures, v[3])
-			local dff = engineLoadDFF ( ":map_mafia2/hillwood/"..v[1]..".dff" )
-			engineReplaceModel ( dff, v[3] )
-			local col = engineLoadCOL ( ":map_mafia2/hillwood/"..v[1]..".col" )
-			engineReplaceCOL ( col, v[3] )
-
-			engineSetModelLODDistance(v[3], 30000)
-		end
-
-		for k,v in ipairs(getElementData(resourceRoot, "riverside")) do
-			engineImportTXD (eb_textures, v[3])
-			local dff = engineLoadDFF ( ":map_mafia2/riverside/"..v[1]..".dff" )
-			engineReplaceModel ( dff, v[3] )
-			local col = engineLoadCOL ( ":map_mafia2/riverside/"..v[1]..".col" )
-			engineReplaceCOL ( col, v[3] )
-
-			engineSetModelLODDistance(v[3], 30000)
-		end
-
-		for k,v in ipairs(getElementData(resourceRoot, "greenfield")) do
-			engineImportTXD (eb_textures, v[3])
-			local dff = engineLoadDFF ( ":map_mafia2/greenfield/"..v[1]..".dff" )
-			engineReplaceModel ( dff, v[3] )
-			local col = engineLoadCOL ( ":map_mafia2/greenfield/"..v[1]..".col" )
-			engineReplaceCOL ( col, v[3] )
-
-			engineSetModelLODDistance(v[3], 30000)
-		end
-
-		for k,v in ipairs(getElementData(resourceRoot, "hunters")) do
-			engineImportTXD (eb_textures, v[3])
-			local dff = engineLoadDFF ( ":map_mafia2/hunters/"..v[1]..".dff" )
-			engineReplaceModel ( dff, v[3] )
-			local col = engineLoadCOL ( ":map_mafia2/hunters/"..v[1]..".col" )
-			engineReplaceCOL ( col, v[3] )
-
-			engineSetModelLODDistance(v[3], 30000)
-		end
-
-		for k,v in ipairs(getElementData(resourceRoot, "sandisland")) do
-			engineImportTXD (eb_textures, v[3])
-			local dff = engineLoadDFF ( ":map_mafia2/sandisland/"..v[1]..".dff" )
-			engineReplaceModel ( dff, v[3] )
-			local col = engineLoadCOL ( ":map_mafia2/sandisland/"..v[1]..".col" )
-			engineReplaceCOL ( col, v[3] )
-
-			engineSetModelLODDistance(v[3], 30000)
+				engineSetModelLODDistance(v[3], 30000)
+			end
 		end
 	end
 end)

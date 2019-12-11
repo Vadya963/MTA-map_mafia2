@@ -2362,8 +2362,15 @@ local sandisland = {
 {-1160.256 ,-376.4995 ,-29.91878 ,0 ,0 ,-180},}, 0},
 }
 
+local southport = {
+{'tunel12', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-881.455932617188, -483.994140625, -26.6085548400879, 0} }, 0},
+{'tunel13', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-854.05224609375, -491.153747558594, -2.00000047683716, 0} }, 0},
+{'tunel11', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-881.35107421875, -455.009552001953, -28.1173095703125, 0} }, 0},
+{'tunel00', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-917.692016601563, -467.560546875, -22.4119052886963, 0} }, 0},
+
+}
+
 local object = {}
---{""; {{ ;0 ;0 ;0};}; 0};
 local no_col_object = {
 {"05_30_OM", {{-638.77860,1738.21000,-9.32861,0,0,0}}, 1226, "dipton"},
 {"05_104_OM", {{-423.82840,1858.56600,-18.37658,0,0,0}}, 1283, "dipton"},
@@ -2468,9 +2475,28 @@ function displayLoadedRes ( res )--старт ресурсов
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters+#sandisland then
 			sandisland[count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters][3] = k
 		else
+			count = k-1
 			break
 		end
 	end
+
+	for k,v in ipairs(southport) do
+		if fileExists("southport/"..v[1]..".dff") then
+			count = count+1
+			while true do
+				local id_obj = getObjectNameFromModel ( count )
+				if id_obj then
+					southport[k][3] = count
+					break
+				else
+					count = count+1
+				end
+			end
+		else
+			southport[k][3] = count
+		end
+	end
+
 
 	for i,v in ipairs(no_col_object) do
 		for k,j in ipairs(v[2]) do
@@ -2487,7 +2513,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj})
+			table.insert(object, {v[1], obj, v[3], v[4]})
 			--print(i,v[1],v[3],obj)
 		end
 	end
@@ -2500,7 +2526,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6])
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6], true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj})
+			table.insert(object, {v[1], obj, v[3], "kingstone"})
 			--print(i,v[1],v[3],obj)
 		end
 	end
@@ -2513,7 +2539,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6])
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6], true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj})
+			table.insert(object, {v[1], obj, v[3], "dipton"})
 			--print(i,v[1],v[3],obj)
 		end
 	end
@@ -2526,7 +2552,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj})
+			table.insert(object, {v[1], obj, v[3], "highbrook"})
 			--print(i,v[1],v[3],obj)
 		end
 	end
@@ -2545,7 +2571,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj})
+			table.insert(object, {v[1], obj, v[3], "hillwood"})
 			--print(i,v[1],v[3],obj)
 		end
 	end
@@ -2564,7 +2590,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj})
+			table.insert(object, {v[1], obj, v[3], "riverside"})
 			--print(i,v[1],v[3],obj)
 		end
 	end
@@ -2577,7 +2603,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj})
+			table.insert(object, {v[1], obj, v[3], "greenfield"})
 			--print(i,v[1],v[3],obj)
 		end
 	end
@@ -2590,7 +2616,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj})
+			table.insert(object, {v[1], obj, v[3], "hunters"})
 			--print(i,v[1],v[3],obj)
 		end
 	end
@@ -2603,21 +2629,33 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj})
-			print(i,v[1],v[3],obj)
+			table.insert(object, {v[1], obj, v[3], "sandisland"})
+			--print(i,v[1],v[3],obj)
 		end
 	end
 
-	setElementData(resourceRoot, "no_col_object", no_col_object)
+	for i,v in ipairs(southport) do 
+		local obj = createObject(v[3], 0,0,0, 0,0,0)
+		local lod_obj = createObject(v[3], 0,0,0, 0,0,0, true)
+
+		setLowLODElement(obj,lod_obj)
+		setElementMatrix(obj, v[2])
+		setElementMatrix(lod_obj, v[2])
+
+		local x,y,z = getElementRotation(obj)
+		setElementRotation(obj, x,y,-z)
+		setElementRotation(lod_obj, x,y,-z)
+
+		if v[4] then
+			setObjectScale(obj, v[4])
+			setObjectScale(lod_obj, v[4])
+		end
+		
+		table.insert(object, {v[1], obj, v[3], "southport"})
+		print(i,v[1],v[3],obj)
+	end
+
 	setElementData(resourceRoot, "object", object)
-	setElementData(resourceRoot, "kingstone", kingstone)
-	setElementData(resourceRoot, "dipton", dipton)
-	setElementData(resourceRoot, "highbrook", highbrook)
-	setElementData(resourceRoot, "hillwood", hillwood)
-	setElementData(resourceRoot, "riverside", riverside)
-	setElementData(resourceRoot, "greenfield", greenfield)
-	setElementData(resourceRoot, "hunters", hunters)
-	setElementData(resourceRoot, "sandisland", sandisland)
 end
 addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
 
