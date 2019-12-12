@@ -1,5 +1,6 @@
 <meta>
 <include resource="radar_and_map_mafia2"/>
+<include resource="image_replace_mafia2"/>
 
 <script src="getObjectNameFromModel.lua"></script>
 <script src="object_eb.lua" type="client"/>
@@ -2440,5 +2441,59 @@
 <file src='southport/tunel11.col'/>
 <file src='southport/tunel00.dff'/>
 <file src='southport/tunel00.col'/>
+<file src='southport/SO_teren_OM_01.dff'/>
+<file src='southport/SO_teren_OM_01.col'/>
+<file src='southport/SO_teren_OM_02.dff'/>
+<file src='southport/SO_teren_OM_02.col'/>
+<file src='southport/SO_teren_OM_03.dff'/>
+<file src='southport/SO_teren_OM_03.col'/>
+<file src='southport/SO_teren_OM_04.dff'/>
+<file src='southport/SO_teren_OM_04.col'/>
+<file src='southport/SO_teren_OM_05.dff'/>
+<file src='southport/SO_teren_OM_05.col'/>
+<file src='southport/SO_teren_OM_06.dff'/>
+<file src='southport/SO_teren_OM_06.col'/>
+<file src='southport/SO_teren_OM_07.dff'/>
+<file src='southport/SO_teren_OM_07.col'/>
+<file src='southport/SO_teren_OM_08.dff'/>
+<file src='southport/SO_teren_OM_08.col'/>
+<file src='southport/SO_teren_OM_09.dff'/>
+<file src='southport/SO_teren_OM_09.col'/>
+<file src='southport/SO_teren_OM_12.dff'/>
+<file src='southport/SO_teren_OM_12.col'/>
+<file src='southport/SO_teren_OM_11.dff'/>
+<file src='southport/SO_teren_OM_11.col'/>
+<file src='southport/SO_teren_OM_10.dff'/>
+<file src='southport/SO_teren_OM_10.col'/>
+<file src='southport/SO_teren_OM_16.dff'/>
+<file src='southport/SO_teren_OM_16.col'/>
+<file src='southport/SO_teren_OM_15.dff'/>
+<file src='southport/SO_teren_OM_15.col'/>
+<file src='southport/SO_teren_OM_14.dff'/>
+<file src='southport/SO_teren_OM_14.col'/>
+<file src='southport/SO_teren_OM_19.dff'/>
+<file src='southport/SO_teren_OM_19.col'/>
+<file src='southport/SO_teren_OM_18.dff'/>
+<file src='southport/SO_teren_OM_18.col'/>
+<file src='southport/SO_teren_OM_26.dff'/>
+<file src='southport/SO_teren_OM_26.col'/>
+<file src='southport/SO_teren_OM_27.dff'/>
+<file src='southport/SO_teren_OM_27.col'/>
+<file src='southport/SO_teren_OM_24.dff'/>
+<file src='southport/SO_teren_OM_24.col'/>
+<file src='southport/SO_teren_OM_25.dff'/>
+<file src='southport/SO_teren_OM_25.col'/>
+<file src='southport/SO_teren_OM_22.dff'/>
+<file src='southport/SO_teren_OM_22.col'/>
+<file src='southport/SO_teren_OM_23.dff'/>
+<file src='southport/SO_teren_OM_23.col'/>
+<file src='southport/SO_teren_OM_20.dff'/>
+<file src='southport/SO_teren_OM_20.col'/>
+<file src='southport/SO_teren_OM_29.dff'/>
+<file src='southport/SO_teren_OM_29.col'/>
+<file src='southport/SO_teren_OM_31.dff'/>
+<file src='southport/SO_teren_OM_31.col'/>
+<file src='southport/SO_teren_OM_30.dff'/>
+<file src='southport/SO_teren_OM_30.col'/>
 
 </meta>

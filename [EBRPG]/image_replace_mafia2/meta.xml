@@ -1,0 +1,17 @@
+<meta>
+	<info name="HD HUD" description="HD hud from xbox 360 version of the game" author="vx89" type="script" version="0.1" />
+
+	<!-- 
+		Some images are by Ash_735 from here:
+		http://gtaforums.com/topic/743010-relsa-remastered-gui-textures-for-sa-inc-mobile-stuff/
+	-->
+	<script src="client/main.lua" type="client" />
+
+	<file src="client/shaders/texture_replace.fx" type="client" />
+
+	<file src="client/img/vehiclegrunge256.png" />
+	<file src="client/img/plateback1.png" />
+	<file src="client/img/plateback2.png" />
+	<file src="client/img/plateback3.png" />
+	<file src="client/img/vehiclepoldecals128.png" />
+</meta>
