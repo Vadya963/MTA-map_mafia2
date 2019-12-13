@@ -1,5 +1,6 @@
 local eb_textures = false
 local object_data = false
+local pogoda = true --зима(false) или лето(true)
 
 local start = true
 local table_water = {
@@ -32,7 +33,11 @@ function ( startedRes )
 			setElementDoubleSided(v[2], true)
 		end
 
-		eb_textures = engineLoadTXD ( ":map_mafia2/eb_textures.txd" )
+		if pogoda then
+			eb_textures = engineLoadTXD ( ":textures/eb_textures_leto.txd" )
+		else
+			eb_textures = engineLoadTXD ( ":textures/eb_textures_zima.txd" )
+		end
 
 		for k,v in ipairs(object_data) do
 			if fileExists(v[4].."/"..v[1]..".dff") and fileExists(v[4].."/"..v[1]..".col") then
