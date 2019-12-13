@@ -14,7 +14,7 @@ function replaceTexture(textureName, imgPath)
 end
 
 function replaceTexture2(textureName, imgPath)
-	local textureReplaceShader = dxCreateShader("client/shaders/texture_replace.fx", 150, 0, false, "vehicle")
+	local textureReplaceShader = dxCreateShader("client/shaders/texture_replace.fx", 0, 0, false, "vehicle")
 	local texture = dxCreateTexture(imgPath .. textureName .. ".png")
 	dxSetShaderValue(textureReplaceShader, "gTexture", texture)
 	engineApplyShaderToWorldTexture(textureReplaceShader, textureName)
