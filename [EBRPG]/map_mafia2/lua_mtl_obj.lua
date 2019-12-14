@@ -1,5 +1,5 @@
 local object = {
-{'odevy'}
+
 }
 print(os.date())
 function string.split(input, separator)
