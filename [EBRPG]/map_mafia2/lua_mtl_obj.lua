@@ -1,4 +1,6 @@
 local object = {
+{"07_vjezd koleje", {{-672.8036 ,-242.9576 ,-11.87194 ,0 ,0 ,0},}, 700, "southport"},
+{"07_tunnel_subw_i_01", {{-672.8037 ,-272.5595 ,-8.966229 ,0 ,0 ,0},}, 703, "southport"},
 
 }
 print(os.date())
@@ -36,7 +38,7 @@ for line in io.lines(pyt) do
 	end
 end]]
 
-for k,v in pairs(object) do
+for k,v in ipairs(object) do
 	local pyt = "C:\\"..v[1].."(0).obj.mtl"
 	local file = io.open(pyt, "r")
 	local text = {}
@@ -66,7 +68,7 @@ for k,v in pairs(object) do
 end
 
 local file_meta = io.open("C:\\test\\meta.txt", "w")
-for k,v in pairs(object) do
+for k,v in ipairs(object) do
 	local pyt = "C:\\"..v[1].."(0).obj"
 	local file = io.open(pyt, "r")
 	local text = {}

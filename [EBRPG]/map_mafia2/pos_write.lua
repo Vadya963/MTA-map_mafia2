@@ -23,9 +23,9 @@ local bool_file = false
 
 for line in io.lines(pyt) do
 	if string.find(line, "obj") then
-		if io.open("C:\\"..string.split(line, " ")[2].."(0).obj", "r") then
+		if io.open("C:\\"..string.split(line, "|")[2].."(0).obj", "r") then
 			bool_file = true
-			text = "{'"..string.split(line, " ")[2]
+			text = "{'"..string.split(line, "|")[2]
 		end
 	end
 
