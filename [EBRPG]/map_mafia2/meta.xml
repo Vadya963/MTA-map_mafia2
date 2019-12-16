@@ -2,6 +2,7 @@
 <include resource="radar_and_map_mafia2"/>
 <include resource="image_replace_mafia2"/>
 <include resource="textures"/>
+<include resource="scripts"/>
 
 <script src="getObjectNameFromModel.lua"></script>
 <script src="object_eb.lua" type="client"/>

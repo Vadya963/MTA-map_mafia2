@@ -3021,27 +3021,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		--print(i,v[1],v[3],obj)
 	end
 
-	setElementData(resourceRoot, "object", object)
+	setElementData(root, "object", object)
 end
 addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
-
-addCommandHandler ( "ebdim",
-function (playerid, cmd, level )
-	for k,v in ipairs(object) do
-		setElementDimension(v[2], tonumber(level))
-	end
-end)
-
-addCommandHandler ( "ebdimobj",
-function (playerid, cmd, id, level )
-	for k,v in ipairs(object) do
-		if tonumber(id) == v[3] then
-			setElementDimension(v[2], level)
-			local obj = getLowLODElement(v[2])
-			setElementDimension(obj, level)
-		end
-	end
-end)
 
 addEventHandler("onPlayerJoin", root,--конект игрока на сервер
 function()
