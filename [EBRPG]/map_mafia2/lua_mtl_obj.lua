@@ -1,7 +1,6 @@
 local object = {
-{"07_vjezd koleje", {{-672.8036 ,-242.9576 ,-11.87194 ,0 ,0 ,0},}, 700, "southport"},
-{"07_tunnel_subw_i_01", {{-672.8037 ,-272.5595 ,-8.966229 ,0 ,0 ,0},}, 703, "southport"},
-
+{"Kanal_roura_vypust_01", {{12.25084 ,-27.30422 ,0.05926758 ,0 ,0 ,0},}, 0},
+{"kanal_trouba_velka", {{9.111713 ,-27.30469 ,0.05926758 ,0 ,0 ,0},}, 0},
 }
 print(os.date())
 function string.split(input, separator)
@@ -92,8 +91,8 @@ for k,v in ipairs(object) do
 
 	file:close()
 
-	file_meta:write("<file src='southport/"..v[1]..".dff'/>\n")
-	file_meta:write("<file src='southport/"..v[1]..".col'/>\n")
+	file_meta:write("<file src='port/"..v[1]..".dff'/>\n")
+	file_meta:write("<file src='port/"..v[1]..".col'/>\n")
 end
 
 file_meta:close()
