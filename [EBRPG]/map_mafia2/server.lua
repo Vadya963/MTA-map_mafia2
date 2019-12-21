@@ -2743,6 +2743,25 @@ local southport = {
 {'SO_dum_107', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-771.825988769531, -376.779724121094, -10.4419898986816, 0} }, 0},
 }
 
+local port = {
+{"19_port_terrain_08", {{-376.5894 ,-791.9777 ,-22.68345 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_09", {{-180.7245 ,-802.0427 ,-21.3206 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_00", {{225.3384 ,-1033.871 ,-23.68596 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_01", {{77.24114 ,-907.9546 ,-21.60631 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_02", {{-256.5443 ,-879.8517 ,-21.87175 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_03", {{77.24112 ,-896.329 ,-21.7156 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_04", {{-40.70748 ,-828.7966 ,-21.92308 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_05", {{-343.9799 ,-896.1664 ,-21.87175 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_06", {{-153.3349 ,-896.1664 ,-21.87175 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_07", {{-256.5443 ,-891.4757 ,-21.76261 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_13", {{208.3522 ,-866.377 ,-22.44575 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_12", {{70.05488 ,-747.1359 ,-23.07282 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_11", {{-65.80672 ,-958.4551 ,-21.86989 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_10", {{-153.3349 ,-907.7919 ,-21.76258 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_15", {{-343.9798 ,-907.7919 ,-21.76258 ,0 ,0 ,0},}, 0},
+{"19_port_terrain_14", {{88.93021 ,-634.8761 ,-22.9376 ,0 ,0 ,0},}, 0},
+}
+
 local object = {}
 local no_col_object = {
 {"05_30_OM", {{-638.77860,1738.21000,-9.32861,0,0,0}}, 1226, "dipton"},
@@ -2853,6 +2872,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			hunters[count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield][3] = k
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters+#sandisland then
 			sandisland[count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters][3] = k
+		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters+#sandisland+#port then
+			port[count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters-#sandisland][3] = k
 		else
 			count = k-1
 			break
@@ -3013,6 +3034,19 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 	end
 
+	for i,v in ipairs(port) do 
+		for k,j in ipairs(v[2]) do
+			local obj = false
+			local x,y,z = j[1],j[2],j[3]
+
+			obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
+			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
+			setLowLODElement(obj,lod_obj)
+			table.insert(object, {v[1], obj, v[3], "port"})
+			print(i,v[1],v[3],obj)
+		end
+	end
+
 	for i,v in ipairs(southport) do 
 		local obj = createObject(v[3], 0,0,0, 0,0,0)
 		local lod_obj = createObject(v[3], 0,0,0, 0,0,0, true)
@@ -3026,7 +3060,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "southport"})
-		--print(i,v[1],v[3],obj)
+		print(i,v[1],v[3],obj)
 	end
 
 	setElementData(root, "object", object)

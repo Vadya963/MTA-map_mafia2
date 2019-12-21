@@ -1,6 +1,6 @@
 local eb_textures = false
 local object_data = false
-local pogoda = true --зима(false) или лето(true)
+local pogoda = "leto" --leto,zima,osen
 
 addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
@@ -21,10 +21,12 @@ function ( startedRes )
 		setElementDoubleSided(obj, true)
 	end
 
-	if pogoda then
+	if pogoda == "leto" then
 		eb_textures = engineLoadTXD ( ":textures/eb_textures_leto.txd" )
-	else
+	elseif pogoda == "zima" then
 		eb_textures = engineLoadTXD ( ":textures/eb_textures_zima.txd" )
+	elseif pogoda == "osen" then
+		--soon
 	end
 
 	for k,v in ipairs(object_data) do
