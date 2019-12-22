@@ -16,7 +16,11 @@ function ( startedRes )
 	for i,v in ipairs(object_data) do
 		setObjectBreakable(v[2], false)
 		setElementFrozen(v[2], true)
-		setElementDoubleSided(v[2], true)
+		if v[5] == "true" then
+			setElementDoubleSided(v[2], true)
+		else
+			setElementDoubleSided(v[2], false)
+		end
 		local obj = getLowLODElement(v[2])
 		setElementDoubleSided(obj, true)
 	end
