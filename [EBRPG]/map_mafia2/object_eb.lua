@@ -18,11 +18,13 @@ function ( startedRes )
 		setElementFrozen(v[2], true)
 		if v[5] == "true" then
 			setElementDoubleSided(v[2], true)
+			local obj = getLowLODElement(v[2])
+			setElementDoubleSided(obj, true)
 		else
 			setElementDoubleSided(v[2], false)
+			local obj = getLowLODElement(v[2])
+			setElementDoubleSided(obj, false)
 		end
-		local obj = getLowLODElement(v[2])
-		setElementDoubleSided(obj, true)
 	end
 
 	if pogoda == "leto" then
