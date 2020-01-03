@@ -1078,7 +1078,7 @@ local objectNames = {
 [1726]="mrk_seating2",
 [1727]="mrk_seating2b",
 [1728]="mrk_seating3",
-[1729]="mrk_seating3b",
+	[1729]="mrk_seating3b",
 [1730]="SWANK_CABINET_3",
 [1731]="CJ_MLIGHT3",
 [1732]="CJ_Juke_Box",
@@ -1938,7 +1938,7 @@ local objectNames = {
 [2586]="CJ_SEX_COUNTER2",
 [2587]="SEX_2",
 [2588]="SEX_3",
-[2589]="ab_carcass",
+--[2589]="ab_carcass",--игрок проваливается
 [2590]="ab_hook",
 [2591]="ab_partition1",
 [2592]="ab_slotTable",
@@ -14260,12 +14260,12 @@ local objectNames = {
 }
 
 function getObjectNameFromModel ( id )
-	return objectNames[id] or false
+return objectNames[id] or false
 end
 
 local count = 0
 for k,v in pairs(objectNames) do
-	count=count+1
+count=count+1
 end
 print("objectNames len "..count)
 
