@@ -1430,6 +1430,8 @@
 <file src='dipton/05_369.dff'/>
 <file src='dipton/05_369.col'/>
 
+<file src="highbrook/12_statue02_G.dff"/>
+<file src="highbrook/12_statue02_G.col"/>
 <file src="highbrook/12_teren_CC02.dff"/>
 <file src="highbrook/12_teren_CC02.col"/>
 <file src="highbrook/12_teren_DD1.dff"/>
@@ -1958,6 +1960,8 @@
 <file src="hillwood/14_hvezdarna_dvere.dff"/>
 <file src="hillwood/14_hvezdarna_dvere.col"/>
 
+<file src='riverside/06_wreck_wall_B_i_02.dff'/>
+<file src='riverside/06_wreck_wall_B_i_02.col'/>
 <file src="riverside/06_teren_01_n.dff"/>
 <file src="riverside/06_teren_01_n.col"/>
 <file src="riverside/06_teren_01_I.dff"/>

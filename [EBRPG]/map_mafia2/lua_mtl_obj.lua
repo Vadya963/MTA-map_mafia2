@@ -1,6 +1,7 @@
 local object = {
-{"14_hvezdarna_dvere", {{633.1376 ,1335.994 ,75.83382 ,0 ,0 ,90},}, 718, "hillwood"},
-
+{"12_statue02_G"},
+{"12_93"},
+{"OB_Vila_02"},
 }
 print(os.date())
 function string.split(input, separator)
