@@ -1,7 +1,5 @@
 local object = {
-{"12_statue02_G"},
-{"12_93"},
-{"OB_Vila_02"},
+{"OB_Zabrana_Beton_00", {{273.6846 ,-474.7496 ,-19.7547 ,0 ,0 ,0},}, 727, "oysterbay"},
 }
 print(os.date())
 function string.split(input, separator)
@@ -92,8 +90,8 @@ for k,v in ipairs(object) do
 
 	file:close()
 
-	file_meta:write("<file src='oysterbay/"..v[1]..".dff'/>\n")
-	file_meta:write("<file src='oysterbay/"..v[1]..".col'/>\n")
+	file_meta:write("<file src='millville_s/"..v[1]..".dff'/>\n")
+	file_meta:write("<file src='millville_s/"..v[1]..".col'/>\n")
 end
 
 file_meta:close()
