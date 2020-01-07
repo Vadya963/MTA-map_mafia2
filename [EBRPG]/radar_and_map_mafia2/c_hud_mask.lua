@@ -25,8 +25,6 @@ addEventHandler( "onClientResourceStart", resourceRoot,
 			dxSetShaderValue( hudMaskShader, "sPicTexture", radarTexture )
 			dxSetShaderValue( hudMaskShader, "sMaskTexture", maskTexture1 )
 		end
-
-	createBlip ( -924.17102050781,-474.42742919922,-33.945209503174, 32, 0, 0,0,0,0, 0, 100 )
 end)
 
 function getSpeed(vehicle)
