@@ -1,5 +1,5 @@
 local object = {
-{"OB_Zabrana_Beton_00", {{273.6846 ,-474.7496 ,-19.7547 ,0 ,0 ,0},}, 727, "oysterbay"},
+{"city83", {{241.2526 ,-289.8656 ,-20.3036 ,0 ,0 ,0},}, 728, "southport"},
 }
 print(os.date())
 function string.split(input, separator)
