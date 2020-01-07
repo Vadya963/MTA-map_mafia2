@@ -1,4 +1,6 @@
+local screenWidth, screenHeight = guiGetScreenSize ( )
 local object_data = false
+local timer = {true, 10, 10}
 
 local table_water = {
 	{0, -1336.3854980469,349.09210205078, -718.77734375,1365.2574462891},--от кинг до хант
@@ -24,11 +26,25 @@ function ( startedRes )
 	end]]
 end)
 
-local function dxdrawtext(text, x, y, width, height, color, scale, font)
+function dxdrawtext(text, x, y, width, height, color, scale, font)
 	dxDrawText ( text, x+1, y+1, width, height, tocolor ( 0, 0, 0, 255 ), scale, font )
 
 	dxDrawText ( text, x, y, width, height, color, scale, font )
 end
+
+function timerm2(time)
+	timer[1] = true
+	timer[2] = time
+	timer[3] = time
+end
+addEvent("createHudTimer", true)
+addEventHandler("createHudTimer", root, timerm2)
+
+function timerm2off()
+	timer[1] = false
+end
+addEvent("destroyHudTimer", true)
+addEventHandler("destroyHudTimer", root, timerm2off)
 
 local swim_time, air_time = 0, 0
 setTimer(function ( ... )
@@ -49,10 +65,24 @@ setTimer(function ( ... )
 		setElementPosition(localPlayer, -924.17102050781,-474.42742919922,-33.945209503174)
 		swim_time = 0
 	end
+
+	if timer[1] then
+		timer[3] = timer[3]-1
+
+		if timer[3] == -1 then
+			timer[1] = false
+		end
+	end
 end, 1000, 0)
 
 local hud = false
 function createText ()
+
+	if timer[1] then
+		dxDrawImage ( (screenWidth-85), (screenHeight-161-85), 85, 85, ":radar_and_map_mafia2/hud/timer.png" )
+		dxDrawCircle ( (screenWidth-85)+(85/2), (screenHeight-161-85)+(85/2), 30, -90.0, (360.0/timer[2])*timer[3]-90, tocolor( 255,50,50,200 ), tocolor( 255,50,50,200 ) )
+		dxDrawImage ( (screenWidth-85), (screenHeight-161-85), 85, 85, ":radar_and_map_mafia2/hud/timer_arrow.png", (360.0/timer[2])*timer[3] )
+	end
 	
 	if hud then
 		setTime(10, 0)

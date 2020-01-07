@@ -208,6 +208,8 @@ function toggleMap()
 			toggle=true
 		end
 	end
+
+	setElementData(localPlayer, "radar_mafia2", toggle)
 end
 bindKey("F11","up",toggleMap)
 

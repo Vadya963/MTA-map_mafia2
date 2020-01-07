@@ -4001,8 +4001,8 @@ function displayLoadedRes ( res )--старт ресурсов
 				setElementRotation(obj, 90,0,z)
 				setElementRotation(lod_obj, 90,0,z)
 			elseif x == 90 and v[1] == p[1] then
-				setElementRotation(obj, x,0,z+100)
-				setElementRotation(lod_obj, x,0,z+100)
+				setElementRotation(obj, x,0,180)
+				setElementRotation(lod_obj, x,0,180)
 			end
 		end
 		

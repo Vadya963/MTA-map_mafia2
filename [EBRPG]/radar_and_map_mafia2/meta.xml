@@ -4,9 +4,19 @@
 
 	<!--<oop>true</oop>
 	<script src="render.lua" type="client"></script>-->
-	
+
+	<script src="c_hud_mask.lua" type="client" validate="false"/>
+
+	<file src="hud_mask.fx" type="client" />
+	<file src="include/tex_matrix.fx" type="client" />
+	<file src="images/circle_mask.png" type="client" />
+	<file src="images/sept_mask.png" type="client" />
+	<file src="images/radar_ver1.png" type="client" />
+	<file src="images/radar_ver2.png" type="client" />
+	<file src="images/pointer.png" type="client" />
 
 	<file src="images/radar.png" type="client" />
+	<file src="images/radar2.png" type="client" />
 	<script src="maximap_c.lua" type="client"/>
 	<script src="getControlState.lua" type="client"/>
 
@@ -97,4 +107,22 @@
 	<file src="images/blips/61.png"/>
 	<file src="images/blips/62.png"/>
 	<file src="images/blips/63.png"/>
+
+	<file src="hud/m2font.ttf"/>
+	<file src="hud/gui7.png"/>
+	<file src="hud/window-arrow-off-down.png"/>
+	<file src="hud/window-arrow-on-down.png"/>
+	<file src="hud/window-arrow-off-left.png"/>
+	<file src="hud/window-arrow-on-left.png"/>
+	<file src="hud/window-arrow-off-right.png"/>
+	<file src="hud/window-arrow-on-right.png"/>
+	<file src="hud/window-arrow-off-up.png"/>
+	<file src="hud/window-arrow-on-up.png"/>
+	<file src="hud/window-m2.png"/>
+	<file src="hud/timer.png"/>
+	<file src="hud/timer_arrow.png"/>
+	<file src="hud/speed_v.png"/>
+	<file src="hud/arrow_speed_v.png"/>
+	<file src="hud/fuel_v.png"/>
+	<file src="hud/low_fuel.png"/>
 </meta>
