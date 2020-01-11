@@ -1,30 +1,11 @@
 local eb_textures = false
-local object_data = false
 local pogoda = "leto" --leto,zima,osen
 
 addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
-	object_data = getElementData(root, "object")
 
 	for i=550,20000 do
 		removeWorldModel(i,10000,0,0,0)
-	end
-	setOcclusionsEnabled(false)
-	engineSetSurfaceProperties ( 0, "audio", "concrete" )
-	engineSetSurfaceProperties ( 0, "canclimb", true )
-
-	for i,v in ipairs(object_data) do
-		setObjectBreakable(v[2], false)
-		setElementFrozen(v[2], true)
-		if v[5] == "true" then
-			setElementDoubleSided(v[2], true)
-			local obj = getLowLODElement(v[2])
-			setElementDoubleSided(obj, true)
-		else
-			setElementDoubleSided(v[2], false)
-			local obj = getLowLODElement(v[2])
-			setElementDoubleSided(obj, false)
-		end
 	end
 
 	if pogoda == "leto" then
@@ -35,7 +16,7 @@ function ( startedRes )
 		--soon
 	end
 
-	for k,v in ipairs(object_data) do
+	for k,v in ipairs(getElementData(root, "object")) do
 		if fileExists(v[4].."/"..v[1]..".dff") and fileExists(v[4].."/"..v[1]..".col") then
 			engineImportTXD (eb_textures, v[3])
 			local dff = engineLoadDFF ( ":map_mafia2/"..v[4].."/"..v[1]..".dff" )
@@ -46,3 +27,12 @@ function ( startedRes )
 		end
 	end
 end)
+
+--{''; {{ ;0 ;0 ;0};}; 0};
+--{"05_88_01", {{-575.04130,1664.06500,-18.71200,90,0,0}}, 0}, dipton
+
+--greenfield
+--{"03_teren203", {{-1877.168 ,1046.32 ,12.10801 ,0 ,0 ,0}}, 0},--большая кол-ия
+--{"03_teren201", {{-1877.168 ,1046.32 ,12.10801 ,0 ,0 ,0}}, 0},
+--{"03_30", {{-1803.381 ,1051.32 ,8.489138 ,0 ,0 ,-90}}, 0},
+--{"03_29", {{-2000.435 ,1110.572 ,22.66821 ,0 ,0 ,70}}, 0},--большая кол-ия и далеко от игрока

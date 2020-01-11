@@ -1,5 +1,4 @@
 local screenWidth, screenHeight = guiGetScreenSize ( )
-local object_data = false
 local timer = {true, 10, 10}
 
 local table_water = {
@@ -17,9 +16,29 @@ local table_water = {
 
 addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
-	object_data = getElementData(root, "object")
+
+	setOcclusionsEnabled(false)
+	engineSetSurfaceProperties ( 0, "audio", "concrete" )
+	engineSetSurfaceProperties ( 0, "canclimb", true )
+
+	for i,v in ipairs(getElementData(root, "object")) do
+		setObjectBreakable(v[2], false)
+		setElementFrozen(v[2], true)
+		if v[5] == "true" then
+			setElementDoubleSided(v[2], true)
+			local obj = getLowLODElement(v[2])
+			setElementDoubleSided(obj, true)
+		else
+			setElementDoubleSided(v[2], false)
+			local obj = getLowLODElement(v[2])
+			setElementDoubleSided(obj, false)
+		end
+	end
+
+	bindKey ( "F3", "down", menu_mafia_2 )
 
 	setWaterLevel(-5000)
+	setFarClipDistance(2000)
 
 	--[[for k,v in ipairs(table_water) do
 		table_water[k][1] = createWater ( v[2], v[3], -25, v[4], v[3], -25, v[2], v[5], -25, v[4], v[5], -25 )
@@ -62,7 +81,7 @@ setTimer(function ( ... )
 	end
 
 	if swim_time >= 5 or air_time >= 5 then
-		setElementPosition(localPlayer, -924.17102050781,-474.42742919922,-33.945209503174)
+		setElementPosition(localPlayer, 836.17102050781,113.42742919922,-9.945209503174)
 		swim_time = 0
 	end
 
@@ -90,16 +109,16 @@ function createText ()
 		local x,y,z = getElementPosition(localPlayer)
 		local task = getPedSimplestTask(localPlayer)
 
-		local amount = 0 -- When starting the command, we don't have any objects looped.
-		for k,v in ipairs ( getElementsByType ( "object" ) ) do -- Looping all the objects in the server
-			if isElementStreamedIn ( v ) then -- If the object is streamed in
-				amount = amount + 1 -- It's an object more streamed in
+		local amount = 0
+		for k,v in ipairs ( getElementsByType ( "object" ) ) do
+			if isElementStreamedIn ( v ) then
+				amount = amount + 1
 			end
 		end
 
 		dxdrawtext ( task..", "..swim_time..", "..air_time..", streamed obj "..amount, 0, 200, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
 
-		for k,v in ipairs(object_data) do
+		for k,v in ipairs(getElementData(root, "object")) do
 			local j = {getElementPosition(v[2])}
 			local model = getElementModel(v[2])
 			if getDistanceBetweenPoints3D(x, y, z, j[1],j[2],j[3]) <= 100 then
@@ -142,7 +161,7 @@ end)
 
 addCommandHandler ( "ebdim",
 function (cmd, level )
-	for k,v in ipairs(object_data) do
+	for k,v in ipairs(getElementData(root, "object")) do
 		setElementDimension(v[2], tonumber(level))
 		local obj = getLowLODElement(v[2])
 		setElementDimension(obj, tonumber(level))
@@ -151,7 +170,7 @@ end)
 
 addCommandHandler ( "ebdimobj",
 function (cmd, id, level )
-	for k,v in ipairs(object_data) do
+	for k,v in ipairs(getElementData(root, "object")) do
 		if tonumber(id) == v[3] then
 			setElementDimension(v[2], level)
 			local obj = getLowLODElement(v[2])
