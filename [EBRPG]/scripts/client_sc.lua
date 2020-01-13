@@ -1,5 +1,4 @@
 local screenWidth, screenHeight = guiGetScreenSize ( )
-local timer = {true, 10, 10}
 
 local table_water = {
 	{0, -1336.3854980469,349.09210205078, -718.77734375,1365.2574462891},--от кинг до хант
@@ -21,22 +20,6 @@ function ( startedRes )
 	engineSetSurfaceProperties ( 0, "audio", "concrete" )
 	engineSetSurfaceProperties ( 0, "canclimb", true )
 
-	for i,v in ipairs(getElementData(root, "object")) do
-		setObjectBreakable(v[2], false)
-		setElementFrozen(v[2], true)
-		if v[5] == "true" then
-			setElementDoubleSided(v[2], true)
-			local obj = getLowLODElement(v[2])
-			setElementDoubleSided(obj, true)
-		else
-			setElementDoubleSided(v[2], false)
-			local obj = getLowLODElement(v[2])
-			setElementDoubleSided(obj, false)
-		end
-	end
-
-	bindKey ( "F3", "down", menu_mafia_2 )
-
 	setWaterLevel(-5000)
 	setFarClipDistance(2000)
 
@@ -50,20 +33,6 @@ function dxdrawtext(text, x, y, width, height, color, scale, font)
 
 	dxDrawText ( text, x, y, width, height, color, scale, font )
 end
-
-function timerm2(time)
-	timer[1] = true
-	timer[2] = time
-	timer[3] = time
-end
-addEvent("createHudTimer", true)
-addEventHandler("createHudTimer", root, timerm2)
-
-function timerm2off()
-	timer[1] = false
-end
-addEvent("destroyHudTimer", true)
-addEventHandler("destroyHudTimer", root, timerm2off)
 
 local swim_time, air_time = 0, 0
 setTimer(function ( ... )
@@ -81,28 +50,14 @@ setTimer(function ( ... )
 	end
 
 	if swim_time >= 5 or air_time >= 5 then
-		setElementPosition(localPlayer, 836.17102050781,113.42742919922,-9.945209503174)
+		setElementPosition(localPlayer, 609.17102050781,873.42742919922,-10.945209503174)
 		swim_time = 0
-	end
-
-	if timer[1] then
-		timer[3] = timer[3]-1
-
-		if timer[3] == -1 then
-			timer[1] = false
-		end
 	end
 end, 1000, 0)
 
 local hud = false
 function createText ()
 
-	if timer[1] then
-		dxDrawImage ( (screenWidth-85), (screenHeight-161-85), 85, 85, ":radar_and_map_mafia2/hud/timer.png" )
-		dxDrawCircle ( (screenWidth-85)+(85/2), (screenHeight-161-85)+(85/2), 30, -90.0, (360.0/timer[2])*timer[3]-90, tocolor( 255,50,50,200 ), tocolor( 255,50,50,200 ) )
-		dxDrawImage ( (screenWidth-85), (screenHeight-161-85), 85, 85, ":radar_and_map_mafia2/hud/timer_arrow.png", (360.0/timer[2])*timer[3] )
-	end
-	
 	if hud then
 		setTime(10, 0)
 		
@@ -160,11 +115,13 @@ function ( cmd )
 end)
 
 addCommandHandler ( "ebdim",
-function (cmd, level )
+function (cmd, level, bool )
 	for k,v in ipairs(getElementData(root, "object")) do
 		setElementDimension(v[2], tonumber(level))
-		local obj = getLowLODElement(v[2])
-		setElementDimension(obj, tonumber(level))
+		if bool == "true" then
+			local obj = getLowLODElement(v[2])
+			setElementDimension(obj, tonumber(level))
+		end
 	end
 end)
 

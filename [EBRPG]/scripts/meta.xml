@@ -1,5 +1,4 @@
 <meta>
 <script src="client_sc.lua" type="client"/>
-<script src="menu_m2.lua" type="client"/>
 <script src="server_sc.lua" type="server"/>
 </meta>

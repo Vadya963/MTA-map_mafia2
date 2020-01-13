@@ -1,0 +1,130 @@
+<meta>
+	<info description="Shader - HUD mask" author="ccw" version="0.0.1" type="script" />
+	<min_mta_version client="1.3.5" />
+
+	<!--<oop>true</oop>
+	<script src="render.lua" type="client"></script>-->
+
+	<script src="menu_m2.lua" type="client"/>
+	<script src="timer.lua" type="client"/>
+
+	<script src="c_hud_mask.lua" type="client" validate="false"/>
+	<file src="hud_mask.fx" type="client" />
+	<file src="include/tex_matrix.fx" type="client" />
+	<file src="images/circle_mask.png" type="client" />
+	<file src="images/sept_mask.png" type="client" />
+	<file src="images/radar_ver1.png" type="client" />
+	<file src="images/radar_ver2.png" type="client" />
+	<file src="images/pointer.png" type="client" />
+
+	<file src="images/radar.png" type="client" />
+	<file src="images/radar2.png" type="client" />
+	<script src="maximap_c.lua" type="client"/>
+	<script src="getControlState.lua" type="client"/>
+
+	<export function="isPlayerMapVisible" type="client"/>
+	<export function="getPlayerMapBoundingBox" type="client"/>
+	<export function="getPlayerMapImage" type="client"/>
+	<export function="setPlayerMapBoundingBox" type="client"/>
+	<export function="setPlayerMapVisible" type="client"/>
+	<export function="getMapFromWorldPosition" type="client"/>
+	<export function="getWorldFromMapPosition" type="client"/>
+	<export function="setPlayerMapImage" type="client"/>
+	<export function="setPlayerMapColor" type="client"/>
+	<export function="getPlayerMapColor" type="client"/>
+	<export function="getPlayerMapMovementSpeed" type="client"/>
+	<export function="setPlayerMapMovementSpeed" type="client"/>
+	<export function="getPlayerMapZoomFactor" type="client"/>
+	<export function="setPlayerMapZoomFactor" type="client"/>
+	<export function="getPlayerMapZoomRate" type="client"/>
+	<export function="setPlayerMapZoomRate" type="client"/>
+	<export function="getPlayerMapMinZoomLimit" type="client"/>
+	<export function="setPlayerMapMinZoomLimit" type="client"/>
+	<export function="getPlayerMapMaxZoomLimit" type="client"/>
+	<export function="setPlayerMapMaxZoomLimit" type="client"/>
+	<export function="setBlipShowingOnMaximap" type="client"/>
+	<export function="getBlipShowingOnMaximap" type="client"/>
+
+	<file src="images/blips/0.png"/>
+	<file src="images/blips/1.png"/>
+	<file src="images/blips/2.png"/>
+	<file src="images/blips/3.png"/>
+	<file src="images/blips/4.png"/>
+	<file src="images/blips/5.png"/>
+	<file src="images/blips/6.png"/>
+	<file src="images/blips/7.png"/>
+	<file src="images/blips/8.png"/>
+	<file src="images/blips/9.png"/>
+	<file src="images/blips/10.png"/>
+	<file src="images/blips/11.png"/>
+	<file src="images/blips/12.png"/>
+	<file src="images/blips/13.png"/>
+	<file src="images/blips/14.png"/>
+	<file src="images/blips/15.png"/>
+	<file src="images/blips/16.png"/>
+	<file src="images/blips/17.png"/>
+	<file src="images/blips/18.png"/>
+	<file src="images/blips/19.png"/>
+	<file src="images/blips/20.png"/>
+	<file src="images/blips/21.png"/>
+	<file src="images/blips/22.png"/>
+	<file src="images/blips/23.png"/>
+	<file src="images/blips/24.png"/>
+	<file src="images/blips/25.png"/>
+	<file src="images/blips/26.png"/>
+	<file src="images/blips/27.png"/>
+	<file src="images/blips/28.png"/>
+	<file src="images/blips/29.png"/>
+	<file src="images/blips/30.png"/>
+	<file src="images/blips/31.png"/>
+	<file src="images/blips/32.png"/>
+	<file src="images/blips/33.png"/>
+	<file src="images/blips/34.png"/>
+	<file src="images/blips/35.png"/>
+	<file src="images/blips/36.png"/>
+	<file src="images/blips/37.png"/>
+	<file src="images/blips/38.png"/>
+	<file src="images/blips/39.png"/>
+	<file src="images/blips/40.png"/>
+	<file src="images/blips/41.png"/>
+	<file src="images/blips/42.png"/>
+	<file src="images/blips/43.png"/>
+	<file src="images/blips/44.png"/>
+	<file src="images/blips/45.png"/>
+	<file src="images/blips/46.png"/>
+	<file src="images/blips/47.png"/>
+	<file src="images/blips/48.png"/>
+	<file src="images/blips/49.png"/>
+	<file src="images/blips/50.png"/>
+	<file src="images/blips/51.png"/>
+	<file src="images/blips/52.png"/>
+	<file src="images/blips/53.png"/>
+	<file src="images/blips/54.png"/>
+	<file src="images/blips/55.png"/>
+	<file src="images/blips/56.png"/>
+	<file src="images/blips/57.png"/>
+	<file src="images/blips/58.png"/>
+	<file src="images/blips/59.png"/>
+	<file src="images/blips/60.png"/>
+	<file src="images/blips/61.png"/>
+	<file src="images/blips/62.png"/>
+	<file src="images/blips/63.png"/>
+
+	<file src="hud/m2font.ttf"/>
+	<file src="hud/gui7.png"/>
+	<file src="hud/window-arrow-off-down.png"/>
+	<file src="hud/window-arrow-on-down.png"/>
+	<file src="hud/window-arrow-off-left.png"/>
+	<file src="hud/window-arrow-on-left.png"/>
+	<file src="hud/window-arrow-off-right.png"/>
+	<file src="hud/window-arrow-on-right.png"/>
+	<file src="hud/window-arrow-off-up.png"/>
+	<file src="hud/window-arrow-on-up.png"/>
+	<file src="hud/window-m2.png"/>
+	<file src="hud/timer.png"/>
+	<file src="hud/timer_arrow.png"/>
+	<file src="hud/speed_v.png"/>
+	<file src="hud/arrow_speed_v.png"/>
+	<file src="hud/fuel_v.png"/>
+	<file src="hud/low_fuel.png"/>
+</meta>

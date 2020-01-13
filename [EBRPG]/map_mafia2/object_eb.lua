@@ -28,6 +28,17 @@ function ( startedRes )
 	end
 end)
 
+addEventHandler("onClientObjectBreak", root,
+	function()
+		for k,v in ipairs(getElementData(root, "object")) do
+			if v[2] == source then
+				cancelEvent()
+				break
+			end
+		end
+	end
+)
+
 --{''; {{ ;0 ;0 ;0};}; 0};
 --{"05_88_01", {{-575.04130,1664.06500,-18.71200,90,0,0}}, 0}, dipton
 
