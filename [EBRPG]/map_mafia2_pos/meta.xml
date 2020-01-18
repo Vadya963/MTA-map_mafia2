@@ -1,4 +1,5 @@
 <meta>
 <script src="getObjectNameFromModel.lua"></script>
 <script src="server.lua"/>
+<script src="unbreakable_object.lua" type="client"/>
 </meta>

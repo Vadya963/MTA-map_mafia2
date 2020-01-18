@@ -9,6 +9,8 @@
 
 <file src="mta-helper.fx" type="client" />
 
+<file src='italy/11_show_reklama.dff'/>
+<file src='italy/11_show_reklama.col'/>
 <file src='italy/11_kanal_joe.dff'/>
 <file src='italy/11_kanal_joe.col'/>
 <file src='italy/11_kanaly18_G.dff'/>
@@ -3433,6 +3435,10 @@
 <file src="greenfield/03_14.col"/>
 <file src="greenfield/03_55.col"/>
 
+<file src='hunters/02_lana_02.dff'/>
+<file src='hunters/02_lana_02.col'/>
+<file src='hunters/02_lana_01.dff'/>
+<file src='hunters/02_lana_01.col'/>
 <file src="hunters/02_teren24.dff"/>
 <file src="hunters/02_teren25.dff"/>
 <file src="hunters/02_teren26.dff"/>

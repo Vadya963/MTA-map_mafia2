@@ -50,7 +50,7 @@ setTimer(function ( ... )
 	end
 
 	if swim_time >= 5 or air_time >= 5 then
-		setElementPosition(localPlayer, 609.17102050781,873.42742919922,-10.945209503174)
+		setElementPosition(localPlayer, -222.17102050781,803.42742919922,-18.945209503174)
 		swim_time = 0
 	end
 end, 1000, 0)
