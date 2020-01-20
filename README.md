@@ -33,8 +33,7 @@
 - [x] меню с 4 опциями
 - [x] таймер
 - [X] селектор оружия
-- [ ] уровень розыска
+- [X] уровень розыска
 - [ ] количество денег
-- [ ] кнопки взаимодействия
 
 Поместить в MTA San Andreas 1.5\server\mods\deathmatch\resources и прописать в mtaserver.conf resource src="map_mafia2" startup="1" protected="0" 
