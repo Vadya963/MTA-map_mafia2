@@ -7,8 +7,6 @@
 
 	<script src="menu_m2.lua" type="client"/>
 	<script src="timer.lua" type="client"/>
-	<script src="hud_weapon.lua" type="client"/>
-	<script src="server_fun.lua"/>
 
 	<script src="c_hud_mask.lua" type="client" validate="false"/>
 	<file src="hud_mask.fx" type="client" />
@@ -129,38 +127,4 @@
 	<file src="hud/arrow_speed_v.png"/>
 	<file src="hud/fuel_v.png"/>
 	<file src="hud/low_fuel.png"/>
-	<file src="hud/hud2.png"/>
-
-	<file src="weapon/silenced.dff"/>
-	<file src="weapon/silenced.txd"/>
-	<file src="weapon/colt45.dff"/>
-	<file src="weapon/colt45.txd"/>
-	<file src="weapon/desert_eagle.dff"/>
-	<file src="weapon/desert_eagle.txd"/>
-	<file src="weapon/m4.dff"/>
-	<file src="weapon/m4.txd"/>
-	<file src="weapon/ak47.dff"/>
-	<file src="weapon/ak47.txd"/>
-	<file src="weapon/chromegun.dff"/>
-	<file src="weapon/chromegun.txd"/>
-	<file src="weapon/mp5.dff"/>
-	<file src="weapon/mp5.txd"/>
-	<file src="weapon/rifle.dff"/>
-	<file src="weapon/rifle.txd"/>
-	<file src="weapon/grenade.dff"/>
-	<file src="weapon/grenade.txd"/>
-	<file src="weapon/bat.dff"/>
-	<file src="weapon/bat.txd"/>
-	<file src="weapon/knifecur.dff"/>
-	<file src="weapon/knifecur.txd"/>
-	<file src="weapon/brassknuckle.dff"/>
-	<file src="weapon/brassknuckle.txd"/>
-	<file src="weapon/nitestick.dff"/>
-	<file src="weapon/nitestick.txd"/>
-	<file src="weapon/molotov.dff"/>
-	<file src="weapon/molotov.txd"/>
-	<file src="weapon/shovel.dff"/>
-	<file src="weapon/shovel.txd"/>
-	<file src="weapon/gun_cane.dff"/>
-	<file src="weapon/gun_cane.txd"/>
 </meta>
