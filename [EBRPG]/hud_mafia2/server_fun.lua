@@ -5,8 +5,9 @@ local weapon = {
 	[30] = {"ak47", 355, 176,448, 112,34, 30},
 	[25] = {"chromegun", 349, 105,340, 138,22, 8},
 	[29] = {"mp5", 353, 0,0, 106,59, 30},
-	[33] = {"rifle", 357, 64,487, 135,25, 5},
+	[33] = {"rifle", 357, 105,313, 143,26, 8},
 	[22] = {"colt45", 346, 123,449, 53,38, 6},
+	[34] = {"sniper", 358, 64,487, 135,25, 5},
 
 	[16] = {"grenade", 342, 268,482, 19,30, 0},
 	[5] = {"bat", 336, 124,188, 119,29, 0},
@@ -34,4 +35,9 @@ addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
 addCommandHandler ( "giveWeapon",
 function (playerid, cmd, id )
 	giveWeapon(playerid, id)
+end)
+
+addCommandHandler ( "wanted",
+function (playerid, cmd, id )
+	setPlayerWantedLevel(playerid, id)
 end)

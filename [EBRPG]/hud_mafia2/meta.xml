@@ -1,13 +1,13 @@
 <meta>
 	<info description="Shader - HUD mask" author="ccw" version="0.0.1" type="script" />
-	<min_mta_version client="1.3.5" />
+	<min_mta_version server="1.5.7" client="1.5.7" />
 
 	<!--<oop>true</oop>
 	<script src="render.lua" type="client"></script>-->
 
 	<script src="menu_m2.lua" type="client"/>
 	<script src="timer.lua" type="client"/>
-	<script src="hud_weapon.lua" type="client"/>
+	<script src="hud_weapon_wanted.lua" type="client"/>
 	<script src="server_fun.lua"/>
 
 	<script src="c_hud_mask.lua" type="client" validate="false"/>
@@ -147,6 +147,8 @@
 	<file src="weapon/mp5.txd"/>
 	<file src="weapon/rifle.dff"/>
 	<file src="weapon/rifle.txd"/>
+	<file src="weapon/sniper.dff"/>
+	<file src="weapon/sniper.txd"/>
 	<file src="weapon/grenade.dff"/>
 	<file src="weapon/grenade.txd"/>
 	<file src="weapon/bat.dff"/>
