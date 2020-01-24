@@ -1,5 +1,5 @@
 local eb_textures = false
-local pogoda = "leto" --leto,zima,osen
+local pogoda = "summer" --summer,winter,autumn
 
 addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
@@ -8,11 +8,11 @@ function ( startedRes )
 		removeWorldModel(i,10000,0,0,0)
 	end
 
-	if pogoda == "leto" then
-		eb_textures = engineLoadTXD ( ":textures/eb_textures_leto.txd" )
-	elseif pogoda == "zima" then
-		eb_textures = engineLoadTXD ( ":textures/eb_textures_zima.txd" )
-	elseif pogoda == "osen" then
+	if pogoda == "summer" then
+		eb_textures = engineLoadTXD ( ":textures/eb_textures_summer.txd" )
+	elseif pogoda == "winter" then
+		eb_textures = engineLoadTXD ( ":textures/eb_textures_winter.txd" )
+	elseif pogoda == "autumn" then
 		--soon
 	end
 
