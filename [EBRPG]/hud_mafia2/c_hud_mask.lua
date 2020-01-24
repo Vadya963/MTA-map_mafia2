@@ -112,7 +112,7 @@ addEventHandler( "onClientRender", root,
 		-- Draw
 		--
 		dxDrawImage( screenWidth-146, screenHeight-161, 146, 146, "images/radar_ver1.png", 0,0,0, tocolor(255,255,255,255) )
-		dxDrawCircle ( (screenWidth-146)+(146/2), (screenHeight-161)+(146/2), 72, 83.0, (-166.0/getPedMaxHealth(localPlayer))*getElementHealth(localPlayer)+83, tocolor( 78,135,95,255 ), tocolor( 78,135,95,255 ) )
+		dxDrawCircle ( (screenWidth-146)+(146/2), (screenHeight-161)+(146/2), 72, 83.0, (-166.0/getPedMaxHealth(localPlayer))*getElementHealth(localPlayer)+83, tocolor( 111,154,104,255 ), tocolor( 111,154,104,255 ) )
 		dxDrawCircle ( (screenWidth-146)+(146/2), (screenHeight-161)+(146/2), 72, 97.0, (166.0/100)*getPedArmor(localPlayer)+97, tocolor( 0, 102, 255,255 ), tocolor( 0, 102, 255,255 ) )
 		dxDrawImage( screenWidth-136, screenHeight-151, 126, 126, hudMaskShader, 0,0,0, tocolor(255,255,255,255) )
 		dxDrawImage( screenWidth-(146/2)-8, screenHeight-(146/2)-8-15, 16, 16, "images/blips/2.png", -playerrot+camrot,0,0, tocolor(255,255,255,255) )
