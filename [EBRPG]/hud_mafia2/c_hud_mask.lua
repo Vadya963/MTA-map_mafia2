@@ -15,6 +15,7 @@ addEventHandler( "onClientResourceStart", resourceRoot,
 		maskTexture2 = dxCreateTexture("images/sept_mask.png")
 
 		setPlayerHudComponentVisible("radar", false)
+		setPlayerHudComponentVisible ("area_name", false )
 
 		-- Check everything is ok
 		bAllValid = hudMaskShader and radarTexture and maskTexture1 and maskTexture2
