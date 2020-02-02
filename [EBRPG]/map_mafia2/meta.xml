@@ -1387,6 +1387,8 @@
 <file src='millville_new/21_bottom_a_03.dff'/>
 <file src='millville_new/21_bottom_a_03.col'/>
 
+<file src='millville_n/foundry00.dff'/>
+<file src='millville_n/foundry00.col'/>
 <file src='millville_n/l_garage.dff'/>
 <file src='millville_n/l_garage.col'/>
 <file src='millville_n/17_building_add_on.dff'/>
@@ -4105,8 +4107,6 @@
 <file src='riverside/ext_okna_ramy_01.col'/>
 <file src='riverside/kancelar_fake_mistnost_01.col'/>
 <file src='riverside/kancelar_fake_mistnost_02.col'/>
-<file src='riverside/int_kancelar_02.dff'/>
-<file src='riverside/int_kancelar_02.col'/>
 <file src='riverside/striska_nad_rampou.dff'/>
 <file src='riverside/striska_nad_rampou.col'/>
 <file src='riverside/city04.dff'/>
