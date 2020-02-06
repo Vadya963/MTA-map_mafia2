@@ -29,7 +29,25 @@ function ( startedRes )
 		eb_textures["westside"] = engineLoadTXD ( ":textures/westside_summer.txd" )
 
 	elseif pogoda == "winter" then
-		eb_textures = engineLoadTXD ( ":textures/eb_textures_winter.txd" )
+		eb_textures["kingstone"] = engineLoadTXD ( ":textures/kingstone_winter.txd" )
+		eb_textures["dipton"] = engineLoadTXD ( ":textures/dipton_winter.txd" )
+		eb_textures["highbrook"] = engineLoadTXD ( ":textures/highbrook_winter.txd" )
+		eb_textures["hillwood"] = engineLoadTXD ( ":textures/hillwood_winter.txd" )
+		eb_textures["riverside"] = engineLoadTXD ( ":textures/riverside_winter.txd" )
+		eb_textures["greenfield"] = engineLoadTXD ( ":textures/greenfield_winter.txd" )
+		eb_textures["hunters"] = engineLoadTXD ( ":textures/hunters_winter.txd" )
+		eb_textures["sandisland"] = engineLoadTXD ( ":textures/sandisland_winter.txd" )
+		eb_textures["port"] = engineLoadTXD ( ":textures/port_winter.txd" )
+		eb_textures["southport"] = engineLoadTXD ( ":textures/southport_winter.txd" )
+		eb_textures["oysterbay"] = engineLoadTXD ( ":textures/oysterbay_winter.txd" )
+		eb_textures["millville_s"] = engineLoadTXD ( ":textures/millville_s_winter.txd" )
+		eb_textures["millville_n"] = engineLoadTXD ( ":textures/millville_n_winter.txd" )
+		eb_textures["millville_new"] = engineLoadTXD ( ":textures/millville_new_winter.txd" )
+		eb_textures["italy"] = engineLoadTXD ( ":textures/italy_winter.txd" )
+		eb_textures["uppertown"] = engineLoadTXD ( ":textures/uppertown_winter.txd" )
+		eb_textures["chinatown"] = engineLoadTXD ( ":textures/chinatown_winter.txd" )
+		eb_textures["westside"] = engineLoadTXD ( ":textures/westside_winter.txd" )
+		
 	elseif pogoda == "autumn" then
 		--soon
 	end
