@@ -1,4 +1,4 @@
-local eb_textures = false
+local eb_textures = {}
 local pogoda = "summer" --summer,winter,autumn
 
 addEventHandler( "onClientResourceStart", resourceRoot,
@@ -9,7 +9,25 @@ function ( startedRes )
 	end
 
 	if pogoda == "summer" then
-		eb_textures = engineLoadTXD ( ":textures/eb_textures_summer.txd" )
+		eb_textures["kingstone"] = engineLoadTXD ( ":textures/kingstone_summer.txd" )
+		eb_textures["dipton"] = engineLoadTXD ( ":textures/dipton_summer.txd" )
+		eb_textures["highbrook"] = engineLoadTXD ( ":textures/highbrook_summer.txd" )
+		eb_textures["hillwood"] = engineLoadTXD ( ":textures/hillwood_summer.txd" )
+		eb_textures["riverside"] = engineLoadTXD ( ":textures/riverside_summer.txd" )
+		eb_textures["greenfield"] = engineLoadTXD ( ":textures/greenfield_summer.txd" )
+		eb_textures["hunters"] = engineLoadTXD ( ":textures/hunters_summer.txd" )
+		eb_textures["sandisland"] = engineLoadTXD ( ":textures/sandisland_summer.txd" )
+		eb_textures["port"] = engineLoadTXD ( ":textures/port_summer.txd" )
+		eb_textures["southport"] = engineLoadTXD ( ":textures/southport_summer.txd" )
+		eb_textures["oysterbay"] = engineLoadTXD ( ":textures/oysterbay_summer.txd" )
+		eb_textures["millville_s"] = engineLoadTXD ( ":textures/millville_s_summer.txd" )
+		eb_textures["millville_n"] = engineLoadTXD ( ":textures/millville_n_summer.txd" )
+		eb_textures["millville_new"] = engineLoadTXD ( ":textures/millville_new_summer.txd" )
+		eb_textures["italy"] = engineLoadTXD ( ":textures/italy_summer.txd" )
+		eb_textures["uppertown"] = engineLoadTXD ( ":textures/uppertown_summer.txd" )
+		eb_textures["chinatown"] = engineLoadTXD ( ":textures/chinatown_summer.txd" )
+		eb_textures["westside"] = engineLoadTXD ( ":textures/westside_summer.txd" )
+
 	elseif pogoda == "winter" then
 		eb_textures = engineLoadTXD ( ":textures/eb_textures_winter.txd" )
 	elseif pogoda == "autumn" then
@@ -18,7 +36,7 @@ function ( startedRes )
 
 	for k,v in ipairs(getElementData(root, "object")) do
 		if fileExists(v[4].."/"..v[1]..".dff") and fileExists(v[4].."/"..v[1]..".col") then
-			engineImportTXD (eb_textures, v[3])
+			engineImportTXD (eb_textures[v[4]], v[3])
 			local dff = engineLoadDFF ( ":map_mafia2/"..v[4].."/"..v[1]..".dff" )
 			engineReplaceModel ( dff, v[3] )
 			local col = engineLoadCOL ( ":map_mafia2/"..v[4].."/"..v[1]..".col" )

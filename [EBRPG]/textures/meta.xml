@@ -1,4 +1,20 @@
 <meta>
-<file src="eb_textures_summer.txd"/>
-<file src="eb_textures_winter.txd"/>
+<file src="kingstone_summer.txd"/>
+<file src="dipton_summer.txd"/>
+<file src="highbrook_summer.txd"/>
+<file src="hillwood_summer.txd"/>
+<file src="riverside_summer.txd"/>
+<file src="greenfield_summer.txd"/>
+<file src="hunters_summer.txd"/>
+<file src="sandisland_summer.txd"/>
+<file src="port_summer.txd"/>
+<file src="southport_summer.txd"/>
+<file src="oysterbay_summer.txd"/>
+<file src="millville_s_summer.txd"/>
+<file src="millville_n_summer.txd"/>
+<file src="millville_new_summer.txd"/>
+<file src="italy_summer.txd"/>
+<file src="uppertown_summer.txd"/>
+<file src="chinatown_summer.txd"/>
+<file src="westside_summer.txd"/>
 </meta>
