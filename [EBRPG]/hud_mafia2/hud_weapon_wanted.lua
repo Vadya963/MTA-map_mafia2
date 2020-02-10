@@ -10,13 +10,6 @@ local wanted_img = {
 
 addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
-	for k,v in pairs(getElementData(resourceRoot, "custom_weapon")) do
-		local txd = engineLoadTXD ( "weapon/"..v[1]..".txd" )
-		local dff = engineLoadDFF ( "weapon/"..v[1]..".dff" )
-		engineImportTXD (txd, v[2])
-		engineReplaceModel ( dff, v[2] )
-	end
-
 	setPlayerHudComponentVisible("ammo", false)
 	setPlayerHudComponentVisible("weapon", false)
 	setPlayerHudComponentVisible("wanted", false)
@@ -30,7 +23,7 @@ end
 
 function createText ()
 	local weaponpl = getPedWeapon(localPlayer)
-	if weaponpl and getElementData(resourceRoot, "custom_weapon")[weaponpl] then
+	if weaponpl and getElementData(root, "custom_weapon") and getElementData(root, "custom_weapon")[weaponpl] then
 		local v = getElementData(resourceRoot, "custom_weapon")[weaponpl]
 		dxDrawImageSection(50, screenHeight-50-v[6], v[5], v[6], v[3], v[4], v[5], v[6], 'hud/hud2.png')
 		if weaponpl ~= 5 and weaponpl ~= 4 and weaponpl ~= 1 and weaponpl ~= 3 and weaponpl ~= 6 and weaponpl ~= 15 then

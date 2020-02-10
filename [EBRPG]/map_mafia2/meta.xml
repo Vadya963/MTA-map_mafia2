@@ -4,6 +4,7 @@
 <include resource='textures'/>
 <include resource='scripts'/>
 <include resource='map_mafia2_pos'/>
+<include resource='model_weapon'/>
 
 <script src='object_eb.lua' type='client'/>
 
