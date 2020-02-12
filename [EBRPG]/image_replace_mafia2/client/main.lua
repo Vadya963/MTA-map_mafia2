@@ -1,8 +1,5 @@
 local car = {
 	"vehiclegrunge256",
-	"plateback1",
-	"plateback2",
-	"plateback3",
 	"vehiclepoldecals128",
 }
 

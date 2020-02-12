@@ -10,8 +10,5 @@
 	<file src="client/shaders/texture_replace.fx" type="client" />
 
 	<file src="client/img/vehiclegrunge256.png" />
-	<file src="client/img/plateback1.png" />
-	<file src="client/img/plateback2.png" />
-	<file src="client/img/plateback3.png" />
 	<file src="client/img/vehiclepoldecals128.png" />
 </meta>

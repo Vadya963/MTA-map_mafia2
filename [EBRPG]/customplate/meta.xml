@@ -1,0 +1,9 @@
+<meta>
+	<info author="!Patrick" name="customvehplate" type="script" version="1.0"/>
+	<min_mta_version client="1.5.0" /> 
+	
+	<script src="client.lua" type="client" />
+	
+	<file src="files/font.ttf" />
+	<file src="files/plate.png" />
+</meta>
