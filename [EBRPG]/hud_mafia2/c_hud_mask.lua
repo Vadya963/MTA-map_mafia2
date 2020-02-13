@@ -139,7 +139,6 @@ addEventHandler( "onClientRender", root,
 		dxDrawImage( screenWidth-136, screenHeight-151, 126, 126, hudMaskShader, 0,0,0, tocolor(255,255,255,255) )
 		dxDrawImage( screenWidth-146, screenHeight-161, 146, 146, "images/radar_ver2.png", 0,0,0, tocolor(255,255,255,255) )
 		dxDrawImage( screenWidth-146, screenHeight-161, 146, 146, "images/pointer.png", camrot,0,0, tocolor(255,255,255,255) )
-		dxDrawImage( screenWidth-(146/2)-8, screenHeight-(146/2)-8-15, 16, 16, "images/blips/2.png", -playerrot+camrot,0,0, tocolor(255,255,255,255) )
 		
 		--blips
 		local px, py, pz = getElementPosition(lp)
@@ -173,6 +172,6 @@ addEventHandler( "onClientRender", root,
 				dxDrawImage(blipx, blipy, blipsize, blipsize, "images/blips/"..icon..".png", 0, 0, 0, tocolor(r,g,b,a))
 			end
 		end
-
+		dxDrawImage( screenWidth-(146/2)-8, screenHeight-(146/2)-8-15, 16, 16, "images/blips/2.png", -playerrot+camrot,0,0, tocolor(255,255,255,255) )
 	end
 )
