@@ -1,6 +1,5 @@
 local object = {
-{"PO_brana_GAME1.Cylinder08", {{-456.5 ,721.4 ,-20 ,0 ,0 ,0},}, 801, "uppertown"},
-
+{'10_nadzemka_151', { {5.9604651880818E-08, -1, 0, 0}, {1, 5.9604651880818E-08, 0, 0}, {0, 0, 1.00000011920929, 0}, {-57.6674385070801, -91.35498046875, -3.96327877044678, 0} }, 0},
 }
 print(os.date(), #object)
 function string.split(input, separator)

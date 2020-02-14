@@ -27,6 +27,7 @@ function ( startedRes )
 		eb_textures["uppertown"] = engineLoadTXD ( ":textures/uppertown_summer.txd" )
 		eb_textures["chinatown"] = engineLoadTXD ( ":textures/chinatown_summer.txd" )
 		eb_textures["westside"] = engineLoadTXD ( ":textures/westside_summer.txd" )
+		eb_textures["eastside"] = engineLoadTXD ( ":textures/eastside_summer.txd" )
 
 	elseif pogoda == "winter" then
 		eb_textures["kingstone"] = engineLoadTXD ( ":textures/kingstone_winter.txd" )
@@ -47,6 +48,7 @@ function ( startedRes )
 		eb_textures["uppertown"] = engineLoadTXD ( ":textures/uppertown_winter.txd" )
 		eb_textures["chinatown"] = engineLoadTXD ( ":textures/chinatown_winter.txd" )
 		eb_textures["westside"] = engineLoadTXD ( ":textures/westside_winter.txd" )
+		eb_textures["eastside"] = engineLoadTXD ( ":textures/eastside_winter.txd" )
 		
 	elseif pogoda == "autumn" then
 		--soon
