@@ -7179,10 +7179,24 @@ function displayLoadedRes ( res )--старт ресурсов
 	end
 	end
 
-	--[[uppertown_fun()
+	kingstone_fun()
+	dipton_fun()
+	highbrook_fun()
+	hillwood_fun()
+	riverside_fun()
+	greenfield_fun()
+	hunters_fun()
+	sandisland_fun()
+	port_fun()
+	southport_fun()
+	oysterbay_fun()
+	millville_s_fun()
+	millville_n_fun()
+	millville_new_fun()
 	italy_fun()
+	uppertown_fun()
 	chinatown_fun()
-	westside_fun()]]
+	westside_fun()
 	eastside_fun()
 
 	for i,v in ipairs(object) do
