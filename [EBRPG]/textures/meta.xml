@@ -18,6 +18,7 @@
 <file src="chinatown_summer.txd"/>
 <file src="westside_summer.txd"/>
 <file src="eastside_summer.txd"/>
+<file src="midtown_summer.txd"/>
 
 <file src="kingstone_winter.txd"/>
 <file src="dipton_winter.txd"/>
@@ -38,4 +39,5 @@
 <file src="chinatown_winter.txd"/>
 <file src="westside_winter.txd"/>
 <file src="eastside_winter.txd"/>
+<file src="midtown_winter.txd"/>
 </meta>
