@@ -2,12 +2,12 @@ local screenWidth, screenHeight = guiGetScreenSize ( )
 
 local menu_m2_table_text = {
 	--button text
-	["т/с"] = {"фары", "двигатель", "вертолет", "двери"},
+	["т/с"] = {"фары", "двигатель", "багажник", "двери"},
 	["двигатель"] = {"назад к т/с", "завести", "", "заглушить"},
 	["двери"] = {"назад к т/с", "открыть", "", "закрыть"},
 	["фары"] = {"назад к т/с", "включить", "", "выключить"},
-	["вертолет"] = {"назад к т/с", "прицепить", "", "отцепить"},
-	["назад к т/с"] = {"фары", "двигатель", "вертолет", "двери"},
+	["багажник"] = {"назад к т/с", "открыть багажник", "", "закрыть багажник"},
+	["назад к т/с"] = {"фары", "двигатель", "багажник", "двери"},
 
 	["анимации"] = {"2 страница", "сесть 1", "поднять руки", "сесть 2"},
 	["поднять руки"] = {"назад к анимации", "запуск поднять руки", "", "остановить анимацию"},
@@ -47,8 +47,10 @@ local menu_m2_table_text = {
 	["включить"] = {"event", "event_server_car_light", "true"},
 	["выключить"] = {"event", "event_server_car_light", "false"},
 
-	["прицепить"] = {"event", "event_server_attach", "true"},
-	["отцепить"] = {"event", "event_server_attach", "false"},
+	["открыть капот"] = {"event", "event_server_car_trunk_and_hood", "true,hood"},
+	["закрыть капот"] = {"event", "event_server_car_trunk_and_hood", "false,hood"},
+	["открыть багажник"] = {"event", "event_server_car_trunk_and_hood", "true,trunk"},
+	["закрыть багажник"] = {"event", "event_server_car_trunk_and_hood", "false,trunk"},
 
 	--анимации														anim 1, anim 2, loop anim true/false
 	["запуск поднять руки"] = {"event", "event_server_anim_player", "rob_bank,shp_handsup_scr,false"},

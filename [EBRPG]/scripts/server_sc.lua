@@ -28,6 +28,20 @@ function isPointInCircle3D(x, y, z, x1, y1, z1, radius)
 	end
 end
 
+function getPlayerVehicle( localPlayer, seat )
+	local vehicle = getPedOccupiedVehicle ( localPlayer )
+	if seat and vehicle then
+		local player = getVehicleOccupant ( vehicle, seat )
+		if localPlayer == player then
+			return vehicle
+		else
+			return false
+		end
+	else
+		return vehicle
+	end
+end
+
 function sendMessage(playerid, text, color)
 	local time = getRealTime()
 	local hour = time["hour"]
@@ -61,32 +75,29 @@ function me_chat(playerid, text)
 	end
 end
 
-addEvent("event_server_attach", true)
-addEventHandler ( "event_server_attach", root,
+addEvent("event_server_car_trunk_and_hood", true)
+addEventHandler ( "event_server_car_trunk_and_hood", root,
 function ( playerid, state )
+	local x,y,z = getElementPosition(playerid)
 	local playername = getPlayerName ( playerid )
-	local vehicleid = getPedOccupiedVehicle(playerid)
+	local vehicleid = getPlayerVehicle( playerid )
+	local spl = split(state, ",")
 
-	if vehicleid then
-		local x,y,z = getElementPosition(vehicleid)
-		if getElementModel(vehicleid) == 548 then
-			for k,vehicle in pairs(getElementsByType("vehicle")) do
-				local x1,y1,z1 = getElementPosition(vehicle)
-				if isPointInCircle3D(x1,y1,z1, x,y,z, 10) then
+	for k,vehicle in pairs(getElementsByType("vehicle")) do
+		local x1,y1,z1 = getElementPosition(vehicle)
+		local plate = getVehiclePlateText ( vehicle )
 
-					if not isElementAttached ( vehicle ) and state == "true" then
-						local car_attach = attachElements ( vehicle, vehicleid, 0, 0, -4 )
-						if car_attach then
-							sendMessage(playerid, "т/с прикреплен", color_mes.yellow)
-						end
-					elseif isElementAttached ( vehicle ) and state == "false" then
-						detachElements  ( vehicle, vehicleid )
-						sendMessage(playerid, "т/с откреплен", color_mes.yellow)
-					end
-
-					return
+		if isPointInCircle3D(x,y,z, x1,y1,z1, 10) and not vehicleid then
+			if spl[2] == "trunk" then
+				if spl[1] == "true" then
+					setVehicleDoorOpenRatio ( vehicle, 1, 1, 500 )
+					me_chat(playerid, playername.." открыл(а) багажник")
+				elseif spl[1] == "false" then
+					setVehicleDoorOpenRatio ( vehicle, 1, 0, 500 )
+					me_chat(playerid, playername.." закрыл(а) багажник")
 				end
 			end
+			return
 		end
 	end
 end)
@@ -119,18 +130,13 @@ addEventHandler("event_server_car_light", root,
 function ( playerid, state )
 	local x,y,z = getElementPosition(playerid)
 	local playername = getPlayerName ( playerid )
+	local vehicleid = getPlayerVehicle( playerid, 0 )
 
-	for k,vehicle in pairs(getElementsByType("vehicle")) do
-		local x1,y1,z1 = getElementPosition(vehicle)
-		local plate = getVehiclePlateText ( vehicle )
-
-		if isPointInCircle3D(x,y,z, x1,y1,z1, 10) then
-			if state == "true" then
-				setVehicleOverrideLights ( vehicle, 2 )
-			else
-				setVehicleOverrideLights ( vehicle, 1 )
-			end
-			return
+	if vehicleid then
+		if state == "true" then
+			setVehicleOverrideLights ( vehicleid, 2 )
+		else
+			setVehicleOverrideLights ( vehicleid, 1 )
 		end
 	end
 end)
@@ -140,20 +146,15 @@ addEventHandler ( "event_server_car_engine", root,
 function ( playerid, state )
 	local playername = getPlayerName ( playerid )
 	local x,y,z = getElementPosition(playerid)
+	local vehicleid = getPlayerVehicle( playerid, 0 )
 	
-	for k,vehicleid in pairs(getElementsByType("vehicle")) do
-		local x1,y1,z1 = getElementPosition(vehicleid)
-		local plate = getVehiclePlateText ( vehicleid )
-
-		if isPointInCircle3D(x,y,z, x1,y1,z1, 10) then
-			if state == "true" then
-				setVehicleEngineState(vehicleid, true)
-				me_chat(playerid, playername.." завел(а) двигатель")
-			else
-				setVehicleEngineState(vehicleid, false)
-				me_chat(playerid, playername.." заглушил(а) двигатель")
-			end
-			return
+	if vehicleid then
+		if state == "true" then
+			setVehicleEngineState(vehicleid, true)
+			me_chat(playerid, playername.." завел(а) двигатель")
+		else
+			setVehicleEngineState(vehicleid, false)
+			me_chat(playerid, playername.." заглушил(а) двигатель")
 		end
 	end
 end)
