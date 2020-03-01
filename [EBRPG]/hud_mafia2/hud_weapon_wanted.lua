@@ -22,6 +22,8 @@ function dxdrawtext(text, x, y, width, height, color, scale, font)
 end
 
 function createText ()
+	if getElementData(localPlayer, "radar_mafia2") then return end
+
 	local weaponpl = getPedWeapon(localPlayer)
 	if weaponpl and getElementData(root, "custom_weapon") and getElementData(root, "custom_weapon")[weaponpl] then
 		local v = getElementData(resourceRoot, "custom_weapon")[weaponpl]

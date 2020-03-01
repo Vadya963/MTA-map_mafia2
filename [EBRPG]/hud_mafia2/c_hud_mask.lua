@@ -77,7 +77,7 @@ local lp = getLocalPlayer()
 local range = 230
 addEventHandler( "onClientRender", root,
 	function()
-		if not bAllValid or getElementData(localPlayer, "radar_mafia2") then return end
+		if not bAllValid or getElementData(localPlayer, "radar_mafia2") or getElementInterior(localPlayer) ~= 0 or getElementDimension(localPlayer) ~= 0 then return end
 
 		local vehicle = getPedOccupiedVehicle ( localPlayer )
 		if vehicle then--отображение скорости авто
