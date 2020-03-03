@@ -1,5 +1,5 @@
 local color			= tocolor(240,170,16)
-local font			= dxCreateFont("files/font.ttf", 13)
+local font			= dxCreateFont("files/font.ttf", 11)
 local size			= 1.0
 local w,h = 64,32
 

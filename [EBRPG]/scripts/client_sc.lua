@@ -23,9 +23,9 @@ function ( startedRes )
 	setWaterLevel(-5000)
 	setFarClipDistance(2000)
 
-	--[[for k,v in ipairs(table_water) do
+	for k,v in ipairs(table_water) do
 		table_water[k][1] = createWater ( v[2], v[3], -25, v[4], v[3], -25, v[2], v[5], -25, v[4], v[5], -25 )
-	end]]
+	end
 end)
 
 function dxdrawtext(text, x, y, width, height, color, scale, font)
