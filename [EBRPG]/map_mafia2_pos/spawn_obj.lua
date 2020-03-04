@@ -6942,6 +6942,14 @@ local no_col_object = {
 }
 
 function displayLoadedRes ( res )--старт ресурсов
+	for i=550,20000 do
+		removeWorldModel(i,10000,0,0,0)
+	end
+
+	for k,v in pairs(getElementData(resourceRoot, "objectNames")) do
+		engineSetModelPhysicalPropertiesGroup(k, 0)
+	end
+
 	local hFile = fileOpen("log.txt")
 
 	local count = 0
@@ -7703,26 +7711,26 @@ function displayLoadedRes ( res )--старт ресурсов
 	end
 	end
 
-	kingstone_fun()
-	dipton_fun()
-	highbrook_fun()
+	--kingstone_fun()
+	--dipton_fun()
+	--highbrook_fun()
 	hillwood_fun()
-	riverside_fun()
-	greenfield_fun()
-	hunters_fun()
-	sandisland_fun()
-	port_fun()
-	southport_fun()
-	oysterbay_fun()
-	millville_s_fun()
-	millville_n_fun()
-	millville_new_fun()
-	italy_fun()
-	uppertown_fun()
-	chinatown_fun()
-	westside_fun()
-	eastside_fun()
-	midtown_fun()
+	--riverside_fun()
+	--greenfield_fun()
+	--hunters_fun()
+	--sandisland_fun()
+	--port_fun()
+	--southport_fun()
+	--oysterbay_fun()
+	--millville_s_fun()
+	--millville_n_fun()
+	--millville_new_fun()
+	--italy_fun()
+	--uppertown_fun()
+	--chinatown_fun()
+	--westside_fun()
+	--eastside_fun()
+	--midtown_fun()
 
 	for i,v in ipairs(no_col_object) do
 		local count = false
@@ -7740,6 +7748,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local lod_obj = false
 				local x,y,z = j[1],j[2],j[3]
 
+				engineSetModelPhysicalPropertiesGroup(v[3], 0)
 				if i <= 33 then
 					obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 					lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
@@ -7761,7 +7770,6 @@ function displayLoadedRes ( res )--старт ресурсов
 	end
 
 	for i,v in ipairs(object) do
-		setElementFrozen(v[2], true)
 		if v[5] then
 			setElementDoubleSided(v[2], true)
 			local obj = getLowLODElement(v[2])
@@ -7779,13 +7787,13 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 	end
 
+	print(#object)
 	setElementData(root, "object", object)
 	fileClose(hFile)
 end
-addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
+addEventHandler ( "onClientResourceStart", resourceRoot, displayLoadedRes )
 
-addEventHandler("onPlayerJoin", root,--конект игрока на сервер
+addEventHandler("onClientPlayerJoin", root,--конект игрока на сервер
 function()
-	local playerid = source
-	setPlayerBlurLevel ( playerid, 0 )
+	setPlayerBlurLevel ( 0 )
 end)

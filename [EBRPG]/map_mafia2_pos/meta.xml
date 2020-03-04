@@ -1,5 +1,8 @@
 <meta>
-<script src="getObjectNameFromModel.lua"></script>
-<script src="server.lua"/>
-<script src="unbreakable_object.lua" type="client"/>
+<min_mta_version client="1.5.7-9.20308.0" server="1.5.7-9.20308.0"/>
+
+<script src="getObjectNameFromModel.lua" type="shared"></script>
+<script src="server.lua" type="client"/>
+
+<file src='log.txt'/>
 </meta>
