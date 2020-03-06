@@ -6946,10 +6946,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		removeWorldModel(i,10000,0,0,0)
 	end
 
-	for k,v in pairs(getElementData(resourceRoot, "objectNames")) do
-		engineSetModelPhysicalPropertiesGroup(k, 0)
-	end
-
 	local hFile = fileOpen("log.txt")
 
 	local count = 0
@@ -7748,7 +7744,6 @@ function displayLoadedRes ( res )--старт ресурсов
 				local lod_obj = false
 				local x,y,z = j[1],j[2],j[3]
 
-				engineSetModelPhysicalPropertiesGroup(v[3], 0)
 				if i <= 33 then
 					obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 					lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
@@ -7787,13 +7782,23 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 	end
 
-	print(#object)
+	print("object len "..#object)
 	setElementData(root, "object", object)
 	fileClose(hFile)
 end
-addEventHandler ( "onClientResourceStart", resourceRoot, displayLoadedRes )
+addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
 
-addEventHandler("onClientPlayerJoin", root,--конект игрока на сервер
+addEventHandler("onPlayerJoin", root,--конект игрока на сервер
 function()
-	setPlayerBlurLevel ( 0 )
+	setPlayerBlurLevel (source, 0 )
+	setElementPosition(source, 0,0,1000)
 end)
+
+--{''; {{ ;0 ;0 ;0};}; 0};
+--{"05_88_01", {{-575.04130,1664.06500,-18.71200,90,0,0}}, 0}, dipton
+
+--greenfield
+--{"03_teren203", {{-1877.168 ,1046.32 ,12.10801 ,0 ,0 ,0}}, 0},--большая кол-ия
+--{"03_teren201", {{-1877.168 ,1046.32 ,12.10801 ,0 ,0 ,0}}, 0},
+--{"03_30", {{-1803.381 ,1051.32 ,8.489138 ,0 ,0 ,-90}}, 0},
+--{"03_29", {{-2000.435 ,1110.572 ,22.66821 ,0 ,0 ,70}}, 0},--большая кол-ия и далеко от игрока
