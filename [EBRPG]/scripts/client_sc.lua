@@ -3,8 +3,8 @@ local screenWidth, screenHeight = guiGetScreenSize ( )
 local table_water = {
 	{0, -1336.3854980469,349.09210205078, -718.77734375,1365.2574462891},--от кинг до хант
 	{0, -755.57446289063,1365.2574462891, -379.68450927734,1523.5191650391},--около моста в дип
-	{0, -379.68450927734,1274.3002929688, 1007.826171875,1523.5191650391},--от дип до дамбы
-	{0, -83.8125,1523.5191650391, 1007.826171875,1931.6591796875},--от ривер до дамбы
+	{0, -379.68450927734,1274.3002929688, 1007.826171875,1530.5191650391},--от дип до дамбы
+	{0, -83.8125,1530.5191650391, 1007.826171875,1931.6591796875},--от ривер до дамбы
 	{0, -1264.7642822266,194.21995544434, -718.77734375,349.09210205078},--от хант до хант
 	{0, -1340.3854980469,-412.2067565918, -718.77734375,194.21995544434},--от хант до саус
 	{0, -1336.3854980469,-2000, -974.7460937,-412.2067565918},--от саус до саус
@@ -16,12 +16,15 @@ local table_water = {
 addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
 
-	setOcclusionsEnabled(false)
 	engineSetSurfaceProperties ( 0, "audio", "concrete" )
 	engineSetSurfaceProperties ( 0, "canclimb", true )
 
+	setOcclusionsEnabled(false)
 	setWaterLevel(-5000)
 	setFarClipDistance(2000)
+	setBirdsEnabled(false)
+	setCloudsEnabled(false)
+	--setFogDistance(2000)
 
 	for k,v in ipairs(table_water) do
 		table_water[k][1] = createWater ( v[2], v[3], -25, v[4], v[3], -25, v[2], v[5], -25, v[4], v[5], -25 )
