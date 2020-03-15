@@ -14,7 +14,6 @@
 	<file src="hud_mask.fx" type="client" />
 	<file src="include/tex_matrix.fx" type="client" />
 	<file src="images/circle_mask.png" type="client" />
-	<file src="images/sept_mask.png" type="client" />
 	<file src="images/radar_ver1.png" type="client" />
 	<file src="images/radar_ver2.png" type="client" />
 	<file src="images/pointer.png" type="client" />

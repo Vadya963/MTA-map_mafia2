@@ -12,13 +12,12 @@ addEventHandler( "onClientResourceStart", resourceRoot,
 		hudMaskShader = dxCreateShader("hud_mask.fx")
 		radarTexture = dxCreateTexture("images/radar2.png")
 		maskTexture1 = dxCreateTexture("images/circle_mask.png")
-		maskTexture2 = dxCreateTexture("images/sept_mask.png")
 
 		setPlayerHudComponentVisible("radar", false)
 		setPlayerHudComponentVisible ("area_name", false )
 
 		-- Check everything is ok
-		bAllValid = hudMaskShader and radarTexture and maskTexture1 and maskTexture2
+		bAllValid = hudMaskShader and radarTexture and maskTexture1
 
 		if not bAllValid then
 			outputChatBox( "Could not create some things. Please use debugscript 3" )
@@ -98,15 +97,6 @@ addEventHandler( "onClientRender", root,
 				dxDrawImage ( screenWidth-105-146, screenHeight-120, 105, 105, "hud/low_fuel.png" )
 			end
 		end
-
-		--
-		-- Switch between mask textures every few seconds for DEMO
-		--
-		--[[if getTickCount() % 3000 < 2000 then
-			dxSetShaderValue( hudMaskShader, "sMaskTexture", maskTexture1 )
-		else
-			dxSetShaderValue( hudMaskShader, "sMaskTexture", maskTexture2 )
-		end]]
 
 		--
 		-- Transform world x,y into -0.5 to 0.5
