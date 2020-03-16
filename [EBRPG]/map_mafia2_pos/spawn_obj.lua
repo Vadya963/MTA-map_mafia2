@@ -7003,7 +7003,6 @@ local no_col_object = {
 {16.81121 ,1806.279 ,-14.79 ,0 ,0 ,0},
 {15.4 ,1813.65 ,-14.95 ,0 ,0 ,0 ,{1,0.95,1.2} },}, 1557, "riverside"},
 {"fake_zastup_kanalu", {{66.49599 ,1818.62 ,-22.97754 ,-90 ,0 ,26}}, 1560, "riverside"},
-{"kancelar_fake_mistnost_02", {{13.5627 ,1803.263 ,-7.295755 ,0 ,0 ,0}}, 1561, "riverside"},
 {"05_terrain_02_OM_e", {{-612.43840,2009.58000,-23.11283,0,0,0}}, 1566, "dipton"},
 
 --col_object
@@ -8045,7 +8044,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local lod_obj = false
 				local x,y,z = j[1],j[2],j[3]
 
-				if i <= 33 then
+				if i <= 32 then
 					obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 					lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 				else
