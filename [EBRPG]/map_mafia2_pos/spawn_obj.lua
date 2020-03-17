@@ -73,10 +73,9 @@ local kingstone = {
 {"04_plot01", {{-1033.77700,1730.94000,12.03265,90,0,0}}, 0},
 {"04_plot02A", {{-1383.20600,1698.44200,11.64970,90,0,0}}, 0},
 {"04_plot02B", {{-897.83040,1608.76200,8.74751,90,0,0}}, 0},
-{"04_plot02C", {{-928.39200,1654.52600,9.53383,90,0,0},
-{-1008.4000244141,1532.3000488281,6.3000001907349,90,0,48},
-{-1010.4000244141,1532.3000488281,6.3000001907349,90,0,48}}, 0},
-{"04_plot02D", {{-1159.20800,1525.22400,8.33719,90,0,0}}, 0},
+{"04_plot02C", {{-928.39200,1654.52600,9.53383,90,0,0}}, 0},
+{"04_plot02D", {{-1159.20800,1525.22400,8.33719,90,0,0},
+{-999.79998779297,1532.1999511719,7.3,90,0,0},}, 0},
 {"04_plot02E", {{-1251.41300,1658.24200,12.60255,90,0,0}}, 0},
 {"04_plot02F", {{-1395.06000,1523.90900,0.02963,90,0,0}}, 0},
 {"04_plot02G", {{-1412.83300,1622.86200,7.05948,90,0,0}}, 0},
@@ -8065,19 +8064,20 @@ function displayLoadedRes ( res )--старт ресурсов
 	end
 
 	for i,v in ipairs(object) do
+		local obj = getLowLODElement(v[2])
+		setElementDimension( v[2], -1 )
+		setElementDimension( obj, -1 )
+
 		if v[5] then
 			setElementDoubleSided(v[2], true)
-			local obj = getLowLODElement(v[2])
 			setElementDoubleSided(obj, true)
 		else
 			setElementDoubleSided(v[2], false)
-			local obj = getLowLODElement(v[2])
 			setElementDoubleSided(obj, false)
 		end
 
 		if v[6] then
 			setObjectScale(v[2], v[6])
-			local obj = getLowLODElement(v[2])
 			setObjectScale(obj, v[6])
 		end
 	end
