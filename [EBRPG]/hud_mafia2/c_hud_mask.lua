@@ -15,6 +15,8 @@ addEventHandler( "onClientResourceStart", resourceRoot,
 
 		setPlayerHudComponentVisible("radar", false)
 		setPlayerHudComponentVisible ("area_name", false )
+		setPlayerHudComponentVisible ("health", false )
+		setPlayerHudComponentVisible ("armour", false )
 
 		-- Check everything is ok
 		bAllValid = hudMaskShader and radarTexture and maskTexture1
