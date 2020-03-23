@@ -18,9 +18,9 @@ local coef_angle = 18/28
 local timer_key_p = false
 local timer_key_m = false
 local key_table = {
-	[1] = {["spring"] = 0, ["kernel2"] = 0, ["kernel1"] = 0, color = white, value = false, randomize = random(1, 28)},
-	[2] = {["spring"] = 0, ["kernel2"] = 0, ["kernel1"] = 0, color = white, value = false, randomize = random(1, 28)},
-	[3] = {["spring"] = 0, ["kernel2"] = 0, ["kernel1"] = 0, color = white, value = false, randomize = random(1, 28)},
+	[1] = {["spring"] = 0, ["kernel2"] = 0, ["kernel1"] = 0, color = white, value = false, randomize = random(6, 28)},
+	[2] = {["spring"] = 0, ["kernel2"] = 0, ["kernel1"] = 0, color = white, value = false, randomize = random(6, 28)},
+	[3] = {["spring"] = 0, ["kernel2"] = 0, ["kernel1"] = 0, color = white, value = false, randomize = random(6, 28)},
 }
 local theft_img = {
 	["castle"] = {107,0, 80,186},
@@ -66,7 +66,7 @@ function f_fun ( key, keyState )
 			key_table[i]["spring"] = 0
 			key_table[i].color = white
 			key_table[i].value = false
-			key_table[i].randomize = random(1, 28)
+			key_table[i].randomize = random(6, 28)
 		end
 	end
 end
@@ -85,7 +85,7 @@ function s_fun ( key, keyState )
 				key_table[key_state]["kernel1"] = count
 				key_table[key_state]["spring"] = count
 				print(count , key_table[key_state].randomize)
-				if count == key_table[key_state].randomize then
+				if key_table[key_state].randomize-5 <= count and count <= key_table[key_state].randomize then
 					key_table[key_state].value = true
 					key_table[key_state].color = green
 				else
@@ -96,7 +96,7 @@ function s_fun ( key, keyState )
 				killTimer( timer_key_p )
 			end
 			print(key_angle,count)
-		end, 250, 0 )
+		end, 50, 0 )
 	else
 		if isTimer( timer_key_p ) then killTimer( timer_key_p ) end
 
@@ -108,7 +108,7 @@ function s_fun ( key, keyState )
 				key_table[key_state]["kernel1"] = count
 				key_table[key_state]["spring"] = count
 				print(count , key_table[key_state].randomize)
-				if count == key_table[key_state].randomize then
+				if key_table[key_state].randomize-5 <= count and count <= key_table[key_state].randomize then
 					key_table[key_state].value = true
 					key_table[key_state].color = green
 				else
@@ -119,7 +119,7 @@ function s_fun ( key, keyState )
 				killTimer( timer_key_m )
 			end
 			print(key_angle,count)
-		end, 250, 0 )
+		end, 50, 0 )
 	end
 end
 
