@@ -8,6 +8,7 @@
 	<script src="menu_m2.lua" type="client"/>
 	<script src="timer.lua" type="client"/>
 	<script src="hud_weapon_wanted.lua" type="client"/>
+	<script src="theft_car_m2_c.lua" type="client"/>
 	<script src="server_fun.lua"/>
 
 	<script src="c_hud_mask.lua" type="client" validate="false"/>

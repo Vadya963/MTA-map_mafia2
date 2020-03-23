@@ -1,5 +1,4 @@
 <meta>
-	<script src="server_fun.lua"/>
 	<script src="replace_weapon.lua" type="client"/>
 
 	<file src="silenced.dff"/>

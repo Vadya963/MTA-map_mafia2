@@ -46,6 +46,6 @@
 - [x] таймер
 - [X] селектор оружия
 - [X] уровень розыска
-- [ ] скрипт взлома тачки
+- [X] скрипт взлома тачки
 
 Поместить в MTA San Andreas 1.5\server\mods\deathmatch\resources и прописать в mtaserver.conf resource src="map_mafia2" startup="1" protected="0" 
