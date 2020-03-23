@@ -14,7 +14,7 @@ local theft = false
 local key_state = 1
 local key_angle = -9
 local count = 0
-local coef_ygol = 18/28
+local coef_angle = 18/28
 local timer_key_p = false
 local timer_key_m = false
 local key_table = {
@@ -80,7 +80,7 @@ function s_fun ( key, keyState )
 		timer_key_p = setTimer( function ( ... )
 			if 0 <= count and count <= 27 then
 				count=count+1
-				key_angle = -9+count*coef_ygol
+				key_angle = -9+count*coef_angle
 				key_table[key_state]["kernel2"] = count
 				key_table[key_state]["kernel1"] = count
 				key_table[key_state]["spring"] = count
@@ -103,7 +103,7 @@ function s_fun ( key, keyState )
 		timer_key_m = setTimer( function ( ... )
 			if 1 <= count and count <= 28 then
 				count=count-1
-				key_angle = -9+count*coef_ygol
+				key_angle = -9+count*coef_angle
 				key_table[key_state]["kernel2"] = count
 				key_table[key_state]["kernel1"] = count
 				key_table[key_state]["spring"] = count
