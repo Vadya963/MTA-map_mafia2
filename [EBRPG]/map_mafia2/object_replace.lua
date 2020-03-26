@@ -1,4 +1,6 @@
-local eb_textures = {}
+local eb_textures = {
+	["prison"] = engineLoadTXD ( ":textures/prison.txd" ),
+}
 local weather = "summer" --summer,winter,autumn
 
 addEventHandler( "onClientResourceStart", resourceRoot,
@@ -26,3 +28,12 @@ function ( startedRes )
 		end
 	end
 end)
+
+--{''; {{ ;0 ;0 ;0};}; 0};
+--{"05_88_01", {{-575.04130,1664.06500,-18.71200,90,0,0}}, 0}, dipton
+
+--greenfield
+--{"03_teren203", {{-1877.168 ,1046.32 ,12.10801 ,0 ,0 ,0}}, 0},--большая кол-ия
+--{"03_teren201", {{-1877.168 ,1046.32 ,12.10801 ,0 ,0 ,0}}, 0},
+--{"03_30", {{-1803.381 ,1051.32 ,8.489138 ,0 ,0 ,-90}}, 0},
+--{"03_29", {{-2000.435 ,1110.572 ,22.66821 ,0 ,0 ,70}}, 0},--большая кол-ия и далеко от игрока

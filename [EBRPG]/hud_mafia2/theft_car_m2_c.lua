@@ -44,7 +44,7 @@ addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
 	bindKey("e", "down", e_fun)
 	bindKey("s", "both", s_fun)
-	bindKey("f", "down", f_fun)
+	bindKey("m", "down", f_fun)
 end)
 
 function f_fun ( key, keyState )
