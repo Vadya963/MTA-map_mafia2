@@ -179,7 +179,7 @@ function key_table_error(key)
 		elseif count%2 == 0 then
 			key_table[key].color = white
 		end
-	end, 250, 6 )
+	end, 250, 4 )
 end
 
 function createText ()
