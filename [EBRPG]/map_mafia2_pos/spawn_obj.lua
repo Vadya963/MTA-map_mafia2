@@ -8378,6 +8378,10 @@ function displayLoadedRes ( res )--старт ресурсов
 		local x,y,z = getElementRotation(obj)
 		setElementRotation(obj, x,y,-z)
 		setElementRotation(lod_obj, x,y,-z)
+
+		local x,y,z = getElementPosition(obj)
+		setElementPosition(obj, x,y,z+200)
+		setElementPosition(lod_obj, x,y,z+200)
 		
 		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5]})
 		fileWrite(hFile, i.." "..v[1].." " ..v[3].." prison " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
@@ -8389,13 +8393,17 @@ function displayLoadedRes ( res )--старт ресурсов
 		local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 
 		setLowLODElement(obj,lod_obj)
+
+		local x,y,z = getElementPosition(obj)
+		setElementPosition(obj, x,y,z+200)
+		setElementPosition(lod_obj, x,y,z+200)
 		
 		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5]})
 		fileWrite(hFile, i.." "..v[1].." " ..v[3].." prison " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
 	end
 	end
 
-	--[[kingstone_fun()
+	kingstone_fun()
 	dipton_fun()
 	highbrook_fun()
 	hillwood_fun()
@@ -8414,7 +8422,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	chinatown_fun()
 	westside_fun()
 	eastside_fun()
-	midtown_fun()]]
+	midtown_fun()
 
 	prison_fun()
 
