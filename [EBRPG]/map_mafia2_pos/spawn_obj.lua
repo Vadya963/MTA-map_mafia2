@@ -8424,7 +8424,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	end
 	end
 
-	--[[kingstone_fun()
+	kingstone_fun()
 	dipton_fun()
 	highbrook_fun()
 	hillwood_fun()
@@ -8444,9 +8444,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	westside_fun()
 	eastside_fun()
 	midtown_fun()
-	prison_fun()]]
-
-	dipton_fun()
+	prison_fun()
 
 	for i,v in ipairs(no_col_object) do
 		local count = false
