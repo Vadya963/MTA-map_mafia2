@@ -20,7 +20,11 @@ function ( startedRes )
 		if fileExists(":map_mafia2/"..v[4].."/"..v[1]..".dff") and fileExists(":map_mafia2/"..v[4].."/"..v[1]..".col") then
 			engineImportTXD (eb_textures[v[4]], v[3])
 			local dff = engineLoadDFF ( ":map_mafia2/"..v[4].."/"..v[1]..".dff" )
-			engineReplaceModel ( dff, v[3] )
+			if v[7] then
+				engineReplaceModel ( dff, v[3], true )
+			else
+				engineReplaceModel ( dff, v[3], false )
+			end
 			local col = engineLoadCOL ( ":map_mafia2/"..v[4].."/"..v[1]..".col" )
 			engineReplaceCOL ( col, v[3] )
 			engineSetModelLODDistance(v[3], 30000)
