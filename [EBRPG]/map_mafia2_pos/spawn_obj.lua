@@ -7824,7 +7824,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6], true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "kingstone", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." kingstone " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+			fileWrite(hFile, i.." "..v[1].." " ..v[3].." kingstone " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -7839,7 +7839,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6], true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "dipton", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." dipton " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+			fileWrite(hFile, i.." "..v[1].." " ..v[3].." dipton " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -7854,7 +7854,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "highbrook", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." highbrook " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+			fileWrite(hFile, i.." "..v[1].." " ..v[3].." highbrook " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -7875,7 +7875,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "hillwood", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." hillwood " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+			fileWrite(hFile, i.." "..v[1].." " ..v[3].." hillwood " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 
@@ -7901,7 +7901,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 
 		table.insert(object, {v[1], obj, v[3], "hillwood", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." hillwood " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." hillwood " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -7921,7 +7921,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "riverside", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." riverside " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+			fileWrite(hFile, i.." "..v[1].." " ..v[3].." riverside " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -7936,7 +7936,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "greenfield", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." greenfield " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+			fileWrite(hFile, i.." "..v[1].." " ..v[3].." greenfield " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -7951,7 +7951,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "hunters", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." hunters " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+			fileWrite(hFile, i.." "..v[1].." " ..v[3].." hunters " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -7966,7 +7966,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "sandisland", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." sandisland " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+			fileWrite(hFile, i.." "..v[1].." " ..v[3].." sandisland " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -7987,7 +7987,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, rx,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "port", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." port " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+			fileWrite(hFile, i.." "..v[1].." " ..v[3].." port " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -8006,7 +8006,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "southport", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." southport " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." southport " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8024,7 +8024,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "oysterbay", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." oysterbay " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." oysterbay " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8053,7 +8053,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "millville_s", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." millville_s " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." millville_s " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8084,7 +8084,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "millville_n", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." millville_n " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." millville_n " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8132,7 +8132,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "millville_new", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." millville_new " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." millville_new " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8173,7 +8173,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "italy", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." italy " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." italy " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8191,7 +8191,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "uppertown", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." uppertown " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." uppertown " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8230,7 +8230,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "chinatown", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." chinatown " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." chinatown " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8277,7 +8277,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "westside", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." westside " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." westside " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8333,7 +8333,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "eastside", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." eastside " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." eastside " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8383,7 +8383,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "midtown", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." midtown " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." midtown " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8405,7 +8405,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(lod_obj, x,y,z+200)
 		
 		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." prison " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." prison " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	for i,v in ipairs(prison[2]) do
 		local j = v[2]
@@ -8420,7 +8420,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(lod_obj, x,y,z+200)
 		
 		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." prison " ..tostring(v[4]).." "..tostring(v[5]).."\n" )
+		fileWrite(hFile, i.." "..v[1].." " ..v[3].." prison " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8479,7 +8479,7 @@ function displayLoadedRes ( res )--старт ресурсов
 
 				setLowLODElement(obj,lod_obj)
 				table.insert(object, {v[1], obj, v[3], v[4], v[5], v[6], v[7]})
-				fileWrite(hFile, i.." "..v[1].." " ..v[3].." "..v[4].." " ..tostring(v[5]).." "..tostring(v[6]).."\n" )
+				fileWrite(hFile, i.." "..v[1].." " ..v[3].." "..v[4].." " ..tostring(v[5]).." "..inspect(v[6]).." "..tostring(v[7]).."\n" )
 			end
 		end
 	end
