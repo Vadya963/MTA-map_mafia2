@@ -1,7 +1,7 @@
 math.randomseed(getTickCount())
 function random(min, max)
 	local r = math.random(min, max)
-	print(r)
+	--print(r)
 	return r
 end
 
@@ -84,7 +84,7 @@ function s_fun ( key, keyState )
 				key_table[key_state]["kernel2"] = count
 				key_table[key_state]["kernel1"] = count
 				key_table[key_state]["spring"] = count
-				print(count , key_table[key_state].randomize)
+				--print(count , key_table[key_state].randomize)
 				if key_table[key_state].randomize-5 <= count and count <= key_table[key_state].randomize then
 					key_table[key_state].value = true
 					key_table[key_state].color = green
@@ -95,7 +95,7 @@ function s_fun ( key, keyState )
 			else
 				killTimer( timer_key_p )
 			end
-			print(key_angle,count)
+			--print(key_angle,count)
 		end, 50, 0 )
 	else
 		if isTimer( timer_key_p ) then killTimer( timer_key_p ) end
@@ -107,7 +107,7 @@ function s_fun ( key, keyState )
 				key_table[key_state]["kernel2"] = count
 				key_table[key_state]["kernel1"] = count
 				key_table[key_state]["spring"] = count
-				print(count , key_table[key_state].randomize)
+				--print(count , key_table[key_state].randomize)
 				if key_table[key_state].randomize-5 <= count and count <= key_table[key_state].randomize then
 					key_table[key_state].value = true
 					key_table[key_state].color = green
@@ -118,7 +118,7 @@ function s_fun ( key, keyState )
 			else
 				killTimer( timer_key_m )
 			end
-			print(key_angle,count)
+			--print(key_angle,count)
 		end, 50, 0 )
 	end
 end
@@ -165,7 +165,7 @@ function e_fun ( key, keyState )
 
 	if key_state == 4 then
 		--евент если замок взломан успешно
-		print("HACKER MAN")
+		--print("HACKER MAN")
 		f_fun()
 	end
 end
