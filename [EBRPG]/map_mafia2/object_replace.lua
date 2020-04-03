@@ -29,6 +29,7 @@ function ( startedRes )
 			engineReplaceCOL ( col, v[3] )
 			engineSetModelLODDistance(v[3], 30000)
 			engineSetModelPhysicalPropertiesGroup(v[3], 0)
+			engineSetModelVisibleTime(v[3], 0, 24)
 		end
 	end
 end)
