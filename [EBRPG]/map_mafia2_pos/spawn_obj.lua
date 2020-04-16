@@ -8513,6 +8513,14 @@ function()
 	setElementPosition(source, 0,0,1000)
 end)
 
+function playerConnect (playerNick, playerIP, playerUsername, playerSerial, playerVersionNumber, playerVersionString)
+	local version = "1.5.7-9.20488.0"
+	if version > playerVersionString then
+		cancelEvent( true, "UPDATE THE MTA TO "..version )
+	end
+end
+addEventHandler ("onPlayerConnect", getRootElement(), playerConnect)
+
 function spawnplayer( ... )
 	spawnPlayer( source, -400.17102050781,803.42742919922,-18.945209503174 )
 	fadeCamera(source, true)
