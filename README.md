@@ -48,4 +48,4 @@
 - [X] уровень розыска
 - [X] скрипт взлома тачки
 
-Поместить в MTA San Andreas 1.5\server\mods\deathmatch\resources и прописать в mtaserver.conf resource src="map_mafia2" startup="1" protected="0" 
+Поместить в MTA San Andreas 1.5\server\mods\deathmatch\resources и прописать в mtaserver.conf <resource src="map_mafia2" startup="1" protected="0"> и <minclientversion>1.5.7-9.20488.0</minclientversion>
