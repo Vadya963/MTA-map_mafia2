@@ -8517,6 +8517,7 @@ function spawnplayer( ... )
 	spawnPlayer( source, -400.17102050781,803.42742919922,-18.945209503174 )
 	fadeCamera(source, true)
 	setCameraTarget(source, source)
+	print("event_spawnplayer "..getPlayerName( source ))
 end
 addEvent("event_spawnplayer", true)
 addEventHandler("event_spawnplayer", root, spawnplayer)
