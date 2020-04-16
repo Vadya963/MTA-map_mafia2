@@ -3,13 +3,56 @@
 
 <include resource='hud_mafia2'/>
 <include resource='image_replace_mafia2'/>
-<include resource='textures'/>
 <include resource='scripts'/>
 <include resource='map_mafia2_pos'/>
 <include resource='model_weapon'/>
 <include resource='customplate'/>
 
 <script src="object_replace.lua" type="client"/>
+
+<file src="prison.txd"/>
+
+<file src="kingstone_summer.txd"/>
+<file src="dipton_summer.txd"/>
+<file src="highbrook_summer.txd"/>
+<file src="hillwood_summer.txd"/>
+<file src="riverside_summer.txd"/>
+<file src="greenfield_summer.txd"/>
+<file src="hunters_summer.txd"/>
+<file src="sandisland_summer.txd"/>
+<file src="port_summer.txd"/>
+<file src="southport_summer.txd"/>
+<file src="oysterbay_summer.txd"/>
+<file src="millville_s_summer.txd"/>
+<file src="millville_n_summer.txd"/>
+<file src="millville_new_summer.txd"/>
+<file src="italy_summer.txd"/>
+<file src="uppertown_summer.txd"/>
+<file src="chinatown_summer.txd"/>
+<file src="westside_summer.txd"/>
+<file src="eastside_summer.txd"/>
+<file src="midtown_summer.txd"/>
+
+<file src="kingstone_winter.txd"/>
+<file src="dipton_winter.txd"/>
+<file src="highbrook_winter.txd"/>
+<file src="hillwood_winter.txd"/>
+<file src="riverside_winter.txd"/>
+<file src="greenfield_winter.txd"/>
+<file src="hunters_winter.txd"/>
+<file src="sandisland_winter.txd"/>
+<file src="port_winter.txd"/>
+<file src="southport_winter.txd"/>
+<file src="oysterbay_winter.txd"/>
+<file src="millville_s_winter.txd"/>
+<file src="millville_n_winter.txd"/>
+<file src="millville_new_winter.txd"/>
+<file src="italy_winter.txd"/>
+<file src="uppertown_winter.txd"/>
+<file src="chinatown_winter.txd"/>
+<file src="westside_winter.txd"/>
+<file src="eastside_winter.txd"/>
+<file src="midtown_winter.txd"/>
 
 <file src='prison/PLOT_osvetleni__02.dff'/>
 <file src='prison/PLOT_osvetleni__02.col'/>

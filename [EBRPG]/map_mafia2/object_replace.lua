@@ -4,18 +4,18 @@ local weather = "summer" --summer,winter,autumn
 addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
 	for k,v in ipairs(getElementData(root, "object")) do
-		if weather == "summer" and not eb_textures[v[4]] and fileExists(":textures/"..v[4].."_summer.txd") then
-			eb_textures[v[4]] = engineLoadTXD ( ":textures/"..v[4].."_summer.txd" )
+		if weather == "summer" and not eb_textures[v[4]] and fileExists(":map_mafia2/textures/"..v[4].."_summer.txd") then
+			eb_textures[v[4]] = engineLoadTXD ( ":map_mafia2/textures/"..v[4].."_summer.txd" )
 			print(v[4].." load")
-		elseif weather == "winter" and not eb_textures[v[4]] and fileExists(":textures/"..v[4].."_winter.txd") then
-			eb_textures[v[4]] = engineLoadTXD ( ":textures/"..v[4].."_winter.txd" )
+		elseif weather == "winter" and not eb_textures[v[4]] and fileExists(":map_mafia2/textures/"..v[4].."_winter.txd") then
+			eb_textures[v[4]] = engineLoadTXD ( ":map_mafia2/textures/"..v[4].."_winter.txd" )
 			print(v[4].." load")
 		elseif weather == "autumn" and not eb_textures[v[4]] then
 			--soon
 		end
 
-		if not eb_textures[v[4]] and fileExists(":textures/"..v[4]..".txd") then
-			eb_textures[v[4]] = engineLoadTXD ( ":textures/"..v[4]..".txd" )
+		if not eb_textures[v[4]] and fileExists(":map_mafia2/textures/"..v[4]..".txd") then
+			eb_textures[v[4]] = engineLoadTXD ( ":map_mafia2/textures/"..v[4]..".txd" )
 			print(v[4].." load")
 		end
 
@@ -34,6 +34,9 @@ function ( startedRes )
 			engineSetModelVisibleTime(v[3], 0, 24)
 		end
 	end
+	setTimer(function()
+		triggerServerEvent("event_spawnplayer", localPlayer)
+	end, 1000, 1)
 end)
 
 --{''; {{ ;0 ;0 ;0};}; 0};
