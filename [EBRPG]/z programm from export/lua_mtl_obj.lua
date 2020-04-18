@@ -1,5 +1,6 @@
+local option = ""--дополнительный путь для объектов у которых есть родитель
+
 local object = {
-{'Basket_sl_02', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {4.11274671554565, -1.99360346794128, 300, 0} }, 0},
 
 }
 print(os.date(), #object)
@@ -38,7 +39,7 @@ for line in io.lines(pyt) do
 end]]
 
 for k,v in ipairs(object) do
-	local pyt = "C:\\"..v[1].."(0).obj.mtl"
+	local pyt = "C:\\"..option..v[1].."(0).obj.mtl"
 	local file = io.open(pyt, "r")
 	local text = {}
 
@@ -68,7 +69,7 @@ end
 
 local file_meta = io.open("C:\\test\\meta.txt", "w")
 for k,v in ipairs(object) do
-	local pyt = "C:\\"..v[1].."(0).obj"
+	local pyt = "C:\\"..option..v[1].."(0).obj"
 	local file = io.open(pyt, "r")
 	local text = {}
 

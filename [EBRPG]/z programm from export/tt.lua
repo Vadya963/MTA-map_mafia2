@@ -1,3 +1,5 @@
+local option = ""--дополнительный путь для объектов у которых есть родитель
+
 function string.split(input, separator)
 
 	if type(input) ~= "string" then error("type mismatch in argument #1", 3) end
@@ -33,11 +35,11 @@ for k,v in ipairs(obj_t) do
 	if obj2 then
 		obj2 = string.split(obj_t[k+1], "{',")[1]
 		--print("write table", obj1,obj2)
-		for line in io.lines("C:\\"..obj1.."(0).obj") do
+		for line in io.lines("C:\\"..option..obj1.."(0).obj") do
 			table.insert(t1, line)
 		end
 
-		for line in io.lines("C:\\"..obj2.."(0).obj") do
+		for line in io.lines("C:\\"..option..obj2.."(0).obj") do
 			table.insert(t2, line)
 		end
 		--print("write table OK", obj1,obj2)

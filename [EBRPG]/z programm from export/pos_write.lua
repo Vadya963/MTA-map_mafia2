@@ -1,3 +1,5 @@
+local option = ""--дополнительный путь для объектов у которых есть родитель
+
 function string.split(input, separator)
 
 	if type(input) ~= "string" then error("type mismatch in argument #1", 3) end
@@ -23,7 +25,7 @@ local bool_file = false
 
 for line in io.lines(pyt) do
 	if string.find(line, "obj") then
-		if io.open("C:\\"..string.split(line, "|")[2].."(0).obj", "r") then
+		if io.open("C:\\"..option..string.split(line, "|")[2].."(0).obj", "r") then
 			bool_file = true
 			text = "{'"..string.split(line, "|")[2]
 		end
