@@ -7649,23 +7649,49 @@ function displayLoadedRes ( res )--старт ресурсов
 		count = count+1
 		
 		if count <= #kingstone then
-			kingstone[count][3] = k
+			local key = count
+			kingstone[key][3] = k
+			fileWrite(hFile, kingstone[key][1].." "..kingstone[key][3].." kingstone\n" )
+
 		elseif count <= #kingstone+#dipton then
-			dipton[count-#kingstone][3] = k
+			local key = count-#kingstone
+			dipton[key][3] = k
+			fileWrite(hFile, dipton[key][1].." "..dipton[key][3].." dipton\n" )
+
 		elseif count <= #kingstone+#dipton+#highbrook then
-			highbrook[count-#kingstone-#dipton][3] = k
+			local key = count-#kingstone-#dipton
+			highbrook[key][3] = k
+			fileWrite(hFile, highbrook[key][1].." "..highbrook[key][3].." highbrook\n" )
+
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood then
-			hillwood[count-#kingstone-#dipton-#highbrook][3] = k
+			local key = count-#kingstone-#dipton-#highbrook
+			hillwood[key][3] = k
+			fileWrite(hFile, hillwood[key][1].." "..hillwood[key][3].." hillwood\n" )
+
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside then
-			riverside[count-#kingstone-#dipton-#highbrook-#hillwood][3] = k
+			local key = count-#kingstone-#dipton-#highbrook-#hillwood
+			riverside[key][3] = k
+			fileWrite(hFile, riverside[key][1].." "..riverside[key][3].." riverside\n" )
+
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield then
-			greenfield[count-#kingstone-#dipton-#highbrook-#hillwood-#riverside][3] = k
+			local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside
+			greenfield[key][3] = k
+			fileWrite(hFile, greenfield[key][1].." "..greenfield[key][3].." greenfield\n" )
+
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters then
-			hunters[count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield][3] = k
+			local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield
+			hunters[key][3] = k
+			fileWrite(hFile, hunters[key][1].." "..hunters[key][3].." hunters\n" )
+
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters+#sandisland then
-			sandisland[count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters][3] = k
+			local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters
+			sandisland[key][3] = k
+			fileWrite(hFile, sandisland[key][1].." "..sandisland[key][3].." sandisland\n" )
+
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters+#sandisland+#port then
-			port[count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters-#sandisland][3] = k
+			local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters-#sandisland
+			port[key][3] = k
+			fileWrite(hFile, port[key][1].." "..port[key][3].." port\n" )
 		else
 			count = k-1
 			break
@@ -7679,6 +7705,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					southport[k][3] = count
+					fileWrite(hFile, southport[k][1].." "..southport[k][3].." southport\n" )
 					break
 				else
 					count = count+1
@@ -7696,6 +7723,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					oysterbay[k][3] = count
+					fileWrite(hFile, oysterbay[k][1].." "..oysterbay[k][3].." oysterbay\n" )
 					break
 				else
 					count = count+1
@@ -7713,6 +7741,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					millville_s[k][3] = count
+					fileWrite(hFile, millville_s[k][1].." "..millville_s[k][3].." millville_s\n" )
 					break
 				else
 					count = count+1
@@ -7730,6 +7759,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					millville_n[k][3] = count
+					fileWrite(hFile, millville_n[k][1].." "..millville_n[k][3].." millville_n\n" )
 					break
 				else
 					count = count+1
@@ -7747,6 +7777,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					millville_new[k][3] = count
+					fileWrite(hFile, millville_new[k][1].." "..millville_new[k][3].." millville_new\n" )
 					break
 				else
 					count = count+1
@@ -7764,6 +7795,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					italy[k][3] = count
+					fileWrite(hFile, italy[k][1].." "..italy[k][3].." italy\n" )
 					break
 				else
 					count = count+1
@@ -7781,6 +7813,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					uppertown[k][3] = count
+					fileWrite(hFile, uppertown[k][1].." "..uppertown[k][3].." uppertown\n" )
 					break
 				else
 					count = count+1
@@ -7798,6 +7831,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					chinatown[k][3] = count
+					fileWrite(hFile, chinatown[k][1].." "..chinatown[k][3].." chinatown\n" )
 					break
 				else
 					count = count+1
@@ -7815,6 +7849,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					westside[k][3] = count
+					fileWrite(hFile, westside[k][1].." "..westside[k][3].." westside\n" )
 					break
 				else
 					count = count+1
@@ -7832,6 +7867,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					eastside[k][3] = count
+					fileWrite(hFile, eastside[k][1].." "..eastside[k][3].." eastside\n" )
 					break
 				else
 					count = count+1
@@ -7849,6 +7885,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					midtown[k][3] = count
+					fileWrite(hFile, midtown[k][1].." "..midtown[k][3].." midtown\n" )
 					break
 				else
 					count = count+1
@@ -7866,6 +7903,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					observatory[k][3] = count
+					fileWrite(hFile, observatory[k][1].." "..observatory[k][3].." observatory\n" )
 					break
 				else
 					count = count+1
@@ -7883,6 +7921,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					prison[1][k][3] = count
+					fileWrite(hFile, prison[1][k][1].." "..prison[1][k][3].." prison\n" )
 					break
 				else
 					count = count+1
@@ -7900,6 +7939,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					prison[2][k][3] = count
+					fileWrite(hFile, prison[2][k][1].." "..prison[2][k][3].." prison\n" )
 					break
 				else
 					count = count+1
@@ -7917,6 +7957,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					diamond_motors[k][3] = count
+					fileWrite(hFile, diamond_motors[k][1].." "..diamond_motors[k][3].." diamond_motors\n" )
 					break
 				else
 					count = count+1
@@ -7938,7 +7979,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6], true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "kingstone", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." kingstone " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -7953,7 +7993,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6], true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "dipton", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." dipton " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -7968,7 +8007,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "highbrook", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." highbrook " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -7989,7 +8027,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "hillwood", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." hillwood " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 
@@ -8015,7 +8052,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 
 		table.insert(object, {v[1], obj, v[3], "hillwood", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." hillwood " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8035,7 +8071,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "riverside", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." riverside " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -8050,7 +8085,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "greenfield", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." greenfield " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -8065,7 +8099,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "hunters", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." hunters " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -8080,7 +8113,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "sandisland", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." sandisland " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -8101,7 +8133,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			local lod_obj = createObject(v[3], x,y,z, rx,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "port", v[4], v[5], v[6]})
-			fileWrite(hFile, i.." "..v[1].." " ..v[3].." port " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 		end
 	end
 	end
@@ -8120,7 +8151,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "southport", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." southport " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8138,7 +8168,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "oysterbay", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." oysterbay " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8167,7 +8196,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "millville_s", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." millville_s " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8198,7 +8226,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "millville_n", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." millville_n " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8246,7 +8273,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "millville_new", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." millville_new " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8287,7 +8313,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "italy", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." italy " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8305,7 +8330,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "uppertown", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." uppertown " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8344,7 +8368,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "chinatown", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." chinatown " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8391,7 +8414,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "westside", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." westside " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8447,7 +8469,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "eastside", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." eastside " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8497,7 +8518,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "midtown", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." midtown " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8515,7 +8535,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." prison " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	for i,v in ipairs(prison[2]) do
 		local j = v[2]
@@ -8526,7 +8545,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		setLowLODElement(obj,lod_obj)
 		
 		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." prison " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8548,7 +8566,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(lod_obj, x+-287.72860,y+823.49730,z+14.50119)
 		
 		table.insert(object, {v[1], obj, v[3], "diamond_motors", v[4], v[5], v[6]})
-		fileWrite(hFile, i.." "..v[1].." " ..v[3].." diamond_motors " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
 	end
 	end
 
@@ -8606,9 +8623,10 @@ function displayLoadedRes ( res )--старт ресурсов
 
 				setLowLODElement(obj,lod_obj)
 				table.insert(object, {v[1], obj, v[3], v[4], v[5], v[6], v[7]})
-				fileWrite(hFile, i.." "..v[1].." " ..v[3].." "..v[4].." " ..tostring(v[5]).." "..inspect(v[6]).." "..tostring(v[7]).."\n" )
 			end
 		end
+
+		fileWrite(hFile, v[1].." " ..v[3].." "..v[4].."\n" )
 	end
 
 	for i,v in ipairs(object) do
@@ -8657,7 +8675,7 @@ function()
 end)
 
 function spawnplayer( ... )
-	spawnPlayer( source, -400.17102050781,803.42742919922,-18.945209503174 )
+	spawnPlayer( source, -400.17102050781,803.42742919922,-18.945209503174+100 )
 	fadeCamera(source, true)
 	setCameraTarget(source, source)
 	print("event_spawnplayer "..getPlayerName( source ))

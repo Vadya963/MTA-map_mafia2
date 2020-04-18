@@ -26,8 +26,9 @@ function ( startedRes )
 	setCloudsEnabled(false)
 	--setFogDistance(2000)
 
+	local height = 75
 	for k,v in ipairs(table_water) do
-		table_water[k][1] = createWater ( v[2], v[3], -25, v[4], v[3], -25, v[2], v[5], -25, v[4], v[5], -25 )
+		table_water[k][1] = createWater ( v[2], v[3], height, v[4], v[3], height, v[2], v[5], height, v[4], v[5], height )
 	end
 end)
 
@@ -53,7 +54,7 @@ setTimer(function ( ... )
 	end
 
 	if swim_time >= 5 or air_time >= 5 then
-		setElementPosition(localPlayer, -400.17102050781,803.42742919922,-18.945209503174)
+		setElementPosition(localPlayer, -400.17102050781,803.42742919922,-18.945209503174+100)
 		swim_time = 0
 	end
 end, 1000, 0)
@@ -117,6 +118,11 @@ end)
 addCommandHandler ( "hud",
 function ( cmd )
 	hud = not hud
+end)
+
+addCommandHandler ( "ebdimplayer",
+function ( cmd, level )
+	setElementDimension(localPlayer, tonumber(level))
 end)
 
 addCommandHandler ( "ebdim",
