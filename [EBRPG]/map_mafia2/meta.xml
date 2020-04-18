@@ -5299,8 +5299,6 @@
 <file src='dipton/05_69_02.col'/>
 <file src='dipton/05_69_03.dff'/>
 <file src='dipton/05_69_03.col'/>
-<file src='dipton/05_88_01.dff'/>
-<file src='dipton/05_88_01.col'/>
 <file src='dipton/05_dum_02.dff'/>
 <file src='dipton/05_dum_02.col'/>
 <file src='dipton/05_dum_03.dff'/>
@@ -6519,6 +6517,28 @@
 <file src='riverside/fake_zastup_kanalu.dff'/>
 <file src='riverside/fake_zastup_kanalu.col'/>
 
+<file src='greenfield/03_teren203.dff'/>
+<file src='greenfield/03_teren203.col'/>
+<file src='greenfield/03_teren201.dff'/>
+<file src='greenfield/03_teren201.col'/>
+<file src='greenfield/03_teren204.dff'/>
+<file src='greenfield/03_teren204.col'/>
+<file src='greenfield/03_29.dff'/>
+<file src='greenfield/03_29.col'/>
+<file src='greenfield/03_30.dff'/>
+<file src='greenfield/03_30.col'/>
+<file src='greenfield/03_39_G.dff'/>
+<file src='greenfield/03_39_G.col'/>
+<file src='greenfield/03_36c_G.dff'/>
+<file src='greenfield/03_36c_G.col'/>
+<file src='greenfield/03_skalasoutezka.dff'/>
+<file src='greenfield/03_skalasoutezka.col'/>
+<file src='greenfield/03_31_G.dff'/>
+<file src='greenfield/03_31_G.col'/>
+<file src='greenfield/03_souteskadno.dff'/>
+<file src='greenfield/03_souteskadno.col'/>
+<file src='greenfield/green_brana_kridlo_02_05.dff'/>
+<file src='greenfield/green_brana_kridlo_02_05.col'/>
 <file src='greenfield/03_OBRUBAKY.dff'/>
 <file src='greenfield/03_OBRUBAKY.col'/>
 <file src='greenfield/03_teren10.dff'/>

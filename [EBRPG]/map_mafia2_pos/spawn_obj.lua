@@ -1719,9 +1719,7 @@ local greenfield = {
 {-1664.520 ,858.0595 ,-1.345066 ,0 ,0 ,-2.96600},
 {-1665.101 ,869.2654 ,-1.353182 ,0 ,0 ,-2.96600},
 {-1663.833 ,835.7474 ,-1.354498 ,0 ,0 ,-1.38592},
-{-1664.103 ,846.9042 ,-1.350174 ,0 ,0 ,-1.38592},
-{-1655.000 ,1033.300 ,-6.5 ,0 ,0 ,-15},
-{-1653.699 ,1028.900 ,-6.5 ,0 ,0 ,-16}}, 0},
+{-1664.103 ,846.9042 ,-1.350174 ,0 ,0 ,-1.38592},}, 0},
 {"03_plaz_fade3", {{-1271.778 ,736.4512 ,-34.47944 ,0 ,0 ,-180}}, 0},
 {"03_12", {{-1386.007 ,879.1657 ,-14.74541 ,0 ,0 ,0}}, 0},
 {"03_12c", {{-1430.175 ,1061.405 ,-12.41087 ,0 ,0 ,0}}, 0},
@@ -7355,7 +7353,9 @@ local diamond_motors = {
 
 local object = {}
 local object_interior = {--интерьеры
-["diamond_motors"] = 1,
+--1 dimension, 2 height
+["prison"] = {1, 200},
+["diamond_motors"] = {2, 500},
 }
 local no_col_object = {
 {"05_30_OM", {{-638.77860,1738.21000,-9.32861,0,0,0}}, 1226, "dipton"},
@@ -7524,6 +7524,17 @@ local no_col_object = {
 {'dvere_vstup', {{-0.0005120086716488+-292.86500, -0.00594685086980462+834.88860, 1.11055994033813+9.84786, 0,0,90},}, 815, "diamond_motors"},
 {'dvere_kancl', {{-0.00279785157181323+-286.19620, 0.0319796837866306+832.06, 1.16252744197845+13.82321, 0,0,90},}, 817, "diamond_motors"},
 {'SHOW', {{-288.29998779297, 827.40002441406, 23.700000762939, 0,0,0},}, 818, "diamond_motors", true, false, true},
+{'03_teren203', {{-1877.168 ,1046.32 ,12.10801 ,0 ,0 ,0},}, 819, "greenfield"},
+{'03_teren201', {{-1877.168-134 ,1046.32-10 ,12.10801+5 ,0 ,0 ,0},}, 820, "greenfield"},
+{'03_teren204', {{-1877.168-136 ,1046.32+199 ,12.10801+2 ,0 ,0 ,0},}, 821, "greenfield"},
+{'03_29', {{-2000.435+164.631 ,1110.572-27.72 ,22.66821-13.422 ,0 ,0 ,0},}, 822, "greenfield"},
+{'03_30', {{-1803.381 ,1051.32 ,8.489138 ,0 ,0 ,-90},}, 823, "greenfield"},
+{'03_39_G', {{-1833.208 ,1072.714 ,6.819406 ,0 ,0 ,11},}, 824, "greenfield"},
+{'03_36c_G', {{-1925.73 ,1207.784 ,6.59896 ,0 ,0 ,0},}, 825, "greenfield"},
+{'03_skalasoutezka', {{-2008.289 ,910.6069 ,23.09036 ,0 ,0 ,0},}, 826, "greenfield"},
+{'03_31_G', {{-2024.641 ,935.4331 ,27.65752 ,0 ,0 ,0},}, 827, "greenfield"},
+{'03_souteskadno', {{-1973.308 ,920.1251 ,11.55987 ,0 ,0 ,0},}, 855, "greenfield"},
+{'green_brana_kridlo_02_05', {{-1662.40000, 1030.13000, -4.50000 ,0 ,0 ,-99},}, 856, "greenfield"},
 
 {"04_fast_food_exterier", {{-1583.17800,1603.85800,1.70258,90,0,0}, 
 {-644.9767 ,1295.865 ,10.87228 ,90 ,0 ,-135},
@@ -8502,10 +8513,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		local x,y,z = getElementRotation(obj)
 		setElementRotation(obj, x,y,-z)
 		setElementRotation(lod_obj, x,y,-z)
-
-		local x,y,z = getElementPosition(obj)
-		setElementPosition(obj, x,y,z+200)
-		setElementPosition(lod_obj, x,y,z+200)
 		
 		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5], v[6]})
 		fileWrite(hFile, i.." "..v[1].." " ..v[3].." prison " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
@@ -8517,10 +8524,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 
 		setLowLODElement(obj,lod_obj)
-
-		local x,y,z = getElementPosition(obj)
-		setElementPosition(obj, x,y,z+200)
-		setElementPosition(lod_obj, x,y,z+200)
 		
 		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5], v[6]})
 		fileWrite(hFile, i.." "..v[1].." " ..v[3].." prison " ..tostring(v[4]).." "..inspect(v[5]).." "..tostring(v[6]).."\n" )
@@ -8610,9 +8613,18 @@ function displayLoadedRes ( res )--старт ресурсов
 
 	for i,v in ipairs(object) do
 		local obj = getLowLODElement(v[2])
+		local x,y,z = getElementPosition(v[2])
+
+		setElementPosition( v[2], x,y,z+100 )
+		setElementPosition( obj, x,y,z+100 )
+
 		if object_interior[v[4]] then
-			setElementDimension( v[2], object_interior[v[4]] )
-			setElementDimension( obj, object_interior[v[4]] )
+			setElementDimension( v[2], object_interior[v[4]][1] )
+			setElementDimension( obj, object_interior[v[4]][1] )
+
+			local x,y,z = getElementPosition(obj)
+			setElementPosition(v[2], x,y,z+object_interior[v[4]][2])
+			setElementPosition(obj, x,y,z+object_interior[v[4]][2])
 		else
 			setElementDimension( v[2], -1 )
 			setElementDimension( obj, -1 )
