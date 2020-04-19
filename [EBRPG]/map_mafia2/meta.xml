@@ -12,6 +12,7 @@
 
 <file src="textures/prison.txd"/>
 <file src="textures/diamond_motors.txd"/>
+<file src="textures/respray.txd"/>
 
 <file src="textures/kingstone_summer.txd"/>
 <file src="textures/dipton_summer.txd"/>
@@ -54,6 +55,55 @@
 <file src="textures/westside_winter.txd"/>
 <file src="textures/eastside_winter.txd"/>
 <file src="textures/midtown_winter.txd"/>
+
+<file src='respray/SS_tools02.dff'/>
+<file src='respray/SS_tools02.col'/>
+<file src='respray/RS_futra.dff'/>
+<file src='respray/RS_futra.col'/>
+<file src='respray/SS_obj__03.dff'/>
+<file src='respray/SS_obj__03.col'/>
+<file src='respray/SS_obj__02.dff'/>
+<file src='respray/SS_obj__02.col'/>
+<file src='respray/SS_obj__01.dff'/>
+<file src='respray/SS_obj__01.col'/>
+<file src='respray/SS_obj__04.dff'/>
+<file src='respray/SS_obj__04.col'/>
+<file src='respray/SS_bomba_B1.dff'/>
+<file src='respray/SS_bomba_B1.col'/>
+<file src='respray/SRS_plechovka__A02.dff'/>
+<file src='respray/SRS_plechovka__A02.col'/>
+<file src='respray/SRS_plechovka__A03.dff'/>
+<file src='respray/SRS_plechovka__A03.col'/>
+<file src='respray/SRS_plechovka__A01.dff'/>
+<file src='respray/SRS_plechovka__A01.col'/>
+<file src='respray/RESPRAY_regal01.dff'/>
+<file src='respray/RESPRAY_regal01.col'/>
+<file src='respray/SS_klima.dff'/>
+<file src='respray/SS_klima.col'/>
+<file src='respray/pinups.dff'/>
+<file src='respray/pinups.col'/>
+<file src='respray/SRS_plechovka_A25.dff'/>
+<file src='respray/SRS_plechovka_A25.col'/>
+<file src='respray/SS_pneu01.dff'/>
+<file src='respray/SS_pneu01.col'/>
+<file src='respray/SS_police01.dff'/>
+<file src='respray/SS_police01.col'/>
+<file src='respray/SS_police02.dff'/>
+<file src='respray/SS_police02.col'/>
+<file src='respray/SS_police03.dff'/>
+<file src='respray/SS_police03.col'/>
+<file src='respray/SS_stred.dff'/>
+<file src='respray/SS_stred.col'/>
+<file src='respray/SS_police.dff'/>
+<file src='respray/SS_police.col'/>
+<file src='respray/Group01.dff'/>
+<file src='respray/Group01.col'/>
+<file src='respray/SS_najezd01.dff'/>
+<file src='respray/SS_najezd01.col'/>
+<file src='respray/SS_najezd02.dff'/>
+<file src='respray/SS_najezd02.col'/>
+<file src='respray/doors1.dff'/>
+<file src='respray/doors1.col'/>
 
 <file src='diamond_motors/hala_plakat_b__02.dff'/>
 <file src='diamond_motors/hala_plakat_b__02.col'/>
