@@ -7379,10 +7379,10 @@ local respray = {
 
 local object = {}
 local object_interior = {--интерьеры
---1 dimension, 2 height+100=600
-["prison"] = {1, 200},
-["diamond_motors"] = {2, 500},
-["respray"] = {3, 500},
+--height+100=600
+["prison"] = 200,
+["diamond_motors"] = 500,
+["respray"] = 500,
 }
 local no_col_object = {
 {"05_30_OM", {{-638.77860,1738.21000,-9.32861,0,0,0}}, 1226, "dipton"},
@@ -8705,16 +8705,13 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition( obj, x,y,z+100 )
 
 		if object_interior[v[4]] then
-			setElementDimension( v[2], object_interior[v[4]][1] )
-			setElementDimension( obj, object_interior[v[4]][1] )
-
 			local x,y,z = getElementPosition(obj)
-			setElementPosition(v[2], x,y,z+object_interior[v[4]][2])
-			setElementPosition(obj, x,y,z+object_interior[v[4]][2])
-		else
-			setElementDimension( v[2], -1 )
-			setElementDimension( obj, -1 )
+			setElementPosition(v[2], x,y,z+object_interior[v[4]])
+			setElementPosition(obj, x,y,z+object_interior[v[4]])
 		end
+
+		setElementDimension( v[2], -1 )
+		setElementDimension( obj, -1 )
 
 		if v[5] then
 			setElementDoubleSided(v[2], true)
