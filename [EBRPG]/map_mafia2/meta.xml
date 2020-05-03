@@ -1,6 +1,6 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.27.2.0"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.28.2.0"/>
 
 <include resource='hud_mafia2'/>
 <include resource='image_replace_mafia2'/>
@@ -6301,6 +6301,20 @@
 <file src='hillwood/14_hvezdarna_dvere.dff'/>
 <file src='hillwood/14_hvezdarna_dvere.col'/>
 
+<file src='riverside/06_CCpistB_i_04_G.dff'/>
+<file src='riverside/06_CCpistB_i_04_G.col'/>
+<file src='riverside/06_CCkeep_i_04_G.dff'/>
+<file src='riverside/06_CCkeep_i_04_G.col'/>
+<file src='riverside/lis_in.dff'/>
+<file src='riverside/lis_in.col'/>
+<file src='riverside/lis_p_vertik.dff'/>
+<file src='riverside/lis_p_vertik.col'/>
+<file src='riverside/lis_out.dff'/>
+<file src='riverside/lis_out.col'/>
+<file src='riverside/lis_p_horiz.dff'/>
+<file src='riverside/lis_p_horiz.col'/>
+<file src='riverside/podlaha.dff'/>
+<file src='riverside/podlaha.col'/>
 <file src='riverside/vrata_vstup_L.dff'/>
 <file src='riverside/vrata_vstup_L.col'/>
 <file src='riverside/ext_okna_skla_04.dff'/>

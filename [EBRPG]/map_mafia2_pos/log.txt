@@ -3915,6 +3915,13 @@ green_brana_kridlo_02_05 856 greenfield
 doors1 857 respray
 05_i_cashA_02_G 858 dipton
 05_ms_123_advert_01 865 dipton
+lis_in 5119 riverside
+lis_p_vertik 866 riverside
+lis_out 872 riverside
+lis_p_horiz 881 riverside
+podlaha 882 riverside
+06_CCpistB_i_04_G 883 riverside
+06_CCkeep_i_04_G 884 riverside
 04_fast_food_exterier 952 kingstone
 04_uhli_02 953 kingstone
 04_blok_interier04 954 kingstone
