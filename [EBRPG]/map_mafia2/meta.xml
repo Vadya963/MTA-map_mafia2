@@ -1,6 +1,6 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.28.3.0"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.28.3.1"/>
 
 <include resource='hud_mafia2'/>
 <include resource='image_replace_mafia2'/>
@@ -58,6 +58,18 @@
 <file src="textures/eastside_winter.txd"/>
 <file src="textures/midtown_winter.txd"/>
 
+<file src='vitoa3city/lednice_RV1_body.dff'/>
+<file src='vitoa3city/lednice_RV1_body.col'/>
+<file src='vitoa3city/lednice_RV1_dvere.dff'/>
+<file src='vitoa3city/lednice_RV1_dvere.col'/>
+<file src='vitoa3city/_skrin2_dvere_L.dff'/>
+<file src='vitoa3city/_skrin2_dvere_L.col'/>
+<file src='vitoa3city/door_Green.dff'/>
+<file src='vitoa3city/door_Green.col'/>
+<file src='vitoa3city/schodiste_dvere18.dff'/>
+<file src='vitoa3city/schodiste_dvere18.col'/>
+<file src='vitoa3city/radio4.dff'/>
+<file src='vitoa3city/radio4.col'/>
 <file src='vitoa3city/mesh.dff'/>
 <file src='vitoa3city/mesh.col'/>
 <file src='vitoa3city/stul.dff'/>
