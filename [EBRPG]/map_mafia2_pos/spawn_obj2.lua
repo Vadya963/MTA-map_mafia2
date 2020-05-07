@@ -7797,63 +7797,63 @@ function displayLoadedRes ( res )--старт ресурсов
 		if count <= #kingstone then
 			local key = count
 			kingstone[key][3][1] = k
-			--fileWrite(hFile, kingstone[key][1].." "..kingstone[key][3].." kingstone\n" )
+			fileWrite(hFile, kingstone[key][1].." "..kingstone[key][3][1].." kingstone\n" )
 			fileWrite(hFile_ide, count_ide..", "..kingstone[key][1]..", kingstone_summer, 300, 0\n" )
 			kingstone[key][3][2] = count_ide
 
 		elseif count <= #kingstone+#dipton then
 			local key = count-#kingstone
 			dipton[key][3][1] = k
-			--fileWrite(hFile, dipton[key][1].." "..dipton[key][3].." dipton\n" )
+			fileWrite(hFile, dipton[key][1].." "..dipton[key][3][1].." dipton\n" )
 			fileWrite(hFile_ide, count_ide..", "..dipton[key][1]..", dipton_summer, 300, 0\n" )
 			dipton[key][3][2] = count_ide
 
 		elseif count <= #kingstone+#dipton+#highbrook then
 			local key = count-#kingstone-#dipton
 			highbrook[key][3][1] = k
-			--fileWrite(hFile, highbrook[key][1].." "..highbrook[key][3].." highbrook\n" )
+			fileWrite(hFile, highbrook[key][1].." "..highbrook[key][3][1].." highbrook\n" )
 			fileWrite(hFile_ide, count_ide..", "..highbrook[key][1]..", highbrook_summer, 300, 0\n" )
 			highbrook[key][3][2] = count_ide
 
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood then
 			local key = count-#kingstone-#dipton-#highbrook
 			hillwood[key][3][1] = k
-			--fileWrite(hFile, hillwood[key][1].." "..hillwood[key][3].." hillwood\n" )
+			fileWrite(hFile, hillwood[key][1].." "..hillwood[key][3][1].." hillwood\n" )
 			fileWrite(hFile_ide, count_ide..", "..hillwood[key][1]..", hillwood_summer, 300, 0\n" )
 			hillwood[key][3][2] = count_ide
 
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside then
 			local key = count-#kingstone-#dipton-#highbrook-#hillwood
 			riverside[key][3][1] = k
-			--fileWrite(hFile, riverside[key][1].." "..riverside[key][3].." riverside\n" )
+			fileWrite(hFile, riverside[key][1].." "..riverside[key][3][1].." riverside\n" )
 			fileWrite(hFile_ide, count_ide..", "..riverside[key][1]..", riverside_summer, 300, 0\n" )
 			riverside[key][3][2] = count_ide
 
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield then
 			local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside
 			greenfield[key][3][1] = k
-			--fileWrite(hFile, greenfield[key][1].." "..greenfield[key][3].." greenfield\n" )
+			fileWrite(hFile, greenfield[key][1].." "..greenfield[key][3][1].." greenfield\n" )
 			fileWrite(hFile_ide, count_ide..", "..greenfield[key][1]..", greenfield_summer, 300, 0\n" )
 			greenfield[key][3][2] = count_ide
 
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters then
 			local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield
 			hunters[key][3][1] = k
-			--fileWrite(hFile, hunters[key][1].." "..hunters[key][3].." hunters\n" )
+			fileWrite(hFile, hunters[key][1].." "..hunters[key][3][1].." hunters\n" )
 			fileWrite(hFile_ide, count_ide..", "..hunters[key][1]..", hunters_summer, 300, 0\n" )
 			hunters[key][3][2] = count_ide
 
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters+#sandisland then
 			local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters
 			sandisland[key][3][1] = k
-			--fileWrite(hFile, sandisland[key][1].." "..sandisland[key][3].." sandisland\n" )
+			fileWrite(hFile, sandisland[key][1].." "..sandisland[key][3][1].." sandisland\n" )
 			fileWrite(hFile_ide, count_ide..", "..sandisland[key][1]..", sandisland_summer, 300, 0\n" )
 			sandisland[key][3][2] = count_ide
 
 		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters+#sandisland+#port then
 			local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters-#sandisland
 			port[key][3][1] = k
-			--fileWrite(hFile, port[key][1].." "..port[key][3].." port\n" )
+			fileWrite(hFile, port[key][1].." "..port[key][3][1].." port\n" )
 			fileWrite(hFile_ide, count_ide..", "..port[key][1]..", port_summer, 300, 0\n" )
 			port[key][3][2] = count_ide
 		else
@@ -7872,7 +7872,7 @@ function displayLoadedRes ( res )--старт ресурсов
 					southport[k][3][1] = count
 					count_ide=count_ide+1
 					southport[k][3][2] = count_ide
-					--fileWrite(hFile, southport[k][1].." "..southport[k][3].." southport\n" )
+					fileWrite(hFile, southport[k][1].." "..southport[k][3][1].." southport\n" )
 					fileWrite(hFile_ide, count_ide..", "..southport[k][1]..", southport_summer, 300, 0\n" )
 					break
 				else
@@ -7881,6 +7881,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			southport[k][3][1] = count
+			southport[k][3][2] = count_ide
 		end
 	end
 
@@ -7893,7 +7894,7 @@ function displayLoadedRes ( res )--старт ресурсов
 					oysterbay[k][3][1] = count
 					count_ide=count_ide+1
 					oysterbay[k][3][2] = count_ide
-					--fileWrite(hFile, oysterbay[k][1].." "..oysterbay[k][3].." oysterbay\n" )
+					fileWrite(hFile, oysterbay[k][1].." "..oysterbay[k][3][1].." oysterbay\n" )
 					fileWrite(hFile_ide, count_ide..", "..oysterbay[k][1]..", oysterbay_summer, 300, 0\n" )
 					break
 				else
@@ -7902,6 +7903,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			oysterbay[k][3][1] = count
+			oysterbay[k][3][2] = count_ide
 		end
 	end
 
@@ -7914,7 +7916,7 @@ function displayLoadedRes ( res )--старт ресурсов
 					millville_s[k][3][1] = count
 					count_ide=count_ide+1
 					millville_s[k][3][2] = count_ide
-					--fileWrite(hFile, millville_s[k][1].." "..millville_s[k][3].." millville_s\n" )
+					fileWrite(hFile, millville_s[k][1].." "..millville_s[k][3][1].." millville_s\n" )
 					fileWrite(hFile_ide, count_ide..", "..millville_s[k][1]..", millville_s_summer, 300, 0\n" )
 					break
 				else
@@ -7923,6 +7925,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			millville_s[k][3][1] = count
+			millville_s[k][3][2] = count_ide
 		end
 	end
 
@@ -7935,7 +7938,7 @@ function displayLoadedRes ( res )--старт ресурсов
 					millville_n[k][3][1] = count
 					count_ide=count_ide+1
 					millville_n[k][3][2] = count_ide
-					--fileWrite(hFile, millville_n[k][1].." "..millville_n[k][3].." millville_n\n" )
+					fileWrite(hFile, millville_n[k][1].." "..millville_n[k][3][1].." millville_n\n" )
 					fileWrite(hFile_ide, count_ide..", "..millville_n[k][1]..", millville_n_summer, 300, 0\n" )
 					break
 				else
@@ -7944,6 +7947,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			millville_n[k][3][1] = count
+			millville_n[k][3][2] = count_ide
 		end
 	end
 
@@ -7956,7 +7960,7 @@ function displayLoadedRes ( res )--старт ресурсов
 					millville_new[k][3][1] = count
 					count_ide=count_ide+1
 					millville_new[k][3][2] = count_ide
-					--fileWrite(hFile, millville_new[k][1].." "..millville_new[k][3].." millville_new\n" )
+					fileWrite(hFile, millville_new[k][1].." "..millville_new[k][3][1].." millville_new\n" )
 					fileWrite(hFile_ide, count_ide..", "..millville_new[k][1]..", millville_new_summer, 300, 0\n" )
 					break
 				else
@@ -7965,6 +7969,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			millville_new[k][3][1] = count
+			millville_new[k][3][2] = count_ide
 		end
 	end
 
@@ -7977,7 +7982,7 @@ function displayLoadedRes ( res )--старт ресурсов
 					italy[k][3][1] = count
 					count_ide=count_ide+1
 					italy[k][3][2] = count_ide
-					--fileWrite(hFile, italy[k][1].." "..italy[k][3].." italy\n" )
+					fileWrite(hFile, italy[k][1].." "..italy[k][3][1].." italy\n" )
 					fileWrite(hFile_ide, count_ide..", "..italy[k][1]..", italy_summer, 300, 0\n" )
 					break
 				else
@@ -7986,6 +7991,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			italy[k][3][1] = count
+			italy[k][3][2] = count_ide
 		end
 	end
 
@@ -7998,7 +8004,7 @@ function displayLoadedRes ( res )--старт ресурсов
 					uppertown[k][3][1] = count
 					count_ide=count_ide+1
 					uppertown[k][3][2] = count_ide
-					--fileWrite(hFile, uppertown[k][1].." "..uppertown[k][3].." uppertown\n" )
+					fileWrite(hFile, uppertown[k][1].." "..uppertown[k][3][1].." uppertown\n" )
 					fileWrite(hFile_ide, count_ide..", "..uppertown[k][1]..", uppertown_summer, 300, 0\n" )
 					break
 				else
@@ -8007,6 +8013,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			uppertown[k][3][1] = count
+			uppertown[k][3][2] = count_ide
 		end
 	end
 
@@ -8019,7 +8026,7 @@ function displayLoadedRes ( res )--старт ресурсов
 					chinatown[k][3][1] = count
 					count_ide=count_ide+1
 					chinatown[k][3][2] = count_ide
-					--fileWrite(hFile, chinatown[k][1].." "..chinatown[k][3].." chinatown\n" )
+					fileWrite(hFile, chinatown[k][1].." "..chinatown[k][3][1].." chinatown\n" )
 					fileWrite(hFile_ide, count_ide..", "..chinatown[k][1]..", chinatown_summer, 300, 0\n" )
 					break
 				else
@@ -8028,6 +8035,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			chinatown[k][3][1] = count
+			chinatown[k][3][2] = count_ide
 		end
 	end
 
@@ -8040,7 +8048,7 @@ function displayLoadedRes ( res )--старт ресурсов
 					westside[k][3][1] = count
 					count_ide=count_ide+1
 					westside[k][3][2] = count_ide
-					--fileWrite(hFile, westside[k][1].." "..westside[k][3].." westside\n" )
+					fileWrite(hFile, westside[k][1].." "..westside[k][3][1].." westside\n" )
 					fileWrite(hFile_ide, count_ide..", "..westside[k][1]..", westside_summer, 300, 0\n" )
 					break
 				else
@@ -8049,6 +8057,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			westside[k][3][1] = count
+			westside[k][3][2] = count_ide
 		end
 	end
 
@@ -8061,7 +8070,7 @@ function displayLoadedRes ( res )--старт ресурсов
 					eastside[k][3][1] = count
 					count_ide=count_ide+1
 					eastside[k][3][2] = count_ide
-					--fileWrite(hFile, eastside[k][1].." "..eastside[k][3].." eastside\n" )
+					fileWrite(hFile, eastside[k][1].." "..eastside[k][3][1].." eastside\n" )
 					fileWrite(hFile_ide, count_ide..", "..eastside[k][1]..", eastside_summer, 300, 0\n" )
 					break
 				else
@@ -8070,6 +8079,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			eastside[k][3][1] = count
+			eastside[k][3][2] = count_ide
 		end
 	end
 
@@ -8082,7 +8092,7 @@ function displayLoadedRes ( res )--старт ресурсов
 					midtown[k][3][1] = count
 					count_ide=count_ide+1
 					midtown[k][3][2] = count_ide
-					--fileWrite(hFile, midtown[k][1].." "..midtown[k][3].." midtown\n" )
+					fileWrite(hFile, midtown[k][1].." "..midtown[k][3][1].." midtown\n" )
 					fileWrite(hFile_ide, count_ide..", "..midtown[k][1]..", midtown_summer, 300, 0\n" )
 					break
 				else
@@ -8091,6 +8101,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			midtown[k][3][1] = count
+			midtown[k][3][2] = count_ide
 		end
 	end
 
@@ -8103,7 +8114,7 @@ function displayLoadedRes ( res )--старт ресурсов
 					observatory[k][3][1] = count
 					count_ide=count_ide+1
 					observatory[k][3][2] = count_ide
-					--fileWrite(hFile, observatory[k][1].." "..observatory[k][3].." observatory\n" )
+					fileWrite(hFile, observatory[k][1].." "..observatory[k][3][1].." observatory\n" )
 					fileWrite(hFile_ide, count_ide..", "..observatory[k][1]..", hillwood_summer, 300, 0\n" )
 					break
 				else
@@ -8112,6 +8123,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			observatory[k][3][1] = count
+			observatory[k][3][2] = count_ide
 		end
 	end
 
@@ -8122,7 +8134,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					prison[1][k][3][1] = count
-					--fileWrite(hFile, prison[1][k][1].." "..prison[1][k][3].." prison\n" )
+					fileWrite(hFile, prison[1][k][1].." "..prison[1][k][3][1].." prison\n" )
 					count_ide=count_ide+1
 					prison[1][k][3][2] = count_ide
 					fileWrite(hFile_ide, count_ide..", "..prison[1][k][1]..", prison, 300, 0\n" )
@@ -8133,6 +8145,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			prison[1][k][3][1] = count
+			prison[1][k][3][2] = count_ide
 		end
 	end
 
@@ -8143,7 +8156,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					prison[2][k][3][1] = count
-					--fileWrite(hFile, prison[2][k][1].." "..prison[2][k][3].." prison\n" )
+					fileWrite(hFile, prison[2][k][1].." "..prison[2][k][3][1].." prison\n" )
 					count_ide=count_ide+1
 					prison[2][k][3][2] = count_ide
 					fileWrite(hFile_ide, count_ide..", "..prison[2][k][1]..", prison, 300, 0\n" )
@@ -8154,6 +8167,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			prison[2][k][3][1] = count
+			prison[2][k][3][2] = count_ide
 		end
 	end
 
@@ -8164,7 +8178,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					diamond_motors[k][3][1] = count
-					--fileWrite(hFile, diamond_motors[k][1].." "..diamond_motors[k][3].." diamond_motors\n" )
+					fileWrite(hFile, diamond_motors[k][1].." "..diamond_motors[k][3][1].." diamond_motors\n" )
 					count_ide=count_ide+1
 					diamond_motors[k][3][2] = count_ide
 					fileWrite(hFile_ide, count_ide..", "..diamond_motors[k][1]..", diamond_motors, 300, 0\n" )
@@ -8175,6 +8189,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			diamond_motors[k][3][1] = count
+			diamond_motors[k][3][2] = count_ide
 		end
 	end
 
@@ -8185,7 +8200,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					respray[k][3][1] = count
-					--fileWrite(hFile, respray[k][1].." "..respray[k][3].." respray\n" )
+					fileWrite(hFile, respray[k][1].." "..respray[k][3][1].." respray\n" )
 					count_ide=count_ide+1
 					respray[k][3][2] = count_ide
 					fileWrite(hFile_ide, count_ide..", "..respray[k][1]..", respray, 300, 0\n" )
@@ -8196,6 +8211,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			respray[k][3][1] = count
+			respray[k][3][2] = count_ide
 		end
 	end
 
@@ -8206,7 +8222,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				local id_obj = getObjectNameFromModel ( count )
 				if id_obj then
 					vitoa3city[k][3][1] = count
-					--fileWrite(hFile, vitoa3city[k][1].." "..vitoa3city[k][3].." vitoa3city\n" )
+					fileWrite(hFile, vitoa3city[k][1].." "..vitoa3city[k][3][1].." vitoa3city\n" )
 					count_ide=count_ide+1
 					vitoa3city[k][3][2] = count_ide
 					fileWrite(hFile_ide, count_ide..", "..vitoa3city[k][1]..", vitoa3city, 300, 0\n" )
@@ -8217,6 +8233,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		else
 			vitoa3city[k][3][1] = count
+			vitoa3city[k][3][2] = count_ide
 		end
 	end
 
@@ -8928,7 +8945,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		end
 
-		--fileWrite(hFile, v[1].." " ..v[3].." "..v[4].."\n" )
+		fileWrite(hFile, v[1].." " ..v[3].." "..v[4].."\n" )
 	
 	end
 
