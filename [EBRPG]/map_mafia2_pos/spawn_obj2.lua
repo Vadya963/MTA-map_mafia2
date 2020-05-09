@@ -8981,11 +8981,15 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 	end
 
+	local name = 0
 	for k,v in ipairs(object) do
+		if fileExists(":map_mafia2/"..v[4].."/"..v[1]..".dff") then
+			name = v[1]
+		end
 		local x,y,z = getElementPosition( v[2] )
 		local xr,yr,zr = getElementRotation( v[2] )
 		local rot = toQuaternion(xr,yr,zr)
-		fileWrite(hFile_ipl, v[3]..", "..v[1]..", 0, "..x..", "..y..", "..z..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
+		fileWrite(hFile_ipl, v[3]..", "..name..", 0, "..x..", "..y..", "..z..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
 	end
 
 	print("object len "..#object)
