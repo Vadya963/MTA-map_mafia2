@@ -7658,6 +7658,10 @@ local no_col_object = {
 {'door_Green', {{-0.5499994-650.48490, 943.23670 ,1.152858-7.93975 ,0 ,0 ,0},}, 892, "vitoa3city"},
 {'schodiste_dvere18', {{2.025195-652.51050 ,-0.2121094+942.87540 ,16.57303-23.01977 ,0 ,0 ,90},}, 893, "vitoa3city"},
 {'radio4', {{0.003295288-655.08300 ,-0.004562302+938.54420 ,0.4241195-7.96056 ,0 ,0 ,0},}, 894, "vitoa3city"},
+{'Object33', {{0.36727-647.34720, -0.40125+939.62610, 0.46316-7.75856 ,0 ,0 ,0},}, 895, "vitoa3city"},
+{'Object18', {{2.04070-651.03000, -0.03813+934.80000, 1.04161-7.76000 ,0 ,0 ,0},}, 904, "vitoa3city"},
+{'liska', {{-651.6805 ,935.8976 ,-5.409745 ,0 ,0 ,10},}, 945, "vitoa3city"},
+{'telefon', {{-651.6109 ,942.3301 ,-7.05574+0.09847 ,0 ,0 ,-90},}, 1561, "vitoa3city"},
 
 {"04_fast_food_exterier", {{-1583.17800,1603.85800,1.70258,90,0,0}, 
 {-644.9767 ,1295.865 ,10.87228 ,90 ,0 ,-135},
@@ -8835,6 +8839,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementDimension( v[2], -1 )
 		setElementDimension( obj, -1 )
 
+		setElementDoubleSided(v[2], false)
+		setElementDoubleSided(obj, false)
+
 		if object_interior[v[4]] then
 			local x,y,z = getElementPosition(obj)
 			setElementPosition(v[2], x,y,z+object_interior[v[4]][1])
@@ -8846,9 +8853,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		if v[5] then
 			setElementDoubleSided(v[2], true)
 			setElementDoubleSided(obj, true)
-		else
-			setElementDoubleSided(v[2], false)
-			setElementDoubleSided(obj, false)
 		end
 
 		if v[6] then

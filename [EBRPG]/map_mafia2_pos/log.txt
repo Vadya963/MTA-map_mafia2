@@ -3976,6 +3976,10 @@ _skrin2_dvere_L 891 vitoa3city
 door_Green 892 vitoa3city
 schodiste_dvere18 893 vitoa3city
 radio4 894 vitoa3city
+Object33 895 vitoa3city
+Object18 904 vitoa3city
+liska 945 vitoa3city
+telefon 1561 vitoa3city
 04_fast_food_exterier 952 kingstone
 04_uhli_02 953 kingstone
 04_blok_interier04 954 kingstone
