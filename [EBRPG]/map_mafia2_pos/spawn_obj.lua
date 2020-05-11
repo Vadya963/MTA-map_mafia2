@@ -7449,20 +7449,6 @@ local object_interior = {--интерьеры
 ["vitoa3city"] = {0, 1},
 }
 
-local city_crash = {
-{'acer01_trunk', {0,0,0 ,0 ,0 ,0}, 3001},
-{'quercus01_trunk', {20,0,0 ,0 ,0 ,0}, 3002},
-{'populus01_trunk', {40,0,0 ,0 ,0 ,0}, 3003},
-{'picea01_trunk', {60,0,0 ,0 ,0 ,0}, 3093},
-{'ailanthus05_trunk', {80,0,0 ,0 ,0 ,0}, 2589},
-{'prunus01_trunk', {100,0,0 ,0 ,0 ,0}, 2995},
-{'acer02_trunk', {120,0,0 ,0 ,0 ,0}, 2996},
-{'fraxinus01_trunk', {140,0,0 ,0 ,0 ,0}, 2997},
-{'quercus02_trunk', {160,0,0 ,0 ,0 ,0}, 2998},
-{'celtis01_trunk', {180,0,0 ,0 ,0 ,0}, 2999},
-{'ailanthus01_trunk', {200,0,0 ,0 ,0 ,0}, 3000},
-}
-
 local no_col_object = {
 {"05_30_OM", {{-638.77860,1738.21000,-9.32861,0,0,0}}, 1226, "dipton"},
 {"05_104_OM", {{-423.82840,1858.56600,-18.37658,0,0,0}}, 1283, "dipton"},
@@ -8147,15 +8133,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 	end
 
-	
-	function city_crash_fun( ... )
-	for i,v in ipairs(city_crash) do 
-		local x,y,z = v[2][1],v[2][2],v[2][3]-100
-		local obj = createObject(v[3], x,y,z, v[2][4],v[2][5],v[2][6]*-1)
-		
-		table.insert(object, {v[1], obj, v[3], "city_crash", v[4], v[5], v[6]})
-	end
-	end
 
 	function kingstone_fun( ... )
 	for i,v in ipairs(kingstone) do
