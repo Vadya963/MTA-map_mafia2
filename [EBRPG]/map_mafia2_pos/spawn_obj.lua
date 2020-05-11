@@ -1,3 +1,5 @@
+local object = {}--все объекты
+
 local kingstone = {
 --объекты
 --1 name, 2 position, 3 id model, 4 true/false DoubleSided, 5 scale table, 6 true/false alphaTransparency
@@ -7439,7 +7441,6 @@ local vitoa3city = {
 -- 180 -180 градусов -187, -358, -4
 -- -90 градусов 358, -187, -4
 
-local object = {}
 local object_interior = {--интерьеры
 --1 height+100=600, 2 dimension
 ["prison"] = {200, -1},
@@ -7447,6 +7448,21 @@ local object_interior = {--интерьеры
 ["respray"] = {500, -1},
 ["vitoa3city"] = {0, 1},
 }
+
+local city_crash = {
+{'acer01_trunk', {0,0,0 ,0 ,0 ,0}, 3001},
+{'quercus01_trunk', {20,0,0 ,0 ,0 ,0}, 3002},
+{'populus01_trunk', {40,0,0 ,0 ,0 ,0}, 3003},
+{'picea01_trunk', {60,0,0 ,0 ,0 ,0}, 3093},
+{'ailanthus05_trunk', {80,0,0 ,0 ,0 ,0}, 2589},
+{'prunus01_trunk', {100,0,0 ,0 ,0 ,0}, 2995},
+{'acer02_trunk', {120,0,0 ,0 ,0 ,0}, 2996},
+{'fraxinus01_trunk', {140,0,0 ,0 ,0 ,0}, 2997},
+{'quercus02_trunk', {160,0,0 ,0 ,0 ,0}, 2998},
+{'celtis01_trunk', {180,0,0 ,0 ,0 ,0}, 2999},
+{'ailanthus01_trunk', {200,0,0 ,0 ,0 ,0}, 3000},
+}
+
 local no_col_object = {
 {"05_30_OM", {{-638.77860,1738.21000,-9.32861,0,0,0}}, 1226, "dipton"},
 {"05_104_OM", {{-423.82840,1858.56600,-18.37658,0,0,0}}, 1283, "dipton"},
@@ -8132,6 +8148,15 @@ function displayLoadedRes ( res )--старт ресурсов
 	end
 
 	
+	function city_crash_fun( ... )
+	for i,v in ipairs(city_crash) do 
+		local x,y,z = v[2][1],v[2][2],v[2][3]
+		local obj = createObject(v[3], x,y,z, v[2][4],v[2][5],v[2][6]*-1)
+		
+		table.insert(object, {v[1], obj, v[3], "city_crash", v[4], v[5], v[6]})
+	end
+	end
+
 	function kingstone_fun( ... )
 	for i,v in ipairs(kingstone) do
 		for k,j in ipairs(v[2]) do
@@ -8834,30 +8859,30 @@ function displayLoadedRes ( res )--старт ресурсов
 		local x,y,z = getElementPosition(v[2])
 
 		setElementPosition( v[2], x,y,z+100 )
-		setElementPosition( obj, x,y,z+100 )
+		if obj then setElementPosition( obj, x,y,z+100 ) end
 
 		setElementDimension( v[2], -1 )
-		setElementDimension( obj, -1 )
+		if obj then setElementDimension( obj, -1 ) end
 
 		setElementDoubleSided(v[2], false)
-		setElementDoubleSided(obj, false)
+		if obj then setElementDoubleSided(obj, false) end
 
 		if object_interior[v[4]] then
 			local x,y,z = getElementPosition(obj)
 			setElementPosition(v[2], x,y,z+object_interior[v[4]][1])
-			setElementPosition(obj, x,y,z+object_interior[v[4]][1])
+			if obj then setElementPosition(obj, x,y,z+object_interior[v[4]][1]) end
 			setElementDimension(v[2], object_interior[v[4]][2])
-			setElementDimension(obj, object_interior[v[4]][2])
+			if obj then setElementDimension(obj, object_interior[v[4]][2]) end
 		end
 
 		if v[5] then
 			setElementDoubleSided(v[2], true)
-			setElementDoubleSided(obj, true)
+			if obj then setElementDoubleSided(obj, true) end
 		end
 
 		if v[6] then
 			setObjectScale(v[2], v[6][1],v[6][2],v[6][3])
-			setObjectScale(obj, v[6][1],v[6][2],v[6][3])
+			if obj then setObjectScale(obj, v[6][1],v[6][2],v[6][3]) end
 		end
 	end
 
