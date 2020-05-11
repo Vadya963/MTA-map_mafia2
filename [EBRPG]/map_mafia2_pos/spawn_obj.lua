@@ -8150,7 +8150,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	
 	function city_crash_fun( ... )
 	for i,v in ipairs(city_crash) do 
-		local x,y,z = v[2][1],v[2][2],v[2][3]
+		local x,y,z = v[2][1],v[2][2],v[2][3]-100
 		local obj = createObject(v[3], x,y,z, v[2][4],v[2][5],v[2][6]*-1)
 		
 		table.insert(object, {v[1], obj, v[3], "city_crash", v[4], v[5], v[6]})
