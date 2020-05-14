@@ -1,6 +1,6 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.33.3.2"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.34.3.2"/>
 
 <include resource='hud_mafia2'/>
 <include resource='image_replace_mafia2'/>

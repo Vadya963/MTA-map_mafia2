@@ -7446,7 +7446,7 @@ local object_interior = {--интерьеры
 ["prison"] = {200, -1},
 ["diamond_motors"] = {500, -1},
 ["respray"] = {500, -1},
-["vitoa3city"] = {0, 1},
+["vitoa3city"] = {500, -1},
 }
 
 local no_col_object = {
