@@ -8297,7 +8297,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				end
 			end
 
-			obj = createObject(v[3][1], x,y,z, j[4]+90*-1,j[5],j[6]*-1)
+			obj = createObject(v[3][1], x,y,z, (j[4]+90)*-1,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3][1], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3][2], "hillwood", v[4], v[5], v[6]})
@@ -8341,7 +8341,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				end
 			end
 
-			obj = createObject(v[3][1], x,y,z, j[4]+90*-1,j[5],j[6]*-1)
+			obj = createObject(v[3][1], x,y,z, (j[4]+90)*-1,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3][1], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3][2], "riverside", v[4], v[5], v[6]})
@@ -8355,7 +8355,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			local obj = false
 			local x,y,z = j[1],j[2],j[3]
 
-			obj = createObject(v[3][1], x,y,z, j[4]+90*-1,j[5],j[6]*-1)
+			obj = createObject(v[3][1], x,y,z, (j[4]+90)*-1,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3][1], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3][2], "greenfield", v[4], v[5], v[6]})
