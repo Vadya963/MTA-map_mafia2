@@ -14268,5 +14268,3 @@ for k,v in pairs(objectNames) do
 count=count+1
 end
 print("objectNames len "..count)
-
-setElementData(resourceRoot, "objectNames", objectNames)

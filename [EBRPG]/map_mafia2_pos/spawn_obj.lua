@@ -1,4 +1,5 @@
 local object = {}--все объекты
+local object_replace = {}--объекты для замены
 
 local kingstone = {
 --объекты
@@ -7822,56 +7823,59 @@ function displayLoadedRes ( res )--старт ресурсов
 	local hFile = fileOpen("log.txt")
 
 	local count = 0
-	for k,v in pairs(getElementData(resourceRoot, "objectNames")) do
-		count = count+1
-		
-		if count <= #kingstone then
-			local key = count
-			kingstone[key][3] = k
-			fileWrite(hFile, kingstone[key][1].." "..kingstone[key][3].." kingstone\n" )
+	for i=615,18630 do
+		if getObjectNameFromModel(i) then
+			local k = i
+			count = count+1
+			
+			if count <= #kingstone then
+				local key = count
+				kingstone[key][3] = k
+				fileWrite(hFile, kingstone[key][1].." "..kingstone[key][3].." kingstone\n" )
 
-		elseif count <= #kingstone+#dipton then
-			local key = count-#kingstone
-			dipton[key][3] = k
-			fileWrite(hFile, dipton[key][1].." "..dipton[key][3].." dipton\n" )
+			elseif count <= #kingstone+#dipton then
+				local key = count-#kingstone
+				dipton[key][3] = k
+				fileWrite(hFile, dipton[key][1].." "..dipton[key][3].." dipton\n" )
 
-		elseif count <= #kingstone+#dipton+#highbrook then
-			local key = count-#kingstone-#dipton
-			highbrook[key][3] = k
-			fileWrite(hFile, highbrook[key][1].." "..highbrook[key][3].." highbrook\n" )
+			elseif count <= #kingstone+#dipton+#highbrook then
+				local key = count-#kingstone-#dipton
+				highbrook[key][3] = k
+				fileWrite(hFile, highbrook[key][1].." "..highbrook[key][3].." highbrook\n" )
 
-		elseif count <= #kingstone+#dipton+#highbrook+#hillwood then
-			local key = count-#kingstone-#dipton-#highbrook
-			hillwood[key][3] = k
-			fileWrite(hFile, hillwood[key][1].." "..hillwood[key][3].." hillwood\n" )
+			elseif count <= #kingstone+#dipton+#highbrook+#hillwood then
+				local key = count-#kingstone-#dipton-#highbrook
+				hillwood[key][3] = k
+				fileWrite(hFile, hillwood[key][1].." "..hillwood[key][3].." hillwood\n" )
 
-		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside then
-			local key = count-#kingstone-#dipton-#highbrook-#hillwood
-			riverside[key][3] = k
-			fileWrite(hFile, riverside[key][1].." "..riverside[key][3].." riverside\n" )
+			elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside then
+				local key = count-#kingstone-#dipton-#highbrook-#hillwood
+				riverside[key][3] = k
+				fileWrite(hFile, riverside[key][1].." "..riverside[key][3].." riverside\n" )
 
-		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield then
-			local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside
-			greenfield[key][3] = k
-			fileWrite(hFile, greenfield[key][1].." "..greenfield[key][3].." greenfield\n" )
+			elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield then
+				local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside
+				greenfield[key][3] = k
+				fileWrite(hFile, greenfield[key][1].." "..greenfield[key][3].." greenfield\n" )
 
-		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters then
-			local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield
-			hunters[key][3] = k
-			fileWrite(hFile, hunters[key][1].." "..hunters[key][3].." hunters\n" )
+			elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters then
+				local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield
+				hunters[key][3] = k
+				fileWrite(hFile, hunters[key][1].." "..hunters[key][3].." hunters\n" )
 
-		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters+#sandisland then
-			local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters
-			sandisland[key][3] = k
-			fileWrite(hFile, sandisland[key][1].." "..sandisland[key][3].." sandisland\n" )
+			elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters+#sandisland then
+				local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters
+				sandisland[key][3] = k
+				fileWrite(hFile, sandisland[key][1].." "..sandisland[key][3].." sandisland\n" )
 
-		elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters+#sandisland+#port then
-			local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters-#sandisland
-			port[key][3] = k
-			fileWrite(hFile, port[key][1].." "..port[key][3].." port\n" )
-		else
-			count = k-1
-			break
+			elseif count <= #kingstone+#dipton+#highbrook+#hillwood+#riverside+#greenfield+#hunters+#sandisland+#port then
+				local key = count-#kingstone-#dipton-#highbrook-#hillwood-#riverside-#greenfield-#hunters-#sandisland
+				port[key][3] = k
+				fileWrite(hFile, port[key][1].." "..port[key][3].." port\n" )
+			else
+				count = k-1
+				break
+			end
 		end
 	end
 
@@ -8195,6 +8199,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 			table.insert(object, {v[1], obj, v[3], "city_crash", v[4], v[5], v[6]})
 		end
+		table.insert(object_replace, {v[1], v[3], "city_crash"})
 	end
 	end
 
@@ -8209,6 +8214,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "kingstone", v[4], v[5], v[6]})
 		end
+		table.insert(object_replace, {v[1], v[3], "kingstone"})
 	end
 	end
 
@@ -8223,6 +8229,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "dipton", v[4], v[5], v[6]})
 		end
+		table.insert(object_replace, {v[1], v[3], "dipton"})
 	end
 	end
 
@@ -8237,6 +8244,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "highbrook", v[4], v[5], v[6]})
 		end
+		table.insert(object_replace, {v[1], v[3], "highbrook"})
 	end
 	end
 
@@ -8257,6 +8265,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "hillwood", v[4], v[5], v[6]})
 		end
+		table.insert(object_replace, {v[1], v[3], "hillwood"})
 	end
 
 	for i,v in ipairs(observatory) do
@@ -8281,6 +8290,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 
 		table.insert(object, {v[1], obj, v[3], "hillwood", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "hillwood"})
 	end
 	end
 
@@ -8301,6 +8311,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "riverside", v[4], v[5], v[6]})
 		end
+		table.insert(object_replace, {v[1], v[3], "riverside"})
 	end
 	end
 
@@ -8315,6 +8326,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "greenfield", v[4], v[5], v[6]})
 		end
+		table.insert(object_replace, {v[1], v[3], "greenfield"})
 	end
 	end
 
@@ -8329,6 +8341,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "hunters", v[4], v[5], v[6]})
 		end
+		table.insert(object_replace, {v[1], v[3], "hunters"})
 	end
 	end
 
@@ -8343,6 +8356,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "sandisland", v[4], v[5], v[6]})
 		end
+		table.insert(object_replace, {v[1], v[3], "sandisland"})
 	end
 	end
 
@@ -8363,6 +8377,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "port", v[4], v[5], v[6]})
 		end
+		table.insert(object_replace, {v[1], v[3], "port"})
 	end
 	end
 
@@ -8380,6 +8395,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "southport", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "southport"})
 	end
 	end
 
@@ -8397,6 +8413,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "oysterbay", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "oysterbay"})
 	end
 	end
 
@@ -8425,6 +8442,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "millville_s", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "millville_s"})
 	end
 	end
 
@@ -8455,6 +8473,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "millville_n", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "millville_n"})
 	end
 	end
 
@@ -8495,6 +8514,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "millville_new", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "millville_new"})
 	end
 	end
 
@@ -8535,6 +8555,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "italy", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "italy"})
 	end
 	end
 
@@ -8552,6 +8573,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "uppertown", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "uppertown"})
 	end
 	end
 
@@ -8590,6 +8612,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "chinatown", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "chinatown"})
 	end
 	end
 
@@ -8636,6 +8659,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "westside", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "westside"})
 	end
 	end
 
@@ -8691,6 +8715,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "eastside", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "eastside"})
 	end
 	end
 
@@ -8740,6 +8765,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "midtown", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "midtown"})
 	end
 	end
 
@@ -8757,6 +8783,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "prison"})
 	end
 	for i,v in ipairs(prison[2]) do
 		local j = v[2]
@@ -8767,6 +8794,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setLowLODElement(obj,lod_obj)
 		
 		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "prison"})
 	end
 	end
 
@@ -8788,6 +8816,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(lod_obj, x+-287.72860,y+823.49730,z+14.50119)
 		
 		table.insert(object, {v[1], obj, v[3], "diamond_motors", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "diamond_motors"})
 	end
 	end
 
@@ -8809,6 +8838,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(lod_obj, x-77.57613,y-1189.47300,z+1.80610)
 		
 		table.insert(object, {v[1], obj, v[3], "respray", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "respray"})
 	end
 	end
 
@@ -8830,6 +8860,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(lod_obj, x,y,z)
 		
 		table.insert(object, {v[1], obj, v[3], "vitoa3city", v[4], v[5], v[6]})
+		table.insert(object_replace, {v[1], v[3], "vitoa3city"})
 	end
 	end
 
@@ -8891,6 +8922,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				setLowLODElement(obj,lod_obj)
 				table.insert(object, {v[1], obj, v[3], v[4], v[5], v[6], v[7]})
 			end
+			table.insert(object_replace, {v[1], v[3], v[4]})
 		end
 
 		fileWrite(hFile, v[1].." " ..v[3].." "..v[4].."\n" )
@@ -8929,7 +8961,9 @@ function displayLoadedRes ( res )--старт ресурсов
 	end
 
 	print("object len "..#object)
+	print("object_replace len "..#object_replace)
 	setElementData(root, "object", object)
+	setElementData(root, "object_replace", object_replace)
 	fileClose(hFile)
 end
 addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
