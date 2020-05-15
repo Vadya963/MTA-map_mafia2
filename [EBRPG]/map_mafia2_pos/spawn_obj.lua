@@ -8197,9 +8197,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			else
 				obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
 			end
-			table.insert(object, {v[1], obj, v[3], "city_crash", v[4], v[5], v[6]})
+			table.insert(object, {v[1], obj, v[3], "city_crash", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "city_crash"})
+		table.insert(object_replace, {v[1], v[3], "city_crash", v[6]})
 	end
 	end
 
@@ -8212,9 +8212,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6])
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6], true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj, v[3], "kingstone", v[4], v[5], v[6]})
+			table.insert(object, {v[1], obj, v[3], "kingstone", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "kingstone"})
+		table.insert(object_replace, {v[1], v[3], "kingstone", v[6]})
 	end
 	end
 
@@ -8227,9 +8227,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6])
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6], true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj, v[3], "dipton", v[4], v[5], v[6]})
+			table.insert(object, {v[1], obj, v[3], "dipton", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "dipton"})
+		table.insert(object_replace, {v[1], v[3], "dipton", v[6]})
 	end
 	end
 
@@ -8242,9 +8242,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj, v[3], "highbrook", v[4], v[5], v[6]})
+			table.insert(object, {v[1], obj, v[3], "highbrook", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "highbrook"})
+		table.insert(object_replace, {v[1], v[3], "highbrook", v[6]})
 	end
 	end
 
@@ -8263,9 +8263,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj, v[3], "hillwood", v[4], v[5], v[6]})
+			table.insert(object, {v[1], obj, v[3], "hillwood", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "hillwood"})
+		table.insert(object_replace, {v[1], v[3], "hillwood", v[6]})
 	end
 
 	for i,v in ipairs(observatory) do
@@ -8289,8 +8289,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		end
 
-		table.insert(object, {v[1], obj, v[3], "hillwood", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "hillwood"})
+		table.insert(object, {v[1], obj, v[3], "hillwood", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "hillwood", v[6]})
 	end
 	end
 
@@ -8309,9 +8309,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj, v[3], "riverside", v[4], v[5], v[6]})
+			table.insert(object, {v[1], obj, v[3], "riverside", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "riverside"})
+		table.insert(object_replace, {v[1], v[3], "riverside", v[6]})
 	end
 	end
 
@@ -8324,9 +8324,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4]+90,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj, v[3], "greenfield", v[4], v[5], v[6]})
+			table.insert(object, {v[1], obj, v[3], "greenfield", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "greenfield"})
+		table.insert(object_replace, {v[1], v[3], "greenfield", v[6]})
 	end
 	end
 
@@ -8339,9 +8339,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj, v[3], "hunters", v[4], v[5], v[6]})
+			table.insert(object, {v[1], obj, v[3], "hunters", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "hunters"})
+		table.insert(object_replace, {v[1], v[3], "hunters", v[6]})
 	end
 	end
 
@@ -8354,9 +8354,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj, v[3], "sandisland", v[4], v[5], v[6]})
+			table.insert(object, {v[1], obj, v[3], "sandisland", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "sandisland"})
+		table.insert(object_replace, {v[1], v[3], "sandisland", v[6]})
 	end
 	end
 
@@ -8375,9 +8375,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			obj = createObject(v[3], x,y,z, rx,j[5],j[6]*-1)
 			local lod_obj = createObject(v[3], x,y,z, rx,j[5],j[6]*-1, true)
 			setLowLODElement(obj,lod_obj)
-			table.insert(object, {v[1], obj, v[3], "port", v[4], v[5], v[6]})
+			table.insert(object, {v[1], obj, v[3], "port", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "port"})
+		table.insert(object_replace, {v[1], v[3], "port", v[6]})
 	end
 	end
 
@@ -8394,8 +8394,8 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(obj, x,y,-z)
 		setElementRotation(lod_obj, x,y,-z)
 		
-		table.insert(object, {v[1], obj, v[3], "southport", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "southport"})
+		table.insert(object, {v[1], obj, v[3], "southport", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "southport", v[6]})
 	end
 	end
 
@@ -8412,8 +8412,8 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(obj, x,y,-z)
 		setElementRotation(lod_obj, x,y,-z)
 		
-		table.insert(object, {v[1], obj, v[3], "oysterbay", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "oysterbay"})
+		table.insert(object, {v[1], obj, v[3], "oysterbay", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "oysterbay", v[6]})
 	end
 	end
 
@@ -8441,8 +8441,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		end
 		
-		table.insert(object, {v[1], obj, v[3], "millville_s", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "millville_s"})
+		table.insert(object, {v[1], obj, v[3], "millville_s", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "millville_s", v[6]})
 	end
 	end
 
@@ -8472,8 +8472,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			setElementRotation(lod_obj, 0,0,180)
 		end
 		
-		table.insert(object, {v[1], obj, v[3], "millville_n", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "millville_n"})
+		table.insert(object, {v[1], obj, v[3], "millville_n", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "millville_n", v[6]})
 	end
 	end
 
@@ -8513,8 +8513,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		end
 		
-		table.insert(object, {v[1], obj, v[3], "millville_new", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "millville_new"})
+		table.insert(object, {v[1], obj, v[3], "millville_new", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "millville_new", v[6]})
 	end
 	end
 
@@ -8554,8 +8554,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		end
 		
-		table.insert(object, {v[1], obj, v[3], "italy", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "italy"})
+		table.insert(object, {v[1], obj, v[3], "italy", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "italy", v[6]})
 	end
 	end
 
@@ -8572,8 +8572,8 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(obj, x,y,-z)
 		setElementRotation(lod_obj, x,y,-z)
 		
-		table.insert(object, {v[1], obj, v[3], "uppertown", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "uppertown"})
+		table.insert(object, {v[1], obj, v[3], "uppertown", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "uppertown", v[6]})
 	end
 	end
 
@@ -8611,8 +8611,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		end
 		
-		table.insert(object, {v[1], obj, v[3], "chinatown", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "chinatown"})
+		table.insert(object, {v[1], obj, v[3], "chinatown", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "chinatown", v[6]})
 	end
 	end
 
@@ -8658,8 +8658,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		end
 		
-		table.insert(object, {v[1], obj, v[3], "westside", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "westside"})
+		table.insert(object, {v[1], obj, v[3], "westside", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "westside", v[6]})
 	end
 	end
 
@@ -8714,8 +8714,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		end
 		
-		table.insert(object, {v[1], obj, v[3], "eastside", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "eastside"})
+		table.insert(object, {v[1], obj, v[3], "eastside", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "eastside", v[6]})
 	end
 	end
 
@@ -8764,8 +8764,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			end
 		end
 		
-		table.insert(object, {v[1], obj, v[3], "midtown", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "midtown"})
+		table.insert(object, {v[1], obj, v[3], "midtown", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "midtown", v[6]})
 	end
 	end
 
@@ -8782,8 +8782,8 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(obj, x,y,-z)
 		setElementRotation(lod_obj, x,y,-z)
 		
-		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "prison"})
+		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "prison", v[6]})
 	end
 	for i,v in ipairs(prison[2]) do
 		local j = v[2]
@@ -8793,8 +8793,8 @@ function displayLoadedRes ( res )--старт ресурсов
 
 		setLowLODElement(obj,lod_obj)
 		
-		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "prison"})
+		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "prison", v[6]})
 	end
 	end
 
@@ -8815,8 +8815,8 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(obj, x+-287.72860,y+823.49730,z+14.50119)
 		setElementPosition(lod_obj, x+-287.72860,y+823.49730,z+14.50119)
 		
-		table.insert(object, {v[1], obj, v[3], "diamond_motors", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "diamond_motors"})
+		table.insert(object, {v[1], obj, v[3], "diamond_motors", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "diamond_motors", v[6]})
 	end
 	end
 
@@ -8837,8 +8837,8 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(obj, x-77.57613,y-1189.47300,z+1.80610)
 		setElementPosition(lod_obj, x-77.57613,y-1189.47300,z+1.80610)
 		
-		table.insert(object, {v[1], obj, v[3], "respray", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "respray"})
+		table.insert(object, {v[1], obj, v[3], "respray", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "respray", v[6]})
 	end
 	end
 
@@ -8859,8 +8859,8 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(obj, x,y,z)
 		setElementPosition(lod_obj, x,y,z)
 		
-		table.insert(object, {v[1], obj, v[3], "vitoa3city", v[4], v[5], v[6]})
-		table.insert(object_replace, {v[1], v[3], "vitoa3city"})
+		table.insert(object, {v[1], obj, v[3], "vitoa3city", v[4], v[5]})
+		table.insert(object_replace, {v[1], v[3], "vitoa3city", v[6]})
 	end
 	end
 
@@ -8920,9 +8920,9 @@ function displayLoadedRes ( res )--старт ресурсов
 				end
 
 				setLowLODElement(obj,lod_obj)
-				table.insert(object, {v[1], obj, v[3], v[4], v[5], v[6], v[7]})
+				table.insert(object, {v[1], obj, v[3], v[4], v[5], v[6]})
 			end
-			table.insert(object_replace, {v[1], v[3], v[4]})
+			table.insert(object_replace, {v[1], v[3], v[4], v[7]})
 		end
 
 		fileWrite(hFile, v[1].." " ..v[3].." "..v[4].."\n" )
