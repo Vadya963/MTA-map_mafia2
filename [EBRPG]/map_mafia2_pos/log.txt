@@ -3980,6 +3980,7 @@ Object33 895 vitoa3city
 Object18 904 vitoa3city
 liska 945 vitoa3city
 telefon 1561 vitoa3city
+03_novinstanek 2995 greenfield
 04_fast_food_exterier 952 kingstone
 04_uhli_02 953 kingstone
 04_blok_interier04 954 kingstone

@@ -78,7 +78,7 @@ function createText ()
 		dxdrawtext ( task..", "..swim_time..", "..air_time..", streamed obj "..amount, 0, 200, 0.0, 0.0, tocolor ( 255, 255, 255, 255 ), 1, "default-bold" )
 
 		for k,v in ipairs(getElementData(root, "object")) do
-			if isElementStreamedIn ( v[2] ) then
+			if isElementStreamedIn ( v[2] ) and not isElementLowLOD( v[2] ) then
 				local j = {getElementPosition(v[2])}
 				local model = getElementModel(v[2])
 				if getDistanceBetweenPoints3D(x, y, z, j[1],j[2],j[3]) <= 100 then
@@ -128,10 +128,11 @@ end)
 addCommandHandler ( "ebdim",
 function (cmd, level, bool )
 	for k,v in ipairs(getElementData(root, "object")) do
-		setElementDimension(v[2], tonumber(level))
 		if bool == "true" then
 			local obj = getLowLODElement(v[2])
 			setElementDimension(obj, tonumber(level))
+		else
+			setElementDimension(v[2], tonumber(level))
 		end
 	end
 end)
