@@ -36,7 +36,7 @@ function createText ()
 	local wanted = getPlayerWantedLevel ( )
 	if wanted ~= 0 then
 		local v = wanted_img[wanted]
-		dxDrawImageSection(screenWidth-(146/2)-(v[3]/2), screenHeight-161-v[4], v[3], v[4], v[1], v[2], v[3], v[4], 'hud/hud2.png')
+		dxDrawImageSection(screenWidth-(146*width_hd/2)-(v[3]*width_hd/2), screenHeight-(146*width_hd)-15-(v[4]*height_hd), v[3]*width_hd, v[4]*height_hd, v[1], v[2], v[3], v[4], 'hud/hud2.png')
 	end
 end
 addEventHandler ( "onClientRender", root, createText )

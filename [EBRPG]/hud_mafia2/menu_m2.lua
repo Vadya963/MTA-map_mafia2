@@ -77,7 +77,7 @@ function()
 end)
 
 --menu from mafia 2
-local menu_m2 = guiCreateStaticImage( screenWidth/2-30, screenHeight-100, 57, 58, "hud/window-m2.png", false )
+local menu_m2 = guiCreateStaticImage( screenWidth/2-58/2, screenHeight-100, 58, 58, "hud/window-m2.png", false )
 local sx,sy = guiGetSize(menu_m2, false)
 local px,py = guiGetPosition(menu_m2, false)
 local arrow_m2 = {
