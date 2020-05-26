@@ -1,6 +1,6 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.38.5.1"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.38.5.0"/>
 
 <include resource='hud_mafia2'/>
 <include resource='image_replace_mafia2'/>
@@ -99,6 +99,8 @@
 <file src='vitoa1/obrazek_Y.col'/>
 <file src='vitoa1/STROP_PREDSIN.dff'/>
 <file src='vitoa1/STROP_PREDSIN.col'/>
+<file src='vitoa1/A1_L_lampa_INST02.dff'/>
+<file src='vitoa1/A1_L_lampa_INST02.col'/>
 <file src='vitoa1/plechovka_D_01.dff'/>
 <file src='vitoa1/plechovka_D_01.col'/>
 <file src='vitoa1/Stit_oblouk.dff'/>
@@ -281,15 +283,7 @@
 <file src='vitoa1/lista_kamna.col'/>
 <file src='vitoa1/toaletni_papiry.dff'/>
 <file src='vitoa1/toaletni_papiry.col'/>
-<file src='vitoa1/vypinac_kuchyn_B.dff'/>
-<file src='vitoa1/vypinac_kuchyn_B.col'/>
-<file src='vitoa1/zaklad.dff'/>
-<file src='vitoa1/zaklad.col'/>
 
-<file src='vitoa2/vypinac_wc.dff'/>
-<file src='vitoa2/vypinac_wc.col'/>
-<file src='vitoa2/vypinac_kabel.dff'/>
-<file src='vitoa2/vypinac_kabel.col'/>
 <file src='vitoa2/krajic03.dff'/>
 <file src='vitoa2/krajic03.col'/>
 <file src='vitoa2/bedynka_proutena04.dff'/>
@@ -478,13 +472,7 @@
 <file src='vitoa2/model_body.col'/>
 <file src='vitoa2/A2_okno.dff'/>
 <file src='vitoa2/A2_okno.col'/>
-<file src='vitoa2/zarovka_ON.dff'/>
-<file src='vitoa2/zarovka_ON.col'/>
 
-<file src='vitoa3city/Teleso_ON.dff'/>
-<file src='vitoa3city/Teleso_ON.col'/>
-<file src='vitoa3city/Glass_ON.dff'/>
-<file src='vitoa3city/Glass_ON.col'/>
 <file src='vitoa3city/Object33.dff'/>
 <file src='vitoa3city/Object33.col'/>
 <file src='vitoa3city/Object18.dff'/>
