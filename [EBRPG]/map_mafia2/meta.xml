@@ -290,8 +290,6 @@
 <file src='vitoa2/vypinac_wc.col'/>
 <file src='vitoa2/vypinac_kabel.dff'/>
 <file src='vitoa2/vypinac_kabel.col'/>
-<file src='vitoa2/krajic03.dff'/>
-<file src='vitoa2/krajic03.col'/>
 <file src='vitoa2/bedynka_proutena04.dff'/>
 <file src='vitoa2/bedynka_proutena04.col'/>
 <file src='vitoa2/polstare.dff'/>
@@ -481,6 +479,8 @@
 <file src='vitoa2/zarovka_ON.dff'/>
 <file src='vitoa2/zarovka_ON.col'/>
 
+<file src='vitoa3city/krajic03.dff'/>
+<file src='vitoa3city/krajic03.col'/>
 <file src='vitoa3city/Teleso_ON.dff'/>
 <file src='vitoa3city/Teleso_ON.col'/>
 <file src='vitoa3city/Glass_ON.dff'/>
