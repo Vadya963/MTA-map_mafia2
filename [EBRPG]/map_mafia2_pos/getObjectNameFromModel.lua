@@ -14255,8 +14255,8 @@ zaklad[3106]="k_poolball8",]]
 [18626]="cs_landbit_36_A",
 [18627]="cs_landbit_27_A",
 [18628]="cs_landbit_10_A",
-[18629]="cs_landbit_06_A",
-[18630]="cs_landbit_20_A"
+--02_08[18629]="cs_landbit_06_A",
+--02_02[18630]="cs_landbit_20_A"
 }
 
 function getObjectNameFromModel ( id )
