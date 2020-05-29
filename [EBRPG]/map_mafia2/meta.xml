@@ -1,6 +1,6 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.39.5.1"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.40.5.1"/>
 
 <include resource='hud_mafia2'/>
 <include resource='image_replace_mafia2'/>
@@ -6517,7 +6517,6 @@
 <file src='hillwood/14_teren__aa2.dff'/>
 <file src='hillwood/14_teren__mm1.dff'/> 
 <file src='hillwood/14_teren__ll1.dff'/> 
-<file src='hillwood/14_teren__cc1-bez_coll.dff'/>
 <file src='hillwood/14_teren__cc-bez_coll.dff'/>
 <file src='hillwood/14_teren__bb-bez_coll.dff'/>
 <file src='hillwood/14_teren__ll2-bez_coll.dff'/>
@@ -6538,7 +6537,6 @@
 <file src='hillwood/14_teren__aa2.col'/>
 <file src='hillwood/14_teren__mm1.col'/> 
 <file src='hillwood/14_teren__ll1.col'/> 
-<file src='hillwood/14_teren__cc1-bez_coll.col'/>
 <file src='hillwood/14_teren__cc-bez_coll.col'/>
 <file src='hillwood/14_teren__bb-bez_coll.col'/>
 <file src='hillwood/14_teren__ll2-bez_coll.col'/>

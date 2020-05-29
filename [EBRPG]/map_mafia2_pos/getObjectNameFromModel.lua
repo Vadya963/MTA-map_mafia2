@@ -785,7 +785,6 @@ local objectNames = {
 [1431]="DYN_BOX_PILE",
 [1432]="DYN_TABLE_2",
 [1433]="DYN_TABLE_1",
-[1434]="DYN_ROADBARRIER_5a",
 [1435]="DYN_ROADBARRIER_5b",
 [1436]="DYN_SCAFFOLD_2",
 [1437]="DYN_LADDER_2",
@@ -14257,6 +14256,7 @@ zaklad[3106]="k_poolball8",]]
 [18628]="cs_landbit_10_A",
 --02_08[18629]="cs_landbit_06_A",
 --02_02[18630]="cs_landbit_20_A"
+--свободный[1434]="DYN_ROADBARRIER_5a",
 }
 
 function getObjectNameFromModel ( id )
