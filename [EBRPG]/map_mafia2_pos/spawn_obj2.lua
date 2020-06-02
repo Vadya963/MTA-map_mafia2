@@ -9491,7 +9491,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		local x,y,z = getElementPosition( v[2] )
 		local xr,yr,zr = getElementRotation( v[2] )
-		local rot = toQuaternion(xr,yr,zr)
+		local rot = toQuaternion(xr,yr,zr*-1)
 		fileWrite(hFile_ipl, v[3]..", "..name..", 0, "..x..", "..y..", "..z..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
 	end
 
