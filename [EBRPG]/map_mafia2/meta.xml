@@ -1,6 +1,6 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.40.5.1"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.41.5.1"/>
 
 <include resource='hud_mafia2'/>
 <include resource='image_replace_mafia2'/>
@@ -6844,6 +6844,8 @@
 <file src='hillwood/14_hvezdarna_dvere.dff'/>
 <file src='hillwood/14_hvezdarna_dvere.col'/>
 
+<file src='riverside/06_pipes_chan_01_G.dff'/>
+<file src='riverside/06_pipes_chan_01_G.col'/>
 <file src='riverside/06_CCpistB_i_04_G.dff'/>
 <file src='riverside/06_CCpistB_i_04_G.col'/>
 <file src='riverside/06_CCkeep_i_04_G.dff'/>

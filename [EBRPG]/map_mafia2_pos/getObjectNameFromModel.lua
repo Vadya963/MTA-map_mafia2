@@ -702,7 +702,7 @@ local objectNames = {
 [1348]="CJ_O2Tanks",
 [1349]="CJ_SHTROLLY",
 [1350]="CJ_TRAFFIC_LIGHT4",
-	[1351]="CJ_TRAFFIC_LIGHT5",
+--	[1351]="CJ_TRAFFIC_LIGHT5",--светится пешеход
 [1352]="CJ_TRAFFIC_LIGHT3",
 	[1353]="CJ_AIRCON",
 [1354]="CJ_AIRCON_FAN",
@@ -14253,10 +14253,10 @@ zaklad[3106]="k_poolball8",]]
 [18625]="cs_landbit_48_A",
 [18626]="cs_landbit_36_A",
 [18627]="cs_landbit_27_A",
-[18628]="cs_landbit_10_A",
+--06_pipes_chan_01_G[18628]="cs_landbit_10_A",
 --02_08[18629]="cs_landbit_06_A",
 --02_02[18630]="cs_landbit_20_A"
---свободный[1434]="DYN_ROADBARRIER_5a",
+--12_00[1434]="DYN_ROADBARRIER_5a",
 }
 
 function getObjectNameFromModel ( id )
