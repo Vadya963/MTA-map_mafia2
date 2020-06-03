@@ -8169,6 +8169,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	local hFile = fileOpen("log.txt")
 	local hFile_ide = fileOpen("mafia2_ide.txt")
 	local hFile_ipl = fileOpen( "mafia2_ipl.txt" )
+	local hFile_ipl_euler = fileOpen( "mafia2_ipl_euler.txt" )
 
 	local count = 0
 	for i=615,18630 do
@@ -9493,6 +9494,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		local xr,yr,zr = getElementRotation( v[2] )
 		local rot = toQuaternion(xr,yr,zr*-1)
 		fileWrite(hFile_ipl, v[3]..", "..name..", 0, "..x..", "..y..", "..z..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
+		fileWrite(hFile_ipl_euler, v[3]..", "..name..", 0, "..x..", "..y..", "..z..", "..xr..", "..yr..", "..zr..", -1\n" )
 	end
 
 	print("object len "..#object)
@@ -9500,6 +9502,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	fileClose(hFile)
 	fileClose(hFile_ide)
 	fileClose(hFile_ipl)
+	fileClose(hFile_ipl_euler)
 end
 addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
 
