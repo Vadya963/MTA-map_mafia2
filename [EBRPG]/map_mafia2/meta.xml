@@ -1,6 +1,6 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.42.5.1"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.42.6.0"/>
 
 <include resource='hud_mafia2'/>
 <include resource='image_replace_mafia2'/>
@@ -64,6 +64,77 @@
 
 <file src='city_crash/newstand.dff'/>
 <file src='city_crash/newstand.col'/>
+<file src='city_crash/bedna_noseni.dff'/>
+<file src='city_crash/bedna_noseni.col'/>
+<file src='city_crash/kanistr_model.dff'/>
+<file src='city_crash/kanistr_model.col'/>
+
+<file src='gas/glass.dff'/>
+<file src='gas/glass.col'/>
+<file src='gas/wash_okna.dff'/>
+<file src='gas/wash_okna.col'/>
+<file src='gas/wash_nosnik02.dff'/>
+<file src='gas/wash_nosnik02.col'/>
+<file src='gas/wash_trubka3.dff'/>
+<file src='gas/wash_trubka3.col'/>
+<file src='gas/wash_trubka4.dff'/>
+<file src='gas/wash_trubka4.col'/>
+<file src='gas/wash_trubka.dff'/>
+<file src='gas/wash_trubka.col'/>
+<file src='gas/PLAKATY.dff'/>
+<file src='gas/PLAKATY.col'/>
+<file src='gas/NOOMM.dff'/>
+<file src='gas/NOOMM.col'/>
+<file src='gas/GS_door_FAKE.dff'/>
+<file src='gas/GS_door_FAKE.col'/>
+<file src='gas/wash_power.dff'/>
+<file src='gas/wash_power.col'/>
+<file src='gas/wash_rantl02.dff'/>
+<file src='gas/wash_rantl02.col'/>
+<file src='gas/NNROZVOD.dff'/>
+<file src='gas/NNROZVOD.col'/>
+<file src='gas/wash_interior.dff'/>
+<file src='gas/wash_interior.col'/>
+<file src='gas/INTERIOR.dff'/>
+<file src='gas/INTERIOR.col'/>
+<file src='gas/wash_pipes.dff'/>
+<file src='gas/wash_pipes.col'/>
+<file src='gas/GS_hook.dff'/>
+<file src='gas/GS_hook.col'/>
+<file src='gas/wash_meganeco.dff'/>
+<file src='gas/wash_meganeco.col'/>
+<file src='gas/wash_pbox.dff'/>
+<file src='gas/wash_pbox.col'/>
+<file src='gas/wash_sprcha.dff'/>
+<file src='gas/wash_sprcha.col'/>
+<file src='gas/CEDULE.dff'/>
+<file src='gas/CEDULE.col'/>
+<file src='gas/konzole.dff'/>
+<file src='gas/konzole.col'/>
+<file src='gas/brush_A.dff'/>
+<file src='gas/brush_A.col'/>
+<file src='gas/drzak_A.dff'/>
+<file src='gas/drzak_A.col'/>
+<file src='gas/cashregister_old_mesh.dff'/>
+<file src='gas/cashregister_old_mesh.col'/>
+<file src='gas/GS_P_Service_a.dff'/>
+<file src='gas/GS_P_Service_a.col'/>
+<file src='gas/GS_P_Service_b.dff'/>
+<file src='gas/GS_P_Service_b.col'/>
+<file src='gas/pixla_9.dff'/>
+<file src='gas/pixla_9.col'/>
+<file src='gas/pixla_11.dff'/>
+<file src='gas/pixla_11.col'/>
+<file src='gas/GS_pixla_62.dff'/>
+<file src='gas/GS_pixla_62.col'/>
+<file src='gas/pixla_8.dff'/>
+<file src='gas/pixla_8.col'/>
+<file src='gas/pixla_5.dff'/>
+<file src='gas/pixla_5.col'/>
+<file src='gas/GS_pixla_39.dff'/>
+<file src='gas/GS_pixla_39.col'/>
+<file src='gas/door.dff'/>
+<file src='gas/door.col'/>
 
 <file src='vitoa1/door_brown.dff'/>
 <file src='vitoa1/door_brown.col'/>
