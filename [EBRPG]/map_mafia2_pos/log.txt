@@ -1928,7 +1928,6 @@ big_factory_metal_03 2991 millville_n
 big_factory_metal_02 2992 millville_n
 17_brick_building04 2993 millville_n
 17_Prahy 2994 millville_n
-crazy_horse2 3004 millville_n
 17_ocesanejsloupek 3005 millville_n
 17_slave_hall 3006 millville_n
 21_two_floor_shop_00 3007 millville_new
@@ -4175,6 +4174,7 @@ OB_Zabrana_Beton_00 727 oysterbay
 OB_Vezaky_Zabradli_A_04 4809 oysterbay
 foundry00 697 millville_n
 city428 806 millville_n
+crazy_horse2 3004 millville_n
 21_roof_top_16 733 millville_new
 21_brick_block 3253 millville_new
 11_show_reklama 734 italy
