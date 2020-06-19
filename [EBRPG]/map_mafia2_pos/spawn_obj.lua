@@ -144,7 +144,7 @@ local kingstone = {
 {"04_blok44", {{-1376.19000,1589.52900,20.59987,0,0,0}}, 0},
 {"04_blok45", {{-992.91380,1631.39100,14.12483,0,0,0}}, 0},
 {"04_blok46", {{-1354.51500,1702.06500,16.14933,0,0,0}}, 0},
-{"04_blok47", {{-1308.03600,1706.24600,16.21890,0,0,0},{-1425.10600,1284.30700,-8.17070,0,0,90}}, 0},
+{"04_blok47", {{-1308.03600,1706.24600,16.21890,0,0,0},{-1425.10600,1284.30700,-8.17070,0,0,90}}, 0, true},
 {"04_blok48", {{-1248.09100,1706.27100,16.97486,0,0,0}}, 0},
 {"04_blok49", {{-1196.40000,1711.59600,15.67256,0,0,0}}, 0},
 {"04_blok50", {{-1163.11500,1701.55700,13.88185,0,0,0}}, 0},
@@ -4272,7 +4272,7 @@ local millville_new = {
 {'21_dome_building_03', { {5.9604651880818E-08, -1, 0, 0}, {1, 5.9604651880818E-08, 0, 0}, {0, 0, 1.00000011920929, 0}, {240.474853515625, 811.363159179688, -12.0371751785278, 0} }, 0},
 {'21_dome_building_00', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {231.261947631836, 659.272155761719, -13.5641183853149, 0} }, 0},
 {'21_dome_building_01', { {-1, -1.50995802528087E-07, 0, 0}, {1.50995802528087E-07, -1, 0, 0}, {0, 0, 1, 0}, {411.026641845703, 656.180053710938, -17.0768241882324, 0} }, 0},
-{'21_mutterstairs', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {419.021789550781, 891.771850585938, 22.9701271057129, 0} }, 0},
+{'21_mutterstairs', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {419.021789550781-169, 891.771850585938-107, 22.9701271057129-43, 0} }, 0},
 {'21_motor_psycho_03', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {609.134155273438, 893.784729003906, -12.8018159866333, 0} }, 0},
 {'21_motor_psycho_00', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {630.964233398438, 893.784729003906, -12.8018159866333, 0} }, 0},
 {'21_motor_psycho_04', { {5.9604651880818E-08, -1, 0, 0}, {1, 5.9604651880818E-08, 0, 0}, {0, 0, 1.00000011920929, 0}, {582.766540527344, 917.069274902344, -12.8018159866333, 0} }, 0},
@@ -8185,7 +8185,8 @@ local no_col_object = {
 {"02_lana_02", {{-1288.947+266 ,597.1219+23 ,37.02154 ,0 ,0 ,0},}, 735, "hunters"},
 {"02_lana_01", {{-879.2299 ,619.6357+1 ,43.24365 ,0 ,0 ,0},}, 737, "hunters"},
 {'02_08', {{-1657.343 ,421.6096 ,-19.71902 ,0 ,0 ,0},
-{-381.96 ,1752.6999511719 ,-23.10 ,0 ,0 ,0},}, 18629, "hunters"},
+{-381.96 ,1752.6999511719 ,-23.10 ,0 ,0 ,0},
+{763.0 ,316.3 ,-12.0 ,0 ,0 ,0},}, 18629, "hunters"},
 {'02_02', {{-1496.725 ,481.3647 ,-20.5448 ,0 ,0 ,0},}, 18630, "hunters"},
 
 {"Object90", {{-1691.332-130.432 ,61.94596-50.632 ,3.180852-6.267 ,0 ,0 ,0},}, 674, "sandisland"},
@@ -8193,6 +8194,7 @@ local no_col_object = {
 {"Object33", {{-1564.592 ,-150.2291 ,-10.23321 ,0 ,0 ,0},}, 680, "sandisland"},
 {"distillery00", {{-1560.631 ,-102.5989 ,-35.61909 ,0 ,0 ,0},}, 695, "sandisland"},
 {"distillery01", {{-1560.631 ,-102.5989 ,-35.61909 ,0 ,0 ,0},}, 696, "sandisland"},
+{'Object29', {{-1564.592-142 ,-150.2291+115 ,-10.23321+2, 0 ,0 ,0},}, 18618, "sandisland"},
 
 {"dum_2_zed_GARAZ_a16", {{-475.7957 ,-886.1544 ,-14.44057 ,0 ,0 ,180},}, 708, "port"},
 {"19_pr_37", {{-298.4546 ,-759.9343 ,-26.74566 ,0 ,0 ,0},
@@ -8330,7 +8332,7 @@ local no_col_object = {
 {-1053.04300,1669.73800,10.49512,0,0,-90},
 {-759.24910,1644.39800,-14.97027,0,0,180},
 {-616.51590,1522.17100,-14.09251,0,0,-90},
-{-725.77740,1821.09800,-14.83787,0,0,0},
+{-725.77740,1821.11000,-14.97000,0,0,0},
 {-839.13760,1423.91200,-9.03088,0,0,180},
 {-327.5591 ,1728.544 ,-22.8994,0,0,-90},
 {-326.551 ,1779.562 ,-23.59906, 0,0,0},
@@ -8376,7 +8378,7 @@ local no_col_object = {
 {-68.96011 ,202.35 ,-11.0,0,0,-180},
 }, 954, "kingstone", true},
 {"odevy", {{-1295.63800,1697.73800,12.51401+0.13 ,0,0,0},
-{-1416.57,1296.6999511719,-11.859999656677+0.13 ,0,0,-90},
+{-1416.59,1296.71,-11.75 ,0,0,-90},
 {-1368.701 ,386.3124 ,-21.91+0.13 ,0,0,-90},
 {-1533.068 ,-5.245684 ,-16.01+0.13 ,0,0,0},
 {-376.8115 ,-457.3301 ,-15.31127 ,0,0,0},
@@ -8976,8 +8978,11 @@ function displayLoadedRes ( res )--старт ресурсов
 				table.insert(object, {v[1], obj, v[3], "city_crash", v[4], v[5]})
 			end
 		end
-		table.insert(object_replace, {v[1], v[3], "city_crash", v[6]})
 		fileWrite(hFile, v[1].." "..v[3].." city_crash\n" )
+
+		if fileExists(":map_mafia2/city_crash/"..v[1]..".dff") and fileExists(":map_mafia2/city_crash/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "city_crash", v[6]})
+		end
 	end
 	end
 
@@ -8992,7 +8997,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "kingstone", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "kingstone", v[6]})
+		if fileExists(":map_mafia2/kingstone/"..v[1]..".dff") and fileExists(":map_mafia2/kingstone/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "kingstone", v[6]})
+		end
 	end
 	end
 
@@ -9007,7 +9014,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "dipton", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "dipton", v[6]})
+		if fileExists(":map_mafia2/dipton/"..v[1]..".dff") and fileExists(":map_mafia2/dipton/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "dipton", v[6]})
+		end
 	end
 	end
 
@@ -9022,7 +9031,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "highbrook", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "highbrook", v[6]})
+		if fileExists(":map_mafia2/highbrook/"..v[1]..".dff") and fileExists(":map_mafia2/highbrook/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "highbrook", v[6]})
+		end
 	end
 	end
 
@@ -9043,7 +9054,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "hillwood", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "hillwood", v[6]})
+		if fileExists(":map_mafia2/hillwood/"..v[1]..".dff") and fileExists(":map_mafia2/hillwood/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "hillwood", v[6]})
+		end
 	end
 
 	for i,v in ipairs(observatory) do
@@ -9068,7 +9081,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 
 		table.insert(object, {v[1], obj, v[3], "hillwood", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "hillwood", v[6]})
+		if fileExists(":map_mafia2/hillwood/"..v[1]..".dff") and fileExists(":map_mafia2/hillwood/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "hillwood", v[6]})
+		end
 	end
 	end
 
@@ -9089,7 +9104,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "riverside", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "riverside", v[6]})
+		if fileExists(":map_mafia2/riverside/"..v[1]..".dff") and fileExists(":map_mafia2/riverside/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "riverside", v[6]})
+		end
 	end
 	end
 
@@ -9104,7 +9121,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "greenfield", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "greenfield", v[6]})
+		if fileExists(":map_mafia2/greenfield/"..v[1]..".dff") and fileExists(":map_mafia2/greenfield/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "greenfield", v[6]})
+		end
 	end
 	end
 
@@ -9119,7 +9138,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "hunters", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "hunters", v[6]})
+		if fileExists(":map_mafia2/hunters/"..v[1]..".dff") and fileExists(":map_mafia2/hunters/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "hunters", v[6]})
+		end
 	end
 	end
 
@@ -9134,7 +9155,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "sandisland", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "sandisland", v[6]})
+		if fileExists(":map_mafia2/sandisland/"..v[1]..".dff") and fileExists(":map_mafia2/sandisland/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "sandisland", v[6]})
+		end
 	end
 	end
 
@@ -9155,7 +9178,9 @@ function displayLoadedRes ( res )--старт ресурсов
 			setLowLODElement(obj,lod_obj)
 			table.insert(object, {v[1], obj, v[3], "port", v[4], v[5]})
 		end
-		table.insert(object_replace, {v[1], v[3], "port", v[6]})
+		if fileExists(":map_mafia2/port/"..v[1]..".dff") and fileExists(":map_mafia2/port/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "port", v[6]})
+		end
 	end
 	end
 
@@ -9173,7 +9198,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "southport", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "southport", v[6]})
+		if fileExists(":map_mafia2/southport/"..v[1]..".dff") and fileExists(":map_mafia2/southport/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "southport", v[6]})
+		end
 	end
 	end
 
@@ -9191,7 +9218,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "oysterbay", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "oysterbay", v[6]})
+		if fileExists(":map_mafia2/oysterbay/"..v[1]..".dff") and fileExists(":map_mafia2/oysterbay/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "oysterbay", v[6]})
+		end
 	end
 	end
 
@@ -9220,7 +9249,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "millville_s", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "millville_s", v[6]})
+		if fileExists(":map_mafia2/millville_s/"..v[1]..".dff") and fileExists(":map_mafia2/millville_s/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "millville_s", v[6]})
+		end
 	end
 	end
 
@@ -9251,7 +9282,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "millville_n", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "millville_n", v[6]})
+		if fileExists(":map_mafia2/millville_n/"..v[1]..".dff") and fileExists(":map_mafia2/millville_n/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "millville_n", v[6]})
+		end
 	end
 	end
 
@@ -9292,7 +9325,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "millville_new", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "millville_new", v[6]})
+		if fileExists(":map_mafia2/millville_new/"..v[1]..".dff") and fileExists(":map_mafia2/millville_new/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "millville_new", v[6]})
+		end
 	end
 	end
 
@@ -9333,7 +9368,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "italy", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "italy", v[6]})
+		if fileExists(":map_mafia2/italy/"..v[1]..".dff") and fileExists(":map_mafia2/italy/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "italy", v[6]})
+		end
 	end
 	end
 
@@ -9351,7 +9388,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "uppertown", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "uppertown", v[6]})
+		if fileExists(":map_mafia2/uppertown/"..v[1]..".dff") and fileExists(":map_mafia2/uppertown/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "uppertown", v[6]})
+		end
 	end
 	end
 
@@ -9378,7 +9417,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "chinatown", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "chinatown", v[6]})
+		if fileExists(":map_mafia2/chinatown/"..v[1]..".dff") and fileExists(":map_mafia2/chinatown/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "chinatown", v[6]})
+		end
 	end
 	end
 
@@ -9394,12 +9435,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		local x,y,z = getElementRotation(obj)
 		setElementRotation(obj, x,y,-z)
 		setElementRotation(lod_obj, x,y,-z)
-
-		local x,y,z = getElementRotation(obj)
-		if x > 0 then
-			setElementRotation(obj, 90,y,z)
-			setElementRotation(lod_obj, 90,y,z)
-		end
 
 		for k,p in pairs(westside_pos) do
 			local x,y,rz = getElementRotation(obj)
@@ -9425,7 +9460,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "westside", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "westside", v[6]})
+		if fileExists(":map_mafia2/westside/"..v[1]..".dff") and fileExists(":map_mafia2/westside/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "westside", v[6]})
+		end
 	end
 	end
 
@@ -9441,12 +9478,6 @@ function displayLoadedRes ( res )--старт ресурсов
 		local x,y,z = getElementRotation(obj)
 		setElementRotation(obj, x,y,-z)
 		setElementRotation(lod_obj, x,y,-z)
-
-		local x,y,z = getElementRotation(obj)
-		if x == 0 and y == 270 then
-			setElementRotation(obj, 90,0,z)
-			setElementRotation(lod_obj, 90,0,z)
-		end
 
 		for k,p in pairs(eastside_rot) do
 			local x,y,rz = getElementRotation(obj)
@@ -9481,7 +9512,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "eastside", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "eastside", v[6]})
+		if fileExists(":map_mafia2/eastside/"..v[1]..".dff") and fileExists(":map_mafia2/eastside/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "eastside", v[6]})
+		end
 	end
 	end
 
@@ -9531,7 +9564,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 		
 		table.insert(object, {v[1], obj, v[3], "midtown", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "midtown", v[6]})
+		if fileExists(":map_mafia2/midtown/"..v[1]..".dff") and fileExists(":map_mafia2/midtown/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "midtown", v[6]})
+		end
 	end
 	end
 
@@ -9549,7 +9584,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "prison", v[6]})
+		if fileExists(":map_mafia2/prison/"..v[1]..".dff") and fileExists(":map_mafia2/prison/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "prison", v[6]})
+		end
 	end
 	for i,v in ipairs(prison[2]) do
 		local j = v[2]
@@ -9560,7 +9597,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setLowLODElement(obj,lod_obj)
 		
 		table.insert(object, {v[1], obj, v[3], "prison", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "prison", v[6]})
+		if fileExists(":map_mafia2/prison/"..v[1]..".dff") and fileExists(":map_mafia2/prison/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "prison", v[6]})
+		end
 	end
 	end
 
@@ -9582,7 +9621,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(lod_obj, x+-287.72860,y+823.49730,z+14.50119)
 		
 		table.insert(object, {v[1], obj, v[3], "diamond_motors", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "diamond_motors", v[6]})
+		if fileExists(":map_mafia2/diamond_motors/"..v[1]..".dff") and fileExists(":map_mafia2/diamond_motors/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "diamond_motors", v[6]})
+		end
 	end
 	end
 
@@ -9604,7 +9645,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(lod_obj, x-77.57613,y-1189.47300,z+1.80610)
 		
 		table.insert(object, {v[1], obj, v[3], "respray", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "respray", v[6]})
+		if fileExists(":map_mafia2/respray/"..v[1]..".dff") and fileExists(":map_mafia2/respray/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "respray", v[6]})
+		end
 	end
 	end
 
@@ -9626,7 +9669,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(lod_obj, x,y,z)
 		
 		table.insert(object, {v[1], obj, v[3], "vitoa3city", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "vitoa3city", v[6]})
+		if fileExists(":map_mafia2/vitoa3city/"..v[1]..".dff") and fileExists(":map_mafia2/vitoa3city/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "vitoa3city", v[6]})
+		end
 	end
 	end
 
@@ -9657,7 +9702,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(lod_obj, x-1517.35500,y+580.94400,z-14.70962)
 		
 		table.insert(object, {v[1], obj, v[3], "vitoa2", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "vitoa2", v[6]})
+		if fileExists(":map_mafia2/vitoa2/"..v[1]..".dff") and fileExists(":map_mafia2/vitoa2/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "vitoa2", v[6]})
+		end
 	end
 	end
 
@@ -9688,7 +9735,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(lod_obj, x+374.15730,y-293.68850,z-14.04628)
 		
 		table.insert(object, {v[1], obj, v[3], "vitoa1", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "vitoa1", v[6]})
+		if fileExists(":map_mafia2/vitoa1/"..v[1]..".dff") and fileExists(":map_mafia2/vitoa1/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "vitoa1", v[6]})
+		end
 	end
 	end
 
@@ -9710,7 +9759,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(lod_obj, x-1588.675,y+944.8907,z-5.215903)
 		
 		table.insert(object, {v[1], obj, v[3], "gas", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "gas", v[6]})
+		if fileExists(":map_mafia2/gas/"..v[1]..".dff") and fileExists(":map_mafia2/gas/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "gas", v[6]})
+		end
 	end
 	for i,v in ipairs(gas[2]) do
 		local obj = createObject(v[3], 0,0,0, 0,0,0)
@@ -9725,7 +9776,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "gas", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "gas", v[6]})
+		if fileExists(":map_mafia2/gas/"..v[1]..".dff") and fileExists(":map_mafia2/gas/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "gas", v[6]})
+		end
 	end
 	end
 
@@ -9747,7 +9800,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementPosition(lod_obj, x-175,y-1190,z+4)
 		
 		table.insert(object, {v[1], obj, v[3], "fast", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "fast", v[6]})
+		if fileExists(":map_mafia2/fast/"..v[1]..".dff") and fileExists(":map_mafia2/fast/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "fast", v[6]})
+		end
 	end
 	for i,v in ipairs(fast[2]) do
 		local obj = createObject(v[3], 0,0,0, 0,0,0)
@@ -9762,7 +9817,9 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(lod_obj, x,y,-z)
 		
 		table.insert(object, {v[1], obj, v[3], "fast", v[4], v[5]})
-		table.insert(object_replace, {v[1], v[3], "fast", v[6]})
+		if fileExists(":map_mafia2/fast/"..v[1]..".dff") and fileExists(":map_mafia2/fast/"..v[1]..".col") then
+			table.insert(object_replace, {v[1], v[3], "fast", v[6]})
+		end
 	end
 	end
 

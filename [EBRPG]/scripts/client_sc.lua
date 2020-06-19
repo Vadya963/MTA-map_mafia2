@@ -19,6 +19,8 @@ function ( startedRes )
 	engineSetSurfaceProperties ( 0, "audio", "concrete" )
 	engineSetSurfaceProperties ( 0, "canclimb", true )
 
+	toggleControl( "jump", false )
+
 	setOcclusionsEnabled(false)
 	setWaterLevel(-5000)
 	setFarClipDistance(2000)
@@ -130,7 +132,9 @@ function (cmd, level, bool )
 	for k,v in ipairs(getElementData(root, "object")) do
 		if bool == "true" then
 			local obj = getLowLODElement(v[2])
-			setElementDimension(obj, tonumber(level))
+			if obj then
+				setElementDimension(obj, tonumber(level))
+			end
 		else
 			setElementDimension(v[2], tonumber(level))
 		end

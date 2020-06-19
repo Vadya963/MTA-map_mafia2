@@ -1,6 +1,6 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.44.7.1"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.45.7.1"/>
 
 <include resource='hud_mafia2'/>
 <include resource='image_replace_mafia2'/>
@@ -7761,6 +7761,8 @@
 <file src='hunters/02_plot.dff'/>
 <file src='hunters/02_plot.col'/>
 
+<file src='sandisland/Object29.dff'/>
+<file src='sandisland/Object29.col'/>
 <file src='sandisland/S01_teren_10.dff'/>
 <file src='sandisland/S01_teren_11.dff'/>
 <file src='sandisland/S01_teren_12.dff'/>
