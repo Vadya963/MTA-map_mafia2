@@ -4271,6 +4271,7 @@ drzak_A 18625 gas
 cashregister_old_mesh 18626 gas
 door 18627 gas
 glass 18620 gas
+T_Industrial_Strop_4 18617 gas
 04_fast_food_exterier 952 kingstone
 04_uhli_02 953 kingstone
 04_blok_interier04 954 kingstone
