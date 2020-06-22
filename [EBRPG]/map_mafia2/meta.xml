@@ -1,6 +1,6 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.45.7.2"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.45.7.3"/>
 
 <include resource='hud_mafia2'/>
 <include resource='image_replace_mafia2'/>
@@ -156,6 +156,8 @@
 <file src='fast/bar.dff'/>
 <file src='fast/bar.col'/>
 
+<file src='gas/T_Industrial_Strop_4.dff'/>
+<file src='gas/T_Industrial_Strop_4.col'/>
 <file src='gas/glass.dff'/>
 <file src='gas/glass.col'/>
 <file src='gas/wash_okna.dff'/>
