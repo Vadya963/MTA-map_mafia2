@@ -1,6 +1,6 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.45.7.3"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.45.8.0"/>
 
 <include resource='hud_mafia2'/>
 <include resource='image_replace_mafia2'/>
@@ -19,6 +19,7 @@
 <file src="textures/vitoa1.txd"/>
 <file src="textures/gas.txd"/>
 <file src="textures/fast.txd"/>
+<file src="textures/gunshop.txd"/>
 
 <file src="textures/kingstone_summer.txd"/>
 <file src="textures/dipton_summer.txd"/>
@@ -72,6 +73,95 @@
 <file src='city_crash/kanistr_model.col'/>
 <file src='city_crash/hotdog.dff'/>
 <file src='city_crash/hotdog.col'/>
+
+<file src='gunshop/Door.dff'/>
+<file src='gunshop/Door.col'/>
+<file src='gunshop/Glass_1.dff'/>
+<file src='gunshop/Glass_1.col'/>
+<file src='gunshop/munice.dff'/>
+<file src='gunshop/munice.col'/>
+<file src='gunshop/Box_c_M14.dff'/>
+<file src='gunshop/Box_c_M14.col'/>
+<file src='gunshop/Box_b_M26.dff'/>
+<file src='gunshop/Box_b_M26.col'/>
+<file src='gunshop/Box_a_M08.dff'/>
+<file src='gunshop/Box_a_M08.col'/>
+<file src='gunshop/bedna_big.dff'/>
+<file src='gunshop/bedna_big.col'/>
+<file src='gunshop/Gunshop_Zaves_00.dff'/>
+<file src='gunshop/Gunshop_Zaves_00.col'/>
+<file src='gunshop/GS_suplik__01.dff'/>
+<file src='gunshop/GS_suplik__01.col'/>
+<file src='gunshop/Gunshop_Pult.dff'/>
+<file src='gunshop/Gunshop_Pult.col'/>
+<file src='gunshop/Gunshop_Vyztuze_vytrina.dff'/>
+<file src='gunshop/Gunshop_Vyztuze_vytrina.col'/>
+<file src='gunshop/Gunshop_Skrin_00.dff'/>
+<file src='gunshop/Gunshop_Skrin_00.col'/>
+<file src='gunshop/Gunshop_Skrin_01.dff'/>
+<file src='gunshop/Gunshop_Skrin_01.col'/>
+<file src='gunshop/Plane01.dff'/>
+<file src='gunshop/Plane01.col'/>
+<file src='gunshop/Room.dff'/>
+<file src='gunshop/Room.col'/>
+<file src='gunshop/Object14.dff'/>
+<file src='gunshop/Object14.col'/>
+<file src='gunshop/Gunshop_Police_12.dff'/>
+<file src='gunshop/Gunshop_Police_12.col'/>
+<file src='gunshop/Gunshop_Police_05.dff'/>
+<file src='gunshop/Gunshop_Police_05.col'/>
+<file src='gunshop/Room_strop.dff'/>
+<file src='gunshop/Room_strop.col'/>
+<file src='gunshop/Gunshop_Plakat_04.dff'/>
+<file src='gunshop/Gunshop_Plakat_04.col'/>
+<file src='gunshop/Gunshop_Plakat_05.dff'/>
+<file src='gunshop/Gunshop_Plakat_05.col'/>
+<file src='gunshop/Gunshop_Plakat_02.dff'/>
+<file src='gunshop/Gunshop_Plakat_02.col'/>
+<file src='gunshop/Gunshop_Plakat_03.dff'/>
+<file src='gunshop/Gunshop_Plakat_03.col'/>
+<file src='gunshop/Gunshop_Plakat_00.dff'/>
+<file src='gunshop/Gunshop_Plakat_00.col'/>
+<file src='gunshop/Gunshop_Plakat_01.dff'/>
+<file src='gunshop/Gunshop_Plakat_01.col'/>
+<file src='gunshop/Gunshop_Klika_00.dff'/>
+<file src='gunshop/Gunshop_Klika_00.col'/>
+<file src='gunshop/Room_podlaha.dff'/>
+<file src='gunshop/Room_podlaha.col'/>
+<file src='gunshop/GUNSHOP_Glass_10.dff'/>
+<file src='gunshop/GUNSHOP_Glass_10.col'/>
+<file src='gunshop/GUNSHOP_Glass_12.dff'/>
+<file src='gunshop/GUNSHOP_Glass_12.col'/>
+<file src='gunshop/GUNSHOP_Glass_13.dff'/>
+<file src='gunshop/GUNSHOP_Glass_13.col'/>
+<file src='gunshop/GUNSHOP_Glass_09.dff'/>
+<file src='gunshop/GUNSHOP_Glass_09.col'/>
+<file src='gunshop/GUNSHOP_Glass_11.dff'/>
+<file src='gunshop/GUNSHOP_Glass_11.col'/>
+<file src='gunshop/GUNSHOP_Glass_03.dff'/>
+<file src='gunshop/GUNSHOP_Glass_03.col'/>
+<file src='gunshop/GUNSHOP_Glass_07.dff'/>
+<file src='gunshop/GUNSHOP_Glass_07.col'/>
+<file src='gunshop/GUNSHOP_Glass_01.dff'/>
+<file src='gunshop/GUNSHOP_Glass_01.col'/>
+<file src='gunshop/GUNSHOP_Glass_05.dff'/>
+<file src='gunshop/GUNSHOP_Glass_05.col'/>
+<file src='gunshop/GUNSHOP_Glass_02.dff'/>
+<file src='gunshop/GUNSHOP_Glass_02.col'/>
+<file src='gunshop/GUNSHOP_Glass_06.dff'/>
+<file src='gunshop/GUNSHOP_Glass_06.col'/>
+<file src='gunshop/GUNSHOP_Glass_04.dff'/>
+<file src='gunshop/GUNSHOP_Glass_04.col'/>
+<file src='gunshop/GUNSHOP_Glass_08.dff'/>
+<file src='gunshop/GUNSHOP_Glass_08.col'/>
+<file src='gunshop/GUNSHOP_Glass_21.dff'/>
+<file src='gunshop/GUNSHOP_Glass_21.col'/>
+<file src='gunshop/GUNSHOP_Glass_22.dff'/>
+<file src='gunshop/GUNSHOP_Glass_22.col'/>
+<file src='gunshop/GUNSHOP_Glass_25.dff'/>
+<file src='gunshop/GUNSHOP_Glass_25.col'/>
+<file src='gunshop/GUN_Plakaty.dff'/>
+<file src='gunshop/GUN_Plakaty.col'/>
 
 <file src='fast/fast.dff'/>
 <file src='fast/fast.col'/>
