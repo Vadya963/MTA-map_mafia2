@@ -17,7 +17,6 @@ addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
 
 	engineSetSurfaceProperties ( 0, "audio", "concrete" )
-	engineSetSurfaceProperties ( 0, "canclimb", true )
 
 	toggleControl( "jump", false )
 
