@@ -1,5 +1,5 @@
 local eb_textures = {}
-local weather = "summer" --summer,winter,autumn
+local weather = "summer" --summer,winter
 
 addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
@@ -10,8 +10,6 @@ function ( startedRes )
 		elseif weather == "winter" and not eb_textures[v[3]] and fileExists(":map_mafia2/textures/"..v[3].."_winter.txd") then
 			eb_textures[v[3]] = engineLoadTXD ( ":map_mafia2/textures/"..v[3].."_winter.txd" )
 			print(v[3].." load")
-		elseif weather == "autumn" and not eb_textures[v[3]] then
-			--soon
 		end
 
 		if not eb_textures[v[3]] and fileExists(":map_mafia2/textures/"..v[3]..".txd") then
