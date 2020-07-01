@@ -1,6 +1,5 @@
 local car = {
 	"vehiclegrunge256",
-	"vehiclepoldecals128",
 }
 
 function replaceTexture(textureName, imgPath)

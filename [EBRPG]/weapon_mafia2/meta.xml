@@ -1,0 +1,38 @@
+<meta>
+	<script src="replace_weapon.lua" type="client"/>
+
+	<file src="silenced.dff"/>
+	<file src="silenced.txd"/>
+	<file src="colt45.dff"/>
+	<file src="colt45.txd"/>
+	<file src="desert_eagle.dff"/>
+	<file src="desert_eagle.txd"/>
+	<file src="m4.dff"/>
+	<file src="m4.txd"/>
+	<file src="ak47.dff"/>
+	<file src="ak47.txd"/>
+	<file src="chromegun.dff"/>
+	<file src="chromegun.txd"/>
+	<file src="mp5.dff"/>
+	<file src="mp5.txd"/>
+	<file src="rifle.dff"/>
+	<file src="rifle.txd"/>
+	<file src="sniper.dff"/>
+	<file src="sniper.txd"/>
+	<file src="grenade.dff"/>
+	<file src="grenade.txd"/>
+	<file src="bat.dff"/>
+	<file src="bat.txd"/>
+	<file src="knifecur.dff"/>
+	<file src="knifecur.txd"/>
+	<file src="brassknuckle.dff"/>
+	<file src="brassknuckle.txd"/>
+	<file src="nitestick.dff"/>
+	<file src="nitestick.txd"/>
+	<file src="molotov.dff"/>
+	<file src="molotov.txd"/>
+	<file src="shovel.dff"/>
+	<file src="shovel.txd"/>
+	<file src="gun_cane.dff"/>
+	<file src="gun_cane.txd"/>
+</meta>

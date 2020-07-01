@@ -6,7 +6,8 @@
 <include resource='image_replace_mafia2'/>
 <include resource='scripts'/>
 <include resource='map_mafia2_pos'/>
-<include resource='model_weapon'/>
+<include resource='weapon_mafia2'/>
+<include resource='car_mafia2'/>
 <include resource='customplate'/>
 
 <script src="object_replace.lua" type="client"/>
