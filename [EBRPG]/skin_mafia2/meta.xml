@@ -1,0 +1,30 @@
+<meta>
+<script src="replace_skin.lua" type="client"/>
+
+<file src='briancd.dff'/>
+<file src='briancd.txd'/>
+<file src='citga3cd.dff'/>
+<file src='citga3cd.txd'/>
+<file src='cvez2d.dff'/>
+<file src='cvez2d.txd'/>
+<file src='cvez6d.dff'/>
+<file src='cvez6d.txd'/>
+<file src='cvezci3d.dff'/>
+<file src='cvezci3d.txd'/>
+<file src='cvezga2d.dff'/>
+<file src='cvezga2d.txd'/>
+<file src='cvezjimd.dff'/>
+<file src='cvezjimd.txd'/>
+<file src='cvezjond.dff'/>
+<file src='cvezjond.txd'/>
+<file src='cvezvind.dff'/>
+<file src='cvezvind.txd'/>
+<file src='desmondd.dff'/>
+<file src='desmondd.txd'/>
+<file src='driverd.dff'/>
+<file src='driverd.txd'/>
+<file src='joeneupd.dff'/>
+<file src='joeneupd.txd'/>
+<file src='tomangd.dff'/>
+<file src='tomangd.txd'/>
+</meta>
