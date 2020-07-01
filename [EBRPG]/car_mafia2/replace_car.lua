@@ -28,6 +28,21 @@ local vehicles = {
 	[420] = "Quicksilver Windsor Taxi",
 }
 
+local wheel = {
+	{"wheel_gn1", 1082},
+	{"wheel_gn2", 1085},
+	{"wheel_gn3", 1096},
+	{"wheel_gn4", 1097},
+	{"wheel_gn5", 1098},
+	{"wheel_lr3", 1078},
+	{"wheel_lr4", 1076},
+	{"wheel_or1", 1025},
+	{"wheel_sr1", 1079},
+	{"wheel_sr2", 1075},
+	{"wheel_sr3", 1074},
+	{"wheel_sr4", 1081},
+}
+
 addEventHandler( "onClientResourceStart", resourceRoot,
 function ( startedRes )
 	for k,v in pairs(vehicles) do
@@ -36,9 +51,15 @@ function ( startedRes )
 			engineImportTXD (eb_textures, k)
 			local dff = engineLoadDFF ( v..".dff" )
 			engineReplaceModel ( dff, k )
-			--print("<file src='"..v..".dff'/>")
-			--print("<file src='"..v..".txd'/>")
-			--print(k,v)
+		end
+	end
+
+	local eb_textures = engineLoadTXD ( "wheel_mafia2/wheels.txd" )
+	for k,v in pairs(wheel) do
+		if fileExists("wheel_mafia2/"..v[1]..".dff") then
+			engineImportTXD (eb_textures, v[2])
+			local dff = engineLoadDFF ( "wheel_mafia2/"..v[1]..".dff" )
+			engineReplaceModel ( dff, v[2] )
 		end
 	end
 end)
