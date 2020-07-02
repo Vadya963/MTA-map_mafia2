@@ -1,31 +1,39 @@
 local vehicles = {
-	[401] = "Smith Custom 200",
 	[409] = "Lassiter Series 75 Hollywood",
-	[411] = "Delizia GrandeAmerica",
-	[412] = "Walter Coupe",
-	[445] = "Smith Deluxe Station Wagon",
-	[598] = "Shubert 38",
-	[423] = "Milk Truck",
+
+	--рабочие
 	[428] = "Shubert Armored Van",
-	[429] = "ISW 508",
-	[434] = "Smith 34 Hot Rod",
+	[423] = "Milk Truck",
 	[437] = "Parry Bus Prison",
-	[438] = "Shubert 38 Taxi",
-	[415] = "Potomac Elysium",
 	[455] = "Shubert Truck Flatbed",
-	[467] = "Houston Wasp",
-	[475] = "Smith Thunderbolt",
+	[438] = "Shubert 38 Taxi",
+	[420] = "Quicksilver Windsor Taxi",
 	[478] = "Shubert Pickup",
-	[492] = "Quicksilver Windsor",
-	[500] = "Potomac Indian",
-	[517] = "Berkley Kingfisher",
-	[534] = "Jefferson Provincial",
-	[542] = "Waybar Hot Rod",
-	[551] = "Shubert Beverly",
+
+	--2 дверные
+	--спорт
+	[541] = "Delizia GrandeAmerica",
+	[411] = "Potomac Elysium",
+	[434] = "Smith 34 Hot Rod",
+	[545] = "Waybar Hot Rod",
+	[429] = "ISW 508",
+	[415] = "Smith Thunderbolt",
 	[555] = "Shubert Frigate",
+
+	[496] = "Walter Coupe",
+	[401] = "Berkley Kingfisher",
+	[534] = "Jefferson Provincial",
+	[518] = "Shubert Beverly",
+
+	--4 дверные
+	[426] = "Smith Custom 200",
 	[596] = "Smith Custom 200 Police Special",
 	[597] = "Culver Empire Police Special",
-	[420] = "Quicksilver Windsor Taxi",
+	[445] = "Smith Deluxe Station Wagon",
+	[604] = "Shubert 38",
+	[507] = "Houston Wasp",
+	[466] = "Quicksilver Windsor",--приу ударе номера появляется шапка такси
+	[585] = "Potomac Indian",--имеет прозрачное название марки
 }
 
 local wheel = {
