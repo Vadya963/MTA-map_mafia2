@@ -9,6 +9,11 @@ local vehicles = {
 	[438] = "Shubert 38 Taxi",
 	[420] = "Quicksilver Windsor Taxi",
 	[478] = "Shubert Pickup",
+	[544] = "American LaFrance 600-Series 1941",
+	[416] = "Buick Special Ambulance 1947",
+	[525] = "Dodge Towtruck",
+	[431] = "GMC Fishbowl City Bus 1976",
+	[433] = "GAI 353 Military Truck",
 
 	--2 дверные
 	--спорт
@@ -24,6 +29,7 @@ local vehicles = {
 	[401] = "Berkley Kingfisher",
 	[534] = "Jefferson Provincial",
 	[518] = "Shubert Beverly",
+	[589] = "Volkswagen Beetle 1963",
 
 	--4 дверные
 	[426] = "Smith Custom 200",
@@ -32,8 +38,9 @@ local vehicles = {
 	[445] = "Smith Deluxe Station Wagon",
 	[604] = "Shubert 38",
 	[507] = "Houston Wasp",
-	[466] = "Quicksilver Windsor",--приу ударе номера появляется шапка такси
+	[466] = "Quicksilver Windsor",--при ударе номера появляется шапка такси
 	[585] = "Potomac Indian",--имеет прозрачное название марки
+	[551] = "Packard Standard Eight 1948 Touring Sedan",
 }
 
 local wheel = {

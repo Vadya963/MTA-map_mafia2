@@ -1,6 +1,20 @@
 <meta>
 <script src="replace_car.lua" type="client"/>
 
+<file src='GAI 353 Military Truck.dff'/>
+<file src='GAI 353 Military Truck.txd'/>
+<file src='American LaFrance 600-Series 1941.dff'/>
+<file src='American LaFrance 600-Series 1941.txd'/>
+<file src='Buick Special Ambulance 1947.dff'/>
+<file src='Buick Special Ambulance 1947.txd'/>
+<file src='Dodge Towtruck.dff'/>
+<file src='Dodge Towtruck.txd'/>
+<file src='GMC Fishbowl City Bus 1976.dff'/>
+<file src='GMC Fishbowl City Bus 1976.txd'/>
+<file src='Volkswagen Beetle 1963.dff'/>
+<file src='Volkswagen Beetle 1963.txd'/>
+<file src='Packard Standard Eight 1948 Touring Sedan.dff'/>
+<file src='Packard Standard Eight 1948 Touring Sedan.txd'/>
 <file src='Lassiter Series 75 Hollywood.dff'/>
 <file src='Lassiter Series 75 Hollywood.txd'/>
 <file src='Shubert Frigate.dff'/>
