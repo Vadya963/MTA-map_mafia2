@@ -1,6 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.46.10.0"/>
+
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.47.10.0"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -4216,6 +4217,8 @@
 <file src='chinatown/15_teren_OM_schodek04.dff'/>
 <file src='chinatown/15_teren_OM_schodek04.col'/>
 
+<file src='uppertown/13_177.dff'/>
+<file src='uppertown/13_177.col'/>
 <file src='uppertown/dipton04.dff'/>
 <file src='uppertown/dipton04.col'/>
 <file src='uppertown/PO_brana_GAME1_Cylinder08.dff'/>

@@ -4632,6 +4632,7 @@ g11_288 808 italy
 PO_brana_GAME1_Cylinder08 801 uppertown
 dipton04 805 uppertown
 13_vylohaotevrenarest02 4810 uppertown
+13_177 18615 uppertown
 tocna 814 diamond_motors
 dvere_vstup 815 diamond_motors
 dvere_kancl 817 diamond_motors
