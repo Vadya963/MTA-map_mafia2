@@ -1293,7 +1293,7 @@ F713323D23514F06 low8mid04.dds low8mid04s.dds low8mid04e.dds mafiaenv_f.dds
 4E5039054924BF46 treesZ.dds
 E54C6C4C072A4E5E FakeGLOW_stinitko3.dds
 170BDC1FE115340F glas_broken.dds shubPU_r.dds
-CD5B72320236DB68 M11_ceiling
+CD5B72320236DB68 M11_ceiling_roset02_tile.dds
 91786345BF178B79 HEN40SZd.dds HEN40SZn.dds HEN40SZsp.dds
 8A6DC5187339820E hotrod1_n.dds hotrod1_r.dds Crash_Plates.dds UnivAlfa.dds
 31048316110B564F low3sis19.dds low3sis19s.dds
@@ -4799,7 +4799,7 @@ C8641761ED7BA556 Sloko
 8673D25AB64E4342 glas_broken.dds uniglass_snow.dds
 B63DE8408E79C833 7vaza1.dds 7vaza1N.dds 7vaza1.dds M11_hala_ENV.dds
 0B47091D88661129 3KJ_Vinyl_Pack_b.dds 3KJ_Vinyl_Pack_b_N.dds
-A65FB7575E770318 M11_stuk
+A65FB7575E770318 M11_stuk_top02_tile.dds
 5E467F55F25A1F4A waterfoam.dds water.dds nil
 FB09A42DB0385065 LGLalpha.dds LGLalphaS.dds
 DE746813E2233A59 INT_D_steny_1_[Z].dds INT_D_steny_1_n_[Z].dds INT_D_steny_1_s_[Z].dds INT_cube_map_1_[Z].dds
