@@ -1,4 +1,5 @@
 <meta>
+<script src="script_c.lua" type="client"/>
 <script src="getObjectNameFromModel.lua" type="server"></script>
 <script src="spawn_obj.lua" type="server"/>
 </meta>
