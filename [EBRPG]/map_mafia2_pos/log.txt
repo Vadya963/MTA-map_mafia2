@@ -4601,6 +4601,10 @@ CC_plech00_I_00_G 1496 riverside
 ext_okna_ramy_01 1557 riverside
 fake_zastup_kanalu 1560 riverside
 06_pipes_chan_01_G 18628 riverside
+06_drat_plot_46_G 18614 riverside
+06_d_bouda_A_ins00_G 18611 riverside
+06_coteA_i_08_G 18612 riverside
+06_Dum_A_01 18613 riverside
 03_OBRUBAKY 792 greenfield
 03_teren203 819 greenfield
 03_teren201 820 greenfield

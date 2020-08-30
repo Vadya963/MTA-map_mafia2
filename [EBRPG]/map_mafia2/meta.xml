@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.49.10.0"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.50.10.0"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -8160,6 +8160,14 @@
 <file src='riverside/kanal_trouba_velka.col'/>
 <file src='riverside/fake_zastup_kanalu.dff'/>
 <file src='riverside/fake_zastup_kanalu.col'/>
+<file src='riverside/06_drat_plot_46_G.dff'/>
+<file src='riverside/06_drat_plot_46_G.col'/>
+<file src='riverside/06_d_bouda_A_ins00_G.dff'/>
+<file src='riverside/06_d_bouda_A_ins00_G.col'/>
+<file src='riverside/06_coteA_i_08_G.dff'/>
+<file src='riverside/06_coteA_i_08_G.col'/>
+<file src='riverside/06_Dum_A_01.dff'/>
+<file src='riverside/06_Dum_A_01.col'/>
 
 <file src='greenfield/03_novinstanek.dff'/>
 <file src='greenfield/03_novinstanek.col'/>
