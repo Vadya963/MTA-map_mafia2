@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.50.10.0"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.50.11.0"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -73,6 +73,20 @@
 <file src='city_crash/hotdog.dff'/>
 <file src='city_crash/hotdog.col'/>
 
+<file src='shinterier/bourarna_lampa_01__B_01.dff'/>
+<file src='shinterier/bourarna_lampa_01__B_01.col'/>
+<file src='shinterier/bourarna_lampa_02__B_24.dff'/>
+<file src='shinterier/bourarna_lampa_02__B_24.col'/>
+<file src='shinterier/X09_slaughterhouse_sloup_bourarna01.dff'/>
+<file src='shinterier/X09_slaughterhouse_sloup_bourarna01.col'/>
+<file src='shinterier/X09_Slaughterhouse_chodby_sloup_01_B_01.dff'/>
+<file src='shinterier/X09_Slaughterhouse_chodby_sloup_01_B_01.col'/>
+<file src='shinterier/frame56.dff'/>
+<file src='shinterier/frame56.col'/>
+<file src='shinterier/frame58.dff'/>
+<file src='shinterier/frame58.col'/>
+<file src='shinterier/X09_Slaghterhouse_zed_v_bourarne_B1.dff'/>
+<file src='shinterier/X09_Slaghterhouse_zed_v_bourarne_B1.col'/>
 <file src='shinterier/bouraran1_korpus10.dff'/>
 <file src='shinterier/bouraran1_korpus10.col'/>
 <file src='shinterier/bouraran1_korpus09.dff'/>
@@ -105,20 +119,12 @@
 <file src='shinterier/bourani_int_pas01.col'/>
 <file src='shinterier/komoda04.dff'/>
 <file src='shinterier/komoda04.col'/>
-<file src='shinterier/MUSTR04.dff'/>
-<file src='shinterier/MUSTR04.col'/>
-<file src='shinterier/MUSTR05.dff'/>
-<file src='shinterier/MUSTR05.col'/>
-<file src='shinterier/MUSTR01.dff'/>
-<file src='shinterier/MUSTR01.col'/>
 <file src='shinterier/HLB_chodby_trouba_b__06.dff'/>
 <file src='shinterier/HLB_chodby_trouba_b__06.col'/>
 <file src='shinterier/kolejnice_mrazaky_c__01.dff'/>
 <file src='shinterier/kolejnice_mrazaky_c__01.col'/>
 <file src='shinterier/bourani_int_slp__04.dff'/>
 <file src='shinterier/bourani_int_slp__04.col'/>
-<file src='shinterier/Cylinder74.dff'/>
-<file src='shinterier/Cylinder74.col'/>
 <file src='shinterier/bourarna02_hadice.dff'/>
 <file src='shinterier/bourarna02_hadice.col'/>
 <file src='shinterier/bourani_int_vetrak03.dff'/>
