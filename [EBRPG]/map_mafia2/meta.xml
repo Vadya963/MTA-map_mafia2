@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.50.11.0"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.50.11.1"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -185,12 +185,6 @@
 <file src='shinterier/Object469.col'/>
 <file src='shinterier/Object580.dff'/>
 <file src='shinterier/Object580.col'/>
-<file src='shinterier/Object570.dff'/>
-<file src='shinterier/Object570.col'/>
-<file src='shinterier/Object571.dff'/>
-<file src='shinterier/Object571.col'/>
-<file src='shinterier/Object549.dff'/>
-<file src='shinterier/Object549.col'/>
 <file src='shinterier/Object543.dff'/>
 <file src='shinterier/Object543.col'/>
 <file src='shinterier/Object668.dff'/>
@@ -209,14 +203,8 @@
 <file src='shinterier/Object711.col'/>
 <file src='shinterier/Object712.dff'/>
 <file src='shinterier/Object712.col'/>
-<file src='shinterier/Object707.dff'/>
-<file src='shinterier/Object707.col'/>
-<file src='shinterier/Object709.dff'/>
-<file src='shinterier/Object709.col'/>
 <file src='shinterier/Object163.dff'/>
 <file src='shinterier/Object163.col'/>
-<file src='shinterier/Object149.dff'/>
-<file src='shinterier/Object149.col'/>
 <file src='shinterier/Object142.dff'/>
 <file src='shinterier/Object142.col'/>
 <file src='shinterier/Object138.dff'/>
@@ -243,12 +231,6 @@
 <file src='shinterier/Object114.col'/>
 <file src='shinterier/Object105.dff'/>
 <file src='shinterier/Object105.col'/>
-<file src='shinterier/Object107.dff'/>
-<file src='shinterier/Object107.col'/>
-<file src='shinterier/Object108.dff'/>
-<file src='shinterier/Object108.col'/>
-<file src='shinterier/Object192.dff'/>
-<file src='shinterier/Object192.col'/>
 <file src='shinterier/Object181.dff'/>
 <file src='shinterier/Object181.col'/>
 <file src='shinterier/Object180.dff'/>
@@ -263,12 +245,6 @@
 <file src='shinterier/Object218.col'/>
 <file src='shinterier/Object262.dff'/>
 <file src='shinterier/Object262.col'/>
-<file src='shinterier/Object398.dff'/>
-<file src='shinterier/Object398.col'/>
-<file src='shinterier/Object394.dff'/>
-<file src='shinterier/Object394.col'/>
-<file src='shinterier/Object397.dff'/>
-<file src='shinterier/Object397.col'/>
 <file src='shinterier/Object353.dff'/>
 <file src='shinterier/Object353.col'/>
 <file src='shinterier/Object355.dff'/>
@@ -279,14 +255,10 @@
 <file src='shinterier/Object349.col'/>
 <file src='shinterier/Object348.dff'/>
 <file src='shinterier/Object348.col'/>
-<file src='shinterier/Object340.dff'/>
-<file src='shinterier/Object340.col'/>
 <file src='shinterier/Object347.dff'/>
 <file src='shinterier/Object347.col'/>
 <file src='shinterier/Object344.dff'/>
 <file src='shinterier/Object344.col'/>
-<file src='shinterier/Object378.dff'/>
-<file src='shinterier/Object378.col'/>
 <file src='shinterier/Object371.dff'/>
 <file src='shinterier/Object371.col'/>
 <file src='shinterier/Object361.dff'/>
@@ -299,28 +271,8 @@
 <file src='shinterier/vozejk_pyramida_01.col'/>
 <file src='shinterier/int_kancelar_01.dff'/>
 <file src='shinterier/int_kancelar_01.col'/>
-<file src='shinterier/HLB_roury.dff'/>
-<file src='shinterier/HLB_roury.col'/>
 <file src='shinterier/spalovna_int_steny.dff'/>
 <file src='shinterier/spalovna_int_steny.col'/>
-<file src='shinterier/trubky46.dff'/>
-<file src='shinterier/trubky46.col'/>
-<file src='shinterier/trubky43.dff'/>
-<file src='shinterier/trubky43.col'/>
-<file src='shinterier/trubky40.dff'/>
-<file src='shinterier/trubky40.col'/>
-<file src='shinterier/trubky48.dff'/>
-<file src='shinterier/trubky48.col'/>
-<file src='shinterier/trubky51.dff'/>
-<file src='shinterier/trubky51.col'/>
-<file src='shinterier/trubky52.dff'/>
-<file src='shinterier/trubky52.col'/>
-<file src='shinterier/trubky39.dff'/>
-<file src='shinterier/trubky39.col'/>
-<file src='shinterier/trubky38.dff'/>
-<file src='shinterier/trubky38.col'/>
-<file src='shinterier/trubky07.dff'/>
-<file src='shinterier/trubky07.col'/>
 <file src='shinterier/bourarna_okna_emiss_08.dff'/>
 <file src='shinterier/bourarna_okna_emiss_08.col'/>
 <file src='shinterier/bourarna_okna_emiss_01.dff'/>
@@ -343,12 +295,6 @@
 <file src='shinterier/paletoid05.col'/>
 <file src='shinterier/Mrazak_x__vent__08.dff'/>
 <file src='shinterier/Mrazak_x__vent__08.col'/>
-<file src='shinterier/Object88.dff'/>
-<file src='shinterier/Object88.col'/>
-<file src='shinterier/Object89.dff'/>
-<file src='shinterier/Object89.col'/>
-<file src='shinterier/Object87.dff'/>
-<file src='shinterier/Object87.col'/>
 <file src='shinterier/Object96.dff'/>
 <file src='shinterier/Object96.col'/>
 <file src='shinterier/Object49.dff'/>
@@ -365,16 +311,10 @@
 <file src='shinterier/Object69.col'/>
 <file src='shinterier/Object64.dff'/>
 <file src='shinterier/Object64.col'/>
-<file src='shinterier/Object70.dff'/>
-<file src='shinterier/Object70.col'/>
 <file src='shinterier/Object73.dff'/>
 <file src='shinterier/Object73.col'/>
-<file src='shinterier/Object75.dff'/>
-<file src='shinterier/Object75.col'/>
 <file src='shinterier/Object74.dff'/>
 <file src='shinterier/Object74.col'/>
-<file src='shinterier/Object77.dff'/>
-<file src='shinterier/Object77.col'/>
 <file src='shinterier/Object04.dff'/>
 <file src='shinterier/Object04.col'/>
 <file src='shinterier/Object09.dff'/>
@@ -409,10 +349,6 @@
 <file src='shinterier/spalovna_int_agregat__02.col'/>
 <file src='shinterier/spalovna_int_agregat__01.dff'/>
 <file src='shinterier/spalovna_int_agregat__01.col'/>
-<file src='shinterier/O03.dff'/>
-<file src='shinterier/O03.col'/>
-<file src='shinterier/O04.dff'/>
-<file src='shinterier/O04.col'/>
 <file src='shinterier/p16.dff'/>
 <file src='shinterier/p16.col'/>
 <file src='shinterier/dfg.dff'/>

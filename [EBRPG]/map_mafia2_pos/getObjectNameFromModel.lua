@@ -5137,7 +5137,7 @@ zaklad[3106]="k_poolball8",]]
 [5998]="sunset18Tr_LAwN",
 [5999]="sunset18_LAwN",
 [6000]="LODset18_LAwN",
-[6001]="LTSsunset18_LAwN",
+--[6001]="LTSsunset18_LAwN",не заменяется
 [6002]="LODlawncluckbel",
 [6003]="LODters02_LAwN",
 [6004]="LODters01_LAwN",
@@ -14255,7 +14255,7 @@ zaklad[3106]="k_poolball8",]]
 --door[18627]="cs_landbit_27_A",
 --06_pipes_chan_01_G[18628]="cs_landbit_10_A",
 --02_08[18629]="cs_landbit_06_A",
---02_02[18630]="cs_landbit_20_A"
+--02_02[18630]="cs_landbit_20_A",
 --12_00[1434]="DYN_ROADBARRIER_5a",
 }
 
