@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.50.11.1"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.51.11.1"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -4082,6 +4082,8 @@
 <file src='westside/box04marcade_04marcade_gl.dff'/>
 <file src='westside/box04marcade_04marcade_gl.col'/>
 
+<file src='chinatown/15_265.dff'/>
+<file src='chinatown/15_265.col'/>
 <file src='chinatown/15_OM_42.dff'/>
 <file src='chinatown/15_OM_42.col'/>
 <file src='chinatown/15_OM_80.dff'/>
