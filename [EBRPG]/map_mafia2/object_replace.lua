@@ -28,7 +28,11 @@ function ( startedRes )
 			local col = engineLoadCOL ( ":map_mafia2/"..v[3].."/"..v[1]..".col" )
 			engineReplaceCOL ( col, v[2] )
 			engineSetModelLODDistance(v[2], 30000)
-			engineSetModelPhysicalPropertiesGroup(v[2], 0)
+			if v[5] then
+				engineSetModelPhysicalPropertiesGroup(v[2], v[5])
+			else
+				engineSetModelPhysicalPropertiesGroup(v[2], 0)
+			end
 		end
 	end
 end)
