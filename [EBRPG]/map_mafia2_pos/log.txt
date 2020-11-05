@@ -4928,6 +4928,8 @@ liska 945 vitoa3city
 telefon 1561 vitoa3city
 Teleso_ON 3103 vitoa3city
 Glass_ON 3104 vitoa3city
+dvere_koupelna 18608 vitoa3city
+dvere_loznice 18609 vitoa3city
 byt_vito_hunters_dvere 2996 vitoa2
 02 2997 vitoa2
 01 2998 vitoa2

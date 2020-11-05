@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.51.12.0"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.51.12.1"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -1993,6 +1993,10 @@
 <file src='vitoa2/zarovka_ON.dff'/>
 <file src='vitoa2/zarovka_ON.col'/>
 
+<file src='vitoa3city/dvere_koupelna.dff'/>
+<file src='vitoa3city/dvere_koupelna.col'/>
+<file src='vitoa3city/dvere_loznice.dff'/>
+<file src='vitoa3city/dvere_loznice.col'/>
 <file src='vitoa3city/krajic03.dff'/>
 <file src='vitoa3city/krajic03.col'/>
 <file src='vitoa3city/Teleso_ON.dff'/>
