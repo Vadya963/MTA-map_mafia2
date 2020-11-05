@@ -1105,7 +1105,7 @@ local hillwood = {
 {"14_vila_FLV__09", {{111.0887 ,1241.623 ,63.34928 ,0 ,0 ,0}}, 0},
 }
 
-local hillwood_obj_new_pos = {
+local hillwood_pos = {
 {"VV_GAR_segment06", {{-19.86927 ,-42.95234 ,15.73177 ,0 ,0 ,5.999992},
 {-19.86927 ,-42.95234 ,15.73177 ,0 ,0 ,17.99998},
 {-19.86927 ,-42.95234 ,15.73177 ,0 ,0 ,29.99998}}, 0},
@@ -1528,7 +1528,7 @@ local riverside = {
 {"kanal_trouba_velka", {{9.111713 ,-27.30469 ,0.05926758 ,0 ,0 ,0},}, 0},
 }
 
-local riverside_obj_new_pos = {
+local riverside_pos = {
 {"teren_okoli", {{25.70995 ,-15.24094 ,4.734521 ,0 ,0 ,0}}, 0},
 {"breh", {{38.93762 ,-14.83156 ,-3.483252 ,0 ,0 ,0}}, 0},
 {"kanal_vstup", {{19.1728 ,-27.31172 ,-0.3986548 ,0 ,0 ,0}}, 0},
@@ -3328,7 +3328,7 @@ local port = {
 {-333.5038 ,-769.4209 ,-15.46798 ,0 ,0 ,-90},}, 0},
 }
 
-local port_new_pos = {
+local port_pos = {
 {'Velka_hala_dil36', 223 ,-123 ,-2 ,0 ,0 ,0, 0},
 {'Velka_hala_dil37', 223 ,-117 ,-2 ,0 ,0 ,0, 0},
 {'Velka_hala_dilAA', 344 ,19 ,4 ,-90 ,0 ,0, 0},
@@ -5005,7 +5005,7 @@ local italy = {
 {'11_kanaly17_G', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-64.056999206543, 540.282348632813, -19.8616523742676, 0} }, 0},
 }
 
-local italy_new_pos = {
+local italy_pos = {
 {'11_60a_1', 205,-205,1},
 {'11_60a_2', -18,99,-1},
 {'11_dalnice01', 113.631,-235.891,-5.051},
@@ -10635,7 +10635,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			local obj = false
 			local x,y,z = j[1],j[2],j[3]
 
-			for _,p in pairs(hillwood_obj_new_pos) do
+			for _,p in pairs(hillwood_pos) do
 				if p[1] == v[1] then
 					x,y,z = j[1]+-44.39632,j[2]+1181.624,j[3]+54.36982
 				end
@@ -10685,7 +10685,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			local obj = false
 			local x,y,z = j[1],j[2],j[3]
 
-			for _,p in pairs(riverside_obj_new_pos) do
+			for _,p in pairs(riverside_pos) do
 				if p[1] == v[1] then
 					x,y,z = j[1]+77.72681,j[2]+1803.701,j[3]+-21.32529
 				end
@@ -10759,7 +10759,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			local obj = false
 			local x,y,z, rx = j[1],j[2],j[3] ,j[4]
 
-			for _,p in pairs(port_new_pos) do
+			for _,p in pairs(port_pos) do
 				if p[1] == v[1] then
 					x,y,z, rx = j[1]+p[2],j[2]+p[3],j[3]+p[4], j[4]+p[5]
 				end
@@ -10936,7 +10936,7 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementRotation(obj, x,y,-z)
 		setElementRotation(lod_obj, x,y,-z)
 
-		for k,p in pairs(italy_new_pos) do
+		for k,p in pairs(italy_pos) do
 			local x,y,rz = getElementRotation(obj)
 			local x,y,z = getElementPosition(obj)
 			if v[1] == p[1] then
