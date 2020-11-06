@@ -4943,6 +4943,7 @@ Plane02 3100 vitoa1
 ledak 3101 vitoa1
 dvere_low 3102 vitoa1
 zaklad 3106 vitoa1
+door_white 18607 vitoa1
 konzole 18623 gas
 brush_A 18624 gas
 drzak_A 18625 gas

@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.51.12.1"/>
+<min_mta_version client="1.5.7-9.20488.0" server="1.5.7-9.20488.0" version="21.51.12.2"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -1579,6 +1579,8 @@
 <file src='gas/door.dff'/>
 <file src='gas/door.col'/>
 
+<file src='vitoa1/door_white.dff'/>
+<file src='vitoa1/door_white.col'/>
 <file src='vitoa1/door_brown.dff'/>
 <file src='vitoa1/door_brown.col'/>
 <file src='vitoa1/mesh_skrin_L.dff'/>

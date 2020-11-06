@@ -9687,8 +9687,8 @@ local no_col_object = {
 {-647.4981 ,939.9617 ,-4.354317-0.17028, 0 ,0 ,0},
 {-648.7507 ,934.7963 ,-4.359801-0.17028, 0 ,0 ,0},}, 3103, "vitoa3city"},
 {'Glass_ON', {{-654.7119 ,935.7686 ,-4.359361-0.58962, 0 ,0 ,0},}, 3104, "vitoa3city"},--люстра домашняя треугольная
-{'dvere_koupelna', {{-648.9005-0.00634 ,940.7864-0.00538-0.57 ,-7.918765+1.16889, 0 ,0 ,-90},}, 18608, "vitoa3city", false, false, false, 147},
-{'dvere_loznice', {{-652.1086-0.00634 ,937.5139-0.00538-0.57 ,-7.911631+1.16889, 0 ,0 ,-90},}, 18609, "vitoa3city", false, false, false, 147},
+{'dvere_koupelna', {{-648.9005-0.00634 ,940.7864-0.00538-0.57 ,-7.918765+1.16889, 0 ,0 ,90*-1},}, 18608, "vitoa3city", false, false, false, 147},
+{'dvere_loznice', {{-652.1086-0.00634 ,937.5139-0.00538-0.57 ,-7.911631+1.16889, 0 ,0 ,90*-1},}, 18609, "vitoa3city", false, false, false, 147},
 
 {'byt_vito_hunters_dvere', {{-0.55-1518.58 ,576.02 ,1.235859-16.51493 , 0 ,0 ,0},}, 2996, "vitoa2"},
 {'02', {{-0.01203245-0.03366985-1515.027 ,-0.001171494-0.5212502+578.6373 ,0.9983429-1.525879E-07-16.43985 , 0 ,0 ,0},}, 2997, "vitoa2"},
@@ -9725,6 +9725,7 @@ local no_col_object = {
 {-337.21060 ,1113.48500 ,05.52874-0.09583, 0 ,0 ,0},
 {-337.21760 ,1111.82100 ,05.52874-0.09583, 0 ,0 ,0},
 }, 3106, "vitoa1"},
+{'door_white', {{372.93 ,-296.48 ,-15.49241+1.16213 , 0 ,0 ,-90},}, 18607, "vitoa1", false, false, false, 147},
 
 {'konzole', {{-1589.233 ,962.639+0.02500 ,-3.253699+0.06597, 0 ,0 ,90},
 {-1584.442 ,962.639+0.02500 ,-3.254635+0.06597, 0 ,0 ,-90},}, 18623, "gas"},
@@ -9935,6 +9936,26 @@ end
 function displayLoadedRes ( res )--старт ресурсов
 	for i=550,20000 do
 		removeWorldModel(i,10000,0,0,0)
+	end
+
+	if not fileExists( "log.txt" ) then
+		local file = fileCreate( "log.txt" )
+		fileClose(file)
+	end
+
+	if not fileExists( "mafia2_ide.txt" ) then
+		local file = fileCreate( "mafia2_ide.txt" )
+		fileClose(file)
+	end
+
+	if not fileExists( "mafia2_ipl.txt" ) then
+		local file = fileCreate( "mafia2_ipl.txt" )
+		fileClose(file)
+	end
+
+	if not fileExists( "mafia2_ipl_euler.txt" ) then
+		local file = fileCreate( "mafia2_ipl_euler.txt" )
+		fileClose(file)
 	end
 
 	local hFile = fileOpen("log.txt")
