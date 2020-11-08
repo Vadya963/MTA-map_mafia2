@@ -117,7 +117,7 @@ function ( startedRes )
 	toggleControl( "jump", false )
 
 	setOcclusionsEnabled(false)
-	setWaterLevel(-5000)
+	setWaterLevel(-5000, true, true, true, true)
 	setFarClipDistance(2000)
 	setBirdsEnabled(false)
 	setCloudsEnabled(false)
