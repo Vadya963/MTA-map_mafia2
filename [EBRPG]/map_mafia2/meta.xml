@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.8-9.20717.0" server="1.5.8-9.20717.0" version="21.51.12.2"/>
+<min_mta_version client="1.5.8-9.20717.0" server="1.5.8-9.20717.0" version="21.51.12.3"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -554,6 +554,8 @@
 <file src='shinterier/vozejk_udirna_vyssi_03.dff'/>
 <file src='shinterier/vozejk_udirna_vyssi_03.col'/>
 
+<file src='gvinterier/dvere_inter_01.dff'/>
+<file src='gvinterier/dvere_inter_01.col'/>
 <file src='gvinterier/pohrabac_drzak.dff'/>
 <file src='gvinterier/pohrabac_drzak.col'/>
 <file src='gvinterier/11_salonek_m01_obraz_02.dff'/>
