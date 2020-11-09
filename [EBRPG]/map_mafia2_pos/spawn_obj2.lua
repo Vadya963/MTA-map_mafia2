@@ -9413,18 +9413,18 @@ local seagift = {
 -- 270 - {5.9604651880818E-08, 1, 0, 0}, {-1, 5.9604651880818E-08, 0, 0}, {0, 0, 1.00000011920929, 0},
 
 local object_interior = {--интерьеры
---1 height+100=600, 2 dimension
-["prison"] = {200, -1},
-["diamond_motors"] = {500, -1},
-["respray"] = {500, -1},
-["vitoa3city"] = {500, -1},
-["vitoa2"] = {500, -1},
-["vitoa1"] = {500, -1},
-["gas"] = {500, -1},
-["fast"] = {500, -1},
-["gunshop"] = {500, -1},
-["odevy"] = {500, -1},
-["gvinterier"] = {450, -1},
+--1 height+40=600, 2 dimension
+["prison"] = {260, -1},
+["diamond_motors"] = {560, -1},
+["respray"] = {560, -1},
+["vitoa3city"] = {560, -1},
+["vitoa2"] = {560, -1},
+["vitoa1"] = {560, -1},
+["gas"] = {560, -1},
+["fast"] = {560, -1},
+["gunshop"] = {560, -1},
+["odevy"] = {560, -1},
+["gvinterier"] = {510, -1},
 ["shinterier"] = {0, 12},
 ["seagift"] = {0, 13},
 }

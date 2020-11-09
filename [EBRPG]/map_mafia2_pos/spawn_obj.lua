@@ -5886,7 +5886,7 @@ local westside = {
 {'09_OM_dum_88', { {5.9604651880818E-08, -1, 0, 0}, {1, 5.9604651880818E-08, 0, 0}, {0, 0, 1.00000011920929, 0}, {-594.51953125, 61.3175239562988, 2.51581168174744, 0} }, 0},
 {'09_OM_dum_18', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-660.724426269531, 386.326019287109, 4.23812961578369, 0} }, 0},
 {'09_OM_dum_36', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-779.682312011719, 490.782806396484, 27.4313583374023, 0} }, 0},
-{'09_OM_dum_19', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-916.955993652344, -266.028930664063, -15.1563863754272, 0} }, 0},
+{'09_OM_dum_19', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-916.955993652344, -266.028930664063, -15.1563863754272, 0} }, 0},--no col
 {'09_OM_dum_34', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-916.62255859375, 148.463882446289, -15.1361713409424, 0} }, 0},
 {'09_OM_dum_32', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-916.62255859375, -27.8053379058838, -15.1361713409424, 0} }, 0},
 {'09_OM_dum_33', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-916.62255859375, 10.6203489303589, -15.1361713409424, 0} }, 0},
@@ -9414,18 +9414,18 @@ local seagift = {
 -- 270 - {5.9604651880818E-08, 1, 0, 0}, {-1, 5.9604651880818E-08, 0, 0}, {0, 0, 1.00000011920929, 0},
 
 local object_interior = {--интерьеры
---1 height+100=600, 2 dimension
-["prison"] = {200, -1},
-["diamond_motors"] = {500, -1},
-["respray"] = {500, -1},
-["vitoa3city"] = {500, -1},
-["vitoa2"] = {500, -1},
-["vitoa1"] = {500, -1},
-["gas"] = {500, -1},
-["fast"] = {500, -1},
-["gunshop"] = {500, -1},
-["odevy"] = {500, -1},
-["gvinterier"] = {450, -1},
+--1 height+40=600, 2 dimension
+["prison"] = {260, -1},
+["diamond_motors"] = {560, -1},
+["respray"] = {560, -1},
+["vitoa3city"] = {560, -1},
+["vitoa2"] = {560, -1},
+["vitoa1"] = {560, -1},
+["gas"] = {560, -1},
+["fast"] = {560, -1},
+["gunshop"] = {560, -1},
+["odevy"] = {560, -1},
+["gvinterier"] = {510, -1},
 ["shinterier"] = {0, 12},
 ["seagift"] = {0, 13},
 }
@@ -11697,8 +11697,8 @@ function displayLoadedRes ( res )--старт ресурсов
 		local obj = getLowLODElement(v[2])
 		local x,y,z = getElementPosition(v[2])
 
-		setElementPosition( v[2], x,y,z+100 )
-		if obj then setElementPosition( obj, x,y,z+100 ) end
+		setElementPosition( v[2], x,y,z+40 )
+		if obj then setElementPosition( obj, x,y,z+40 ) end
 
 		setElementDimension( v[2], -1 )
 		if obj then setElementDimension( obj, -1 ) end
@@ -11732,12 +11732,12 @@ addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
 
 addEventHandler("onPlayerJoin", root,--конект игрока на сервер
 function()
-	setPlayerBlurLevel (source, 0 )
 	setElementPosition(source, 0,0,1000)
 end)
 
 function spawnplayer( ... )
-	spawnPlayer( source, -400.17102050781,803.42742919922,-18.945209503174+100 )
+	setPlayerBlurLevel(source, 0)
+	spawnPlayer( source, -400.17102050781,803.42742919922,-18.945209503174+40 )
 	fadeCamera(source, true)
 	setCameraTarget(source, source)
 end
