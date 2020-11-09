@@ -11703,20 +11703,12 @@ function displayLoadedRes ( res )--старт ресурсов
 		setElementDimension( v[2], -1 )
 		if obj then setElementDimension( obj, -1 ) end
 
-		setElementDoubleSided(v[2], false)
-		if obj then setElementDoubleSided(obj, false) end
-
 		if object_interior[v[4]] then
 			local x,y,z = getElementPosition(obj)
 			setElementPosition(v[2], x,y,z+object_interior[v[4]][1])
 			if obj then setElementPosition(obj, x,y,z+object_interior[v[4]][1]) end
 			setElementDimension(v[2], object_interior[v[4]][2])
 			if obj then setElementDimension(obj, object_interior[v[4]][2]) end
-		end
-
-		if v[5] then
-			setElementDoubleSided(v[2], true)
-			if obj then setElementDoubleSided(obj, true) end
 		end
 
 		if v[6] then
