@@ -1,5 +1,5 @@
 <meta>
-<min_mta_version client="1.5.8-9.20717.0" server="1.5.8-9.20717.0"/>
+<min_mta_version client="1.5.8-9.20718.0" server="1.5.8-9.20718.0"/>
 <script src="water_c.lua" type="client"/>
 <script src="trash_c.lua" type="client"/>
 <script src="getObjectNameFromModel.lua" type="server"></script>

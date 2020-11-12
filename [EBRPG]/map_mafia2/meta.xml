@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.8-9.20717.0" server="1.5.8-9.20717.0" version="21.54.12.3"/>
+<min_mta_version client="1.5.8-9.20718.0" server="1.5.8-9.20718.0" version="21.55.12.3"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -42,6 +42,7 @@
 <file src="textures/eastside_summer.txd"/>
 <file src="textures/midtown_summer.txd"/>
 <file src="textures/city_crash_summer.txd"/>
+<file src="textures/ground_summer.txd"/>
 
 <file src="textures/kingstone_winter.txd"/>
 <file src="textures/dipton_winter.txd"/>
@@ -64,6 +65,7 @@
 <file src="textures/eastside_winter.txd"/>
 <file src="textures/midtown_winter.txd"/>
 <file src="textures/city_crash_winter.txd"/>
+<file src="textures/ground_winter.txd"/>
 
 <file src='city_crash/newstand.dff'/>
 <file src='city_crash/newstand.col'/>
