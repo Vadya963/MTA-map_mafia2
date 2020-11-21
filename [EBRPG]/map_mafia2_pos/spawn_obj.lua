@@ -11722,7 +11722,7 @@ function displayLoadedRes ( res )--старт ресурсов
 
 		local xr,yr,zr = getElementRotation(v[2])
 		if xr > 0 or yr > 0 or xr < 0 or yr < 0 then
-			--print(v[1],xr,yr,zr)
+			--print(v[1],v[4],xr,yr,zr)
 		end
 	end
 
