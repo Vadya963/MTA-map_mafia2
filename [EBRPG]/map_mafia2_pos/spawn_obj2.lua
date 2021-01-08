@@ -11894,6 +11894,20 @@ function displayLoadedRes ( res )--старт ресурсов
 		--if xr > 0 or yr > 0 or xr < 0 or yr < 0 then
 			fileWrite(hFile_ipl_euler, v[3]..", "..name..", 0, "..x..", "..y..", "..z..", "..xr..", "..yr..", "..zr..", "..v[4].." -1\n" )
 		--end
+
+		--разделение районов на отдельные ipl файлы
+		local file_ipl = false
+		if fileExists("areas/"..v[4]..".ipl") then
+			file_ipl = fileOpen( "areas/"..v[4]..".ipl" )
+			fileSetPos( file_ipl, fileGetSize( file_ipl ) )
+			fileWrite(file_ipl, v[3]..", "..name..", 0, "..x..", "..y..", "..z..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
+			fileClose( file_ipl )
+		else
+			file_ipl = fileCreate( "areas/"..v[4]..".ipl" )
+			fileSetPos( file_ipl, fileGetSize( file_ipl ) )
+			fileWrite(file_ipl, v[3]..", "..name..", 0, "..x..", "..y..", "..z..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
+			fileClose( file_ipl )
+		end
 	end
 
 	print("object len "..#object)
