@@ -17,11 +17,11 @@ function ( startedRes )
 		end
 
 		if fileExists(":map_mafia2/"..v[3].."/"..v[1]..".dff") and fileExists(":map_mafia2/"..v[3].."/"..v[1]..".col") then
-			engineImportTXD (eb_textures[v[3]], v[2])
-
 			if fileExists(":map_mafia2/textures/"..v[3].."_"..weather..".txd") then
 				engineImportTXD (eb_textures["ground"], v[2])
 			end
+			
+			engineImportTXD (eb_textures[v[3]], v[2])
 
 			local dff = engineLoadDFF ( ":map_mafia2/"..v[3].."/"..v[1]..".dff" )
 			if v[4] then
