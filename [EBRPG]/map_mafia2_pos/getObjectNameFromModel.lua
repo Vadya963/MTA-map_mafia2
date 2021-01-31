@@ -14186,7 +14186,8 @@ zaklad[3106]="k_poolball8",]]
 --02_02[18630]="cs_landbit_20_A",
 --12_00[1434]="DYN_ROADBARRIER_5a",
 
---[[[3676]="lawnhouseredA",--свободны
+--[[
+[3676]="lawnhouseredA",--свободны
 [3677]="lawnhousegreyLS",
 [3678]="lawnhousegreyRS",
 [3679]="LODnhouseredA",
