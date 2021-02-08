@@ -4900,6 +4900,10 @@ SG_door 6169 seagift
 3PO_wood_madlo 6406 priceoffice
 3PO_chodba_nadvchodem_P 6407 priceoffice
 3PO_chodba_nadvchodem_L 6408 priceoffice
+newstand 2589 city_crash
+bedna_noseni 18622 city_crash
+kanistr_model 18621 city_crash
+hotdog 18619 city_crash
 04_zbrdl12 687 kingstone
 04_tunel_zbr05 688 kingstone
 04_tunel_zbr04 689 kingstone
@@ -5096,11 +5100,6 @@ dvere_inter_01 18606 gvinterier
 odevy 955 kingstone
 04_blok_interier02 956 kingstone
 GUNSHOP 957 kingstone
-05_g_station 958 dipton
-01_OM_56 1958 sandisland
-Nadzemka 1959 sandisland
-04_rantl21 642 kingstone
- kingstone
 05_g_station 958 dipton
 01_OM_56 1958 sandisland
 Nadzemka 1959 sandisland
