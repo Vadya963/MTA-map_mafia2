@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.60.13.2"/>
+<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.60.13.3"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -373,10 +373,6 @@
 <file src='priceoffice/3PO_okno_glass_B05.col'/>
 <file src='priceoffice/3PO_Hlavnisal_schodiste_chodba_okna.dff'/>
 <file src='priceoffice/3PO_Hlavnisal_schodiste_chodba_okna.col'/>
-<file src='priceoffice/3PO_WC_okno_glass2.dff'/>
-<file src='priceoffice/3PO_WC_okno_glass2.col'/>
-<file src='priceoffice/3PO_WC_okno_glass1.dff'/>
-<file src='priceoffice/3PO_WC_okno_glass1.col'/>
 <file src='priceoffice/3PO_okno_glass_celek01.dff'/>
 <file src='priceoffice/3PO_okno_glass_celek01.col'/>
 <file src='priceoffice/3PO_telefon_set02.dff'/>
