@@ -12675,7 +12675,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	end
 	end
 
-	--[[city_crash_fun()
+	city_crash_fun()
 	kingstone_fun()
 	dipton_fun()
 	highbrook_fun()
@@ -12708,7 +12708,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	odevy_fun()
 	gvinterier_fun()
 	shinterier_fun()
-	seagift_fun()]]
+	seagift_fun()
 	priceoffice_fun()
 
 	for i,v in ipairs(no_col_object) do
@@ -12794,7 +12794,14 @@ function displayLoadedRes ( res )--старт ресурсов
 	fileWrite(hFile_object_collapse, "inst\n" )
 
 	local name = 0
+	local name_t = {}
 	for k,v in ipairs(object) do
+		if not name_t[v[4]] then
+			name_t[v[4]] = 1
+		elseif name_t[v[4]] then
+			name_t[v[4]] = name_t[v[4]]+1
+		end
+
 		if fileExists(":map_mafia2/"..v[4].."/"..v[1]..".dff") then
 			name = v[1]
 		end
@@ -12829,6 +12836,14 @@ function displayLoadedRes ( res )--старт ресурсов
 		end
 	end
 
+	print("")
+	print("OBJECT TABLE LEN")
+	print("----------------")
+	for k,v in pairs(name_t) do
+		print(k..": "..v)
+	end
+	print("----------------")
+
 	fileSetPos( hFile_object_collapse, fileGetSize( hFile_object_collapse ) )
 	fileWrite(hFile_object_collapse, "end\n" )
 
@@ -12840,7 +12855,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	fileClose(hFile_ipl_euler)
 	fileClose(hFile_object_collapse)
 
-	print("SPAWN_OBJ2.LUA")
+	print("\n\nSPAWN_OBJ2.LUA\n")
 end
 addEventHandler ( "onResourceStart", resourceRoot, displayLoadedRes )
 

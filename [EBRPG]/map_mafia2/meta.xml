@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.60.13.6"/>
+<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.60.13.7"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -77,6 +77,12 @@
 <file src='city_crash/hotdog.dff'/>
 <file src='city_crash/hotdog.col'/>
 
+<file src='priceoffice/dvere.dff'/>
+<file src='priceoffice/dvere.col'/>
+<file src='priceoffice/mrizdoor.dff'/>
+<file src='priceoffice/mrizdoor.col'/>
+<file src='priceoffice/trezor_mesh.dff'/>
+<file src='priceoffice/trezor_mesh.col'/>
 <file src='priceoffice/3PO_WC_okno_glass2.dff'/>
 <file src='priceoffice/3PO_WC_okno_glass2.col'/>
 <file src='priceoffice/X3PO_skrin_ref_glass.dff'/>
