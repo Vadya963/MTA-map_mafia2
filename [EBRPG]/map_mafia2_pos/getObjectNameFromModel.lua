@@ -14187,7 +14187,7 @@ zaklad[3106]="k_poolball8",]]
 --12_00[1434]="DYN_ROADBARRIER_5a",
 
 --[[
-[3676]="lawnhouseredA",--свободны
+mrizdoor[3676]="lawnhouseredA",--свободны
 [3677]="lawnhousegreyLS",
 [3678]="lawnhousegreyRS",
 [3679]="LODnhouseredA",
