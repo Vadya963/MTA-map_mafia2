@@ -14188,7 +14188,7 @@ zaklad[3106]="k_poolball8",]]
 
 --[[
 mrizdoor[3676]="lawnhouseredA",--свободны
-[3677]="lawnhousegreyLS",
+AmRes_INTERIER[3677]="lawnhousegreyLS",
 [3678]="lawnhousegreyRS",
 [3679]="LODnhouseredA",
 [3680]="LODnhousegreyRS",
