@@ -368,7 +368,6 @@ BETTING 1258 dipton
 12_104 1347 highbrook
 12_63 1348 highbrook
 ELGRECO 1349 highbrook
-12_62 1350 highbrook
 12_79 1352 highbrook
 12_45_inst02_pod_smallOM 1353 highbrook
 12_91 1354 highbrook
@@ -2600,7 +2599,6 @@ vyloha_box_109 3851 westside
 vyloha_box_106 3852 westside
 vyloha_box_102 3853 westside
 vyloha_box_103 3854 westside
-vyloha_box_100 3855 westside
 vyloha_box_101 3856 westside
 vyloha_box_92 3857 westside
 vyloha_box_93 3858 westside
@@ -4902,7 +4900,12 @@ X3PO_WC_okno 6407 priceoffice
 POdoor06_vrsek 6408 priceoffice
 3PO_WC_okno_glass2 6409 priceoffice
 X3PO_skrin_ref_glass 6410 priceoffice
+trezor_mesh 6411 priceoffice
+dvere 6413 priceoffice
+zidle11 6414 priceoffice
+mesh_door_01 6415 priceoffice
 newstand 2589 city_crash
+telefonbudka 3680 city_crash
 bedna_noseni 18622 city_crash
 kanistr_model 18621 city_crash
 hotdog 18619 city_crash
@@ -4936,6 +4939,7 @@ dvere_L 18605 dipton
 12_statue02_G 726 highbrook
 12_00 1434 highbrook
 gvinterier 1284 highbrook
+12_62 3678 highbrook
 X15_EXT_dvere_tel__Z__pha01_dvere_tel 809 hillwood
 14_hvezdarna_dvere 718 hillwood
 14_teren_park_obrubnik 1506 hillwood
@@ -5014,6 +5018,8 @@ Object33 680 sandisland
 distillery00 695 sandisland
 distillery01 696 sandisland
 Object29 18618 sandisland
+Object16 3681 sandisland
+Object24 3682 sandisland
 dum_2_zed_GARAZ_a16 708 port
 19_pr_37 709 port
 dum_garaz_STRED_b01 713 port
@@ -5043,6 +5049,8 @@ dipton04 805 uppertown
 13_vylohaotevrenarest02 4810 uppertown
 13_177 18615 uppertown
 15_265 18610 chinatown
+vyloha_box_100 3679 westside
+AmRes_INTERIER 3677 midtown
 tocna 814 diamond_motors
 dvere_vstup 815 diamond_motors
 dvere_kancl 817 diamond_motors
@@ -5096,6 +5104,7 @@ radio2 5773 gvinterier
 11_satna_m07_zrcadlo_sklo 5584 gvinterier
 dvere_satni03 5888 gvinterier
 dvere_inter_01 18606 gvinterier
+mrizdoor 3676 priceoffice
 04_fast_food_exterier 952 kingstone
 04_uhli_02 953 kingstone
 04_blok_interier04 954 kingstone

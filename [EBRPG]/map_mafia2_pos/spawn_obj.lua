@@ -1,9 +1,8 @@
-local object = {}--все объекты
-local object_replace = {}--объекты для замены
+local object = {}--все объекты --1 name, 2 userdata object, 3 id model, 4 name sds file, 5 true/false DoubleSided, 6 scale table/false
+local object_replace = {}--объекты для замены --1 name, 2 id model, 3 name sds file, 4 true/false alphaTransparency, 5 ModelPhysicalPropertiesGroup(only in table no_col_object)
 
 local kingstone = {
---объекты
---1 name, 2 position, 3 id model, 4 true/false DoubleSided, 5 scale table/false, 6 true/false alphaTransparency, 7 ModelPhysicalPropertiesGroup(only in table no_col_object)
+--1 name, 2 position, 3 id model, 4 true/false DoubleSided, 5 scale table/false, 6 true/false alphaTransparency
 {'teren0', {{-1204.44200, 1429.81300, -8.26321,0,0, 0}}, 0},
 {'teren1', {{-1337.13700, 1197.12900, -19.87857,0,0, 0}}, 0},
 {'teren2', {{-1198.80000, 1248.14300, -19.91991,0,0, 0}}, 0},
@@ -10307,7 +10306,7 @@ local object_interior = {--интерьеры
 ['gvinterier'] = {510, -1},
 ['shinterier'] = {0, 12},
 ['seagift'] = {0, 13},
-['priceoffice'] = {0, -1},
+['priceoffice'] = {560, -1},
 }
 
 local no_col_object = {
@@ -10480,6 +10479,8 @@ local no_col_object = {
 {'distillery00', {{-1560.631 ,-102.5989 ,-35.61909 ,0 ,0 ,0},}, 695, 'sandisland'},
 {'distillery01', {{-1560.631 ,-102.5989 ,-35.61909 ,0 ,0 ,0},}, 696, 'sandisland'},
 {'Object29', {{-1564.592-142 ,-150.2291+115 ,-10.23321+2, 0 ,0 ,0},}, 18618, 'sandisland'},
+{'Object16', {{-1564.592+73 ,-150.2291+329 ,-10.23321-2 ,0 ,0 ,0},}, 3681, 'sandisland'},
+{'Object24', {{-1564.592+33 ,-150.2291+329 ,-10.23321-2 ,0 ,0 ,0},}, 3682, 'sandisland'},
 
 {'dum_2_zed_GARAZ_a16', {{-475.7957 ,-886.1544 ,-14.44057 ,0 ,0 ,180},}, 708, 'port'},
 {'19_pr_37', {{-298.4546 ,-759.9343 ,-26.74566 ,0 ,0 ,0},
@@ -10572,7 +10573,7 @@ local no_col_object = {
 {-188.61400 ,-1191.32000 ,0.90918+0.10056 , 0 ,0 ,-90},
 {-335.12040 ,1109.39100 ,02.89859+0.10056 , 0 ,0 ,25},
 {-316.03830 ,1106.37600 ,02.74405+0.10056 , 0 ,0 ,25},
-{-443.5462 ,762.224 ,-14.15168+0.09847-560 , 0 ,0 ,-208.8016},
+{-443.5462 ,762.224 ,-14.15168+0.09847 , 0 ,0 ,-208.8016},
 }, 1561, 'vitoa3city'},
 {'Teleso_ON', {{-650.5544 ,941.3589 ,-4.354317-0.17028, 0 ,0 ,0},--большая люстра
 {-647.4981 ,939.9617 ,-4.354317-0.17028, 0 ,0 ,0},
@@ -10804,6 +10805,7 @@ local city_crash = {
 {566.2392 ,-555.7375 ,-22.70254 ,0 ,0 ,90},
 {400.1007 ,749.3242 ,-24.85343 ,0 ,0 ,0},
 {229.5364 ,705.525 ,-23.61469 ,0 ,0 ,0},}, 2589, false, false, true},
+{'telefonbudka', {{0 ,0 ,0 ,0 ,0 ,0},}, 3680, false, false, true},--телефонная будка
 {'bedna_noseni', {{0 ,0 ,0 ,0 ,0 ,0},}, 18622},--ящик
 {'kanistr_model', {{-1583.900 ,944.6 ,-4.98+560 ,0 ,0 ,-90},--канистра
 {-1584.100 ,944.6 ,-4.98+560 ,0 ,0 ,-90},
@@ -11489,7 +11491,7 @@ function displayLoadedRes ( res )--старт ресурсов
 
 			if v[1] == "newstand" then
 				obj = createObject(v[3], x,y,z+1.53, j[4],j[5],j[6]*-1)
-			elseif v[1] == "bedna_noseni" then
+			elseif x == 0 and y == 0 and z == 0 then
 
 			else
 				obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
@@ -12554,7 +12556,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	end
 
 	city_crash_fun()
-	--[[kingstone_fun()
+	kingstone_fun()
 	dipton_fun()
 	riverside_fun()
 	greenfield_fun()
@@ -12575,7 +12577,9 @@ function displayLoadedRes ( res )--старт ресурсов
 	eastside_fun()
 	midtown_fun()
 	prison_fun()
-	diamond_motors_fun()
+
+	--interiors
+	--[[diamond_motors_fun()--enable as desired (включить по желанию)
 	respray_fun()
 	vitoa3city_fun()
 	vitoa2_fun()
@@ -12588,8 +12592,6 @@ function displayLoadedRes ( res )--старт ресурсов
 	shinterier_fun()
 	seagift_fun()
 	priceoffice_fun()]]
-	--vitoa3city_fun()
-	priceoffice_fun()
 
 	for i,v in ipairs(no_col_object) do
 		local count = false

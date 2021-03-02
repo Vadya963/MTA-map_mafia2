@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.60.13.10"/>
+<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.63.13.8"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -76,6 +76,8 @@
 <file src='city_crash/kanistr_model.col'/>
 <file src='city_crash/hotdog.dff'/>
 <file src='city_crash/hotdog.col'/>
+<file src='city_crash/telefonbudka.dff'/>
+<file src='city_crash/telefonbudka.col'/>
 
 <file src='priceoffice/zidle11.dff'/>
 <file src='priceoffice/zidle11.col'/>
@@ -9433,6 +9435,10 @@
 <file src='hunters/02_plot.dff'/>
 <file src='hunters/02_plot.col'/>
 
+<file src='sandisland/Object16.dff'/>
+<file src='sandisland/Object16.col'/>
+<file src='sandisland/Object24.dff'/>
+<file src='sandisland/Object24.col'/>
 <file src='sandisland/Object29.dff'/>
 <file src='sandisland/Object29.col'/>
 <file src='sandisland/S01_teren_10.dff'/>
