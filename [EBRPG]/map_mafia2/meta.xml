@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.63.13.8"/>
+<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.64.13.9"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -68,6 +68,28 @@
 <file src="textures/city_crash_winter.txd"/>
 <file src="textures/ground_winter.txd"/>
 
+<file src='city_crash/swift.dff'/>
+<file src='city_crash/swift.col'/>
+<file src='city_crash/lahev01.dff'/>
+<file src='city_crash/lahev01.col'/>
+<file src='city_crash/sandwich_base.dff'/>
+<file src='city_crash/sandwich_base.col'/>
+<file src='city_crash/hambac.dff'/>
+<file src='city_crash/hambac.col'/>
+<file src='city_crash/cashregister_old_mesh.dff'/>
+<file src='city_crash/cashregister_old_mesh.col'/>
+<file src='city_crash/zaklad.dff'/>
+<file src='city_crash/zaklad.col'/>
+<file src='city_crash/Plane02.dff'/>
+<file src='city_crash/Plane02.col'/>
+<file src='city_crash/model_body.dff'/>
+<file src='city_crash/model_body.col'/>
+<file src='city_crash/zarovka_ON.dff'/>
+<file src='city_crash/zarovka_ON.col'/>
+<file src='city_crash/telefon.dff'/>
+<file src='city_crash/telefon.col'/>
+<file src='city_crash/liska.dff'/>
+<file src='city_crash/liska.col'/>
 <file src='city_crash/newstand.dff'/>
 <file src='city_crash/newstand.col'/>
 <file src='city_crash/bedna_noseni.dff'/>
@@ -1895,18 +1917,10 @@
 <file src='fast/Sausage.col'/>
 <file src='fast/Plotna.dff'/>
 <file src='fast/Plotna.col'/>
-<file src='fast/hambac.dff'/>
-<file src='fast/hambac.col'/>
-<file src='fast/sandwich_base.dff'/>
-<file src='fast/sandwich_base.col'/>
 <file src='fast/policka_drzak.dff'/>
 <file src='fast/policka_drzak.col'/>
 <file src='fast/policka_deska.dff'/>
 <file src='fast/policka_deska.col'/>
-<file src='fast/swift.dff'/>
-<file src='fast/swift.col'/>
-<file src='fast/lahev01.dff'/>
-<file src='fast/lahev01.col'/>
 <file src='fast/coker_a.dff'/>
 <file src='fast/coker_a.col'/>
 <file src='fast/skrrinka.dff'/>
@@ -1998,8 +2012,6 @@
 <file src='gas/brush_A.col'/>
 <file src='gas/drzak_A.dff'/>
 <file src='gas/drzak_A.col'/>
-<file src='gas/cashregister_old_mesh.dff'/>
-<file src='gas/cashregister_old_mesh.col'/>
 <file src='gas/GS_P_Service_a.dff'/>
 <file src='gas/GS_P_Service_a.col'/>
 <file src='gas/GS_P_Service_b.dff'/>
@@ -2027,8 +2039,6 @@
 <file src='vitoa1/mesh_skrin_L.col'/>
 <file src='vitoa1/stul.dff'/>
 <file src='vitoa1/stul.col'/>
-<file src='vitoa1/Plane02.dff'/>
-<file src='vitoa1/Plane02.col'/>
 <file src='vitoa1/ledak.dff'/>
 <file src='vitoa1/ledak.col'/>
 <file src='vitoa1/dvere_low.dff'/>
@@ -2239,8 +2249,6 @@
 <file src='vitoa1/toaletni_papiry.col'/>
 <file src='vitoa1/vypinac_kuchyn_B.dff'/>
 <file src='vitoa1/vypinac_kuchyn_B.col'/>
-<file src='vitoa1/zaklad.dff'/>
-<file src='vitoa1/zaklad.col'/>
 
 <file src='vitoa2/vypinac_wc.dff'/>
 <file src='vitoa2/vypinac_wc.col'/>
@@ -2428,12 +2436,8 @@
 <file src='vitoa2/02.col'/>
 <file src='vitoa2/01.dff'/>
 <file src='vitoa2/01.col'/>
-<file src='vitoa2/model_body.dff'/>
-<file src='vitoa2/model_body.col'/>
 <file src='vitoa2/A2_okno.dff'/>
 <file src='vitoa2/A2_okno.col'/>
-<file src='vitoa2/zarovka_ON.dff'/>
-<file src='vitoa2/zarovka_ON.col'/>
 
 <file src='vitoa3city/dvere_koupelna.dff'/>
 <file src='vitoa3city/dvere_koupelna.col'/>
@@ -2449,10 +2453,6 @@
 <file src='vitoa3city/Object33.col'/>
 <file src='vitoa3city/Object18.dff'/>
 <file src='vitoa3city/Object18.col'/>
-<file src='vitoa3city/liska.dff'/>
-<file src='vitoa3city/liska.col'/>
-<file src='vitoa3city/telefon.dff'/>
-<file src='vitoa3city/telefon.col'/>
 <file src='vitoa3city/lednice_RV1_body.dff'/>
 <file src='vitoa3city/lednice_RV1_body.col'/>
 <file src='vitoa3city/lednice_RV1_dvere.dff'/>
