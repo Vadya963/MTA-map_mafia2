@@ -116,7 +116,7 @@ D6351A2D486BF62B ShuT_d.dds UnivNormal.dds ShuT_s.dds ShuT_d.dds Crash_Plates.dd
 046FE2494B196901 trees.dds
 12000000FA01440F
 4231EB18CC738743 CCINMLed.dds
-016B383B651E1A47 5illia
+016B383B651E1A47 5illia.dds
 6F688F1DF0614B60 waterfoam.dds water.dds nil
 5542651949200B51 radio06.dds radio06N.dds radio06.dds cube_universal.dds
 CD7DF519BB4C2243 10_low_8mid10.dds 10_low_8mid10s.dds mafiaenv_f.dds
@@ -468,7 +468,7 @@ F15ABE27EE6CC51A CVEZJIMed.dds
 DA291E6E19681F46 7MP04.dds 7MP04S.dds
 FA681629776EEA48 LGLstrop.dds LGLstropSN.dds
 184E021C8552CA7C kour_anim_02.dds
-35077B4F69389864 5illia
+35077B4F69389864 5illia.dds
 484ED16C6A21400F CELGREd.dds CELGREn.dds CELGREsp.dds
 13165924F72FC616 5obraz22.dds
 9758EE07B1181227 7bedynka03.dds 7bedynka03S.dds
@@ -698,7 +698,7 @@ EE634371BD60B42B JOECIVd.dds JOECIVn.dds JOECIVn.dds EYE_env.dds
 C67D877F55254F4F Album_d.dds Album_n.dds
 2B56523A96447F60 10_pradel_umyvadla.dds 10_pradel_umyvadla_NS.dds 10_ENV_pradelna_uni.dds
 A1160724F740F705 UnivChrom.dds chrom_n.dds chrom_s.dds cube_universal.dds
-1A6DFA615229524B 5illia 5illia
+1A6DFA615229524B 5illia.dds 5illia.dds
 7C79EC760F1D2505 FBglass.dds FBglassS.dds FBglass.dds 2F_ENV.dds
 F957DE29547B2578 CMESZZ3d.dds CMESZZ3n.dds CMESZZ3sp.dds
 6C43EA2B7A168965 Shubert_34_in.dds UnivNormal.dds Shubert_34_in.dds Shubert_34_in_fire.dds UnivNormal.dds
@@ -1297,7 +1297,7 @@ CD5B72320236DB68 M11_ceiling_roset02_tile.dds
 91786345BF178B79 HEN40SZd.dds HEN40SZn.dds HEN40SZsp.dds
 8A6DC5187339820E hotrod1_n.dds hotrod1_r.dds Crash_Plates.dds UnivAlfa.dds
 31048316110B564F low3sis19.dds low3sis19s.dds
-01714847F97EF337 5illia
+01714847F97EF337 5illia.dds
 300C59057B72B534 5obraz18.dds
 1C2EE70AC150CC33 CITKLAV2d.dds CITKLAV2sn.dds CITKLAV2sp.dds
 A061FE469537C867 stolek01.dds
@@ -2273,7 +2273,7 @@ AB5509184A205769 low_3hun03.dds low_3hun03s.dds
 B0322A0BFB1E0779 CH_animovacka_Empire.ifl CH_animovacka_Empire.ifl
 E2606C6913030025 DelGA_l.dds DelGA_ln.dds DelGA_ls.dds DelGA_l.dds nil
 8B28440CEB190F2A kour_an_loop.dds
-0F3A9766AB529435 5illia
+0F3A9766AB529435 5illia.dds
 2F11BD0B7325AA3E loko_d.dds loko_n.dds loko_s.dds mafiaenv4.dds
 C836772DD34AA52B particles_alpha_01.dds
 8B04B8631671CB37 SicTruck_c.dds SicTruck_n.dds SicTruck_s.dds SicTruck_n.dds Crash_Plates.dds
@@ -2484,9 +2484,9 @@ F16A2D6F4F72FA5A grass07.dds
 936F401D3D09A615 Rfnd_PackC.dds Rfnd_PackCN.dds
 647691037C1D5461 K_zed_1_[Z].dds K_zed_1_[Z]_NS.dds
 4E6E487C5B3B3D13 Chaff_cc.dds Chaff_cn.dds Chaff_cs.dds Chaff_cr.dds Crash_Plates.dds
-4A18233615664B78 5illia 5illia
+4A18233615664B78 5illia.dds 5illia.dds
 8733C0198121EC26 Ku_plech01_[V].dds Ku_plech01_[V]_S.dds cubeKUCHlow.dds
-6F02335C8F61F979 5illia 5illia
+6F02335C8F61F979 5illia.dds 5illia.dds
 2E533158EE540A4E kaluz1[G].dds kaluz1_s[G].dds CM_chodby_svetlik.dds
 8831F64C54461408 GLOW_light_red.dds
 E026375617051577 PaperBag_FMV_d.dds PaperBag_FMV_n.dds
@@ -3076,7 +3076,7 @@ FB1814451E78844E 10_gar_lamp_E.dds 10_gar_lamp_E.dds 10_gar_lamp_E.dds 10_gar_la
 CD78626F7F063359 0sout08.dds 0sout08s.dds
 AC30370D424B0534 CMESZZ2d.dds CMESZZ2sn.dds CMESZZ2sp.dds
 0442CF5C5145DE11 ter_chodnik_dv_[Z].dds ter_chodnik_dv_[Z]_NS.dds ter_chodnik_dv_plx_[Z].dds
-E82B0E36633AA949 5illia
+E82B0E36633AA949 5illia.dds
 E127ED7CCD4D6B5B sloucena04.dds sloucena04s.dds
 495AF5274B0C620A LDOroom.dds LDOroomSN.dds
 3E7A926ADB17B068 0tch06z.dds 0tch06NSz.dds
@@ -3264,7 +3264,7 @@ C70E5E30A4404E2A 7kartac.dds 7kartacS.dds
 1332396EDC446046 10_pradel_steny2_tmave.dds 10_pradel_steny2_tmave_NS.dds
 714C6569731D4D53 10_low_Dazabr1.dds
 F51AA826C8467070 CCINZZd.dds CCINZZn.dds CCINZZsp.dds
-7B17873A576A8809 5illia 5illia
+7B17873A576A8809 5illia.dds 5illia.dds
 54517543A655623C vyprsk_vody.dds
 D5244E12DB35DD58 Bus_c.dds UnivNormal.dds Bus_s.dds Bus_c.dds Crash_Plates.dds
 8E05C46BEC49A50B LEOSPOd.dds LEOSPOn_2048.dds LEOSPOs_1024.dds HQCharDirt.dds LEOSPOsp.dds
@@ -5146,7 +5146,7 @@ D76C6D32B14E4441 lednice03.dds lednice03_n.dds lednice03.dds
 BF292E520F631115 10_low_8mid11.dds 10_low_8mid11s.dds mafiaenv_f.dds
 3D1DC9070724685F 5vitohousB12_33.dds
 E80CA91DF57AE536 EDDIESd.dds EDDIESn.dds EDDIESs.dds EDDIESexpr.dds EDDIESsp.dds
-CF0B487D0932C078 5illia 5illia 5illia 5illia
+CF0B487D0932C078 5illia.dds 5illia.dds 5illia.dds 5illia.dds
 836603449860494F sic_hay.dds
 B17D4F1FFF4B9556 shubPU_in.dds UnivNormal.dds UnivKastle.dds shubPU_in_fire.dds UnivNormal.dds
 3C432A11285C2812 INT_podlaha_drevol_[J].dds INT_podlaha_drevol_[J]_NS.dds
@@ -5270,7 +5270,7 @@ DA769D6EEC081961 RwpackA.dds
 516AAF357714FC61
 592B504934524124 UnivChrom.dds jeepC_n.dds UnivNormal.dds jeepC_rs.dds Crash_Plates.dds
 9E329B2BFB73CF23 Hank_cc.dds Hank_cn.dds Hank_cs.dds Hank_cr.dds Crash_Plates.dds
-35077B5F69389864 5illia
+35077B5F69389864 5illia.dds
 827C4E6E2C0CCD17 10_18p_koberce.dds 10_18p_koberce_NM.dds
 A459441853214507 5M_s_tapety.dds 5M_s_tapetyS.dds
 29064121D9479569 ALBERTd.dds ALBERTn2048.dds ALBERTs_1024.dds ALBERT_EXPhigh.dds ALBERTsp.dds
@@ -5558,7 +5558,7 @@ E202421BBD626C42 7kafe_set.dds 7kafe_setS.dds cube_universal.dds
 0814CE3047412959 10_vytah_glow_18patro.dds
 8C0E594E0148B02C 3110min44.dds 3110min44s.dds
 7370481379093B06 7MA01.dds 7MA01NS.dds
-477A2C31DF6A5C4B 5illia 5illia
+477A2C31DF6A5C4B 5illia.dds 5illia.dds
 640B0A39433A4622 Rest02_[N].dds Rest02_[N]_N.dds
 7D351F4D8E224063 ShH_rs512.dds UnivAlfa.dds
 AE0F424F8901626E TOMMYed.dds
@@ -6324,7 +6324,7 @@ AF3C1D67E903A766 02_5B12_34.dds 02_5B12_34NS.dds
 CA475E272613FF49 7vetrak1.dds 7vetrak1S.dds
 AC2839228D31A041 3KJ_obchod_L_mramor_white.dds 3KJ_obchod_L_mramor_NS.dds 10_ENV_pradelna_uni_b.dds
 1F517F032100483F 4beretta_LO.dds 4beretta_LOs.dds
-9B0D1F184C52D502 5illia 5illia
+9B0D1F184C52D502 5illia.dds 5illia.dds
 22517F032100483F 4beretta_HI.dds 4beretta_HIs.dds
 5476754D8246834D Radnice_sklo_1.dds Radnice_sklo_1_S.dds int_env.dds
 1F337A546739312E 4tommyM1_LO.dds 4tommyM1_LOs.dds
@@ -7146,7 +7146,7 @@ E7063A5D6932D325 302tdum03.dds 302tdum03n.dds 302tdum03s.dds
 826AA76F703C7422 10_low_0sout09.dds
 711D5447E80D594C 311tuppbigb01.dds 311tuppbigb01S.dds mafiaenv_f.dds
 ED68A27DE7569771 JOENEUPd.dds JOENEUPn.dds JOENEUPs.dds HQCharDirt.dds JOENEUPsp.dds
-0357B63DA809C876 5illia
+0357B63DA809C876 5illia.dds
 354E154C0D111A4E Rndplot_low.dds
 A40F2256B65BC008 2CS_misc.dds 2CS_misc_NS.dds
 E9400C5DAC5D1867 CDOZTEd.dds CDOZTEn.dds CDOZTEsp.dds
