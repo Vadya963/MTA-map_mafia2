@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.64.13.10"/>
+<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.64.13.11"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -101,6 +101,12 @@
 <file src='city_crash/telefonbudka.dff'/>
 <file src='city_crash/telefonbudka.col'/>
 
+<file src='priceoffice/POdoor15.dff'/>
+<file src='priceoffice/POdoor15.col'/>
+<file src='priceoffice/POdoor13.dff'/>
+<file src='priceoffice/POdoor13.col'/>
+<file src='priceoffice/dvere_noref.dff'/>
+<file src='priceoffice/dvere_noref.col'/>
 <file src='priceoffice/zidle11.dff'/>
 <file src='priceoffice/zidle11.col'/>
 <file src='priceoffice/mesh_door_01.dff'/>
