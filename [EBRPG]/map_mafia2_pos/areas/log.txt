@@ -4916,6 +4916,7 @@ hambac 5429 city_crash
 sandwich_base 5430 city_crash
 lahev01 5434 city_crash
 swift 5433 city_crash
+lampse 3684 city_crash
 04_zbrdl12 687 kingstone
 04_tunel_zbr05 688 kingstone
 04_tunel_zbr04 689 kingstone
