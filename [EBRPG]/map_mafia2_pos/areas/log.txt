@@ -3723,7 +3723,6 @@ VESAK 5122 vitoa3city
 okno02 5123 vitoa3city
 okno03 5124 vitoa3city
 kytka 5125 vitoa3city
-vypinac04 5127 vitoa3city
 byt_gauc 5128 vitoa3city
 kuchyn_linka02 5129 vitoa3city
 Object171 5130 vitoa3city
@@ -3731,7 +3730,6 @@ Object153 5131 vitoa3city
 KUCHYN 5132 vitoa3city
 byt_skrin02 5133 vitoa3city
 byt_skrin01 5134 vitoa3city
-zasuvka05 5135 vitoa3city
 LOZNICE 5136 vitoa3city
 byt_bath_obj__02 5137 vitoa3city
 byt_bath_obj__03 5138 vitoa3city
@@ -3846,8 +3844,6 @@ lepenka02 5248 vitoa2
 zaves_wc 5249 vitoa2
 velkyobraz 5250 vitoa2
 ALFY1 5251 vitoa2
-vypinac_wc 5252 vitoa2
-vypinac_kabel 5253 vitoa2
 plechovka_C_01 5254 vitoa1
 serepetky_kuchyn01 5255 vitoa1
 police_kuchynka 5256 vitoa1
@@ -3927,8 +3923,6 @@ drzaknarucnik 5329 vitoa1
 zrcadlo_ram 5330 vitoa1
 KOUPELNA_STROP 5331 vitoa1
 KOU_mirror 5332 vitoa1
-spinac05 5333 vitoa1
-spinac06 5334 vitoa1
 koberecek_postelovej 5335 vitoa1
 nastenka 5336 vitoa1
 postel 5337 vitoa1
@@ -3950,7 +3944,6 @@ kuchyn_serepetky 5352 vitoa1
 rucnik 5353 vitoa1
 lista_kamna 5354 vitoa1
 toaletni_papiry 5355 vitoa1
-vypinac_kuchyn_B 5356 vitoa1
 wash_okna 5357 gas
 wash_nosnik02 5358 gas
 wash_trubka3 5359 gas
@@ -3991,7 +3984,6 @@ sedacka_double04 5407 fast
 sedacka_double02 5408 fast
 Plane03 5409 fast
 FF_IN_body 5410 fast
-svine_na_strop_svetla 5411 fast
 FF_sporak 5412 fast
 kovove_zebra_strop 5413 fast
 bar 5414 fast
@@ -3999,7 +3991,6 @@ fast 5415 fast
 door 5416 fast
 noha 5417 fast
 sedak 5418 fast
-svitidlo 5419 fast
 FF_coke_mesh 5420 fast
 panvicka 5421 fast
 dvirka 5422 fast
@@ -4156,9 +4147,7 @@ stul__04 5575 gvinterier
 11_koupelna_m06_doplnky_male_f_00 5578 gvinterier
 11_koupelna_m06_doplnky_male_f_03 5579 gvinterier
 11_koupelna_m06_doplnky_male_f_02 5580 gvinterier
-11_pracovna_m06_svetlo_01 5581 gvinterier
 Dvere_ram_koupelna 5582 gvinterier
-11_obyvak_m06_strop_ruzice 5583 gvinterier
 11_herna_m13_nabytek__03 5585 gvinterier
 11_herna_m13_nabytek__01 5586 gvinterier
 11_herna_m13_nabytek__00 5587 gvinterier
@@ -4196,14 +4185,12 @@ Dvere_ram_koupelna 5582 gvinterier
 11_Hala_ramy_dveri08 5619 gvinterier
 11_herna_m14_sklo_sekretar 5620 gvinterier
 11_herna_m13_nabytek_b_01 5621 gvinterier
-11_herna_m13_nabytek_b_00 5622 gvinterier
 11_herna_m13_nabytek_b_03 5623 gvinterier
 11_herna_m13_nabytek_b_02 5624 gvinterier
 11_herna_m13_nabytek_b_05 5625 gvinterier
 11_herna_m13_nabytek_b_04 5626 gvinterier
 11_herna_m13_nabytek_b_07 5627 gvinterier
 11_herna_m13_nabytek_b_06 5628 gvinterier
-11_obyvak_m13_lustr_01 5629 gvinterier
 Dvere_kuchyne 5630 gvinterier
 11_loznice_okn_lem_02 5631 gvinterier
 11_salonek_m18_steny 5632 gvinterier
@@ -4232,8 +4219,6 @@ zabr_sloupky_sikme_A_10 5645 gvinterier
 11_Hala_m08_obrazy13 5655 gvinterier
 11_Hala_m08_obrazy12 5656 gvinterier
 11_Hala_m08_obrazy14 5657 gvinterier
-11_herna_m21_svetlo_01 5658 gvinterier
-11_herna_m21_svetlo_02 5659 gvinterier
 11_obyvak_m07_strop__01 5660 gvinterier
 11_obyvak_m07_strop__02 5663 gvinterier
 11_obyvak_m07_strop__03 5664 gvinterier
@@ -4263,9 +4248,7 @@ Hodiny_03 5708 gvinterier
 11_Hala_m12_Patky__02 5709 gvinterier
 11_pracovna_m06_nabytek__02 5710 gvinterier
 11_kuchyne_m05_doplnky__02 5711 gvinterier
-11_kuchyne_m05_doplnky__01 5712 gvinterier
 polena01 5713 gvinterier
-11_pracovna_m09_lampy_emiss 5714 gvinterier
 11_obyvak_m13_mriz_01 5715 gvinterier
 11_obyvak_m08_ram_01 5716 gvinterier
 11_obyvak_m08_ram_02 5717 gvinterier
@@ -4296,9 +4279,6 @@ schodiste_f_01 5741 gvinterier
 schodiste_f_00 5742 gvinterier
 schodiste_f_03 5743 gvinterier
 schodiste_f_02 5744 gvinterier
-11_loznice_m16__lustr 5745 gvinterier
-11_salonek_m15_emiss 5746 gvinterier
-11_salonek_m13_vypinac_01 5747 gvinterier
 11_kuchyne_m09_zavesy_01 5748 gvinterier
 11_kuchyne_m09_zavesy_02 5749 gvinterier
 11_salonek_m13_konzol_01 5750 gvinterier
@@ -4308,7 +4288,6 @@ schodiste_f_02 5744 gvinterier
 11_pracovna_m06_obraz_04 5754 gvinterier
 11_Hala_m07_schodiste02 5755 gvinterier
 Object34 5756 gvinterier
-11_kuchyne_m08_emiss_lampa 5757 gvinterier
 11_pracovna_m10_zavesy_f_04 5758 gvinterier
 11_pracovna_m10_zavesy_f_05 5759 gvinterier
 11_pracovna_m10_zavesy_f_06 5760 gvinterier
@@ -4332,12 +4311,10 @@ zabr_sikme_B__03 5779 gvinterier
 11_pracovna_m11_lem_01 5780 gvinterier
 11_pracovna_m11_lem_02 5781 gvinterier
 11_obyvak_m05_krb 5782 gvinterier
-11_loznice_m16__vypinac 5783 gvinterier
 11_herna_m19_strop_b 5784 gvinterier
 11_herna_m10_okn_lem_04 5785 gvinterier
 11_herna_m10_okn_lem_05 5787 gvinterier
 11_obyvak_m17_obklady 5788 gvinterier
-11_satna_m06_vypinac_uzky 5789 gvinterier
 11_salonek_m05_polena_v_krbu 5790 gvinterier
 11_loznice_m14_obraz_01 5792 gvinterier
 11_loznice_m14_obraz_02 5793 gvinterier
@@ -4349,7 +4326,6 @@ zabr_sikme_B__03 5779 gvinterier
 11_Hala_m12_Sloup__06 5799 gvinterier
 11_Hala_m12_Sloup__05 5800 gvinterier
 11_Hala_m12_Sloup__04 5801 gvinterier
-11_obyvak_m15_emiss 5802 gvinterier
 11_pracovna_m08_knihovna_sklo 5803 gvinterier
 lavicka 5804 gvinterier
 lavica1 5805 gvinterier
@@ -4373,7 +4349,6 @@ zabr_oblouk_P 5814 gvinterier
 11_herna_m17_obklady_b_01 5823 gvinterier
 11_herna_m17_obklady_b_00 5824 gvinterier
 11_Hala_m01_topeni_mriz 5825 gvinterier
-11_Hala_m02_zdi_konzola 5826 gvinterier
 11_koupelna_m04_steny 5827 gvinterier
 11_koupelna_m06_doplnky_velke_f_05 5828 gvinterier
 11_koupelna_m06_doplnky_velke_f_04 5829 gvinterier
@@ -4388,7 +4363,6 @@ zabr_oblouk_P 5814 gvinterier
 11_herna_m17_obklady_c_04 5838 gvinterier
 11_loznice_listy 5839 gvinterier
 11_Hala_m09_podlaha_nahore 5840 gvinterier
-11_kuchyne_m05_vypinac 5841 gvinterier
 zabr_sikme_A__04 5842 gvinterier
 11_kuchyne_m07_obrazy 5843 gvinterier
 11_Hala_m08_obrazy_01 5844 gvinterier
@@ -4406,7 +4380,6 @@ kos 5847 gvinterier
 11_koupelna_m09_zaves_02 5856 gvinterier
 11_obyvak_m03_steny 5857 gvinterier
 11_obyvak_m01_obrazy 5858 gvinterier
-11_salonek_lustr__01 5859 gvinterier
 stojan_polena_02 5860 gvinterier
 11_salonek_m20_zavesy_01 5861 gvinterier
 11_salonek_m20_zavesy_02 5862 gvinterier
@@ -4440,8 +4413,6 @@ lampicka6 5892 gvinterier
 nohy 5893 gvinterier
 kreslo 5894 gvinterier
 Psacstroj 5895 gvinterier
-Schody_lustr 5896 gvinterier
-zarovka_ok_06 5897 gvinterier
 stolek05 5898 gvinterier
 sedak 5899 gvinterier
 lednic04 5900 gvinterier
@@ -4602,8 +4573,6 @@ X09_Slaughterhouse_chodby_sloup_01_B_01 6083 shinterier
 frame56 6084 shinterier
 frame58 6085 shinterier
 X09_Slaghterhouse_zed_v_bourarne_B1 6086 shinterier
-bourarna_lampa_01__B_01 6087 shinterier
-bourarna_lampa_02__B_24 6088 shinterier
 SG_hala_stair_rail 6089 seagift
 SG_interier 6090 seagift
 SG_ram_okna_int 6091 seagift
@@ -4658,8 +4627,6 @@ SG_int_ramovani 6139 seagift
 body_a_67 6140 seagift
 SG_crate_B114 6141 seagift
 SG_stul_budlik01 6142 seagift
-lampa_02 6143 seagift
-lampa_04 6144 seagift
 SG_top_win_4 6145 seagift
 body_b_31 6146 seagift
 bedny7_06 6147 seagift
@@ -4858,7 +4825,6 @@ SG_door 6169 seagift
 3PO_chodba_vytah_L 6370 priceoffice
 3PO_mapcross 6371 priceoffice
 3PO_room_trezor 6372 priceoffice
-3PO_kancl_big_svetlo_off08 6373 priceoffice
 3PO_delici_stena02 6374 priceoffice
 3PO_delici_stena01 6375 priceoffice
 3PO_top_toilet02_pani 6376 priceoffice
@@ -4908,9 +4874,7 @@ hotdog 18619 city_crash
 liska 945 city_crash
 telefon 1561 city_crash
 model_body 2999 city_crash
-zarovka_ON 3105 city_crash
 Plane02 3100 city_crash
-zaklad 3106 city_crash
 cashregister_old_mesh 18626 city_crash
 hambac 5429 city_crash
 sandwich_base 5430 city_crash
@@ -5080,8 +5044,6 @@ radio4 894 vitoa3city
 Object33 895 vitoa3city
 Object18 904 vitoa3city
 krajic03 3001 vitoa3city
-Teleso_ON 3103 vitoa3city
-Glass_ON 3104 vitoa3city
 dvere_koupelna 18608 vitoa3city
 dvere_loznice 18609 vitoa3city
 byt_vito_hunters_dvere 2996 vitoa2
@@ -5099,7 +5061,6 @@ brush_A 18624 gas
 drzak_A 18625 gas
 door 18627 gas
 glass 18620 gas
-T_Industrial_Strop_4 18617 gas
 rl1 18616 odevy
 radio2 5773 gvinterier
 11_satna_m07_zrcadlo_sklo 5584 gvinterier

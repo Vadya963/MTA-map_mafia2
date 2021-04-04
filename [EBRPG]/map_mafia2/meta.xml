@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.65.13.11"/>
+<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.65.13.12"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -78,14 +78,10 @@
 <file src='city_crash/hambac.col'/>
 <file src='city_crash/cashregister_old_mesh.dff'/>
 <file src='city_crash/cashregister_old_mesh.col'/>
-<file src='city_crash/zaklad.dff'/>
-<file src='city_crash/zaklad.col'/>
 <file src='city_crash/Plane02.dff'/>
 <file src='city_crash/Plane02.col'/>
 <file src='city_crash/model_body.dff'/>
 <file src='city_crash/model_body.col'/>
-<file src='city_crash/zarovka_ON.dff'/>
-<file src='city_crash/zarovka_ON.col'/>
 <file src='city_crash/telefon.dff'/>
 <file src='city_crash/telefon.col'/>
 <file src='city_crash/liska.dff'/>
@@ -473,8 +469,6 @@
 <file src='priceoffice/3PO_mapcross.col'/>
 <file src='priceoffice/3PO_room_trezor.dff'/>
 <file src='priceoffice/3PO_room_trezor.col'/>
-<file src='priceoffice/3PO_kancl_big_svetlo_off08.dff'/>
-<file src='priceoffice/3PO_kancl_big_svetlo_off08.col'/>
 <file src='priceoffice/3PO_delici_stena02.dff'/>
 <file src='priceoffice/3PO_delici_stena02.col'/>
 <file src='priceoffice/3PO_delici_stena01.dff'/>
@@ -648,10 +642,6 @@
 <file src='seagift/SG_crate_B114.col'/>
 <file src='seagift/SG_stul_budlik01.dff'/>
 <file src='seagift/SG_stul_budlik01.col'/>
-<file src='seagift/lampa_02.dff'/>
-<file src='seagift/lampa_02.col'/>
-<file src='seagift/lampa_04.dff'/>
-<file src='seagift/lampa_04.col'/>
 <file src='seagift/SG_top_win_4.dff'/>
 <file src='seagift/SG_top_win_4.col'/>
 <file src='seagift/body_b_31.dff'/>
@@ -705,10 +695,6 @@
 <file src='seagift/SG_door.dff'/>
 <file src='seagift/SG_door.col'/>
 
-<file src='shinterier/bourarna_lampa_01__B_01.dff'/>
-<file src='shinterier/bourarna_lampa_01__B_01.col'/>
-<file src='shinterier/bourarna_lampa_02__B_24.dff'/>
-<file src='shinterier/bourarna_lampa_02__B_24.col'/>
 <file src='shinterier/X09_slaughterhouse_sloup_bourarna01.dff'/>
 <file src='shinterier/X09_slaughterhouse_sloup_bourarna01.col'/>
 <file src='shinterier/X09_Slaughterhouse_chodby_sloup_01_B_01.dff'/>
@@ -1062,12 +1048,8 @@
 <file src='gvinterier/11_koupelna_m06_doplnky_male_f_03.col'/>
 <file src='gvinterier/11_koupelna_m06_doplnky_male_f_02.dff'/>
 <file src='gvinterier/11_koupelna_m06_doplnky_male_f_02.col'/>
-<file src='gvinterier/11_pracovna_m06_svetlo_01.dff'/>
-<file src='gvinterier/11_pracovna_m06_svetlo_01.col'/>
 <file src='gvinterier/Dvere_ram_koupelna.dff'/>
 <file src='gvinterier/Dvere_ram_koupelna.col'/>
-<file src='gvinterier/11_obyvak_m06_strop_ruzice.dff'/>
-<file src='gvinterier/11_obyvak_m06_strop_ruzice.col'/>
 <file src='gvinterier/11_satna_m07_zrcadlo_sklo.dff'/>
 <file src='gvinterier/11_satna_m07_zrcadlo_sklo.col'/>
 <file src='gvinterier/11_herna_m13_nabytek__03.dff'/>
@@ -1144,8 +1126,6 @@
 <file src='gvinterier/11_herna_m14_sklo_sekretar.col'/>
 <file src='gvinterier/11_herna_m13_nabytek_b_01.dff'/>
 <file src='gvinterier/11_herna_m13_nabytek_b_01.col'/>
-<file src='gvinterier/11_herna_m13_nabytek_b_00.dff'/>
-<file src='gvinterier/11_herna_m13_nabytek_b_00.col'/>
 <file src='gvinterier/11_herna_m13_nabytek_b_03.dff'/>
 <file src='gvinterier/11_herna_m13_nabytek_b_03.col'/>
 <file src='gvinterier/11_herna_m13_nabytek_b_02.dff'/>
@@ -1158,8 +1138,6 @@
 <file src='gvinterier/11_herna_m13_nabytek_b_07.col'/>
 <file src='gvinterier/11_herna_m13_nabytek_b_06.dff'/>
 <file src='gvinterier/11_herna_m13_nabytek_b_06.col'/>
-<file src='gvinterier/11_obyvak_m13_lustr_01.dff'/>
-<file src='gvinterier/11_obyvak_m13_lustr_01.col'/>
 <file src='gvinterier/Dvere_kuchyne.dff'/>
 <file src='gvinterier/Dvere_kuchyne.col'/>
 <file src='gvinterier/11_loznice_okn_lem_02.dff'/>
@@ -1216,10 +1194,6 @@
 <file src='gvinterier/11_Hala_m08_obrazy12.col'/>
 <file src='gvinterier/11_Hala_m08_obrazy14.dff'/>
 <file src='gvinterier/11_Hala_m08_obrazy14.col'/>
-<file src='gvinterier/11_herna_m21_svetlo_01.dff'/>
-<file src='gvinterier/11_herna_m21_svetlo_01.col'/>
-<file src='gvinterier/11_herna_m21_svetlo_02.dff'/>
-<file src='gvinterier/11_herna_m21_svetlo_02.col'/>
 <file src='gvinterier/11_obyvak_m07_strop__01.dff'/>
 <file src='gvinterier/11_obyvak_m07_strop__01.col'/>
 <file src='gvinterier/11_obyvak_m07_strop__02.dff'/>
@@ -1278,12 +1252,8 @@
 <file src='gvinterier/11_pracovna_m06_nabytek__02.col'/>
 <file src='gvinterier/11_kuchyne_m05_doplnky__02.dff'/>
 <file src='gvinterier/11_kuchyne_m05_doplnky__02.col'/>
-<file src='gvinterier/11_kuchyne_m05_doplnky__01.dff'/>
-<file src='gvinterier/11_kuchyne_m05_doplnky__01.col'/>
 <file src='gvinterier/polena01.dff'/>
 <file src='gvinterier/polena01.col'/>
-<file src='gvinterier/11_pracovna_m09_lampy_emiss.dff'/>
-<file src='gvinterier/11_pracovna_m09_lampy_emiss.col'/>
 <file src='gvinterier/11_obyvak_m13_mriz_01.dff'/>
 <file src='gvinterier/11_obyvak_m13_mriz_01.col'/>
 <file src='gvinterier/11_obyvak_m08_ram_01.dff'/>
@@ -1344,12 +1314,6 @@
 <file src='gvinterier/schodiste_f_03.col'/>
 <file src='gvinterier/schodiste_f_02.dff'/>
 <file src='gvinterier/schodiste_f_02.col'/>
-<file src='gvinterier/11_loznice_m16__lustr.dff'/>
-<file src='gvinterier/11_loznice_m16__lustr.col'/>
-<file src='gvinterier/11_salonek_m15_emiss.dff'/>
-<file src='gvinterier/11_salonek_m15_emiss.col'/>
-<file src='gvinterier/11_salonek_m13_vypinac_01.dff'/>
-<file src='gvinterier/11_salonek_m13_vypinac_01.col'/>
 <file src='gvinterier/11_kuchyne_m09_zavesy_01.dff'/>
 <file src='gvinterier/11_kuchyne_m09_zavesy_01.col'/>
 <file src='gvinterier/11_kuchyne_m09_zavesy_02.dff'/>
@@ -1368,8 +1332,6 @@
 <file src='gvinterier/11_Hala_m07_schodiste02.col'/>
 <file src='gvinterier/Object34.dff'/>
 <file src='gvinterier/Object34.col'/>
-<file src='gvinterier/11_kuchyne_m08_emiss_lampa.dff'/>
-<file src='gvinterier/11_kuchyne_m08_emiss_lampa.col'/>
 <file src='gvinterier/11_pracovna_m10_zavesy_f_04.dff'/>
 <file src='gvinterier/11_pracovna_m10_zavesy_f_04.col'/>
 <file src='gvinterier/11_pracovna_m10_zavesy_f_05.dff'/>
@@ -1418,8 +1380,6 @@
 <file src='gvinterier/11_pracovna_m11_lem_02.col'/>
 <file src='gvinterier/11_obyvak_m05_krb.dff'/>
 <file src='gvinterier/11_obyvak_m05_krb.col'/>
-<file src='gvinterier/11_loznice_m16__vypinac.dff'/>
-<file src='gvinterier/11_loznice_m16__vypinac.col'/>
 <file src='gvinterier/11_herna_m19_strop_b.dff'/>
 <file src='gvinterier/11_herna_m19_strop_b.col'/>
 <file src='gvinterier/11_herna_m10_okn_lem_04.dff'/>
@@ -1428,8 +1388,6 @@
 <file src='gvinterier/11_herna_m10_okn_lem_05.col'/>
 <file src='gvinterier/11_obyvak_m17_obklady.dff'/>
 <file src='gvinterier/11_obyvak_m17_obklady.col'/>
-<file src='gvinterier/11_satna_m06_vypinac_uzky.dff'/>
-<file src='gvinterier/11_satna_m06_vypinac_uzky.col'/>
 <file src='gvinterier/11_salonek_m05_polena_v_krbu.dff'/>
 <file src='gvinterier/11_salonek_m05_polena_v_krbu.col'/>
 <file src='gvinterier/11_loznice_m14_obraz_01.dff'/>
@@ -1452,8 +1410,6 @@
 <file src='gvinterier/11_Hala_m12_Sloup__05.col'/>
 <file src='gvinterier/11_Hala_m12_Sloup__04.dff'/>
 <file src='gvinterier/11_Hala_m12_Sloup__04.col'/>
-<file src='gvinterier/11_obyvak_m15_emiss.dff'/>
-<file src='gvinterier/11_obyvak_m15_emiss.col'/>
 <file src='gvinterier/11_pracovna_m08_knihovna_sklo.dff'/>
 <file src='gvinterier/11_pracovna_m08_knihovna_sklo.col'/>
 <file src='gvinterier/lavicka.dff'/>
@@ -1500,8 +1456,6 @@
 <file src='gvinterier/11_herna_m17_obklady_b_00.col'/>
 <file src='gvinterier/11_Hala_m01_topeni_mriz.dff'/>
 <file src='gvinterier/11_Hala_m01_topeni_mriz.col'/>
-<file src='gvinterier/11_Hala_m02_zdi_konzola.dff'/>
-<file src='gvinterier/11_Hala_m02_zdi_konzola.col'/>
 <file src='gvinterier/11_koupelna_m04_steny.dff'/>
 <file src='gvinterier/11_koupelna_m04_steny.col'/>
 <file src='gvinterier/11_koupelna_m06_doplnky_velke_f_05.dff'/>
@@ -1530,8 +1484,6 @@
 <file src='gvinterier/11_loznice_listy.col'/>
 <file src='gvinterier/11_Hala_m09_podlaha_nahore.dff'/>
 <file src='gvinterier/11_Hala_m09_podlaha_nahore.col'/>
-<file src='gvinterier/11_kuchyne_m05_vypinac.dff'/>
-<file src='gvinterier/11_kuchyne_m05_vypinac.col'/>
 <file src='gvinterier/zabr_sikme_A__04.dff'/>
 <file src='gvinterier/zabr_sikme_A__04.col'/>
 <file src='gvinterier/11_kuchyne_m07_obrazy.dff'/>
@@ -1566,8 +1518,6 @@
 <file src='gvinterier/11_obyvak_m03_steny.col'/>
 <file src='gvinterier/11_obyvak_m01_obrazy.dff'/>
 <file src='gvinterier/11_obyvak_m01_obrazy.col'/>
-<file src='gvinterier/11_salonek_lustr__01.dff'/>
-<file src='gvinterier/11_salonek_lustr__01.col'/>
 <file src='gvinterier/stojan_polena_02.dff'/>
 <file src='gvinterier/stojan_polena_02.col'/>
 <file src='gvinterier/11_salonek_m20_zavesy_01.dff'/>
@@ -1634,10 +1584,6 @@
 <file src='gvinterier/kreslo.col'/>
 <file src='gvinterier/Psacstroj.dff'/>
 <file src='gvinterier/Psacstroj.col'/>
-<file src='gvinterier/Schody_lustr.dff'/>
-<file src='gvinterier/Schody_lustr.col'/>
-<file src='gvinterier/zarovka_ok_06.dff'/>
-<file src='gvinterier/zarovka_ok_06.col'/>
 <file src='gvinterier/stolek05.dff'/>
 <file src='gvinterier/stolek05.col'/>
 <file src='gvinterier/sedak.dff'/>
@@ -1905,8 +1851,6 @@
 <file src='fast/noha.col'/>
 <file src='fast/sedak.dff'/>
 <file src='fast/sedak.col'/>
-<file src='fast/svitidlo.dff'/>
-<file src='fast/svitidlo.col'/>
 <file src='fast/FF_coke_mesh.dff'/>
 <file src='fast/FF_coke_mesh.col'/>
 <file src='fast/panvicka.dff'/>
@@ -1963,8 +1907,6 @@
 <file src='fast/Plane03.col'/>
 <file src='fast/FF_IN_body.dff'/>
 <file src='fast/FF_IN_body.col'/>
-<file src='fast/svine_na_strop_svetla.dff'/>
-<file src='fast/svine_na_strop_svetla.col'/>
 <file src='fast/FF_sporak.dff'/>
 <file src='fast/FF_sporak.col'/>
 <file src='fast/kovove_zebra_strop.dff'/>
@@ -1972,8 +1914,6 @@
 <file src='fast/bar.dff'/>
 <file src='fast/bar.col'/>
 
-<file src='gas/T_Industrial_Strop_4.dff'/>
-<file src='gas/T_Industrial_Strop_4.col'/>
 <file src='gas/glass.dff'/>
 <file src='gas/glass.col'/>
 <file src='gas/wash_okna.dff'/>
@@ -2209,10 +2149,6 @@
 <file src='vitoa1/KOUPELNA_STROP.col'/>
 <file src='vitoa1/KOU_mirror.dff'/>
 <file src='vitoa1/KOU_mirror.col'/>
-<file src='vitoa1/spinac05.dff'/>
-<file src='vitoa1/spinac05.col'/>
-<file src='vitoa1/spinac06.dff'/>
-<file src='vitoa1/spinac06.col'/>
 <file src='vitoa1/koberecek_postelovej.dff'/>
 <file src='vitoa1/koberecek_postelovej.col'/>
 <file src='vitoa1/nastenka.dff'/>
@@ -2255,13 +2191,7 @@
 <file src='vitoa1/lista_kamna.col'/>
 <file src='vitoa1/toaletni_papiry.dff'/>
 <file src='vitoa1/toaletni_papiry.col'/>
-<file src='vitoa1/vypinac_kuchyn_B.dff'/>
-<file src='vitoa1/vypinac_kuchyn_B.col'/>
 
-<file src='vitoa2/vypinac_wc.dff'/>
-<file src='vitoa2/vypinac_wc.col'/>
-<file src='vitoa2/vypinac_kabel.dff'/>
-<file src='vitoa2/vypinac_kabel.col'/>
 <file src='vitoa2/bedynka_proutena04.dff'/>
 <file src='vitoa2/bedynka_proutena04.col'/>
 <file src='vitoa2/polstare.dff'/>
@@ -2453,10 +2383,6 @@
 <file src='vitoa3city/dvere_loznice.col'/>
 <file src='vitoa3city/krajic03.dff'/>
 <file src='vitoa3city/krajic03.col'/>
-<file src='vitoa3city/Teleso_ON.dff'/>
-<file src='vitoa3city/Teleso_ON.col'/>
-<file src='vitoa3city/Glass_ON.dff'/>
-<file src='vitoa3city/Glass_ON.col'/>
 <file src='vitoa3city/Object33.dff'/>
 <file src='vitoa3city/Object33.col'/>
 <file src='vitoa3city/Object18.dff'/>
@@ -2495,8 +2421,6 @@
 <file src='vitoa3city/kytka.col'/>
 <file src='vitoa3city/byt_vybaveni03.dff'/>
 <file src='vitoa3city/byt_vybaveni03.col'/>
-<file src='vitoa3city/vypinac04.dff'/>
-<file src='vitoa3city/vypinac04.col'/>
 <file src='vitoa3city/byt_gauc.dff'/>
 <file src='vitoa3city/byt_gauc.col'/>
 <file src='vitoa3city/kuchyn_linka02.dff'/>
@@ -2511,8 +2435,6 @@
 <file src='vitoa3city/byt_skrin02.col'/>
 <file src='vitoa3city/byt_skrin01.dff'/>
 <file src='vitoa3city/byt_skrin01.col'/>
-<file src='vitoa3city/zasuvka05.dff'/>
-<file src='vitoa3city/zasuvka05.col'/>
 <file src='vitoa3city/LOZNICE.dff'/>
 <file src='vitoa3city/LOZNICE.col'/>
 <file src='vitoa3city/byt_bath_obj__02.dff'/>
