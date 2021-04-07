@@ -1,6 +1,6 @@
-Карта создана с помощью:
-- Greavesy Mafia: Toolkit https://github.com/Greavesy1899/MafiaToolkit 
-- y.u.s.i.k ModelViewer
+Карта создана с помощью программ:
+- Mafia: Toolkit от Greavesy https://github.com/Greavesy1899/MafiaToolkit 
+- ModelViewer от y.u.s.i.k
 
 Готовые районы:
 - [x] Кингстон
