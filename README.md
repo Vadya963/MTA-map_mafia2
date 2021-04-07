@@ -1,3 +1,7 @@
+Карта создана с помощью:
+Greavesy Mafia: Toolkit https://github.com/Greavesy1899/MafiaToolkit
+y.u.s.i.k ModelViewer
+
 Готовые районы:
 - [x] Кингстон
 - [x] Диптон
