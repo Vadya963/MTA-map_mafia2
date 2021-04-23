@@ -53,7 +53,7 @@ function ( startedRes )
 
 	for k,v in pairs(getElementData(root, "object")) do
 		local obj = getLowLODElement(v[2])
-		if v[5] == true then--в city_crash это название интерьеров, нужна проверка
+		if v[5] and v[5]["DoubleSided"] == true then--в city_crash это название интерьеров, нужна проверка
 			setElementDoubleSided(v[2], true)
 			if obj then setElementDoubleSided(obj, true) end
 		else

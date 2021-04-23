@@ -4922,6 +4922,7 @@ X15_EXT_dvere_tel__Z__pha01_dvere_tel 809 hillwood
 14_teren_chod__18 1533 hillwood
 14_teren_chod__27 1535 hillwood
 14_teren_chod__20 1536 hillwood
+emis_glass__10 3103 hillwood
 striska_nad_rampou 698 riverside
 city04 704 riverside
 city24 705 riverside

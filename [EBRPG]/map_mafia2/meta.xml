@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.65.13.12"/>
+<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.66.13.12"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -7999,6 +7999,8 @@
 <file src='highbrook/12_117_G.col'/>
 <file src='highbrook/12_115_G.col'/>
 
+<file src='hillwood/emis_glass__10.dff'/>
+<file src='hillwood/emis_glass__10.col'/>
 <file src='hillwood/Terasa_vstup_le__01.dff'/>
 <file src='hillwood/Terasa_vstup_le__01.col'/>
 <file src='hillwood/Terasa_a_02.dff'/>
