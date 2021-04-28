@@ -12545,8 +12545,8 @@ function displayLoadedRes ( res )--старт ресурсов
 			if obj then setElementDimension(obj, object_interior[v[4]][2]) end
 		end
 
-		if v[4] and v[4]["Scale"] then
-			local pos = v[4]["Scale"]
+		if v[5] and v[5]["Scale"] then
+			local pos = v[5]["Scale"]
 			setObjectScale(v[2], pos[1],pos[2],pos[3])
 			if obj then setObjectScale(obj, pos[1],pos[2],pos[3]) end
 		end
