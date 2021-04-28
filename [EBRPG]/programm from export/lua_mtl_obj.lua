@@ -1,7 +1,7 @@
 local option = ""--дополнительный путь для объектов у которых есть родитель
 
 local object = {
-
+{'10_nad_patka_03_01'},--пример
 }
 print(os.date(), #object)
 function string.split(input, separator)
