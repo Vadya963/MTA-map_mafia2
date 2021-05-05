@@ -2,7 +2,9 @@
 
 CollEditor2 - это программа для получения коллизии
 
-default.txt - список текстур
+default.txt - список текстур взятый из default.mtl в MafiaII\edit\materials
+
+read_default_mtl.lua - создаёт упрощенный список текстур из default.txt в default_new.txt
 
 DeleteZeroAreaFaces.ms - удаляет невидимые стены у коллизии объекта, переместить в скрипты 3d max и запустить на выделенном объекте
 
