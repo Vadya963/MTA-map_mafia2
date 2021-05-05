@@ -2,11 +2,11 @@
 
 CollEditor2 - это программа для получения коллизии
 
-default.txt - список текстур взятый из default.mtl в MafiaII\edit\materials
+default - список текстур взятый из default.mtl в MafiaII\edit\materials
 
-read_default_mtl.lua - создаёт упрощенный список текстур из default.txt в default_new.txt
+read_default_mtl - создаёт упрощенный список текстур из default.txt в default_new.txt
 
-DeleteZeroAreaFaces.ms - удаляет невидимые стены у коллизии объекта, переместить в скрипты 3d max и запустить на выделенном объекте
+DeleteZeroAreaFaces - удаляет невидимые стены у коллизии объекта, переместить в скрипты 3d max и запустить на выделенном объекте
 
 FrameRes_Editor - это программа для получения положение объектов, нужно открывать sds файлы, и копировать часть которая начинается с Object,
 потом надо вставить то, что скопировал в файл frame.txt, там при помощи notepad++ заменить все запятые на точки и символ " на пустоту, потом выделить (Name: )
