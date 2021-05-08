@@ -32,13 +32,14 @@ function toQuaternion(x,y,z)
 	return q;
 end
 
-local file_ipl = io.open("C:\\test\\ipl_coord.txt", "w")
+local file_ipl = io.open("C:\\test\\ipl_coord.ipl", "w")
+file_ipl:write("inst\n")
 for k,v in ipairs(object) do
 	local xr,yr,zr = getEulerAnglesFromMatrix(v)
 	local rot = toQuaternion(xr,yr,zr)
 	local x,y,z = v[2][4][1],v[2][4][2],v[2][4][3]
 	file_ipl:write(v[3]..", "..v[1]..", 0, "..x..", "..y..", "..z..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n")
 end
-
+file_ipl:write("end\n")
 file_ipl:close()
 print(os.date())
