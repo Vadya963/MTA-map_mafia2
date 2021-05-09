@@ -10753,16 +10753,10 @@ function displayLoadedRes ( res )--старт ресурсов
 		fileClose(file)
 	end
 
-	if not fileExists( "areas/object_collapse.ipl" ) then
-		local file = fileCreate( "areas/object_collapse.ipl" )
-		fileClose(file)
-	end
-
 	local hFile = fileOpen("areas/log.txt")
 	local hFile_ide = fileOpen("areas/mafia2_ide.txt")
 	local hFile_ipl = fileOpen( "areas/mafia2_ipl.txt" )
 	local hFile_ipl_euler = fileOpen( "areas/mafia2_ipl_euler.txt" )
-	local hFile_object_collapse = fileOpen( "areas/object_collapse.ipl" )
 
 	local count = 0
 	for i=615,18630 do
@@ -12710,12 +12704,6 @@ function displayLoadedRes ( res )--старт ресурсов
 	end
 
 
-	local object_collapse = {
-		
-	}
-	fileSetPos( hFile_object_collapse, fileGetSize( hFile_object_collapse ) )
-	fileWrite(hFile_object_collapse, "inst\n" )
-
 	local name = 0
 	local name_t = {}
 	for k,v in ipairs(object) do
@@ -12749,14 +12737,6 @@ function displayLoadedRes ( res )--старт ресурсов
 			fileWrite(file_ipl, v[3]..", "..name..", 0, "..x..", "..y..", "..z..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
 			fileClose( file_ipl )
 		end
-
-		--для объединения объектов в 3d max
-		for i=1,#object_collapse do
-			if v[1] == object_collapse[i][1] then
-				fileWrite(hFile_object_collapse, v[3]..", "..name..", 0, "..x-object_collapse[1][2][4][1]..", "..y-object_collapse[1][2][4][2]..", "..z-object_collapse[1][2][4][3]..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
-				break
-			end
-		end
 	end
 
 	print("")
@@ -12767,16 +12747,12 @@ function displayLoadedRes ( res )--старт ресурсов
 	end
 	print("----------------")
 
-	fileSetPos( hFile_object_collapse, fileGetSize( hFile_object_collapse ) )
-	fileWrite(hFile_object_collapse, "end\n" )
-
 	print("object len "..#object)
 	setElementData(root, "object", object)
 	fileClose(hFile)
 	fileClose(hFile_ide)
 	fileClose(hFile_ipl)
 	fileClose(hFile_ipl_euler)
-	fileClose(hFile_object_collapse)
 
 	print("\n\nSPAWN_OBJ2.LUA\n")
 end
