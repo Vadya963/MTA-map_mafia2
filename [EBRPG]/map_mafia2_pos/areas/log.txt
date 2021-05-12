@@ -4694,7 +4694,7 @@ SG_door 6169 seagift
 3PO_mriz_pruchod_patro 6214 priceoffice
 3PO_top_toilet01_damy 6215 priceoffice
 3PO_podpera01 6216 priceoffice
-3PO_clerk_desk_stuff_A01 6217 priceoffice
+3PO_sink17 6217 priceoffice
 3PO_clerk_desk_stuff_A02 6218 priceoffice
 3PO_clerk_desk_stuff_C02 6219 priceoffice
 3PO_clerk_desk_stuff_B02 6220 priceoffice
@@ -4709,15 +4709,6 @@ SG_door 6169 seagift
 3PO_chodba_nadvchodem 6229 priceoffice
 3PO_vlajka14 6230 priceoffice
 3PO_glass_vitrina_10 6231 priceoffice
-3PO_glass_vitrina_05 6232 priceoffice
-3PO_glass_vitrina_04 6233 priceoffice
-3PO_glass_vitrina_07 6234 priceoffice
-3PO_glass_vitrina_06 6235 priceoffice
-3PO_glass_vitrina_01 6236 priceoffice
-3PO_glass_vitrina_00 6237 priceoffice
-3PO_glass_vitrina_03 6238 priceoffice
-3PO_glass_vitrina_02 6239 priceoffice
-3PO_glass_vitrina_08 6240 priceoffice
 3PO_zabrana01 6241 priceoffice
 3PO_mrizkryt02 6242 priceoffice
 3PO_reditel_stuff_A01 6243 priceoffice
