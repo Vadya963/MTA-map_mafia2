@@ -5235,15 +5235,6 @@ dvere_low[3102]="k_poolballspt04",]]
 [6229]="canalEast01_LAw",
 [6230]="canaljetty_LAw",
 [6231]="CanalRoad01_LAw",
---[[[6232]="canal_arch",
-[6233]="canal_floor",
-[6234]="canal_floor2",
-[6235]="canal_arch01",
-[6236]="canal_floor3",
-[6237]="venice_alpha",
-[6238]="LODCanalRoad01_LAw",
-[6239]="LODcanal_arch2",
-[6240]="LODcanal_floor3",]]
 [6241]="LODcanal_floor2",
 [6242]="LODcanal_floor1",
 [6243]="LODCanBrij02_LAw",
@@ -14258,7 +14249,16 @@ emis_glass__10[3103]="k_poolballspt05",
 [4273]="sbseabed7_las2",
 [4274]="sbseabed86_las2",
 [4275]="sbseabed9_las20",
-[4276]="sbseabed91_las2",]]
+[4276]="sbseabed91_las2",
+[6232]="canal_arch",
+[6233]="canal_floor",
+[6234]="canal_floor2",
+[6235]="canal_arch01",
+[6236]="canal_floor3",
+[6237]="venice_alpha",
+[6238]="LODCanalRoad01_LAw",
+[6239]="LODcanal_arch2",
+[6240]="LODcanal_floor3",]]
 }
 
 function getObjectNameFromModel ( id )
