@@ -24,7 +24,7 @@ function ( startedRes )
 			engineImportTXD (eb_textures[v[3]], v[2])
 
 			local dff = engineLoadDFF ( ":map_mafia2/"..v[3].."/"..v[1]..".dff" )
-			if v[4] and v[4]["AlphaTransparency"] then
+			if type(v[4]) == "table" and v[4]["AlphaTransparency"] then
 				engineReplaceModel ( dff, v[2], true )
 			else
 				engineReplaceModel ( dff, v[2], false )
@@ -35,7 +35,7 @@ function ( startedRes )
 
 			engineSetModelLODDistance(v[2], 30000)
 
-			if v[4] and v[4]["ModelPhysicalPropertiesGroup"] then
+			if type(v[4]) == "table" and v[4]["ModelPhysicalPropertiesGroup"] then
 				engineSetModelPhysicalPropertiesGroup(v[2], v[4]["ModelPhysicalPropertiesGroup"])
 			else
 				engineSetModelPhysicalPropertiesGroup(v[2], 0)

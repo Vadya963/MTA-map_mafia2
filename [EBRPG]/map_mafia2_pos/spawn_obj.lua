@@ -12120,7 +12120,7 @@ function displayLoadedRes ( res )--старт ресурсов
 				obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1)
 				lod_obj = createObject(v[3], x,y,z, j[4],j[5],j[6]*-1, true)
 
-				if j[7] and j[7]["Scale"] then
+				if type(j[7]) == "table" and j[7]["Scale"] then
 					local pos = j[7]["Scale"]
 					setObjectScale(obj, pos[1],pos[2],pos[3])
 					setObjectScale(lod_obj, pos[1],pos[2],pos[3])
@@ -12162,7 +12162,7 @@ function displayLoadedRes ( res )--старт ресурсов
 			if obj then setElementDimension(obj, object_interior[v[4]][2]) end
 		end
 
-		if v[5] and v[5]["Scale"] then
+		if type(v[5]) == "table" and v[5]["Scale"] then
 			local pos = v[5]["Scale"]
 			setObjectScale(v[2], pos[1],pos[2],pos[3])
 			if obj then setObjectScale(obj, pos[1],pos[2],pos[3]) end
