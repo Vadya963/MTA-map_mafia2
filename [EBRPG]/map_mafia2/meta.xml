@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.68.13.16"/>
+<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.69.13.16"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -2658,6 +2658,20 @@
 <file src='diamond_motors/proxy.dff'/>
 <file src='diamond_motors/proxy.col'/>
 
+<file src='prison/PLOT_dr__03.dff'/>
+<file src='prison/PLOT_dr__03.col'/>
+<file src='prison/PLOT_sl__10.dff'/>
+<file src='prison/PLOT_sl__10.col'/>
+<file src='prison/X06_Ext_dvere_pl__Z__pha2.dff'/>
+<file src='prison/X06_Ext_dvere_pl__Z__pha2.col'/>
+<file src='prison/X06_Brana_plot__Z__pha.dff'/>
+<file src='prison/X06_Brana_plot__Z__pha.col'/>
+<file src='prison/PLOT_sl__11.dff'/>
+<file src='prison/PLOT_sl__11.col'/>
+<file src='prison/PLOT_dr__12.dff'/>
+<file src='prison/PLOT_dr__12.col'/>
+<file src='prison/EXT_Amplion_08.dff'/>
+<file src='prison/EXT_Amplion_08.col'/>
 <file src='prison/PLOT_osvetleni__02.dff'/>
 <file src='prison/PLOT_osvetleni__02.col'/>
 <file src='prison/A_Fasada__03.dff'/>

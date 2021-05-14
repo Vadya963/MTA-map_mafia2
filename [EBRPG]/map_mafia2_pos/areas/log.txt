@@ -3630,7 +3630,6 @@ Hi_dvere_vr_[Z]_pha 5009 prison
 Hi_dvere_dre_[Z]_pha 5010 prison
 PLOT_osvetleni__02 5011 prison
 A_Fasada__03 5012 prison
-PLOT_vrata_v_01 5013 prison
 dvere_vis 5014 diamond_motors
 strop_hlavni_lod 5015 diamond_motors
 hlavni_vyloha_kov_G 5016 diamond_motors
@@ -5015,6 +5014,14 @@ dipton04 805 uppertown
 15_265 18610 chinatown
 vyloha_box_100 3679 westside
 AmRes_INTERIER 3677 midtown
+PLOT_vrata_v_01 5013 prison
+X06_Ext_dvere_pl__Z__pha2 3104 prison
+X06_Brana_plot__Z__pha 5253 prison
+PLOT_sl__11 5252 prison
+PLOT_dr__12 3105 prison
+EXT_Amplion_08 5333 prison
+PLOT_dr__03 5334 prison
+PLOT_sl__10 3106 prison
 tocna 814 diamond_motors
 dvere_vstup 815 diamond_motors
 dvere_kancl 817 diamond_motors
