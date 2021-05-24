@@ -5003,6 +5003,8 @@ crazy_horse2 3004 millville_n
 17_podtrubkou03 2902 millville_n
 21_roof_top_16 733 millville_new
 21_brick_block 3253 millville_new
+21_top_d_09 5356 millville_new
+21_shop_a_18 18617 millville_new
 11_show_reklama 734 italy
 city16 738 italy
 11_kanaly15_G 790 italy
