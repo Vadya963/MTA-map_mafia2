@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.74.13.16"/>
+<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.75.13.16"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -7074,6 +7074,18 @@
 <file src='port/X19_jerabmaly04_bone_main.dff'/>
 <file src='port/X19_jerabmaly04_bone_main.col'/>
 
+<file src='kingstone/04_rolv.dff'/>
+<file src='kingstone/04_rolv.col'/>
+<file src='kingstone/04_roletavyloha01.dff'/>
+<file src='kingstone/04_roletavyloha01.col'/>
+<file src='kingstone/g04_241.dff'/>
+<file src='kingstone/g04_241.col'/>
+<file src='kingstone/g04_211.dff'/>
+<file src='kingstone/g04_211.col'/>
+<file src='kingstone/g04_56.dff'/>
+<file src='kingstone/g04_56.col'/>
+<file src='kingstone/g04_100.dff'/>
+<file src='kingstone/g04_100.col'/>
 <file src='kingstone/04_alfa21.dff'/>
 <file src='kingstone/04_alfa21.col'/>
 <file src='kingstone/04_Horse_rider.dff'/>

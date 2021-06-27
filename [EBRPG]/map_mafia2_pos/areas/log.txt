@@ -4882,6 +4882,12 @@ lampse 3684 city_crash
 04_Horse_rider 730 kingstone
 04_sochapodst 731 kingstone
 04_zabradli 732 kingstone
+g04_241 5411 kingstone
+g04_211 5419 kingstone
+g04_56 5896 kingstone
+g04_100 5897 kingstone
+04_roletavyloha01 5826 kingstone
+04_rolv 5841 kingstone
 05_134j 681 dipton
 05_134c 683 dipton
 05_i_tower_01_G 684 dipton

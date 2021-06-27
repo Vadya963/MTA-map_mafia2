@@ -2,6 +2,7 @@
 <min_mta_version client="1.5.8-9.20724.0" server="1.5.8-9.20724.0"/>
 <script src="water_c.lua" type="client"/>
 <script src="trash_c.lua" type="client"/>
+<script src="area_pos_write.lua" type="server"/>
 <script src="getObjectNameFromModel.lua" type="server"></script>
 <script src="spawn_obj.lua" type="server"/>
 </meta>
