@@ -11588,7 +11588,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	end
 
 	city_crash_fun()
-	--[[kingstone_fun()
+	kingstone_fun()
 	dipton_fun()
 	riverside_fun()
 	greenfield_fun()
@@ -11608,7 +11608,7 @@ function displayLoadedRes ( res )--старт ресурсов
 	westside_fun()
 	eastside_fun()
 	midtown_fun()
-	prison_fun()]]
+	prison_fun()
 
 	--interiors
 	--[[diamond_motors_fun()--enable as desired (включить по желанию)
@@ -11624,8 +11624,6 @@ function displayLoadedRes ( res )--старт ресурсов
 	shinterier_fun()
 	seagift_fun()
 	priceoffice_fun()]]
-
-	kingstone_fun()
 
 	for i,v in ipairs(no_col_object) do
 		local count = false
