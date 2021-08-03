@@ -4904,6 +4904,12 @@ g_05_ms_160 813 dipton
 05_edgestone_01_G 1537 dipton
 05_terrain_02_OM_e 1566 dipton
 dvere_L 18605 dipton
+EMD 5712 dipton
+Vagon_Pass 5757 dipton
+Vagon_Box 5745 dipton
+Vagon_Flat 5783 dipton
+Vagon_Tank 5789 dipton
+glass_05_34 5747 dipton
 12_statue02_G 726 highbrook
 12_00 1434 highbrook
 gvinterier 1284 highbrook

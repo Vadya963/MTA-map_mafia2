@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.79.13.16"/>
+<min_mta_version client="1.5.8-9.20723.0" server="1.5.8-9.20723.0" version="21.80.13.16"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -7557,6 +7557,18 @@
 <file src='kingstone/04_tunel_zbr02.dff'/>
 <file src='kingstone/04_tunel_zbr02.col'/>
 
+<file src='dipton/EMD.dff'/>
+<file src='dipton/EMD.col'/>
+<file src='dipton/Vagon_Pass.dff'/>
+<file src='dipton/Vagon_Pass.col'/>
+<file src='dipton/Vagon_Box.dff'/>
+<file src='dipton/Vagon_Box.col'/>
+<file src='dipton/Vagon_Flat.dff'/>
+<file src='dipton/Vagon_Flat.col'/>
+<file src='dipton/Vagon_Tank.dff'/>
+<file src='dipton/Vagon_Tank.col'/>
+<file src='dipton/glass_05_34.dff'/>
+<file src='dipton/glass_05_34.col'/>
 <file src='dipton/dvere_L.dff'/>
 <file src='dipton/dvere_L.col'/>
 <file src='dipton/05_i_cashA_02_G.dff'/>
