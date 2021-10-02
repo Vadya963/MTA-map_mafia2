@@ -1274,7 +1274,8 @@ local riverside = {
 {'06_drateny_plot_01_G', {{50.83363 ,1749.502 ,-16.21519 ,0 ,0 ,0}}, 0},
 {'06_fabr_rotunda_02_G', {{24.62614 ,1683.189 ,-19.39255 ,0 ,0 ,35},
 {-131.6898 ,1810.26 ,-18.79526 ,0 ,0 ,-110},
-{44.95514 ,1698.75 ,-18.64232 ,0 ,0 ,30}}, 0},
+{44.95514 ,1698.75 ,-18.64232 ,0 ,0 ,30},
+{-335.21890 ,1847.72200 ,-22.00708 ,0 ,0 ,-110}}, 0},
 {'06_gunshop', {{-283.0628 ,1622.077 ,-20.0642 ,0 ,0 ,0}}, 0},
 {'teren_okoli', {{25.70995 ,-15.24094 ,4.734521 ,0 ,0 ,0}}, 0},
 {'breh', {{38.93762 ,-14.83156 ,-3.483252 ,0 ,0 ,0}}, 0},
@@ -9424,6 +9425,9 @@ local no_col_object = {
 {'06_d_bouda_A_ins00_G', {{-302.5579 ,1790.583 ,-22.39741, 0,0,0}}, 18611, 'riverside'},
 {'06_coteA_i_08_G', {{33.28343+4 ,1542.56+210 ,-16.1243, 0,0,0}}, 18612, 'riverside'},
 {'06_Dum_A_01', {{-266.3064 ,1538.108 ,-23.10665, 0,0,-180}}, 18613, 'riverside'},
+--{'glass_06_03', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-311.008972167969, 1716.54309082031, -20.6438159942627, 0} }, 0},
+--{'06_coteA_i_18_G', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {142.922561645508, 1589.865234375, -22.0771446228027, 0} }, 0},
+
 
 {'03_OBRUBAKY', {{-1490.173+173 ,1366.133-403 ,0.9226873-19 ,0 ,0 ,-180},}, 792, 'greenfield'},
 {'03_teren203', {{-1877.168 ,1046.32 ,12.10801 ,0 ,0 ,0},}, 819, 'greenfield'},
@@ -11718,11 +11722,13 @@ function()
 	setElementPosition(source, 0,0,1000)
 end)
 
-function spawnplayer( ... )
-	setPlayerBlurLevel(source, 0)
-	spawnPlayer( source, -400.17102050781,803.42742919922,-18.945209503174+40 )
-	fadeCamera(source, true)
-	setCameraTarget(source, source)
-end
-addEvent("event_spawnplayer", true)
-addEventHandler("event_spawnplayer", root, spawnplayer)
+addEventHandler( "onPlayerResourceStart", root, 
+function (loadedResource)
+--The source of this event is the player who loaded the resource.
+	if getResourceName( loadedResource ) == "map_mafia2" then 
+		setPlayerBlurLevel(source, 0)
+		spawnPlayer( source, -400.17102050781,803.42742919922,-18.945209503174+40 )
+		fadeCamera(source, true)
+		setCameraTarget(source, source)
+	end
+end)
