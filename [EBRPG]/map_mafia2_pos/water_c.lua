@@ -61,8 +61,4 @@ function ( startedRes )
 			if obj then setElementDoubleSided(obj, false) end
 		end
 	end
-
-	setTimer(function()
-		triggerServerEvent("event_spawnplayer", localPlayer)
-	end, 1000, 1)
 end)

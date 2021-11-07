@@ -4940,7 +4940,6 @@ lis_p_horiz 881 riverside
 podlaha 882 riverside
 06_CCpistB_i_04_G 883 riverside
 06_CCkeep_i_04_G 884 riverside
-city61 1297 riverside
 06_Fact_A_00 1491 riverside
 06jer15_G 1492 riverside
 06jerabdfds_G 1493 riverside
@@ -4963,6 +4962,7 @@ fake_zastup_kanalu 1560 riverside
 06_d_bouda_A_ins00_G 18611 riverside
 06_coteA_i_08_G 18612 riverside
 06_Dum_A_01 18613 riverside
+glass_06_03 5746 riverside
 03_OBRUBAKY 792 greenfield
 03_teren203 819 greenfield
 03_teren201 820 greenfield
