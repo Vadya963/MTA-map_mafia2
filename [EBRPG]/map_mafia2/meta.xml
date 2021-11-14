@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.80.13.16"/>
+<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.81.13.16"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -8624,6 +8624,12 @@
 <file src='hillwood/14_hvezdarna_dvere.dff'/>
 <file src='hillwood/14_hvezdarna_dvere.col'/>
 
+<file src='riverside/06_w_carC_i_21_G.dff'/>
+<file src='riverside/06_w_carC_i_21_G.col'/>
+<file src='riverside/06_w_carB_i_14_G.dff'/>
+<file src='riverside/06_w_carB_i_14_G.col'/>
+<file src='riverside/06_w_carA_i_27_G.dff'/>
+<file src='riverside/06_w_carA_i_27_G.col'/>
 <file src='riverside/glass_06_03.dff'/>
 <file src='riverside/glass_06_03.col'/>
 <file src='riverside/06_pipes_chan_01_G.dff'/>
