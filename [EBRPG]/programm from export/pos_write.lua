@@ -74,3 +74,4 @@ for line in io.lines(pyt) do
 	end
 end
 file_new:close()
+file_new_euler:close()
