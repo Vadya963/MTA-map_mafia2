@@ -80,8 +80,20 @@ end
 
 local pyt_new = "C:\\test\\frame_new_copy.txt"
 local file_new = io.open(pyt_new, "w")
+local pyt_new_copy_euler = io.open("C:\\test\\frame_new_copy_euler.txt", "w")
 for i,v in ipairs(obj_t_copy) do
 	file_new:write(v.."\n")
+	for line in io.lines("C:\\test\\frame_new_euler.txt") do
+		if line ~= "" then
+			local obj1 = string.split(line, "{',")[1]
+			local obj2 = string.split(v, "{',-")[1]
+			if obj1 == obj2 then 
+				pyt_new_copy_euler:write(line.."\n")
+				break
+			end
+		end
+	end
 end
 file_new:close()
+pyt_new_copy_euler:close()
 print(os.date())
