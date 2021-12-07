@@ -4990,6 +4990,9 @@ Object02 670 hunters
 02_lana_01 737 hunters
 02_08 18629 hunters
 02_02 18630 hunters
+g02_30 5802 hunters
+g02_20 5583 hunters
+g02_17 5622 hunters
 Object90 674 sandisland
 Object07 676 sandisland
 Object33 680 sandisland

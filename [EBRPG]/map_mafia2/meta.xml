@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.81.13.16"/>
+<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.82.13.16"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -9084,6 +9084,12 @@
 <file src='greenfield/03_14.col'/>
 <file src='greenfield/03_55.col'/>
 
+<file src='hunters/g02_30.dff'/>
+<file src='hunters/g02_30.col'/>
+<file src='hunters/g02_20.dff'/>
+<file src='hunters/g02_20.col'/>
+<file src='hunters/g02_17.dff'/>
+<file src='hunters/g02_17.col'/>
 <file src='hunters/02_08.dff'/>
 <file src='hunters/02_08.col'/>
 <file src='hunters/02_02.dff'/>
