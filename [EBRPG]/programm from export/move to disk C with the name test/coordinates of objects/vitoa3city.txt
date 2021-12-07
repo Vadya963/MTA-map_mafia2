@@ -1,0 +1,3551 @@
+Object
+{
+0_Type: 472
+1_Type: 472
+2_Type: 472
+3_Type: 472
+4_Type: 472
+5_Type: 472
+6_Type: 1
+7_Type: 1
+8_Type: 1
+9_Type: 2
+10_Type: 1
+11_Type: 2
+12_Type: 1
+13_Type: 472
+14_Type: 472
+15_Type: 472
+16_Type: 472
+17_Type: 472
+18_Type: 1
+19_Type: 1
+20_Type: 1
+21_Type: 1
+22_Type: 2
+23_Type: 1
+24_Type: 1
+25_Type: 1
+26_Type: 1
+27_Type: 2
+28_Type: 1
+29_Type: 1
+30_Type: 1
+31_Type: 472
+32_Type: 1
+33_Type: 472
+34_Type: 2
+35_Type: 2
+36_Type: 2
+37_Type: 1
+38_Type: 1
+39_Type: 1
+40_Type: 1
+41_Type: 1
+42_Type: 1
+43_Type: 1
+44_Type: 472
+45_Type: 1
+46_Type: 1
+47_Type: 1
+48_Type: 1
+49_Type: 1
+50_Type: 1
+51_Type: 1
+52_Type: 0
+53_Type: 2
+54_Type: 472
+55_Type: 472
+56_Type: 2
+57_Type: 1
+58_Type: 1
+59_Type: 472
+60_Type: 0
+61_Type: 1
+62_Type: 1
+63_Type: 1
+64_Type: 1
+65_Type: 1
+66_Type: 2
+67_Type: 2
+68_Type: 0
+69_Type: 1
+70_Type: 2
+71_Type: 2
+72_Type: 1
+73_Type: 1
+74_Type: 1
+75_Type: 1
+76_Type: 1
+77_Type: 1
+78_Type: 1
+79_Type: 1
+80_Type: 1
+81_Type: 1
+82_Type: 0
+83_Type: 472
+84_Type: 1
+85_Type: 1
+86_Type: 1
+87_Type: 1
+88_Type: 1
+89_Type: 1
+90_Type: 1
+91_Type: 1
+92_Type: 1
+93_Type: 1
+94_Type: 1
+95_Type: 1
+96_Type: 1
+97_Type: 2
+98_Type: 2
+99_Type: 0
+100_Type: 1
+101_Type: 1
+102_Type: 1
+103_Type: 1
+104_Type: 1
+105_Type: 0
+106_Type: 1
+107_Type: 1
+108_Type: 2
+109_Type: 2
+110_Type: 2
+111_Type: 2
+112_Type: 1
+113_Type: 1
+114_Type: 2
+115_Type: 2
+116_Type: 1
+117_Type: 472
+118_Type: 1
+119_Type: 472
+120_Type: 2
+121_Type: 2
+122_Type: 2
+123_Type: 1
+124_Type: 1
+125_Type: 1
+126_Type: 1
+127_Type: 1
+128_Type: 1
+129_Type: 1
+130_Type: 1
+131_Type: 0
+132_Type: 1
+133_Type: 472
+134_Type: 0
+135_Type: 1
+136_Type: 2
+137_Type: 1
+138_Type: 1
+139_Type: 1
+140_Type: 1
+141_Type: 0
+142_Type: 0
+143_Type: 0
+144_Type: 0
+145_Type: 2
+146_Type: 1
+147_Type: 1
+148_Type: 1
+149_Type: 1
+150_Type: 0
+151_Type: 1
+152_Type: 472
+153_Type: 472
+154_Type: 1
+155_Type: 1
+156_Type: 1
+157_Type: 1
+158_Type: 1
+159_Type: 1
+160_Type: 1
+161_Type: 1
+162_Type: 1
+163_Type: 1
+164_Type: 1
+165_Type: 1
+166_Type: 1
+167_Type: 7
+168_Type: 1
+// Collision 0
+{
+obj|1
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-651.796081542969      939.613586425781       -9.78179740905762      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+obj|0100000000000000
+}
+
+// Collision 1
+{
+obj|CC01_Collision
+unknown_00_int: 1
+5.9604651880818E-08    -1                     0                      // Right
+1                      5.9604651880818E-08    0                      // Up
+0                      0                      1.00000011920929       // Backward
+0.00945312436670065    0.00390625             -1.16806638240814      // Translation X Y Z
+ParentIndex1: 331
+ParentIndex2: 297
+obj|285E229DBCE3205C
+}
+
+// Collision 2
+{
+obj|CC01_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+1.49011603056692E-09   9.53674295089968E-09   0.204465553164482      // Translation X Y Z
+ParentIndex1: 203
+ParentIndex2: 242
+obj|EAD9C27BF65EEB92
+}
+
+// Collision 3
+{
+obj|CC01_Collision
+unknown_00_int: 1
+5.9604651880818E-08    -1                     0                      // Right
+1                      5.9604651880818E-08    0                      // Up
+0                      0                      1.00000011920929       // Backward
+0.00945312436670065    0.00390625             -1.16806638240814      // Translation X Y Z
+ParentIndex1: 332
+ParentIndex2: 295
+obj|285E229DBCE3205C
+}
+
+// Collision 4
+{
+obj|CC01_Collision
+unknown_00_int: 1
+5.9604651880818E-08    -1                     0                      // Right
+1                      5.9604651880818E-08    0                      // Up
+0                      0                      1.00000011920929       // Backward
+0.00945312436670065    0.00390625             -1.16806638240814      // Translation X Y Z
+ParentIndex1: 329
+ParentIndex2: 241
+obj|285E229DBCE3205C
+}
+
+// Collision 5
+{
+obj|CC01_Collision
+unknown_00_int: 1
+5.9604651880818E-08    -1                     0                      // Right
+1                      5.9604651880818E-08    0                      // Up
+0                      0                      1.00000011920929       // Backward
+0.00945312436670065    0.00390625             -1.16806638240814      // Translation X Y Z
+ParentIndex1: 330
+ParentIndex2: 296
+obj|285E229DBCE3205C
+}
+
+// Single 6
+{
+obj|JF_skrin03
+unknown_00_int: 1
+5.9604651880818E-08    1                      0                      // Right
+-1                     5.9604651880818E-08    0                      // Up
+0                      0                      1.00000011920929       // Backward
+-651.679809570313      940.361328125          -6.59859561920166      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.79474925994873 -0.36739444732666 -1.356769323349
+Max: 0.794665217399597 0.414470881223679 1.35743093490601
+byte: 255
+MeshIndex: 1
+MaterialIndex: 78
+obj|OM_loznice_vybav.dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 7
+{
+obj|rucka_velka
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0.000166625977726653   0.0308366864919662     0.0173828117549419     // Translation X Y Z
+ParentIndex1: 306
+ParentIndex2: 228
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.0106684947386384 -0.0833743885159492 -0.00144688633736223
+Max: 0.0106685003265738 0.0833746790885925 0.00144688633736223
+byte: 1
+MeshIndex: 56
+MaterialIndex: 151
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 8
+{
+obj|x_shade__01
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-650.490295410156      937.506286621094       -6.16791009902954      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 637534256
+
+Min: -1.52644979953766 -1.74055814743042 -1.85281240940094
+Max: 1.52650511264801 1.7405344247818 1.85281217098236
+byte: 255
+MeshIndex: 54
+MaterialIndex: 144
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Frame 9
+{
+obj|VA3_zidle
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|VA3_zidle
+}
+
+// Single 10
+{
+obj|b_prah
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-650.423889160156      944.981872558594       -6.15980100631714      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.707304835319519 -1.75375699996948 -1.80197811126709
+Max: 0.575563073158264 -1.48588585853577 -1.78198719024658
+byte: 255
+MeshIndex: 12
+MaterialIndex: 93
+obj|OM_koupelna[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Frame 11
+{
+obj|X99_VA3_stolicka_W2
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|99_VA3_stolicka[W]
+}
+
+// Single 12
+{
+obj|VESAK
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-649.381896972656      942.175231933594       -7.79117345809937      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.223306968808174 -0.284174174070358 -0.179113194346428
+Max: 0.3281389772892 0.284167259931564 1.76298189163208
+byte: 255
+MeshIndex: 11
+MaterialIndex: 92
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Collision 13
+{
+obj|PhxBox05_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0.00189000368118286    // Translation X Y Z
+ParentIndex1: 298
+ParentIndex2: 241
+obj|334521B7EDDA4AF3
+}
+
+// Collision 14
+{
+obj|PhxBox05_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0.00189000368118286    // Translation X Y Z
+ParentIndex1: 301
+ParentIndex2: 296
+obj|334521B7EDDA4AF3
+}
+
+// Collision 15
+{
+obj|PhxBox05_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0.00189000368118286    // Translation X Y Z
+ParentIndex1: 299
+ParentIndex2: 297
+obj|334521B7EDDA4AF3
+}
+
+// Collision 16
+{
+obj|PhxBox05_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0.00189000368118286    // Translation X Y Z
+ParentIndex1: 300
+ParentIndex2: 295
+obj|334521B7EDDA4AF3
+}
+
+// Collision 17
+{
+obj|coll_noha_01_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.494990229606628     -0.402825832366943     -0.0337176322937012    // Translation X Y Z
+ParentIndex1: 271
+ParentIndex2: 211
+obj|D499ECE5B0C4600F
+}
+
+// Single 18
+{
+obj|okno02
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-650.291381835938      932.802429199219       -6.25980091094971      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -1.0357049703598 -0.356115102767944 -1.64795327186584
+Max: 1.03677189350128 0.150021865963936 1.30346131324768
+byte: 255
+MeshIndex: 40
+MaterialIndex: 125
+obj|OM_kuchyn_vyb_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 19
+{
+obj|okno03
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-653.633056640625      932.802429199219       -6.25980091094971      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -1.03569102287292 -0.35613676905632 -1.72982597351074
+Max: 1.03677749633789 0.149966657161713 1.30346131324768
+byte: 255
+MeshIndex: 41
+MaterialIndex: 126
+obj|OM_loznice_vybav.dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 20
+{
+obj|okno01
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-647.700744628906      932.802429199219       -6.25980091094971      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -1.0357049703598 -0.356115102767944 -1.64795327186584
+Max: 1.03677189350128 0.150021865963936 1.30346131324768
+byte: 255
+MeshIndex: 40
+MaterialIndex: 124
+obj|OM_kuchyn_vyb_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 21
+{
+obj|okno04
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-656.223754882813      932.802429199219       -6.25980091094971      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -1.03569090366364 -0.35613676905632 -1.72982597351074
+Max: 1.03677761554718 0.149966657161713 1.30346131324768
+byte: 255
+MeshIndex: 42
+MaterialIndex: 127
+obj|OM_loznice_vybav.dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Frame 22
+{
+obj|bystrouska
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|bystrouska
+}
+
+// Single 23
+{
+obj|spina02
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-648.991394042969      935.972473144531       -7.95410680770874      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -2.98443746566772 -3.21295881271362 -0.0050652539357543
+Max: 2.98442816734314 3.21293783187866 0.00503650680184364
+byte: 255
+MeshIndex: 49
+MaterialIndex: 136
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 24
+{
+obj|spina03
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-655.939697265625      935.868469238281       -6.15264654159546      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -1.57577514648438 -3.12526941299438 -1.80436706542969
+Max: 1.57580816745758 3.12535238265991 1.80436658859253
+byte: 255
+MeshIndex: 50
+MaterialIndex: 137
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 25
+{
+obj|spina01
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-650.5400390625        941.308715820313       -7.9591760635376       // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -1.55869841575623 -1.92895996570587 -2.75185448117554E-06
+Max: 1.55871284008026 1.9289425611496 -2.75185448117554E-06
+byte: 255
+MeshIndex: 48
+MaterialIndex: 135
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 26
+{
+obj|spina05
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-653.289733886719      935.856140136719       -6.15264654159546      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -1.07484400272369 -3.11642408370972 -1.80436408519745
+Max: 1.07486069202423 3.11634254455566 1.80436384677887
+byte: 255
+MeshIndex: 51
+MaterialIndex: 138
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Frame 27
+{
+obj|PHA_koste1
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|PHA_koste1
+}
+
+// Single 28
+{
+obj|body
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+1.89244744319694E-07   -1.90734859017994E-08  0.521545350551605      // Translation X Y Z
+ParentIndex1: 242
+ParentIndex2: 242
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.235636591911316 -0.235808297991753 -0.530265390872955
+Max: 0.235645651817322 0.235797673463821 0.530265390872955
+byte: 255
+MeshIndex: 70
+MaterialIndex: 167
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 29
+{
+obj|kytka
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-646.624267578125      933.418823242188       -5.92339944839478      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.387847125530243 -0.529640436172485 -0.501110315322876
+Max: 0.331757664680481 0.441957592964172 0.501111149787903
+byte: 255
+MeshIndex: 39
+MaterialIndex: 123
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 30
+{
+obj|liska
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-1.43051144263495E-08  0                      -9.53674295089968E-09  // Translation X Y Z
+ParentIndex1: 197
+ParentIndex2: 197
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.11847360432148 -0.449622869491577 -0.308905392885208
+Max: 0.118467018008232 0.449616193771362 0.308905392885208
+byte: 255
+MeshIndex: 68
+MaterialIndex: 164
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Collision 31
+{
+obj|CC39_Collision
+unknown_00_int: 1
+-1.19209289550781E-07  1                      2.08616256713867E-07   // Right
+8.94069671630859E-08   -2.38418579101563E-07  1                      // Up
+1                      8.94069671630859E-08   -1.19209289550781E-07  // Backward
+6.51878595547828E-09   1.80060066856669E-09   -3.17678616745809E-09  // Translation X Y Z
+ParentIndex1: 282
+ParentIndex2: 202
+obj|B2CC91748E67F669
+}
+
+// Single 32
+{
+obj|byt_vybaveni03
+unknown_00_int: 1
+1.19209289550781E-07   -1                     -1.49011611938477E-07  // Right
+-2.98023223876953E-08  -1.19209289550781E-07  0.999999940395355      // Up
+-1                     -5.96046447753906E-08  0                      // Backward
+-646.746276855469      937.586853027344       -6.1313328742981       // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.212824702262878 -0.20612096786499 -2.14576721191406E-06
+Max: 0.212824106216431 0.206125617027283 -2.14576721191406E-06
+byte: 255
+MeshIndex: 31
+MaterialIndex: 114
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Collision 33
+{
+obj|coll_noha_04_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0.495192855596542      -0.402825832366943     -0.0337176322937012    // Translation X Y Z
+ParentIndex1: 271
+ParentIndex2: 211
+obj|7047C17DC6A53031
+}
+
+// Frame 34
+{
+obj|phyzics_scene_dumacek
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|phyzics_scene_dumacek
+}
+
+// Frame 35
+{
+obj|pinup46_ps
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|pinup46_ps
+}
+
+// Frame 36
+{
+obj|X99_VA3_stul_W
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|99_VA3_stul[W]
+}
+
+// Single 37
+{
+obj|vypinac04
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-652.243408203125      936.64013671875        -6.75980138778687      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.0140162631869316 -0.0470963567495346 -0.0781533345580101
+Max: 0.0139673110097647 0.047093540430069 0.0781538859009743
+byte: 255
+MeshIndex: 53
+MaterialIndex: 143
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 38
+{
+obj|vypinac03
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-646.03515625          939.770141601563       -6.45101690292358      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.0140162631869316 -0.0470963567495346 -0.0781533345580101
+Max: 0.0139673110097647 0.047093540430069 0.0781538859009743
+byte: 255
+MeshIndex: 53
+MaterialIndex: 142
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 39
+{
+obj|vypinac02
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-649.003723144531      939.876953125          -6.47134447097778      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.0140162631869316 -0.0470963567495346 -0.0781533345580101
+Max: 0.0139673110097647 0.047093540430069 0.0781538859009743
+byte: 255
+MeshIndex: 53
+MaterialIndex: 141
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 40
+{
+obj|vypinac01
+unknown_00_int: 1
+5.9604651880818E-08    -1                     0                      // Right
+1                      5.9604651880818E-08    0                      // Up
+0                      0                      1.00000011920929       // Backward
+-651.568420410156      939.179565429688       -6.75980138778687      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.0140162631869316 -0.0470963567495346 -0.0781533345580101
+Max: 0.0139673110097647 0.047093540430069 0.0781538859009743
+byte: 255
+MeshIndex: 53
+MaterialIndex: 140
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 41
+{
+obj|byt_gauc
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-651.183227539063      933.751831054688       -7.19254922866821      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.727399230003357 -0.952239036560059 -0.766313314437866
+Max: 0.727369666099548 0.952414035797119 0.0714200884103775
+byte: 255
+MeshIndex: 20
+MaterialIndex: 101
+obj|OM_kuchyn_vyb_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 42
+{
+obj|rucka_mala
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.0113424677401781    -6.55674593872391E-05  0.0144824218004942     // Translation X Y Z
+ParentIndex1: 325
+ParentIndex2: 228
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.0477930344641209 -0.0106729306280613 -0.00144688633736223
+Max: 0.0477930381894112 0.0106732212007046 0.00144688633736223
+byte: 2
+MeshIndex: 56
+MaterialIndex: 152
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 43
+{
+obj|kuchyn_linka02
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-648.991394042969      935.970458984375       -6.16899299621582      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: 0.00572630763053894 0.562409818172455 -1.78222167491913
+Max: 1.89910221099854 1.34560108184814 0.827353596687317
+byte: 255
+MeshIndex: 38
+MaterialIndex: 122
+obj|OM_linka_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Collision 44
+{
+obj|C_liska_04_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0.000344414700521156   0.0379492193460464     -0.284526020288467     // Translation X Y Z
+ParentIndex1: 205
+ParentIndex2: 197
+obj|C6AF7545F348BEAA
+}
+
+// Single 45
+{
+obj|Object171
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-650.291381835938      932.802429199219       -6.25980234146118      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.407572329044342 -0.148923337459564 -0.0311222840100527
+Max: 0.407587677240372 -0.148923337459564 0.881451368331909
+byte: 255
+MeshIndex: 8
+MaterialIndex: 86
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 46
+{
+obj|Object172
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-653.633056640625      932.802429199219       -6.25980234146118      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.407572329044342 -0.148923337459564 -0.0311222840100527
+Max: 0.407587677240372 -0.148923337459564 0.881451368331909
+byte: 255
+MeshIndex: 8
+MaterialIndex: 87
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 47
+{
+obj|Object173
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-656.223754882813      932.802429199219       -6.25980234146118      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.407572329044342 -0.148923337459564 -0.0311222840100527
+Max: 0.407587677240372 -0.148923337459564 0.881451368331909
+byte: 255
+MeshIndex: 8
+MaterialIndex: 88
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 48
+{
+obj|Object174
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-647.700744628906      932.802429199219       -6.25980091094971      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.407572329044342 -0.148923337459564 -0.0311222840100527
+Max: 0.407587677240372 -0.148923337459564 0.881451368331909
+byte: 255
+MeshIndex: 8
+MaterialIndex: 89
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 49
+{
+obj|Object153
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-647.701904296875      932.751708984375       -5.86046361923218      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.448937058448792 -0.0418933108448982 -0.50606244802475
+Max: 0.448906242847443 0.0418015904724598 0.506061971187592
+byte: 255
+MeshIndex: 5
+MaterialIndex: 83
+obj|OM_loznice_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 50
+{
+obj|KUCHYN
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-649.002990722656      935.047241210938       -6.16674137115479      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1711276080
+
+Min: -3.01165723800659 -2.30392575263977 -1.80694031715393
+Max: 3.01158761978149 2.30388236045837 1.80694031715393
+byte: 255
+MeshIndex: 2
+MaterialIndex: 79
+obj|OM_kuchyn_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 51
+{
+obj|bathbox03
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      5.91278080719349E-07   0.195362314581871      // Translation X Y Z
+ParentIndex1: 231
+ParentIndex2: 231
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.0708889737725258 -0.1581741720438 -0.195362567901611
+Max: 0.0708860084414482 0.158174753189087 0.195362448692322
+byte: 255
+MeshIndex: 67
+MaterialIndex: 163
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Joint 52
+{
+obj|deform_obj
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: 242
+ParentIndex2: 242
+unknown_byte: 0
+}
+// Frame 53
+{
+obj|hodiny1_beer
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|hodiny1_beer
+}
+
+// Collision 54
+{
+obj|CCtelo_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+1.43051144263495E-08   0                      0                      // Translation X Y Z
+ParentIndex1: 205
+ParentIndex2: 197
+obj|9117354F3AC251E7
+}
+
+// Collision 55
+{
+obj|coll_noha_02_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.494990229606628     0.409923851490021      -0.0337176322937012    // Translation X Y Z
+ParentIndex1: 271
+ParentIndex2: 211
+obj|BC88170F6B3555CC
+}
+
+// Frame 56
+{
+obj|VA3_pracprasek_W
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|VA3_pracprasek[W]
+}
+
+// Single 57
+{
+obj|byt_skrin02
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-651.490356445313      935.934265136719       -6.83114862442017      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.474928140640259 -0.523802042007446 -1.10324466228485
+Max: -2.11038423003629E-05 0.523876130580902 1.10324442386627
+byte: 255
+MeshIndex: 29
+MaterialIndex: 112
+obj|OM_kuchyn_vyb_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 58
+{
+obj|byt_skrin01
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-650.491394042969      938.072998046875       -6.15980100631714      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: 0.903156995773315 -0.644334435462952 -1.80173897743225
+Max: 1.45983040332794 0.547946453094482 0.534193098545074
+byte: 255
+MeshIndex: 28
+MaterialIndex: 111
+obj|OM_kuchyn_vyb_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Collision 59
+{
+obj|coll_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      5.96046447753906E-08   -0.999999940395355     // Up
+0                      0.999999940395355      5.96046447753906E-08   // Backward
+-0.000166625977726653  3.72529029846191E-09   -0.0001250913774129    // Translation X Y Z
+ParentIndex1: 339
+ParentIndex2: 228
+obj|183E2EB65A295CB1
+}
+
+// Joint 60
+{
+obj|Point05
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.000875854457262903  -0.0339062474668026    0.0205823127180338     // Translation X Y Z
+ParentIndex1: 343
+ParentIndex2: 311
+unknown_byte: 0
+}
+// Single 61
+{
+obj|popel
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      -1.66893006081636E-08  // Translation X Y Z
+ParentIndex1: 245
+ParentIndex2: 245
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.0904465317726135 -0.0901017785072327 -0.0320249274373055
+Max: 0.0904465615749359 0.0901010930538177 0.0320248119533062
+byte: 255
+MeshIndex: 62
+MaterialIndex: 158
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 62
+{
+obj|zasuvka05
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-645.992614746094      933.897155761719       -7.0897912979126       // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.00348078622482717 -0.0469887405633926 -0.0781537368893623
+Max: 0.00345665984787047 0.0472011640667915 0.0781534984707832
+byte: 255
+MeshIndex: 55
+MaterialIndex: 149
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 63
+{
+obj|zasuvka01
+unknown_00_int: 1
+5.9604651880818E-08    -1                     0                      // Right
+1                      5.9604651880818E-08    0                      // Up
+0                      0                      1.00000011920929       // Backward
+-648.695922851563      937.235656738281       -6.77322959899902      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.00348078622482717 -0.0469887405633926 -0.0781537368893623
+Max: 0.00345665984787047 0.0472011640667915 0.0781534984707832
+byte: 255
+MeshIndex: 55
+MaterialIndex: 146
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 64
+{
+obj|zasuvka02
+unknown_00_int: 1
+3.57627925495763E-07   1                      0                      // Right
+-1                     3.57627925495763E-07   0                      // Up
+0                      0                      1.00000011920929       // Backward
+-646.277282714844      937.45263671875        -6.278883934021        // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.00348078622482717 -0.0469887405633926 -0.0781537368893623
+Max: 0.00345665984787047 0.0472011640667915 0.0781534984707832
+byte: 255
+MeshIndex: 55
+MaterialIndex: 147
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 65
+{
+obj|zasuvka03
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-652.232543945313      936.497802734375       -6.75980138778687      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.00348078622482717 -0.0469887405633926 -0.0781537368893623
+Max: 0.00345665984787047 0.0472011640667915 0.0781534984707832
+byte: 255
+MeshIndex: 55
+MaterialIndex: 148
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Frame 66
+{
+obj|X99_vito_A3_okno
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|99_vito_A3_okno
+}
+
+// Frame 67
+{
+obj|Tv07
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|Tv07
+}
+
+// Joint 68
+{
+obj|mass_mala
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0.0113424677401781     6.55639450997114E-05   4.88281293655746E-05   // Translation X Y Z
+ParentIndex1: 217
+ParentIndex2: 228
+unknown_byte: 0
+}
+// Single 69
+{
+obj|dvere_koupelna
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.0063367853872478    -0.0053767953068018    1.1688894033432        // Translation X Y Z
+ParentIndex1: 273
+ParentIndex2: 273
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.578768908977509 -0.0711643695831299 -1.16878652572632
+Max: 0.578814923763275 0.0706883519887924 1.16878652572632
+byte: 255
+MeshIndex: 75
+MaterialIndex: 172
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Frame 70
+{
+obj|popelnik6
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|popelnik6
+}
+
+// Frame 71
+{
+obj|X99_vito_A3_loznice
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|99_vito_A3_loznice
+}
+
+// Single 72
+{
+obj|LOZNICE
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-654.876770019531      935.857604980469       -6.15170621871948      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1711276080
+
+Min: -2.65257930755615 -3.12178945541382 -1.80885672569275
+Max: 2.65262746810913 3.1218581199646 1.80885672569275
+byte: 255
+MeshIndex: 3
+MaterialIndex: 80
+obj|OM_loznice_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 73
+{
+obj|playboy46
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: 210
+ParentIndex2: 210
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.145827189087868 -0.191329658031464 0
+Max: 0.142199248075485 0.189604789018631 0.0134420087561011
+byte: 255
+MeshIndex: 77
+MaterialIndex: 174
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 74
+{
+obj|byt_bath_obj__02
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-646.477478027344      940.783935546875       -7.40905141830444      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.445025622844696 -0.573269307613373 -0.559840679168701
+Max: 0.44504588842392 0.573310434818268 0.559840679168701
+byte: 255
+MeshIndex: 14
+MaterialIndex: 95
+obj|OM_koupelna_vybav[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 75
+{
+obj|byt_bath_obj__03
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-647.221496582031      938.658325195313       -6.31388473510742      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -1.59473049640656 -1.21861016750336 -1.64582026004791
+Max: 1.59472441673279 1.21857023239136 1.64582026004791
+byte: 255
+MeshIndex: 15
+MaterialIndex: 96
+obj|OM_koupelna_vybav[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 76
+{
+obj|byt_bath_obj__01
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-648.342712402344      940.793395996094       -6.68480014801025      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.513665497303009 -0.749979853630066 -1.27499997615814
+Max: -0.442832142114639 0.750052213668823 1.27499997615814
+byte: 255
+MeshIndex: 13
+MaterialIndex: 94
+obj|OM_koupelna_vybav[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 77
+{
+obj|rolety01
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-650.293029785156      932.751708984375       -5.72753524780273      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.448935240507126 -0.0418933108448982 -0.373133540153503
+Max: 0.448908418416977 0.041822511702776 0.37313324213028
+byte: 255
+MeshIndex: 46
+MaterialIndex: 133
+obj|OM_loznice_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 78
+{
+obj|byt_police04
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-657.392883300781      937.070617675781       -6.69250917434692      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.121895551681519 -0.315076619386673 -0.0741696134209633
+Max: 0.121837466955185 0.314978927373886 0.0741703808307648
+byte: 255
+MeshIndex: 24
+MaterialIndex: 106
+obj|OM_loznice_vybav.dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 79
+{
+obj|byt_police03
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-657.392883300781      933.882568359375       -6.69250917434692      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.121895551681519 -0.315076619386673 -0.0741696134209633
+Max: 0.121837466955185 0.314978927373886 0.0741703808307648
+byte: 255
+MeshIndex: 24
+MaterialIndex: 105
+obj|OM_loznice_vybav.dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 80
+{
+obj|byt_police02
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-651.868041992188      933.852172851563       -6.83751487731934      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.121860980987549 -0.722985744476318 -5.96046447753906E-07
+Max: 0.12186748534441 0.722965836524963 0.423169761896133
+byte: 255
+MeshIndex: 23
+MaterialIndex: 104
+obj|OM_kuchyn_vyb_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 81
+{
+obj|byt_police01
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-653.679870605469      935.52685546875        -6.15208864212036      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: 1.19144368171692 -1.20083475112915 -0.413849949836731
+Max: 1.44801902770996 -0.153431862592697 -0.376282840967178
+byte: 255
+MeshIndex: 22
+MaterialIndex: 103
+obj|OM_loznice_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Joint 82
+{
+obj|joint_na_zdi
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      5.96046447753906E-08   -0.999999940395355     // Up
+0                      0.999999940395355      5.96046447753906E-08   // Backward
+0                      0.0241796877235174     0.0836507678031921     // Translation X Y Z
+ParentIndex1: 339
+ParentIndex2: 228
+unknown_byte: 0
+}
+// Collision 83
+{
+obj|C_dvere_koupelna_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0.0242630280554295     6.9429248128472E-08    -0.00639474391937256   // Translation X Y Z
+ParentIndex1: 244
+ParentIndex2: 273
+obj|A88CAC49FCCF3741
+}
+
+// Single 84
+{
+obj|Object17
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-648.991333007813      936.122497558594       -4.36880493164063      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -2.9844765663147 -3.36295890808105 -3.03445267491043E-06
+Max: 2.98436999320984 3.36296463012695 -3.03445267491043E-06
+byte: 255
+MeshIndex: 7
+MaterialIndex: 85
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 85
+{
+obj|Object16
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-648.991394042969      935.970458984375       -6.16899299621582      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: 0.0837837010622025 0.96203887462616 -0.0798535346984863
+Max: 0.998862445354462 0.963604807853699 0.721696734428406
+byte: 255
+MeshIndex: 6
+MaterialIndex: 84
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 86
+{
+obj|Object15
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-656.221069335938      932.751708984375       -5.86046361923218      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.448937058448792 -0.0418933108448982 -0.50606244802475
+Max: 0.448906242847443 0.0418015904724598 0.506061971187592
+byte: 255
+MeshIndex: 5
+MaterialIndex: 82
+obj|OM_loznice_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 87
+{
+obj|Object14
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.00167480460368097   -0.00235160812735558   0.301000446081162      // Translation X Y Z
+ParentIndex1: 290
+ParentIndex2: 290
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.270946204662323 -0.228350162506104 -0.299357652664185
+Max: 0.270949631929398 0.22834387421608 0.299357652664185
+byte: 255
+MeshIndex: 65
+MaterialIndex: 161
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 88
+{
+obj|Object14
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.00167480460368097   -0.00235160812735558   0.301000446081162      // Translation X Y Z
+ParentIndex1: 289
+ParentIndex2: 289
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.270946204662323 -0.228350162506104 -0.299357652664185
+Max: 0.270949631929398 0.22834387421608 0.299357652664185
+byte: 255
+MeshIndex: 65
+MaterialIndex: 161
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 89
+{
+obj|Object14
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.00167480460368097   -0.00235160812735558   0.301000446081162      // Translation X Y Z
+ParentIndex1: 186
+ParentIndex2: 186
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.270946204662323 -0.228350162506104 -0.299357652664185
+Max: 0.270949631929398 0.22834387421608 0.299357652664185
+byte: 255
+MeshIndex: 65
+MaterialIndex: 161
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 90
+{
+obj|Object19
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-653.295288085938      935.861206054688       -4.48089456558228      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -1.06929695606232 -3.1180272102356 -0.138058468699455
+Max: 1.06927025318146 3.11807203292847 0.138054549694061
+byte: 255
+MeshIndex: 9
+MaterialIndex: 90
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 91
+{
+obj|Object18
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+2.0407030582428        -0.0381250008940697    1.04161369800568       // Translation X Y Z
+ParentIndex1: 286
+ParentIndex2: 286
+unknown_byte: 0
+flags: 1677721648
+
+Min: -2.99877762794495 -1.57888638973236 -0.830872178077698
+Max: 2.99800658226013 1.57885253429413 0.830874085426331
+byte: 255
+MeshIndex: 60
+MaterialIndex: 156
+obj|OM_CO_stehovani.dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 92
+{
+obj|Object27
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-655.939819335938      935.861328125          -4.48089981079102      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -1.57529723644257 -3.11810541152954 -0.138053894042969
+Max: 1.57532143592834 3.11802911758423 0.138060688972473
+byte: 255
+MeshIndex: 10
+MaterialIndex: 91
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 93
+{
+obj|Object30
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.379062503576279     1.02890622615814       0.703244626522064      // Translation X Y Z
+ParentIndex1: 283
+ParentIndex2: 283
+unknown_byte: 0
+flags: 1677721648
+
+Min: -2.11442756652832 -2.58496022224426 -0.80529773235321
+Max: 2.08630013465881 2.58487486839294 0.720087766647339
+byte: 255
+MeshIndex: 64
+MaterialIndex: 160
+obj|OM_CO_stehovani.dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 94
+{
+obj|Object33
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0.367265611886978      -0.401250004768372     0.463164061307907      // Translation X Y Z
+ParentIndex1: 284
+ParentIndex2: 284
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.881412327289581 -1.71724450588226 -0.664499461650848
+Max: 0.881376147270203 1.71753513813019 0.664485573768616
+byte: 255
+MeshIndex: 63
+MaterialIndex: 159
+obj|OM_CO_stehovani.dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 95
+{
+obj|byt_kreslo
+unknown_00_int: 1
+-0.139173045754433     -0.990268111228943     0                      // Right
+0.990268111228943      -0.139173045754433     0                      // Up
+0                      0                      1.00000011920929       // Backward
+-653.237670898438      933.397155761719       -7.19254922866821      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.475181579589844 -0.952250719070435 -0.766313314437866
+Max: 0.727325439453125 0.192411974072456 0.0714318677783012
+byte: 255
+MeshIndex: 21
+MaterialIndex: 102
+obj|OM_loznice_vybav.dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 96
+{
+obj|stul
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.00125488277990371   0.00254035950638354    0.425109058618546      // Translation X Y Z
+ParentIndex1: 211
+ParentIndex2: 211
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.707351505756378 -0.650481879711151 -0.423717647790909
+Max: 0.708997011184692 0.645157635211945 0.373224705457687
+byte: 255
+MeshIndex: 66
+MaterialIndex: 162
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Frame 97
+{
+obj|VA3_zidle1
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|VA3_zidle
+}
+
+// Frame 98
+{
+obj|X99_vito_A3_koup
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|99_vito_A3_koup
+}
+
+// Joint 99
+{
+obj|mass_velka
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.000166625977726653  -0.030836695805192     1.95312550204108E-05   // Translation X Y Z
+ParentIndex1: 182
+ParentIndex2: 228
+unknown_byte: 0
+}
+// Single 100
+{
+obj|obr_original
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-1.29699708395492E-06  -0.178505823016167     0.330226927995682      // Translation X Y Z
+ParentIndex1: 203
+ParentIndex2: 242
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.151481106877327 -0.016388475894928 -0.119693234562874
+Max: 0.151478692889214 0.0163919776678085 0.119693234562874
+byte: 255
+MeshIndex: 71
+MaterialIndex: 168
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 101
+{
+obj|chodba
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-650.44189453125       941.330688476563       -6.16755056381226      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1711276080
+
+Min: -1.64949822425842 -1.93728697299957 -1.80774962902069
+Max: 1.64947926998138 1.93734514713287 1.80774962902069
+byte: 255
+MeshIndex: 32
+MaterialIndex: 115
+obj|OM_koupelna[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 102
+{
+obj|predsin_skrinka
+unknown_00_int: 1
+5.9604651880818E-08    0                      1                      // Right
+0                      1.00000011920929       0                      // Up
+-1                     0                      5.9604651880818E-08    // Backward
+-651.896606445313      942.18310546875        -6.46233606338501      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.76301896572113 -0.340243339538574 -0.193735599517822
+Max: 1.49586224555969 0.466396510601044 0.447246074676514
+byte: 255
+MeshIndex: 44
+MaterialIndex: 130
+obj|OM_koupelna_vybav[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 103
+{
+obj|obr_rozbita
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-1.10298390154639E-06  -0.156218975782394     0.851772129535675      // Translation X Y Z
+ParentIndex1: 227
+ParentIndex2: 242
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.151481091976166 -0.0323030315339565 -0.119693197309971
+Max: 0.151478707790375 0.0323006249964237 0.119693271815777
+byte: 255
+MeshIndex: 72
+MaterialIndex: 169
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 104
+{
+obj|vetrak_lopatky
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.0182095337659121    0                      0.00564081175252795    // Translation X Y Z
+ParentIndex1: 235
+ParentIndex2: 311
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.156689673662186 -0.000873109558597207 -0.165959969162941
+Max: 0.1566993445158 0.00086911377729848 0.165959969162941
+byte: 1
+MeshIndex: 69
+MaterialIndex: 166
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Joint 105
+{
+obj|pant
+unknown_00_int: 1
+-3.57627868652344E-07  1                      0                      // Right
+-1                     -3.57627868652344E-07  0                      // Up
+0                      0                      1                      // Backward
+-0.566776037216187     0.00234796619042754    -3.0517577442879E-07   // Translation X Y Z
+ParentIndex1: 244
+ParentIndex2: 273
+unknown_byte: 0
+}
+// Single 106
+{
+obj|predsin_zrcadlo
+unknown_00_int: 1
+5.9604651880818E-08    0                      1                      // Right
+0                      1.00000011920929       0                      // Up
+-1                     0                      5.9604651880818E-08    // Backward
+-651.896606445313      942.18310546875        -6.46233606338501      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.74967348575592 -0.260307312011719 -0.171693086624146
+Max: 0.205851584672928 0.377774000167847 -0.171693086624146
+byte: 255
+MeshIndex: 45
+MaterialIndex: 131
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 107
+{
+obj|Line01
+unknown_00_int: 1
+0                      2.98023223876953E-08   1                      // Right
+1                      0                      2.98023223876953E-08   // Up
+2.98023223876953E-08   1                      0                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: 202
+ParentIndex2: 202
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.18506383895874 -0.460272282361984 -0.0506216324865818
+Max: 0.185063719749451 0.966758787631989 0.0506216548383236
+byte: 255
+MeshIndex: 58
+MaterialIndex: 154
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Frame 108
+{
+obj|VA3_stehovani_4
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|VA3_stehovani_4
+}
+
+// Frame 109
+{
+obj|VA3_stehovani_1
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|VA3_stehovani_1
+}
+
+// Frame 110
+{
+obj|VA3_stehovani_2
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|VA3_stehovani_2
+}
+
+// Frame 111
+{
+obj|VA3_stehovani_3
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|VA3_stehovani_3
+}
+
+// Single 112
+{
+obj|O
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-650.488891601563      938.144714355469       -6.15980100631714      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1711276080
+
+Min: -1.50250053405762 -1.27867186069489 -1.79999995231628
+Max: 1.50255417823792 1.27869057655334 1.79999995231628
+byte: 255
+MeshIndex: 4
+MaterialIndex: 81
+obj|OM_kuchyn_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 113
+{
+obj|krucifix01
+unknown_00_int: 1
+0.999390840530396      0                      -0.0348994955420494    // Right
+0                      1                      0                      // Up
+0.0348994955420494     0                      0.999390840530396      // Backward
+-650.530700683594      939.40966796875        -4.92389869689941      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.144410476088524 -0.0126593010500073 -0.249817192554474
+Max: 0.144358679652214 0.0249352883547544 0.249817192554474
+byte: 255
+MeshIndex: 37
+MaterialIndex: 121
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Frame 114
+{
+obj|X99_VA3_stolicka_W_02
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|99_VA3_stolicka[W]
+}
+
+// Frame 115
+{
+obj|X99_VA3_stolicka_W_03
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|99_VA3_stolicka[W]
+}
+
+// Single 116
+{
+obj|koupelna
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-647.411315917969      939.837463378906       -6.15980100631714      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1711276080
+
+Min: -1.41752016544342 -2.40182375907898 -1.80000054836273
+Max: 1.41753554344177 2.40180397033691 1.80000054836273
+byte: 255
+MeshIndex: 36
+MaterialIndex: 119
+obj|OM_koupelna[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Collision 117
+{
+obj|C_popel_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      -0.00704548321664333   // Translation X Y Z
+ParentIndex1: 236
+ParentIndex2: 245
+obj|FD1956C3E03D7F10
+}
+
+// Single 118
+{
+obj|postel04
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-656.260009765625      936.130126953125       -7.38387012481689      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -1.17647743225098 -0.595622897148132 -0.572499394416809
+Max: 1.27179050445557 0.587445080280304 0.462745785713196
+byte: 255
+MeshIndex: 43
+MaterialIndex: 129
+obj|OM_potel[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Collision 119
+{
+obj|C_dvere_loznice_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0.000343015708494931   7.96135353198224E-08   -0.00235581398010254   // Translation X Y Z
+ParentIndex1: 324
+ParentIndex2: 246
+obj|BF5A9E7AB0C79FCF
+}
+
+// Frame 120
+{
+obj|X99_vito_A3_okno01
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|99_vito_A3_okno
+}
+
+// Frame 121
+{
+obj|X99_vito_A3_okno03
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|99_vito_A3_okno
+}
+
+// Frame 122
+{
+obj|X99_vito_A3_okno02
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|99_vito_A3_okno
+}
+
+// Single 123
+{
+obj|okno_sklo
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: 329
+ParentIndex2: 241
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.411107778549194 0.0025476694572717 -0.42715322971344
+Max: 0.404039591550827 0.0025476694572717 0.438575476408005
+byte: 255
+MeshIndex: 74
+MaterialIndex: 171
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 124
+{
+obj|okno_sklo
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: 331
+ParentIndex2: 297
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.411107778549194 0.0025476694572717 -0.42715322971344
+Max: 0.404039591550827 0.0025476694572717 0.438575476408005
+byte: 255
+MeshIndex: 74
+MaterialIndex: 171
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 125
+{
+obj|okno_sklo
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: 332
+ParentIndex2: 295
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.411107778549194 0.0025476694572717 -0.42715322971344
+Max: 0.404039591550827 0.0025476694572717 0.438575476408005
+byte: 255
+MeshIndex: 74
+MaterialIndex: 171
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 126
+{
+obj|okno_sklo
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: 330
+ParentIndex2: 296
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.411107778549194 0.0025476694572717 -0.42715322971344
+Max: 0.404039591550827 0.0025476694572717 0.438575476408005
+byte: 255
+MeshIndex: 74
+MaterialIndex: 171
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 127
+{
+obj|krajic03
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0.126093745231628      0.517499983310699      1.46351432800293       // Translation X Y Z
+ParentIndex1: 285
+ParentIndex2: 285
+unknown_byte: 0
+flags: 1677721648
+
+Min: -1.24850130081177 -0.332447856664658 -0.761874377727509
+Max: 1.24842703342438 0.332261651754379 0.761873781681061
+byte: 255
+MeshIndex: 59
+MaterialIndex: 155
+obj|OM_CO_stehovani.dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 128
+{
+obj|postel
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-656.260009765625      934.966247558594       -7.38387012481689      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -1.17647743225098 -0.595622897148132 -0.572499394416809
+Max: 1.27179050445557 0.587445080280304 0.462745785713196
+byte: 255
+MeshIndex: 43
+MaterialIndex: 128
+obj|OM_potel[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 129
+{
+obj|mesh
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      -3.81469718035987E-08  0.455074161291122      // Translation X Y Z
+ParentIndex1: 272
+ParentIndex2: 272
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.251388937234879 -0.279046028852463 -0.455209940671921
+Max: 0.251398473978043 0.279044657945633 0.455209881067276
+byte: 255
+MeshIndex: 61
+MaterialIndex: 157
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 130
+{
+obj|mesh
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      -3.81469718035987E-08  0.455074161291122      // Translation X Y Z
+ParentIndex1: 184
+ParentIndex2: 184
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.251388937234879 -0.279046028852463 -0.455209940671921
+Max: 0.251398473978043 0.279044657945633 0.455209881067276
+byte: 255
+MeshIndex: 61
+MaterialIndex: 157
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Joint 131
+{
+obj|joint_velka
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      5.96046447753906E-08   -0.999999940395355     // Up
+0                      0.999999940395355      5.96046447753906E-08   // Backward
+-0.000166625977726653  0                      -0.000125094651593827  // Translation X Y Z
+ParentIndex1: 339
+ParentIndex2: 228
+unknown_byte: 0
+}
+// Single 132
+{
+obj|rolety
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-653.636413574219      932.751708984375       -5.72753524780273      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.448935240507126 -0.0418933108448982 -0.373133540153503
+Max: 0.448908418416977 0.041822511702776 0.37313324213028
+byte: 255
+MeshIndex: 46
+MaterialIndex: 132
+obj|OM_loznice_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Collision 133
+{
+obj|CC51_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.00178161612711847   0.000273437501164153   -0.216194078326225     // Translation X Y Z
+ParentIndex1: 343
+ParentIndex2: 311
+obj|EF44E14BE73A8A95
+}
+
+// Joint 134
+{
+obj|pant01
+unknown_00_int: 1
+-3.57627868652344E-07  1                      0                      // Right
+-1                     -3.57627868652344E-07  0                      // Up
+0                      0                      1                      // Backward
+-0.566776096820831     0.00234796619042754    -3.0517577442879E-07   // Translation X Y Z
+ParentIndex1: 324
+ParentIndex2: 246
+unknown_byte: 0
+}
+// Single 135
+{
+obj|byt_skla01
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-646.917419433594      938.376281738281       -6.04565286636353      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: 1.00105428695679 -0.621025323867798 -0.92142117023468
+Max: 1.07603931427002 0.621037185192108 0.921421527862549
+byte: 255
+MeshIndex: 27
+MaterialIndex: 110
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Frame 136
+{
+obj|vetrak1
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|vetrak1
+}
+
+// Single 137
+{
+obj|byt_radiator03
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-654.926330566406      932.967712402344       -7.40156602859497      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.391471534967422 -0.181833490729332 -0.576618611812592
+Max: 0.391469478607178 0.181809365749359 0.576618611812592
+byte: 255
+MeshIndex: 26
+MaterialIndex: 108
+obj|OM_kuchyn_vyb_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 138
+{
+obj|byt_radiator01
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-649.003662109375      932.967712402344       -7.40156602859497      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.391471534967422 -0.181833490729332 -0.576618611812592
+Max: 0.391493707895279 0.181812793016434 0.574067413806915
+byte: 255
+MeshIndex: 25
+MaterialIndex: 107
+obj|OM_kuchyn_vyb_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 139
+{
+obj|byt_radiator07
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-648.0986328125        942.034729003906       -7.40156602859497      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.391471534967422 -0.181833490729332 -0.576618611812592
+Max: 0.391493707895279 0.181812793016434 0.574067413806915
+byte: 255
+MeshIndex: 25
+MaterialIndex: 109
+obj|OM_kuchyn_vyb_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 140
+{
+obj|krucifix
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-654.942626953125      932.758666992188       -5.87524700164795      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.144410476088524 -0.0126593010500073 -0.249817192554474
+Max: 0.144358679652214 0.0249352883547544 0.249817192554474
+byte: 255
+MeshIndex: 37
+MaterialIndex: 120
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Joint 141
+{
+obj|joint_okno
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: 330
+ParentIndex2: 296
+unknown_byte: 0
+}
+// Joint 142
+{
+obj|joint_okno
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: 332
+ParentIndex2: 295
+unknown_byte: 0
+}
+// Joint 143
+{
+obj|joint_okno
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: 329
+ParentIndex2: 241
+unknown_byte: 0
+}
+// Joint 144
+{
+obj|joint_okno
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: 331
+ParentIndex2: 297
+unknown_byte: 0
+}
+// Frame 145
+{
+obj|VA3_klobouk_W
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: -1
+unknown_byte: 0
+obj|VA3_klobouk[W]
+}
+
+// Single 146
+{
+obj|kos
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-649.582397460938      938.814880371094       -7.65756130218506      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: 0.0868589878082275 -0.212495803833008 -0.304622769355774
+Max: 0.482980877161026 0.212526232004166 0.30462384223938
+byte: 255
+MeshIndex: 35
+MaterialIndex: 118
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 147
+{
+obj|futra_01
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-650.491394042969      939.246765136719       -6.65980100631714      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.900033235549927 -0.0933770760893822 -1.29999995231628
+Max: 0.899966716766357 0.0933689475059509 1.29999995231628
+byte: 255
+MeshIndex: 33
+MaterialIndex: 116
+obj|OM_kuchyn_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 148
+{
+obj|futra_02
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-650.491394042969      939.386779785156       -6.65980100631714      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.899999380111694 -0.0466415397822857 -1.29999995231628
+Max: 0.90000057220459 0.0466917902231216 1.29999995231628
+byte: 255
+MeshIndex: 34
+MaterialIndex: 117
+obj|OM_kuchyn_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 149
+{
+obj|dvere_loznice
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.00633666990324855   -0.0053767953068018    1.1688894033432        // Translation X Y Z
+ParentIndex1: 246
+ParentIndex2: 246
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.578769505023956 -0.0711643695831299 -1.16878724098206
+Max: 0.578814804553986 0.0749696791172028 1.1687867641449
+byte: 255
+MeshIndex: 76
+MaterialIndex: 173
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Joint 150
+{
+obj|joint_mala
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      5.96046447753906E-08   -0.999999940395355     // Up
+0                      0.999999940395355      5.96046447753906E-08   // Backward
+-0.000166625977726653  0                      -0.000125094651593827  // Translation X Y Z
+ParentIndex1: 339
+ParentIndex2: 228
+unknown_byte: 0
+}
+// Single 151
+{
+obj|klobou01
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-0.000380859361030161  4.814147905563E-05     -4.76837147544984E-09  // Translation X Y Z
+ParentIndex1: 320
+ParentIndex2: 320
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.139988332986832 -0.156539171934128 -0.0825104936957359
+Max: 0.139988198876381 0.156537264585495 0.0825104936957359
+byte: 255
+MeshIndex: 57
+MaterialIndex: 153
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Collision 152
+{
+obj|coll_noha_03_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0.495192855596542      0.409923851490021      -0.0337176322937012    // Translation X Y Z
+ParentIndex1: 271
+ParentIndex2: 211
+obj|901A618B6C9839D3
+}
+
+// Collision 153
+{
+obj|coll_stul_Collision
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0.00021728515275754    0.00239034648984671    0.163644343614578      // Translation X Y Z
+ParentIndex1: 271
+ParentIndex2: 211
+obj|98F441FC78D7211E
+}
+
+// Single 154
+{
+obj|okno_ram
+unknown_00_int: 1
+5.9604651880818E-08    1                      0                      // Right
+-1                     5.9604651880818E-08    0                      // Up
+0                      0                      1.00000011920929       // Backward
+-0.00390625            0.00937499944120646    1.16806638240814       // Translation X Y Z
+ParentIndex1: 241
+ParentIndex2: 241
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.450009286403656 -0.01500213611871 -0.473114311695099
+Max: 0.449991077184677 0.0149978632107377 0.473113685846329
+byte: 255
+MeshIndex: 73
+MaterialIndex: 170
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 155
+{
+obj|okno_ram
+unknown_00_int: 1
+5.9604651880818E-08    1                      0                      // Right
+-1                     5.9604651880818E-08    0                      // Up
+0                      0                      1.00000011920929       // Backward
+-0.00390625            0.00937499944120646    1.16806638240814       // Translation X Y Z
+ParentIndex1: 296
+ParentIndex2: 296
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.450009286403656 -0.01500213611871 -0.473114311695099
+Max: 0.449991077184677 0.0149978632107377 0.473113685846329
+byte: 255
+MeshIndex: 73
+MaterialIndex: 170
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 156
+{
+obj|okno_ram
+unknown_00_int: 1
+5.9604651880818E-08    1                      0                      // Right
+-1                     5.9604651880818E-08    0                      // Up
+0                      0                      1.00000011920929       // Backward
+-0.00390625            0.00937499944120646    1.16806638240814       // Translation X Y Z
+ParentIndex1: 297
+ParentIndex2: 297
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.450009286403656 -0.01500213611871 -0.473114311695099
+Max: 0.449991077184677 0.0149978632107377 0.473113685846329
+byte: 255
+MeshIndex: 73
+MaterialIndex: 170
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 157
+{
+obj|okno_ram
+unknown_00_int: 1
+5.9604651880818E-08    1                      0                      // Right
+-1                     5.9604651880818E-08    0                      // Up
+0                      0                      1.00000011920929       // Backward
+-0.00390625            0.00937499944120646    1.16806638240814       // Translation X Y Z
+ParentIndex1: 295
+ParentIndex2: 295
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.450009286403656 -0.01500213611871 -0.473114311695099
+Max: 0.449991077184677 0.0149978632107377 0.473113685846329
+byte: 255
+MeshIndex: 73
+MaterialIndex: 170
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 158
+{
+obj|byt_skrinka03
+unknown_00_int: 1
+5.9604651880818E-08    1                      0                      // Right
+-1                     5.9604651880818E-08    0                      // Up
+0                      0                      1.00000011920929       // Backward
+-653.683410644531      938.435607910156       -6.83114862442017      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.474878072738647 -0.523659467697144 -1.10324466228485
+Max: 3.22431151289493E-05 0.523731291294098 -0.276874959468842
+byte: 255
+MeshIndex: 30
+MaterialIndex: 113
+obj|OM_loznice_vybav.dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 159
+{
+obj|sporak
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-648.991394042969      935.970458984375       -6.16899299621582      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: 1.84396266937256 0.297694146633148 -1.77943599224091
+Max: 2.97414827346802 1.25963342189789 1.80894148349762
+byte: 255
+MeshIndex: 52
+MaterialIndex: 139
+obj|OM_kuchyn_vyb_A3[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 160
+{
+obj|byt_futra03
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-652.036193847656      937.519287109375       -6.68480110168457      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.00975786335766315 -0.749963879585266 -1.27499997615814
+Max: 0.0797568112611771 0.750068604946136 1.27500069141388
+byte: 255
+MeshIndex: 16
+MaterialIndex: 97
+obj|OM_loznice_vybav.dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 161
+{
+obj|byt_futra07
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-650.485229492188      943.234497070313       -6.4467453956604       // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.55592155456543 0.0149621209129691 -1.51305639743805
+Max: 0.557373762130737 0.109967321157455 0.825313448905945
+byte: 255
+MeshIndex: 18
+MaterialIndex: 99
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 162
+{
+obj|byt_futra06
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-649.613891601563      940.793395996094       -6.68480110168457      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: 0.602504968643188 -0.749979853630066 -1.27499997615814
+Max: 0.75748211145401 0.750052213668823 1.27499997615814
+byte: 255
+MeshIndex: 17
+MaterialIndex: 98
+obj|OM_koupelna_vybav[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 163
+{
+obj|byt_futra09
+unknown_00_int: 1
+-1                     -8.74227765734759E-08  0                      // Right
+8.74227765734759E-08   -1                     0                      // Up
+0                      0                      1                      // Backward
+-652.192810058594      937.519409179688       -6.68480110168457      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.146906703710556 -0.75448352098465 -1.27499961853027
+Max: 0.0797599926590919 0.750063359737396 1.27500057220459
+byte: 255
+MeshIndex: 19
+MaterialIndex: 100
+obj|OM_loznice_vybav.dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 164
+{
+obj|hodiny
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: 228
+ParentIndex2: 228
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.149999991059303 -0.0345465540885925 -0.149999991059303
+Max: 0.149999991059303 0.0345468446612358 0.149999991059303
+byte: 0
+MeshIndex: 56
+MaterialIndex: 150
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 165
+{
+obj|schod_rohoz_07
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+-650.36767578125       943.765380859375       -7.9492392539978       // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 1677721648
+
+Min: -0.419449925422668 -0.262996524572372 -0.0105615230277181
+Max: 0.419396162033081 0.2630874812603 0.0105632646009326
+byte: 255
+MeshIndex: 47
+MaterialIndex: 134
+obj|OM_koupelna[W].dds
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Single 166
+{
+obj|zasuvka
+unknown_00_int: 1
+5.9604651880818E-08    -1                     0                      // Right
+1                      5.9604651880818E-08    0                      // Up
+0                      0                      1.00000011920929       // Backward
+-651.718872070313      939.189880371094       -6.75980138778687      // Translation X Y Z
+ParentIndex1: -1
+ParentIndex2: 0
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.00348078622482717 -0.0469887405633926 -0.0781537368893623
+Max: 0.00345665984787047 0.0472011640667915 0.0781534984707832
+byte: 255
+MeshIndex: 55
+MaterialIndex: 145
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+// Dummy 167
+{
+obj|phyzic_scene
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0                      0                      0                      // Translation X Y Z
+ParentIndex1: 209
+ParentIndex2: 209
+unknown_byte: 0
+
+Min: -0.5 -0.5 -0.5
+Max: 0.5 0.5 0.5
+}
+
+// Single 168
+{
+obj|vetrak_telo
+unknown_00_int: 1
+1                      0                      0                      // Right
+0                      1                      0                      // Up
+0                      0                      1                      // Backward
+0.00178161612711847    -0.000273437501164153  0.216194078326225      // Translation X Y Z
+ParentIndex1: 311
+ParentIndex2: 311
+unknown_byte: 0
+flags: 603979824
+
+Min: -0.193711921572685 -0.0919174775481224 -0.216194078326225
+Max: 0.193708389997482 0.0919134840369225 0.216194078326225
+byte: 0
+MeshIndex: 69
+MaterialIndex: 165
+obj|None
+byte1: 0
+byte2: 0
+byte3: 0
+}
+
+}
