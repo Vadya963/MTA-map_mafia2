@@ -1,3 +1,5 @@
+[Видео гайд по экспорту объектов из Mafia II](https://www.youtube.com/watch?v=vW_eV2FHt4A)
+
 Карта создана с помощью программ:
 - Mafia: Toolkit от Greavesy https://github.com/Greavesy1899/MafiaToolkit 
 - ModelViewer от y.u.s.i.k
