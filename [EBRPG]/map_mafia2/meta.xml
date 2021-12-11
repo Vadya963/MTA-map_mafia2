@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.83.13.16"/>
+<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.84.13.16"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -9403,6 +9403,10 @@
 <file src='hunters/02_plot.dff'/>
 <file src='hunters/02_plot.col'/>
 
+<file src='sandisland/g01_89.dff'/>
+<file src='sandisland/g01_89.col'/>
+<file src='sandisland/g01_141.dff'/>
+<file src='sandisland/g01_141.col'/>
 <file src='sandisland/Object16.dff'/>
 <file src='sandisland/Object16.col'/>
 <file src='sandisland/Object24.dff'/>
@@ -9467,18 +9471,18 @@
 <file src='sandisland/EXTERIER_WIND_21.col'/>
 <file src='sandisland/g01_154.dff'/>
 <file src='sandisland/g01_154.col'/>
-<file src='sandisland/g01_210.dff'/>
-<file src='sandisland/g01_210.col'/>
-<file src='sandisland/g01_232.dff'/>
-<file src='sandisland/g01_232.col'/>
+<file src='sandisland/01_45.dff'/>
+<file src='sandisland/01_45.col'/>
+<file src='sandisland/S01_zed_zabr.dff'/>
+<file src='sandisland/S01_zed_zabr.col'/>
 <file src='sandisland/01_OM_56.dff'/>
 <file src='sandisland/01_OM_56.col'/>
 <file src='sandisland/01_OM_22.dff'/>
 <file src='sandisland/01_OM_22.col'/>
-<file src='sandisland/g01_218.dff'/>
-<file src='sandisland/g01_218.col'/>
-<file src='sandisland/g01_181.dff'/>
-<file src='sandisland/g01_181.col'/>
+<file src='sandisland/01_64.dff'/>
+<file src='sandisland/01_64.col'/>
+<file src='sandisland/Object57.dff'/>
+<file src='sandisland/Object57.col'/>
 <file src='sandisland/EXTERIER_WIND1pat_01.dff'/>
 <file src='sandisland/EXTERIER_WIND1pat_01.col'/>
 <file src='sandisland/S01_Dum_70.dff'/>

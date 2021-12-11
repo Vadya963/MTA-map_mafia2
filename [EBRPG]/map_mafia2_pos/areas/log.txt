@@ -933,11 +933,11 @@ S01_zed_07 1986 sandisland
 EXTERIER_WIND_21 1987 sandisland
 EXTERIER_WIND1pat_01 1988 sandisland
 g01_154 1989 sandisland
-g01_210 1990 sandisland
-g01_218 1991 sandisland
-g01_232 1992 sandisland
+01_45 1990 sandisland
+01_64 1991 sandisland
+S01_zed_zabr 1992 sandisland
 01_OM_22 1993 sandisland
-g01_181 1994 sandisland
+Object57 1994 sandisland
 S01_Dum_70 1995 sandisland
 S01_Dum_71 1996 sandisland
 S01_Dum_72 1997 sandisland
@@ -5001,6 +5001,8 @@ distillery01 696 sandisland
 Object29 18618 sandisland
 Object16 3681 sandisland
 Object24 3682 sandisland
+g01_141 5658 sandisland
+g01_89 5659 sandisland
 dum_2_zed_GARAZ_a16 708 port
 19_pr_37 709 port
 dum_garaz_STRED_b01 713 port
