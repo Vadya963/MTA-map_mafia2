@@ -10,6 +10,7 @@ local table_water = {
 	[9] = {-974.7460937,-2000, 1500.31118774414,-503.91384887695, {false, false}},--от саус до юж мил
 	[10] = {813.47155761719,-503.91384887695, 1500.31118774414,-301.46527099609, {false, false}},--от юж мил до юж мил
 }
+local height = 15
 
 local swim_time, air_time = 0, 0
 setTimer(function ( ... )
@@ -45,7 +46,6 @@ function ( startedRes )
 	setCloudsEnabled(false)
 	--setFogDistance(2000)
 
-	local height = 15
 	for k,v in ipairs(table_water) do
 		v[5][1] = createWater ( v[1], v[2], height, v[3], v[2], height, v[1], v[4], height, v[3], v[4], height )
 		v[5][2] = createWater ( v[1], v[2], height, v[3], v[2], height, v[1], v[4], height, v[3], v[4], height )
