@@ -4922,6 +4922,7 @@ emis_glass__10 3103 hillwood
 14_Branka_b__01 1523 hillwood
 vrata_L 1532 hillwood
 vrata_P 1533 hillwood
+Ter_zabr_zz_01 1535 hillwood
 striska_nad_rampou 698 riverside
 city04 704 riverside
 city24 705 riverside
