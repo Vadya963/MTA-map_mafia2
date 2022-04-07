@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.88.13.17"/>
+<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.89.13.17"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -7840,6 +7840,94 @@
 <file src='dipton/05_369.dff'/>
 <file src='dipton/05_369.col'/>
 
+<file src='highbrook/12_03_10.dff'/>
+<file src='highbrook/12_03_10.col'/>
+<file src='highbrook/12_03_11.dff'/>
+<file src='highbrook/12_03_11.col'/>
+<file src='highbrook/12_03_12.dff'/>
+<file src='highbrook/12_03_12.col'/>
+<file src='highbrook/12_03_13.dff'/>
+<file src='highbrook/12_03_13.col'/>
+<file src='highbrook/12_03_03.dff'/>
+<file src='highbrook/12_03_03.col'/>
+<file src='highbrook/12_03_02.dff'/>
+<file src='highbrook/12_03_02.col'/>
+<file src='highbrook/12_03_01.dff'/>
+<file src='highbrook/12_03_01.col'/>
+<file src='highbrook/12_03_07.dff'/>
+<file src='highbrook/12_03_07.col'/>
+<file src='highbrook/12_03_06.dff'/>
+<file src='highbrook/12_03_06.col'/>
+<file src='highbrook/12_03_05.dff'/>
+<file src='highbrook/12_03_05.col'/>
+<file src='highbrook/12_03_04.dff'/>
+<file src='highbrook/12_03_04.col'/>
+<file src='highbrook/12_03_09.dff'/>
+<file src='highbrook/12_03_09.col'/>
+<file src='highbrook/12_03_08.dff'/>
+<file src='highbrook/12_03_08.col'/>
+<file src='highbrook/12_03.dff'/>
+<file src='highbrook/12_03.col'/>
+<file src='highbrook/12_119.dff'/>
+<file src='highbrook/12_119.col'/>
+<file src='highbrook/12_37e.dff'/>
+<file src='highbrook/12_37e.col'/>
+<file src='highbrook/12_37c.dff'/>
+<file src='highbrook/12_37c.col'/>
+<file src='highbrook/12_37b.dff'/>
+<file src='highbrook/12_37b.col'/>
+<file src='highbrook/12_121_plot01.dff'/>
+<file src='highbrook/12_121_plot01.col'/>
+<file src='highbrook/12_pletivo03b.dff'/>
+<file src='highbrook/12_pletivo03b.col'/>
+<file src='highbrook/12_26_2b.dff'/>
+<file src='highbrook/12_26_2b.col'/>
+<file src='highbrook/12_26_3b.dff'/>
+<file src='highbrook/12_26_3b.col'/>
+<file src='highbrook/12_26_4b.dff'/>
+<file src='highbrook/12_26_4b.col'/>
+<file src='highbrook/12_03_03b.dff'/>
+<file src='highbrook/12_03_03b.col'/>
+<file src='highbrook/12_03_01b.dff'/>
+<file src='highbrook/12_03_01b.col'/>
+<file src='highbrook/12_pletivo01.dff'/>
+<file src='highbrook/12_pletivo01.col'/>
+<file src='highbrook/12_pletivo02.dff'/>
+<file src='highbrook/12_pletivo02.col'/>
+<file src='highbrook/12_pletivo03.dff'/>
+<file src='highbrook/12_pletivo03.col'/>
+<file src='highbrook/12_26_2.dff'/>
+<file src='highbrook/12_26_2.col'/>
+<file src='highbrook/12_26_3.dff'/>
+<file src='highbrook/12_26_3.col'/>
+<file src='highbrook/12_26_1.dff'/>
+<file src='highbrook/12_26_1.col'/>
+<file src='highbrook/12_26_6.dff'/>
+<file src='highbrook/12_26_6.col'/>
+<file src='highbrook/12_26_4.dff'/>
+<file src='highbrook/12_26_4.col'/>
+<file src='highbrook/12_26_5.dff'/>
+<file src='highbrook/12_26_5.col'/>
+<file src='highbrook/12_drplInst104.dff'/>
+<file src='highbrook/12_drplInst104.col'/>
+<file src='highbrook/12_pletivo.dff'/>
+<file src='highbrook/12_pletivo.col'/>
+<file src='highbrook/12_55.dff'/>
+<file src='highbrook/12_55.col'/>
+<file src='highbrook/12_17.dff'/>
+<file src='highbrook/12_17.col'/>
+<file src='highbrook/12_11.dff'/>
+<file src='highbrook/12_11.col'/>
+<file src='highbrook/12_09.dff'/>
+<file src='highbrook/12_09.col'/>
+<file src='highbrook/12_08.dff'/>
+<file src='highbrook/12_08.col'/>
+<file src='highbrook/12_06.dff'/>
+<file src='highbrook/12_06.col'/>
+<file src='highbrook/12_37.dff'/>
+<file src='highbrook/12_37.col'/>
+<file src='highbrook/g12_04.dff'/>
+<file src='highbrook/g12_04.col'/>
 <file src='highbrook/12_statue02_G.dff'/>
 <file src='highbrook/12_statue02_G.col'/>
 <file src='highbrook/12_teren_CC02.dff'/>
