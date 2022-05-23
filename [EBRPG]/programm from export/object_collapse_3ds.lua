@@ -1,7 +1,8 @@
 local value = true--true - matrix, false - euler angles, nil - euler angles in table
+local name_write = false--true write name object_collapse[1][1], false v[1] and recording coordinates for 3d max 
 local object_collapse = {
-{'02_55501', { {0.469470739364624, -0.882948160171509, 0, 0}, {0.882948160171509, 0.469470739364624, 0, 0}, {0, 0, 1.00000011920929, 0}, {-1328.650 ,159.5100 ,-24.62364, 0} }, 0},
-{'02_55501', { {0.469470739364624, -0.882948160171509, 0, 0}, {0.882948160171509, 0.469470739364624, 0, 0}, {0, 0, 1.00000011920929, 0}, {-1314.85546875, 133.6044921875, -24.9878273010254, 0} }, 0},
+{'12_118', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-0.370585918426514, -36.8212509155273, -7.50809574127197, 0} }, 0},
+{'sklaoknavys_exter_16', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-8.05976581573486, 12.0900001525879, -3.23469710350037, 0} }, 0},
 
 }
 
@@ -34,9 +35,16 @@ function toQuaternion(x,y,z)
 	return q;
 end
 
+function ifElse(condition, trueReturn, falseReturn)
+	if (condition) then return trueReturn
+	else return falseReturn end
+end
+
 local name = object_collapse[1][1]
 local pyt_new = "C:\\test\\object_collapse.ipl"
+local pyt_3d_max = "C:\\test\\3d_max_coord.ms"
 local file_new = io.open(pyt_new, "w")
+local file_ms = io.open(pyt_3d_max, "w")
 
 file_new:write("inst\n")
 
@@ -45,21 +53,25 @@ for k,v in ipairs(object_collapse) do
 		local x,y,z = v[2][4][1],v[2][4][2],v[2][4][3]
 		local xr,yr,zr = getEulerAnglesFromMatrix(v)
 		local rot = toQuaternion(xr,yr,zr)-- zr*-1 starting from version 2.13 mafiatoolkit
-		file_new:write(v[3]..", "..name..", 0, "..x-object_collapse[1][2][4][1]..", "..y-object_collapse[1][2][4][2]..", "..z-object_collapse[1][2][4][3]..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
+		file_new:write(v[3]..", "..ifElse(name_write, name, v[1])..", 0, "..x-object_collapse[1][2][4][1]..", "..y-object_collapse[1][2][4][2]..", "..z-object_collapse[1][2][4][3]..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
+		if not name_write then file_ms:write("$"..v[1]..".pos.x = "..x-object_collapse[1][2][4][1].."\n$"..v[1]..".pos.y = "..y-object_collapse[1][2][4][2].."\n$"..v[1]..".pos.z = "..z-object_collapse[1][2][4][3].."\n$"..v[1]..".rotation.x_rotation = "..rot.x.."\n$"..v[1]..".rotation.y_rotation = "..rot.y.."\n$"..v[1]..".rotation.z_rotation = "..rot.z.."\n") end
 	elseif value == false then
 		local xr,yr,zr = v[2][4],v[2][5],v[2][6]
 		local x,y,z = v[2][1],v[2][2],v[2][3]
 		local rot = toQuaternion(xr,yr,zr)
-		file_new:write(v[3]..", "..name..", 0, "..x-object_collapse[1][2][1]..", "..y-object_collapse[1][2][2]..", "..z-object_collapse[1][2][3]..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
+		file_new:write(v[3]..", "..ifElse(name_write, name, v[1])..", 0, "..x-object_collapse[1][2][1]..", "..y-object_collapse[1][2][2]..", "..z-object_collapse[1][2][3]..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
+		if not name_write then file_ms:write("$"..v[1]..".pos.x = "..x-object_collapse[1][2][1].."\n$"..v[1]..".pos.y = "..y-object_collapse[1][2][2].."\n$"..v[1]..".pos.z = "..z-object_collapse[1][2][3].."\n$"..v[1]..".rotation.x_rotation = "..rot.x.."\n$"..v[1]..".rotation.y_rotation = "..rot.y.."\n$"..v[1]..".rotation.z_rotation = "..rot.z.."\n") end
 	elseif value == nil then
 		for k,v in pairs(object_collapse[1][2]) do
 			local xr,yr,zr = v[4],v[5],v[6]
 			local x,y,z = v[1],v[2],v[3]
 			local rot = toQuaternion(xr,yr,zr)
-			file_new:write(object_collapse[1][3]..", "..name..", 0, "..x-object_collapse[1][2][1][1]..", "..y-object_collapse[1][2][1][2]..", "..z-object_collapse[1][2][1][3]..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
+			file_new:write(object_collapse[1][3]..", "..ifElse(name_write, name, v[1])..", 0, "..x-object_collapse[1][2][1][1]..", "..y-object_collapse[1][2][1][2]..", "..z-object_collapse[1][2][1][3]..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
+			if not name_write then file_ms:write("$"..v[1]..".pos.x = "..x-object_collapse[1][2][1][1].."\n$"..v[1]..".pos.y = "..y-object_collapse[1][2][1][2].."\n$"..v[1]..".pos.z = "..z-object_collapse[1][2][1][3].."\n$"..v[1]..".rotation.x_rotation = "..rot.x.."\n$"..v[1]..".rotation.y_rotation = "..rot.y.."\n$"..v[1]..".rotation.z_rotation = "..rot.z.."\n") end
 		end
 	end
 end
 
 file_new:write("end\n")
 file_new:close()
+file_ms:close()
