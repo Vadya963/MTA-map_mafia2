@@ -1,9 +1,12 @@
-local value = true--true - matrix, false - euler angles, nil - euler angles in table
-local name_write = false--true write name object_collapse[1][1], false v[1] and recording coordinates for 3d max 
+local value = false--true - matrix, false - euler angles, nil - euler angles in table
+local name_write = false--true write name object_collapse[1][1], false v[1] and recording coordinates for 3d max
 local object_collapse = {
-{'12_118', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-0.370585918426514, -36.8212509155273, -7.50809574127197, 0} }, 0},
-{'sklaoknavys_exter_16', { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {-8.05976581573486, 12.0900001525879, -3.23469710350037, 0} }, 0},
-
+{'12_118', {-0.370585918426514, -36.8212509155273, -7.50809574127197, 0, -0, -0}, 0},
+{'CHODNIKY__01', {-0.37935546040535, -22.7262496948242, -6.66429662704468, 0, -0, -0}, 0},
+{'CHODNIKY__02', {-2.64199209213257, 17.5420303344727, -4.85767555236816, 0, -0, -0}, 0},
+{'CHODNIKY__03', {-0.444140613079071, -1.67859375476837, 7.436279296875, 0, -0, -0}, 0},
+{'CHODNIKY__04', {-0.37935546040535, -23.2913284301758, -6.66714334487915, 0, -0, -0}, 0},
+{'TELO_BARAKU', {-0.444140613079071, -1.67859375476837, 7.436279296875, 0, -0, 179.99999499104}, 0},
 }
 
 function getEulerAnglesFromMatrix(table)
@@ -52,22 +55,23 @@ for k,v in ipairs(object_collapse) do
 	if value == true then
 		local x,y,z = v[2][4][1],v[2][4][2],v[2][4][3]
 		local xr,yr,zr = getEulerAnglesFromMatrix(v)
-		local rot = toQuaternion(xr,yr,zr)-- zr*-1 starting from version 2.13 mafiatoolkit
+		--zr = zr*-1 --starting from version 2.13 mafiatoolkit
+		local rot = toQuaternion(xr,yr,zr)
 		file_new:write(v[3]..", "..ifElse(name_write, name, v[1])..", 0, "..x-object_collapse[1][2][4][1]..", "..y-object_collapse[1][2][4][2]..", "..z-object_collapse[1][2][4][3]..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
-		if not name_write then file_ms:write("$"..v[1]..".pos.x = "..x-object_collapse[1][2][4][1].."\n$"..v[1]..".pos.y = "..y-object_collapse[1][2][4][2].."\n$"..v[1]..".pos.z = "..z-object_collapse[1][2][4][3].."\n$"..v[1]..".rotation.x_rotation = "..rot.x.."\n$"..v[1]..".rotation.y_rotation = "..rot.y.."\n$"..v[1]..".rotation.z_rotation = "..rot.z.."\n") end
+		if not name_write then file_ms:write("$"..v[1]..".pos.x = "..x-object_collapse[1][2][4][1].."\n$"..v[1]..".pos.y = "..y-object_collapse[1][2][4][2].."\n$"..v[1]..".pos.z = "..z-object_collapse[1][2][4][3].."\n$"..v[1]..".rotation.x_rotation = "..xr.."\n$"..v[1]..".rotation.y_rotation = "..yr.."\n$"..v[1]..".rotation.z_rotation = "..zr.."\n") end
 	elseif value == false then
 		local xr,yr,zr = v[2][4],v[2][5],v[2][6]
 		local x,y,z = v[2][1],v[2][2],v[2][3]
 		local rot = toQuaternion(xr,yr,zr)
 		file_new:write(v[3]..", "..ifElse(name_write, name, v[1])..", 0, "..x-object_collapse[1][2][1]..", "..y-object_collapse[1][2][2]..", "..z-object_collapse[1][2][3]..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
-		if not name_write then file_ms:write("$"..v[1]..".pos.x = "..x-object_collapse[1][2][1].."\n$"..v[1]..".pos.y = "..y-object_collapse[1][2][2].."\n$"..v[1]..".pos.z = "..z-object_collapse[1][2][3].."\n$"..v[1]..".rotation.x_rotation = "..rot.x.."\n$"..v[1]..".rotation.y_rotation = "..rot.y.."\n$"..v[1]..".rotation.z_rotation = "..rot.z.."\n") end
+		if not name_write then file_ms:write("$"..v[1]..".pos.x = "..x-object_collapse[1][2][1].."\n$"..v[1]..".pos.y = "..y-object_collapse[1][2][2].."\n$"..v[1]..".pos.z = "..z-object_collapse[1][2][3].."\n$"..v[1]..".rotation.x_rotation = "..xr.."\n$"..v[1]..".rotation.y_rotation = "..yr.."\n$"..v[1]..".rotation.z_rotation = "..(zr*-1).."\n") end
 	elseif value == nil then
 		for k,v in pairs(object_collapse[1][2]) do
 			local xr,yr,zr = v[4],v[5],v[6]
 			local x,y,z = v[1],v[2],v[3]
 			local rot = toQuaternion(xr,yr,zr)
 			file_new:write(object_collapse[1][3]..", "..ifElse(name_write, name, v[1])..", 0, "..x-object_collapse[1][2][1][1]..", "..y-object_collapse[1][2][1][2]..", "..z-object_collapse[1][2][1][3]..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
-			if not name_write then file_ms:write("$"..v[1]..".pos.x = "..x-object_collapse[1][2][1][1].."\n$"..v[1]..".pos.y = "..y-object_collapse[1][2][1][2].."\n$"..v[1]..".pos.z = "..z-object_collapse[1][2][1][3].."\n$"..v[1]..".rotation.x_rotation = "..rot.x.."\n$"..v[1]..".rotation.y_rotation = "..rot.y.."\n$"..v[1]..".rotation.z_rotation = "..rot.z.."\n") end
+			if not name_write then file_ms:write("$"..v[1]..".pos.x = "..x-object_collapse[1][2][1][1].."\n$"..v[1]..".pos.y = "..y-object_collapse[1][2][1][2].."\n$"..v[1]..".pos.z = "..z-object_collapse[1][2][1][3].."\n$"..v[1]..".rotation.x_rotation = "..xr.."\n$"..v[1]..".rotation.y_rotation = "..yr.."\n$"..v[1]..".rotation.z_rotation = "..(zr*-1).."\n") end
 		end
 	end
 end
