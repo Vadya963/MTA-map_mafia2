@@ -55,8 +55,7 @@ for k,v in ipairs(object_collapse) do
 	if value == true then
 		local x,y,z = v[2][4][1],v[2][4][2],v[2][4][3]
 		local xr,yr,zr = getEulerAnglesFromMatrix(v)
-		--zr = zr*-1 --starting from version 2.13 mafiatoolkit
-		local rot = toQuaternion(xr,yr,zr)
+		local rot = toQuaternion(xr,yr,zr)-- zr*-1 starting from version 2.13 mafiatoolkit
 		file_new:write(v[3]..", "..ifElse(name_write, name, v[1])..", 0, "..x-object_collapse[1][2][4][1]..", "..y-object_collapse[1][2][4][2]..", "..z-object_collapse[1][2][4][3]..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
 		if not name_write then file_ms:write("$"..v[1]..".pos.x = "..x-object_collapse[1][2][4][1].."\n$"..v[1]..".pos.y = "..y-object_collapse[1][2][4][2].."\n$"..v[1]..".pos.z = "..z-object_collapse[1][2][4][3].."\n$"..v[1]..".rotation.x_rotation = "..xr.."\n$"..v[1]..".rotation.y_rotation = "..yr.."\n$"..v[1]..".rotation.z_rotation = "..zr.."\n") end
 	elseif value == false then
