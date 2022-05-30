@@ -4955,6 +4955,8 @@ g12_04 3705 highbrook
 12_03_09 3930 highbrook
 12_03_08 3931 highbrook
 12_03 3932 highbrook
+11_EXT_okna_obyvak 3933 highbrook
+EXT_sloupky__02 3934 highbrook
 X15_EXT_dvere_tel__Z__pha01_dvere_tel 809 hillwood
 14_hvezdarna_dvere 718 hillwood
 14_teren_park_obrubnik 1506 hillwood
