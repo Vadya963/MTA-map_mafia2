@@ -74,7 +74,6 @@ function ( startedRes )
 	setBirdsEnabled(false)
 	setCloudsEnabled(false)
 	--setFogDistance(2000)
-	setDevelopmentMode( true )
 
 
 	for k,v in ipairs(table_water) do
