@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.93.13.17"/>
+<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.94.13.17"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -7842,6 +7842,8 @@
 <file src='dipton/05_369.dff'/>
 <file src='dipton/05_369.col'/>
 
+<file src='highbrook/brana_P.dff'/>
+<file src='highbrook/brana_P.col'/>
 <file src='highbrook/brana_02.dff'/>
 <file src='highbrook/brana_02.col'/>
 <file src='highbrook/11_EXT_okna_obyvak.dff'/>
