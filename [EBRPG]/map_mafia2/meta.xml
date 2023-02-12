@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.95.13.17"/>
+<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.96.13.17"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -4987,6 +4987,18 @@
 <file src='chinatown/15_teren_OM_schodek04.dff'/>
 <file src='chinatown/15_teren_OM_schodek04.col'/>
 
+<file src='uppertown/g13_50.dff'/>
+<file src='uppertown/g13_50.col'/>
+<file src='uppertown/g13_56.dff'/>
+<file src='uppertown/g13_56.col'/>
+<file src='uppertown/g13_63.dff'/>
+<file src='uppertown/g13_63.col'/>
+<file src='uppertown/13_closed01_G.dff'/>
+<file src='uppertown/13_closed01_G.col'/>
+<file src='uppertown/13_svodidlodohigh.dff'/>
+<file src='uppertown/13_svodidlodohigh.col'/>
+<file src='uppertown/13_116.dff'/>
+<file src='uppertown/13_116.col'/>
 <file src='uppertown/13_177.dff'/>
 <file src='uppertown/13_177.col'/>
 <file src='uppertown/dipton04.dff'/>

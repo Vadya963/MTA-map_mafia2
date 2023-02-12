@@ -3,6 +3,7 @@ local object = {
 }
 local file_t = fileCreate( "true.ipl" )
 local file_f = fileCreate( "false.ipl" )
+local file_3d = fileCreate( "3d_max_coord.ms" )
 
 function toQuaternion(x,y,z)
 	local z,y,x = math.rad(z),math.rad(y),math.rad(x)
@@ -44,6 +45,7 @@ if #object > 0 then
 		if posInArea(xa,ya,x,y) then 
 			fileSetPos( file_t, fileGetSize( file_t ) )
 			fileWrite(file_t, v[3]..", "..name..", 0, "..x-xa..", "..y-ya..", "..z-za..", "..rot.x..", "..rot.y..", "..rot.z..", "..rot.w..", -1\n" )
+			fileWrite(file_3d, "$"..name..".pos.x = "..x-xa.."\n$"..name..".pos.y = "..y-ya.."\n$"..name..".pos.z = "..z-za.."\n$"..name..".rotation.x_rotation = "..xr.."\n$"..name..".rotation.y_rotation = "..yr.."\n$"..name..".rotation.z_rotation = "..(zr*-1).."\n")
 		else
 			fileSetPos( file_f, fileGetSize( file_f ) )
 			fileWrite(file_f, "{'"..v[1].."', { {"..v[2][1][1]..", "..v[2][1][2]..", "..v[2][1][3]..", "..v[2][1][4].."}, {"..v[2][2][1]..", "..v[2][2][2]..", "..v[2][2][3]..", "..v[2][2][4].."}, {"..v[2][3][1]..", "..v[2][3][2]..", "..v[2][3][3]..", "..v[2][3][4].."}, {"..v[2][4][1]..", "..v[2][4][2]..", "..v[2][4][3]..", "..v[2][4][4].."} }, 0},\n" )
@@ -53,3 +55,4 @@ end
 
 fileClose( file_t )
 fileClose( file_f )
+fileClose( file_3d )
