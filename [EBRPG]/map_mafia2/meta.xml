@@ -1,7 +1,7 @@
 <meta>
 <info author="Paolo_Ricchi (Vadya963)" type="map"/>
 
-<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.96.13.17"/>
+<min_mta_version client="1.5.9-9.21002.0" server="1.5.9-9.21002.0" version="21.97.13.17"/>
 
 <include resource='map_mafia2_pos'/>
 
@@ -5324,6 +5324,12 @@
 <file src='uppertown/13_ndz_podst01.dff'/>
 <file src='uppertown/13_ndz_podst01.col'/>
 
+<file src='italy/g11_300.dff'/>
+<file src='italy/g11_300.col'/>
+<file src='italy/g11_216.dff'/>
+<file src='italy/g11_216.col'/>
+<file src='italy/g11_359.dff'/>
+<file src='italy/g11_359.col'/>
 <file src='italy/g11_288.dff'/>
 <file src='italy/g11_288.col'/>
 <file src='italy/city16.dff'/>
